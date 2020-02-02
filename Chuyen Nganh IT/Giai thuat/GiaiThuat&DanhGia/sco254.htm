@@ -1,0 +1,53 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="31 Mar 2007 18:09:07 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title>Danh Sách Kề</title>
+</head>
+<body onLoad="loadPage()" onUnload="return unloadPage('incomplete')">
+
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in .5in"><SPAN lang=DE style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-ansi-language: DE"><FONT face="Times New Roman">Với cách biểu diễn đồ thị G = (V, E) qua ma trận kề, quy ước rằng các đỉnh được đánh tùy ý từ 1, 2, ... cho đến |V|. Biểu diễn qua ma trận kề này được mô tả qua ma trận A = (aij) có kích thước |V| x |V| như sau:
+  <o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in .5in"><SPAN lang=DE style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-ansi-language: DE"><o:p></o:p></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt 1.5in; TEXT-INDENT: 0.5in; LINE-HEIGHT: 150%; tab-stops: .25in .5in"><FONT face="Times New Roman"><SPAN lang=DE style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-ansi-language: DE"><SPAN style="mso-spacerun: yes">&nbsp;&nbsp; </SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">a&shy;<SUB>&shy;ij</SUB> =<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>1 nếu (i,f )</SPAN></FONT><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">Î</SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"> E<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt 1.5in; LINE-HEIGHT: 150%; tab-stops: .25in .5in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>=<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>0 trong trường hợp khác<SPAN style="COLOR: red"><o:p></o:p></SPAN></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in .5in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Hình 23.1(c) và hình 23.2(c) là các ma trận kề của đồ thị vô hướng và có hướng cho trong hình 23.1(a) và 23.2(a) tương ứng. Ma trận kề của đồ thị yêu cầu </FONT></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">Q</SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">(V<SUB>&shy;</SUB>&shy;&shy;&shy;&shy;&shy;&shy;<SUP>2</SUP>) bộ nhớ, không phụ thuộc vào số cạnh trong đồ thị.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in .5in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Nếu để ý quan sát tính đối xứng qua đường chéo chính của ma trận kề trong hình 23.1(c). Định nghĩa hoán vị của ma trận A = (aij) là ma trận AT = (aijT) với aijT = aij. Do với đồ thị vô hướng (u,v) và (v,u) đều biểu diễn cùng một cạnh, nên ma trận kề A của một đồ thị vô hướng chính là hoán vị của nó: A = AT. Trong một vài ứng dụng, chỉ cần lưu toàn bộ dữ liệu trên đường chéo của ma trận (tạo thành hình tam giác trên), do đó bộ nhớ được giảm một nửa.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in .5in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Giống như cách biểu diễn qua danh sách các đỉnh kề, cách biểu diễn qua ma trận kề có thể được sử dung cho đồ thị có trọng số. Ví dụ, nếu G = (V, E) là một đồ thị trọng số với hàm w, trọng số w(u,v) của cạnh (u,v) được lưu trữ tương ứng với hàng v và cột u của ma trận kề. Nếu cạnh không tồn tại, một giá trị rỗng (NIL) sẽ được lưu trưữ tưng ứng trên ma trận. Nhiều bài toán thông thường sử dụng giá trị 0 hoặc </FONT></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">¥</SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in .5in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Mặc dù cách biểu diễn đồ thị danh sách các đỉnh kề gần như có hiệu quả ít nhất là bằng gần cách biểu diễn ma trận kề, nhưng vì tính đơn giản của cách biểu diễn ma trận kề nên cách biểu diễn này hay được sử dụng hơn đới với đồ thị khá nhỏ. Hơn thế nữa, nếu đồ thị không trọng số, lợi ích của việc sử dụng ma trận kề lại càng rõ ràng hơn: thay vì sử dụng một word nhớ cho mỗi một phần tử ma trận, ma trận kề chỉ cần sử dụng đến một bit tướng </FONT><A name=_Toc30428326><FONT face="Times New Roman">ứng với một phần tử của ma trận.<o:p></o:p></FONT></A></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in .5in"><SPAN style="mso-bookmark: _Toc30428326"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></SPAN></P>
+<HR align="JUSTIFY">
+
+<FORM>
+  <div align="justify">
+    <TABLE cols=3 width="100%" align=center>
+      <TBODY>
+        <TR>
+      <TD align=middle><INPUT id=button2 onClick="doQuit('completed')" type=button value="  Done  " name=button2></TD></TR></TBODY>
+    </TABLE>
+  </div>
+</FORM>
+</body></html>

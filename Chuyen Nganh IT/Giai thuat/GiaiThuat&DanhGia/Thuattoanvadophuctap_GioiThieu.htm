@@ -1,0 +1,53 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="30 Mar 2007 16:28:45 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title> Thiết kế thuật toán</title>
+<style type="text/css">
+<!--
+.style3 {font-size: 13pt}
+-->
+</style>
+</head>
+<body onLoad="loadPage()" onUnload="return unloadPage('incomplete')">
+
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><span class="style3">Có nhiều bài toán tổng quát xuất hiện trong toán học rời rạc. Chẳng hạn tìm số lớn nhất trong một dãy số nguyên cho trước, liệt kê hết tất cả các tập hợp con của một tập hợp cho trước, xếp lại một dãy số nguyên theo thứ tự tăng dần hoặc giảm dần...  Khi được giao một bài toán như vậy, thì trước hết chúng ta phải xây dựng một mô hình dịch bài toán đó sang ngữ cảnh toán học. Các cấu trúc được dùng trong những mô hình này chủ yếu là các cấu trúc tập hợp, dãy, hàm, hoán vị, tổ hợp ... và cấu trúc đồ thị là phần chúng ta sẽ học trong chương sau. </span></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><span class="style3"><br>
+Lập được mô hình toán học thích hợp mới chỉ là bước bắt đầu của quá trình giải. Để hoàn tất quá trình này còn cần phải có một phương pháp sử dụng mô hình để đi tới lời giải. Bước này đòi hỏi phải thích hợp với công cụ máy tính chúng ta dùng. Cái đòi hỏi ở đây là những bước đi cụ thể theo đúng thủ tục đòi hỏi của máy tính và cấu trúc dữ liệu của ta để đi tới lời giải bài toán ban đầu. Một dãy các bước như vậy được gọi là thuật toán. Ta sẽ đưa ra cách mô tả thuật toán theo sơ đồ cũng như theo thuật ngữ lập trình.</span></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><span class="style3"><br>
+  Một vấn đề quan trọng của thuật toán là ta phải đánh giá và so sánh được các thuật toán với nhau. Nói chung tiêu chuẩn để đánh giá một thuật toán là tốt hay không chủ yếu dựa trên độ phức tạp của nó, tức là dựa trên số thời gian cần dùng để thực hiện nó. Trong phần sau, chúng ta sẽ đưa ra các bước cần thực hiện để đánh giá độ phức tạp của thuật toán. Khái niệm độ phức tạp này chưa phải là khái niệm dựa trên khái niệm chính xác về thuật toán xây dựng  trên cơ sở máy tính Turing trừu tượng.</span><br>
+</P>
+<HR>
+
+<FORM>
+<TABLE cols=3 width="100%" align=center>
+<TBODY>
+<TR>
+<TD align=middle><div align="center">
+  <INPUT id=button2 onClick="doQuit('completed')" type=button value="  Done  " name=button2>
+</div></TD></TR></TBODY></TABLE>
+</FORM>
+</body></html>

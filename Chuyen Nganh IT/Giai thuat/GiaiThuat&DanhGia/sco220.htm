@@ -1,0 +1,53 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="30 Mar 2007 16:31:27 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title>Đánh giá hiệu quả của thuật toán.</title>
+</head>
+<body onLoad="loadPage()" onunload="return unloadPage('incomplete')">
+
+<DIV>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Khi giải một vấn đề ,chúng ta cần chọn trong số các thuật toán, một thuật toán mà chúng ta cho là “tốt” nhất .Vậy ta cần lựa chọn thuật toán dựa trên cơ sở nào? Thông thường ta dựa trên hai tiêu chuẩn sau đây:<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 6pt 0in 0pt 1in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: .25in; mso-list: l0 level1 lfo1"><FONT face="Times New Roman"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><SPAN style="mso-list: Ignore">1.<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Thuật toán đơn giản, dễ hiểu, dễ cài đặt (dễ viết chương trình)<o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 6pt 0in 0pt 1in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: .25in; mso-list: l0 level1 lfo1"><FONT face="Times New Roman"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><SPAN style="mso-list: Ignore">2.<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Thuật toán sử dụng tiết kiệm nhất các nguồn tài nguyên của máy tính, và đặc biệt chạy nhanh nhất có thể<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>được.<o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Khi ta viết một chương trình chỉ để sử dụng một số ít lần ,và cái giá của thời gian viết chương trình vượt xa cái giá<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>của chạy chương trình<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>thì tiêu chuẩn (1) là quan trọng nhất . Nhưng có trường hợp ta cần viết các chương trình (hoặc thủ tục, hàm) để sử dụng nhiều lần , cho nhiều người sử dụng , khi đó giá của thời gian chạy chương trình sẽ vượt xa giá viết nó. Chẳng hạn, các thủ tục sắp xếp ,tìm kiếm được sử dụng rất nhiều lần, bởi rất nhiều người trong các bài toán khác nhau . Trong trường hợp này ta cần dựa trên tieu chuẩn 2. Ta sẽ cài đặt thuật táon có thể sẽ rất phức tạp , miễn là chương trình nhận được chạy nhanh hơn so với các chương trình khác.<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Tiêu chuẩn 2 được xem là <I style="mso-bidi-font-style: normal">tính hiệu quả</I> của thuật toán. Tính hiệu quả của thuật toán bao gồm hai nhân tố cơ bản:<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Dung lượng không gian nhớ cần thiết để lưu giữ các giữ liệu vào , các kết quả tính toán trung gian và các kết quả của thuật toán .<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Thời gian cần thiết để thực hiện thuật toán (ta gọi là thời gian chạy). Chúng ta chỉ quan tâm đến thời gian thực hiện thuậ toán, có nghĩa là ta nói đến đánh giá thời gian thực hiện. Một thuật toán có hiệu quả được xem là thuật toán có thời gian chạy ít hơn so với các thuật toán khác.<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></P>
+<P class=Baitap style="MARGIN: 6pt 0in 0pt"><SPAN lang=EN-GB><STRONG><FONT size=3><FONT face="Times New Roman">Bài tập<o:p></o:p></FONT></FONT></STRONG></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">1. Xác định số phép tính so sánh nhiều nhất có thể trong thuật toán của bạn tìm phần tử lớn nhất của một dãy n số thực cho trước.<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">2. Xác định số phép tính so sánh nhiều nhất có thể trong thuật toán của bạn để xếp lại một dãy có n số thực theo thứ tự tăng dần.<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">3. Xác định số bước thực hiện nhiều nhất có thể trong thuật toán của bạn nhằm xác định được nhiều nhất có thể các số liên tiếp nhau có tổng dương trong một dãy n số hạng cho trước . <o:p></o:p></FONT></SPAN></P>
+<P class=MsoTitle style="MARGIN: 12pt 0in 3pt; TEXT-ALIGN: justify; tab-stops: .25in"><SPAN style="FONT-WEIGHT: normal; FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-weight: bold; mso-bidi-font-family: Arial; mso-ansi-language: EN-US"><o:p>&nbsp;</o:p></SPAN></P><SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><BR style="PAGE-BREAK-BEFORE: always; mso-special-character: line-break" clear=all></SPAN>
+<HR>
+</DIV>
+<FORM>
+<TABLE cols=3 width="100%" align=center>
+<TBODY>
+<TR>
+<TD align=middle><INPUT id=button2 onclick="doQuit('completed')" type=button value="  Done  " name=button2></TD></TR></TBODY></TABLE></FORM>
+</body></html>

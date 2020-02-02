@@ -1,0 +1,70 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="31 Mar 2007 18:04:33 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title>Tập độc lập lớn nhất trên cây</title>
+</head>
+<body onLoad="loadPage()" onUnload="return unloadPage('incomplete')">
+
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 0.25in; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Có một cách thực hiện cách tiếp cận quy hoạch động đối với các thủ tục đệ quy vẫn giữ nguyên được vẻ đẹp của lập luận phân tích từ trên xuống đồng thời đảm bảo được hiệu quả tính toán, đó là thực hiện đệ quy có nhớ.
+<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Thuật toán đệ quy có nhớ cũng làm việc với các bảng ghi giá trị của các bài toán con. Thoạt đầu, các phần tử của bảng sẽ chứa một giá trị đặc biệt để báo hiệu rằng giá trị của nó chưa được điền. Khi bài toán con xuất hiện lần đầu tiên trong thủ tục đệ quy, nó sẽ được giải và lời giải của nó sẽ được điền vào bảng. Mỗi lần gọi đệ quy sau đó đến bài toán con này, chúng ta sẽ không phải giải nó nữa, mà chỉ cần đưa ra giá trị đã được ghi nhớ trong bảng.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 0.25in; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Thủ tục đệ quy có nhớ để giải bài toán nhân dãy ma trận có thể viết như sau<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><B style="mso-bidi-font-weight: normal"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">function Lookup-Chain(d,i,j);</SPAN></I></B><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p></o:p></SPAN></I></FONT></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">begin<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN>if m[i,j] &lt; </FONT></SPAN></I><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">¥</SPAN></SPAN></I><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-spacerun: yes">&nbsp; </SPAN>then return m[i,j];<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN>if i = j then m[i,j]: = 0<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN>else<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>for k: = i to j-1 do<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>begin<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt 1.75in; TEXT-INDENT: -0.75in; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">q:=Lookup-Chain(d,i,k)+Lookup-Chain(d,k+1,j)+ d[i-1]*d[k]*d[j];<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>if q &lt; m[i,j] then m[i,j]: = q;<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>end;<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN>return m[i,j];<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">end;<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><B style="mso-bidi-font-weight: normal"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">procedure Memoized-Matrix-Chain(d);</SPAN></I></B><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p></o:p></SPAN></I></FONT></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">begin<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN>for i: = 1to n do<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>for j: = 1 to n do<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>m[i,j]: = </FONT></SPAN></I><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">¥</SPAN></SPAN></I><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">;<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt 12pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-spacerun: yes">&nbsp;</SPAN>for<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>i := 1 to n do<SPAN style="mso-spacerun: yes">&nbsp;&nbsp; </SPAN>m[i,i] := 0;<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN>Lookup-Chain(d,1,n);<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">end;<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 0.25in; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Dễ thấy rằng thủ tục Lookup-Chain(d,i,j) thực hiện việc tính m[i,j] ở lần đầu tiên gọi đến nó, còn những lần gọi sau thủ tục chỉ thực hiện việc trả lại giá trị từ bảng kết quả đã ghi nhớ. Từ đó suy ra thời gian tính của thuật toán Memoized-Matrix-Chain là O(n<SUP>3</SUP>).<o:p></o:p></FONT></SPAN></P>
+<HR align="JUSTIFY">
+
+<FORM>
+  <div align="justify">
+    <TABLE cols=3 width="100%" align=center>
+      <TBODY>
+        <TR>
+      <TD align=middle><INPUT id=button2 onClick="doQuit('completed')" type=button value="  Done  " name=button2></TD></TR></TBODY>
+    </TABLE>
+  </div>
+</FORM>
+</body></html>

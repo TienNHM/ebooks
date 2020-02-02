@@ -1,0 +1,64 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="31 Mar 2007 18:02:30 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title>Tìm kiếm nhị phân</title>
+</head>
+<body onLoad="loadPage()" onunload="return unloadPage('incomplete')">
+
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><FONT face="Times New Roman"><B><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Bài toán :</SPAN></B><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"> Cho mảng x[1..n] được sắp xếp theo thứ tự không giảm và y. Tìm i sao cho x[i] = y. (Giả thiết i tồn tại).<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><B><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Phân tích giải thuật :<o:p></o:p></FONT></SPAN></B></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-bidi-font-weight: bold"><FONT face="Times New Roman">Số y cho trước <o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-bidi-font-weight: bold"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>+ Hoặc là bằng phần tử nằm ở vị trí giữa mảng x<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-bidi-font-weight: bold"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>+ Hoặc là nằm ở nửa bên trái<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>(y &lt; phần tử ở giữa mảng x )<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-bidi-font-weight: bold"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>+ Hoặc là nằm ở nửa bên phải (y &lt; phần tử ở giữa mảng x )<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-bidi-font-weight: bold"><FONT face="Times New Roman">Từ nhận xét đó ta có giải thuật sau<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-bidi-font-weight: bold"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt 0.5in; LINE-HEIGHT: 150%; tab-stops: .25in"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Function Bsearch(x[1..n],Start,Finish)<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt 0.5in; LINE-HEIGHT: 150%; tab-stops: .25in"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Begin<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt 0.5in; LINE-HEIGHT: 150%; tab-stops: .25in"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Middle := (Start + Finish)/2;<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt 0.5in; LINE-HEIGHT: 150%; tab-stops: .25in"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>If<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>(y = x[Middle])<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>then return middle<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt 0.5in; LINE-HEIGHT: 150%; tab-stops: .25in"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Else <o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt 0.5in; LINE-HEIGHT: 150%; tab-stops: .25in"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>If<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>( y &lt; x[Middle] then return Bsearch(x,Start,Middle-1)<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt 0.5in; LINE-HEIGHT: 150%; tab-stops: .25in"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Else <o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt 0.5in; LINE-HEIGHT: 150%; tab-stops: .25in"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Return<SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN>Bsearch<SPAN style="POSITION: relative; TOP: 5pt; mso-text-raise: -5.0pt"><?xml:namespace prefix = v ns = "urn:schemas-microsoft-com:vml" /><v:shapetype id=_x0000_t75 coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"> <v:stroke joinstyle="miter"></v:stroke><v:formulas><v:f eqn="if lineDrawn pixelLineWidth 0"></v:f><v:f eqn="sum @0 1 0"></v:f><v:f eqn="sum 0 0 @1"></v:f><v:f eqn="prod @2 1 2"></v:f><v:f eqn="prod @3 21600 pixelWidth"></v:f><v:f eqn="prod @3 21600 pixelHeight"></v:f><v:f eqn="sum @0 0 1"></v:f><v:f eqn="prod @6 1 2"></v:f><v:f eqn="prod @7 21600 pixelWidth"></v:f><v:f eqn="sum @8 21600 0"></v:f><v:f eqn="prod @7 21600 pixelHeight"></v:f><v:f eqn="sum @10 21600 0"></v:f></v:formulas><v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"></v:path><o:lock v:ext="edit" aspectratio="t"></o:lock></v:shapetype><v:shape id=_x0000_i1027 style="WIDTH: 9pt; HEIGHT: 17.25pt" type="#_x0000_t75" o:ole=""><v:imagedata src="file:///C:\DOCUME~1\vnis05\LOCALS~1\Temp\msohtml1\01\clip_image001.wmz" o:title=""></v:imagedata></v:shape></SPAN>(x,Middle+1,Finish) <o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt 0.5in; LINE-HEIGHT: 150%; tab-stops: .25in"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">End;<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt 0.5in; LINE-HEIGHT: 150%; tab-stops: .25in"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><FONT face="Times New Roman"><B><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Phân tích hiệu quả thuật toán </SPAN></B><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">: T(n)</SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><FONT face="Times New Roman"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><IMG height=48 src="sco231_Media/image004.gif" width=129 align=absMiddle></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></FONT></SPAN><SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">Theo định lý thợ ta có<SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;</SPAN><SPAN style="POSITION: relative; TOP: 5pt; mso-text-raise: -5.0pt"><v:shape id=_x0000_i1026 style="WIDTH: 78pt; HEIGHT: 17.25pt" type="#_x0000_t75" o:ole=""><v:imagedata src="file:///C:\DOCUME~1\vnis05\LOCALS~1\Temp\msohtml1\01\clip_image005.wmz" o:title=""></v:imagedata></v:shape></SPAN><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN></P>
+<P><SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG height=23 src="sco231_Media/image006.gif" width=104 align=absMiddle></SPAN></SPAN></P>
+<P>
+<HR>
+
+<P></P>
+<P></P>
+<FORM>
+<TABLE cols=3 width="100%" align=center>
+<TBODY>
+<TR>
+<TD align=middle><INPUT id=button2 onclick="doQuit('completed')" type=button value="  Done  " name=button2></TD></TR></TBODY></TABLE></FORM>
+</body></html>

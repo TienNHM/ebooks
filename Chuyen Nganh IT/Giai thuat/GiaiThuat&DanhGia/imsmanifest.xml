@@ -1,0 +1,1267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest identifier="SingleCourseManifest" version="1.1"
+   xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+   xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+   http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd
+   http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+<organizations  default="organization8">
+<organization  identifier="organization8">
+<title>GIẢI THUẬT VÀ ĐÁNH GIÁ ĐỘ PHỨC TẠP GIẢI THUẬT</title>
+   <item identifier="ID_0" identifierref="RI_0" isvisible="true">
+   <title>Lời nói đầu</title>
+   </item>
+   <item identifier="O_9" isvisible="true">
+   <title>THUẬT TOÁN VÀ ĐỘ PHỨC TẠP</title>
+	 <item identifier="ID_1" identifierref="RI_1" isvisible="true">
+	 <title>Giới thiệu chương I</title>
+	 </item>	 
+      <item identifier="O_16" isvisible="true">
+      <title>KHÁI NIỆM THUẬT TOÁN</title>
+         <item identifier="O_18" identifierref="R_S8" isvisible="true">
+         <title>Khái niệm thuật toán</title>
+         </item>
+         <item identifier="O_19" identifierref="R_S9" isvisible="true">
+         <title>Các yêu cầu về thuật toán</title>
+         </item>
+      </item>
+      <item identifier="O_330" isvisible="true">
+      <title>CÁC VẤN ĐỀ LIÊN QUAN ĐẾN THUẬT TOÁN	</title>
+         <item identifier="O_331" identifierref="R_S217" isvisible="true">
+         <title> Thiết kế thuật toán</title>
+         </item>
+         <item identifier="O_332" identifierref="R_S218" isvisible="true">
+         <title>Tính đúng đắn của thuật toán.</title>
+         </item>
+         <item identifier="O_333" identifierref="R_S219" isvisible="true">
+         <title>Phân tích thuật toán</title>
+         </item>
+         <item identifier="O_334" identifierref="R_S220" isvisible="true">
+         <title>Đánh giá hiệu quả của thuật toán.</title>
+         </item>
+      </item>
+      <item identifier="O_335" isvisible="true">
+      <title> BIỂU DIỄN THUẬT TOÁN BẰNG PHƯƠNG PHÁP SƠ ĐỒ</title>
+         <item identifier="O_338" identifierref="R_S221" isvisible="true">
+         <title> Phương pháp liệt kê từng bước</title>
+         </item>
+         <item identifier="O_339" identifierref="R_S222" isvisible="true">
+         <title>Phương pháp sơ đồ</title>
+         </item>
+       </item>
+      <item identifier="O_336" isvisible="true">
+      <title> NGÔN NGỮ TỰA PASCAL</title>
+         <item identifier="O_340" identifierref="R_S223" isvisible="true">
+         <title>Bảng chữ cái và ký tự chủ yếu</title>
+         </item>
+         <item identifier="O_341" identifierref="R_S224" isvisible="true">
+         <title> Một số câu lệnh chính</title>
+         </item>
+       </item>
+      <item identifier="O_337" isvisible="true">
+      <title>ĐỘ PHỨC TẠP THUẬT TOÁN</title>
+         <item identifier="O_342" identifierref="R_S225" isvisible="true">
+         <title>Tại sao lại cần thuật toán có hiệu quả.</title>
+         </item>
+         <item identifier="O_343" identifierref="R_S226" isvisible="true">
+         <title>Đánh giá thời gian thực hiện thuật toán như thế nà</title>
+         </item>
+         <item identifier="O_344" identifierref="R_S227" isvisible="true">
+         <title>O(f(x)) và đánh giá thời gian thực hiện thuật toán</title>
+         </item>
+         <item identifier="O_345" identifierref="R_S228" isvisible="true">
+         <title>Các qui tắc để đánh giá thời gian thực hiện thuật</title>
+         </item>
+	</item>
+	 <item identifier="ID_Q1" identifierref="RQ_1" isvisible="true">
+	 <title>Bài tập chương I</title> 
+	 </item>	 			 
+   </item>
+   <item identifier="O_346" isvisible="true">
+   <title>CHIA ĐÊ TRỊ</title>
+	 <item identifier="ID_2" identifierref="RI_2" isvisible="true">
+	 <title>Giới thiệu chương II</title>
+	 </item>   
+      <item identifier="O_347" isvisible="true">
+      <title>SƠ ĐỒ CHUNG THUẬT TOÁN</title>
+         <item identifier="O_349" identifierref="R_S229" isvisible="true">
+         <title>Xét một ví dụ</title>
+         </item>
+         <item identifier="O_350" identifierref="R_S230" isvisible="true">
+         <title>Sơ đồ tổng quát thuật toán chia để trị</title>
+         </item>
+         </item>
+      <item identifier="O_348" isvisible="true">
+      <title>CÁC VÍ DỤ MINH HỌA</title>
+         <item identifier="O_351" identifierref="R_S231" isvisible="true">
+         <title>Tìm kiếm nhị phân</title>
+         </item>
+         <item identifier="O_352" identifierref="R_S232" isvisible="true">
+         <title> Phép nhân các số nguyên lớn</title>
+         </item>
+         <item identifier="O_353" identifierref="R_S233" isvisible="true">
+         <title>Nhân ma trận</title>
+         </item>
+         <item identifier="O_354" identifierref="R_S234" isvisible="true">
+         <title>Mảng con lớn nhất</title>
+         </item>
+         <item identifier="O_355" identifierref="R_S235" isvisible="true">
+         <title>Sắp xếp</title>
+         </item>
+         <item identifier="O_356" identifierref="R_S236" isvisible="true">
+         <title>Luỹ thừa</title>
+         </item>
+         <item identifier="O_357" identifierref="R_S237" isvisible="true">
+         <title>Giới thiệu về khoa học mật mã</title>
+         </item>
+         </item>
+	 <item identifier="ID_Q2" identifierref="RQ_2" isvisible="true">
+	 <title>Bài tập chương II</title> 
+	 	 </item>		 
+   </item>
+   <item identifier="O_358" isvisible="true">
+   <title>QUI HOẠCH ĐỘNG</title>
+	 <item identifier="ID_3" identifierref="RI_3" isvisible="true">
+	 <title>Giới thiệu chương III</title>
+	 </item>   
+      <item identifier="O_359" isvisible="true">
+      <title>SƠ ĐỒ CHUNG THUẬT TOÁN</title>
+         <item identifier="O_399" identifierref="R_S266" isvisible="true">
+         <title>Sơ đồ chung thuật toán</title>
+         </item>
+         </item>
+      <item identifier="O_360" isvisible="true">
+      <title>MỘT SỐ VÍ DỤ MINH HỌA</title>
+         <item identifier="O_361" identifierref="R_S238" isvisible="true">
+         <title>Bài toán thực hiện dãy phép nhân ma trận</title>
+         </item>
+         <item identifier="O_362" identifierref="R_S239" isvisible="true">
+         <title>Bài toán con trùng lặp</title>
+         </item>
+         <item identifier="O_363" identifierref="R_S240" isvisible="true">
+         <title>Đệ qui có nhớ</title>
+         </item>
+         <item identifier="O_364" identifierref="R_S241" isvisible="true">
+         <title>Tập độc lập lớn nhất trên cây</title>
+         </item>
+         <item identifier="O_365" identifierref="R_S242" isvisible="true">
+         <title>Bài toán dãy con lớn nhất</title>
+         </item>
+         <item identifier="O_400" identifierref="R_S267" isvisible="true">
+         <title>Bài toán dãy con chung dài nhất</title>
+         </item>
+         </item>
+	  <item identifier="ID_Q3" identifierref="RQ_3" isvisible="true">
+	 <title>Bài tập chương III</title>  		 
+	 </item>	 
+      </item>
+   <item identifier="O_366" isvisible="true">
+   <title> THUẬT TOÁN THAM LAM</title>
+	 <item identifier="ID_4" identifierref="RI_4" isvisible="true">
+	 <title>Giới thiệu chương IV</title> 
+	 	 </item>  
+      <item identifier="O_367" isvisible="true">
+      <title>ĐẶC TRƯNG CỦA CHIẾN LƯỢC THAM LAM</title>
+         <item identifier="O_370" identifierref="R_S243" isvisible="true">
+         <title>Đặc tính lựa chọn tham lam(Greedy_choice property)</title>
+         </item>
+         <item identifier="O_371" identifierref="R_S244" isvisible="true">
+         <title>Cấu trúc con tối ưu(Optimal substructure)</title>
+         </item>
+         <item identifier="O_372" identifierref="R_S245" isvisible="true">
+         <title>Sự khác nhau giữa giải thuật tham lam và giải thuậ</title>
+         </item>
+         </item>
+      <item identifier="O_368" isvisible="true">
+      <title> SƠ ĐỒ CHUNG CỦA THUẬT TOÁN</title>
+         <item identifier="O_373" identifierref="R_S246" isvisible="true">
+         <title>Đặc điểm chung của thuật toán tham lam</title>
+         </item>
+         <item identifier="O_374" identifierref="R_S247" isvisible="true">
+         <title> Sơ đồ thuật toán</title>
+         </item>
+         <item identifier="O_375" identifierref="R_S248" isvisible="true">
+         <title> Chứng minh tính đúng đắn của thuật toán tham lam</title>
+         </item>
+         </item>
+      <item identifier="O_369" isvisible="true">
+      <title>MỘT SỐ VÍ DỤ MINH HOẠ</title>
+         <item identifier="O_376" identifierref="R_S249" isvisible="true">
+         <title>Bài toán về các đoạn thẳng không giao nhau</title>
+         </item>
+         <item identifier="O_377" identifierref="R_S250" isvisible="true">
+         <title>Bài toán cái túi</title>
+         </item>
+         <item identifier="O_378" identifierref="R_S251" isvisible="true">
+         <title>Tối ưu hoá thuật toán Huffman</title>
+         </item>
+         </item>
+	  <item identifier="ID_Q4" identifierref="RQ_4" isvisible="true">
+	 <title>Bài tập chương IV</title>  	
+	 </item>	 	 
+   </item>
+   <item identifier="O_379" isvisible="true">
+   <title>CÁC THUẬT TOÁN ĐỒ THỊ CƠ BẢN</title>
+	 <item identifier="ID_5" identifierref="RI_5" isvisible="true">
+	 <title>Giới thiệu chương V</title>      
+	 </item>
+      <item identifier="O_380" isvisible="true">
+      <title> BIỂU DIỄN ĐỒ THỊ</title>
+         <item identifier="O_385" identifierref="R_S252" isvisible="true">
+         <title>Giới Thiệu</title>
+         </item>
+         <item identifier="O_386" identifierref="R_S253" isvisible="true">
+         <title>Danh Sách Kề</title>
+         </item>
+         <item identifier="O_387" identifierref="R_S254" isvisible="true">
+         <title>Ma trận kề</title>
+         </item>
+         </item>
+      <item identifier="O_381" isvisible="true">
+      <title>TÌM KIẾM THEO CHIỀU RỘNG</title>
+         <item identifier="O_388" identifierref="R_S255" isvisible="true">
+         <title>Khái niệm</title>
+         </item>
+         <item identifier="O_389" identifierref="R_S256" isvisible="true">
+         <title>Hoạt động của thuật toán</title>
+         </item>
+         </item>
+      <item identifier="O_382" isvisible="true">
+      <title>TÌM KIẾM THEO CHIỀU SÂU</title>
+         <item identifier="O_390" identifierref="R_S257" isvisible="true">
+         <title>Khái Niệm</title>
+         </item>
+         <item identifier="O_391" identifierref="R_S258" isvisible="true">
+         <title>Độ phức tạp tính toán</title>
+         </item>
+         <item identifier="O_392" identifierref="R_S259" isvisible="true">
+         <title>Một số Định lý của Thuật toán tìm kiếm theo chiều</title>
+         </item>
+         <item identifier="O_393" identifierref="R_S260" isvisible="true">
+         <title>Phân loại cạnh</title>
+         </item>
+         </item>
+      <item identifier="O_383" isvisible="true">
+      <title> SẮP XẾP TOPO (TOPOLOGICAL SORT)</title>
+         <item identifier="O_394" identifierref="R_S261" isvisible="true">
+         <title>Giải thuật sắp xếp TOPO</title>
+         </item>
+         <item identifier="O_401" identifierref="R_S268" isvisible="true">
+         <title>Độ phức tạp tính toán</title>
+         </item>
+         </item>
+      <item identifier="O_384" isvisible="true">
+      <title>CÁC THÀNH PHẦN LIÊN THÔNG MẠNH</title>
+         <item identifier="O_396" identifierref="R_S263" isvisible="true">
+         <title>Giới thiệu</title>
+         </item>
+         <item identifier="O_397" identifierref="R_S264" isvisible="true">
+         <title>Các bổ đề và định lý cơ bản</title>
+         </item>
+         </item>
+	  <item identifier="ID_Q5" identifierref="RQ_5" isvisible="true">
+	 <title>Bài tập chương V</title> 
+	 </item> 		 
+     </item>
+
+</organization>
+</organizations>
+<resources>
+
+   <resource identifier="R_API" type="webcontent" adlcp:scormtype="asset" href="APIWrapper.js" >
+      <file href="APIWrapper.js"/>
+   </resource>
+   <resource identifier="R_SCO" type="webcontent" adlcp:scormtype="asset" href="SCOFunctions.js" >
+      <file href="SCOFunctions.js"/>
+   </resource>
+   <resource identifier="RI_0" type="webcontent" adlcp:scormtype="sco" href="Loi noi dau.htm">
+      <file href="Loi noi dau.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="RI_1" type="webcontent" adlcp:scormtype="sco" href="Thuattoanvadophuctap_GioiThieu.htm">
+      <file href="Thuattoanvadophuctap_GioiThieu.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>   
+   <resource identifier="RQ_1" type="webcontent" adlcp:scormtype="sco" href="Thuattoanvadophuctap_Baitap.htm">
+      <file href="Thuattoanvadophuctap_Baitap.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>      
+   <resource identifier="RI_2" type="webcontent" adlcp:scormtype="sco" href="Chiadetri_GioiThieu.htm">
+      <file href="Chiadetri_GioiThieu.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>   
+   <resource identifier="RQ_2" type="webcontent" adlcp:scormtype="sco" href="Chiadetri_Baitap.htm">
+      <file href="Chiadetri_Baitap.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>       
+   <resource identifier="RI_3" type="webcontent" adlcp:scormtype="sco" href="QuiHoachDong_GioiThieu.htm">
+      <file href="QuiHoachDong_GioiThieu.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>   
+   <resource identifier="RQ_3" type="webcontent" adlcp:scormtype="sco" href="QuiHoachDong_Baitap.htm">
+      <file href="QuiHoachDong_Baitap.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>   
+   <resource identifier="RI_4" type="webcontent" adlcp:scormtype="sco" href="CThuatToanThamLam_GioiThieu.htm">
+      <file href="ThuatToanThamLam_GioiThieu.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>   
+   <resource identifier="RQ_4" type="webcontent" adlcp:scormtype="sco" href="ThuatToanThamLam_Baitap.htm">
+      <file href="ThuatToanThamLam_Baitap.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>   
+   <resource identifier="RI_5" type="webcontent" adlcp:scormtype="sco" href="CacThuatToanDoThiCoBan_GioiThieu.htm">
+      <file href="CacThuatToanDoThiCoBan_GioiThieu.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>   
+   <resource identifier="RQ_5" type="webcontent" adlcp:scormtype="sco" href="CacThuatToanDoThiCoBan_Baitap.htm">
+      <file href="CacThuatToanDoThiCoBan_Baitap.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>             
+   <resource identifier="R_S8" type="webcontent" adlcp:scormtype="sco" href="sco8.htm">
+
+      <file href="sco8.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S9" type="webcontent" adlcp:scormtype="sco" href="sco9.htm">
+
+      <file href="sco9.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="RA_S9" type="webcontent" adlcp:scormtype="sco" href="scoA9.htm">
+
+      <file href="scoA9.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>   
+   <resource identifier="R_S268" type="webcontent" adlcp:scormtype="sco" href="sco268.htm">
+
+      <file href="sco268.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A267_1" type="webcontent" adlcp:scormtype="asset" href="sco267_Media/32.gif" >
+
+      <file href="sco267_Media/32.gif"/>
+   </resource>
+   <resource identifier="R_A267_2" type="webcontent" adlcp:scormtype="asset" href="sco267_Media/image002.gif" >
+
+      <file href="sco267_Media/image002.gif"/>
+   </resource>
+   <resource identifier="R_A267_3" type="webcontent" adlcp:scormtype="asset" href="sco267_Media/image004.gif" >
+
+      <file href="sco267_Media/image004.gif"/>
+   </resource>
+   <resource identifier="R_S267" type="webcontent" adlcp:scormtype="sco" href="sco267.htm">
+
+      <file href="sco267.htm"/>
+      <dependency identifierref="R_A267_1" />
+      <dependency identifierref="R_A267_2" />
+      <dependency identifierref="R_A267_3" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S266" type="webcontent" adlcp:scormtype="sco" href="sco266.htm">
+
+      <file href="sco266.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S217" type="webcontent" adlcp:scormtype="sco" href="sco217.htm">
+
+      <file href="sco217.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S218" type="webcontent" adlcp:scormtype="sco" href="sco218.htm">
+
+      <file href="sco218.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S219" type="webcontent" adlcp:scormtype="sco" href="sco219.htm">
+
+      <file href="sco219.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S220" type="webcontent" adlcp:scormtype="sco" href="sco220.htm">
+
+      <file href="sco220.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A221_1" type="webcontent" adlcp:scormtype="asset" href="sco221_Media/10.gif" >
+
+      <file href="sco221_Media/10.gif"/>
+   </resource>
+   <resource identifier="R_A221_2" type="webcontent" adlcp:scormtype="asset" href="sco221_Media/image002.gif" >
+
+      <file href="sco221_Media/image002.gif"/>
+   </resource>
+   <resource identifier="R_A221_3" type="webcontent" adlcp:scormtype="asset" href="sco221_Media/image004.gif" >
+
+      <file href="sco221_Media/image004.gif"/>
+   </resource>
+   <resource identifier="R_A221_4" type="webcontent" adlcp:scormtype="asset" href="sco221_Media/image006.gif" >
+
+      <file href="sco221_Media/image006.gif"/>
+   </resource>
+   <resource identifier="R_A221_5" type="webcontent" adlcp:scormtype="asset" href="sco221_Media/image008.gif" >
+
+      <file href="sco221_Media/image008.gif"/>
+   </resource>
+   <resource identifier="R_S221" type="webcontent" adlcp:scormtype="sco" href="sco221.htm">
+
+      <file href="sco221.htm"/>
+      <dependency identifierref="R_A221_1" />
+      <dependency identifierref="R_A221_2" />
+      <dependency identifierref="R_A221_3" />
+      <dependency identifierref="R_A221_4" />
+      <dependency identifierref="R_A221_5" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A222_1" type="webcontent" adlcp:scormtype="asset" href="sco222_Media/3.gif" >
+
+      <file href="sco222_Media/3.gif"/>
+   </resource>
+   <resource identifier="R_A222_2" type="webcontent" adlcp:scormtype="asset" href="sco222_Media/7.gif" >
+
+      <file href="sco222_Media/7.gif"/>
+   </resource>
+   <resource identifier="R_A222_3" type="webcontent" adlcp:scormtype="asset" href="sco222_Media/image001.gif" >
+
+      <file href="sco222_Media/image001.gif"/>
+   </resource>
+   <resource identifier="R_A222_4" type="webcontent" adlcp:scormtype="asset" href="sco222_Media/image002.gif" >
+
+      <file href="sco222_Media/image002.gif"/>
+   </resource>
+   <resource identifier="R_A222_5" type="webcontent" adlcp:scormtype="asset" href="sco222_Media/image003.gif" >
+
+      <file href="sco222_Media/image003.gif"/>
+   </resource>
+   <resource identifier="R_A222_6" type="webcontent" adlcp:scormtype="asset" href="sco222_Media/image004.gif" >
+
+      <file href="sco222_Media/image004.gif"/>
+   </resource>
+   <resource identifier="R_A222_7" type="webcontent" adlcp:scormtype="asset" href="sco222_Media/image009.gif" >
+
+      <file href="sco222_Media/image009.gif"/>
+   </resource>
+   <resource identifier="R_S222" type="webcontent" adlcp:scormtype="sco" href="sco222.htm">
+
+      <file href="sco222.htm"/>
+      <dependency identifierref="R_A222_1" />
+      <dependency identifierref="R_A222_2" />
+      <dependency identifierref="R_A222_3" />
+      <dependency identifierref="R_A222_4" />
+      <dependency identifierref="R_A222_5" />
+      <dependency identifierref="R_A222_6" />
+      <dependency identifierref="R_A222_7" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S223" type="webcontent" adlcp:scormtype="sco" href="sco223.htm">
+
+      <file href="sco223.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S224" type="webcontent" adlcp:scormtype="sco" href="sco224.htm">
+
+      <file href="sco224.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S225" type="webcontent" adlcp:scormtype="sco" href="sco225.htm">
+
+      <file href="sco225.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S226" type="webcontent" adlcp:scormtype="sco" href="sco226.htm">
+
+      <file href="sco226.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S227" type="webcontent" adlcp:scormtype="sco" href="sco227.htm">
+
+      <file href="sco227.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S228" type="webcontent" adlcp:scormtype="sco" href="sco228.htm">
+
+      <file href="sco228.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A229_1" type="webcontent" adlcp:scormtype="asset" href="sco229_Media/11.gif" >
+
+      <file href="sco229_Media/11.gif"/>
+   </resource>
+   <resource identifier="R_A229_2" type="webcontent" adlcp:scormtype="asset" href="sco229_Media/12.gif" >
+
+      <file href="sco229_Media/12.gif"/>
+   </resource>
+   <resource identifier="R_A229_3" type="webcontent" adlcp:scormtype="asset" href="sco229_Media/image002.gif" >
+
+      <file href="sco229_Media/image002.gif"/>
+   </resource>
+   <resource identifier="R_A229_4" type="webcontent" adlcp:scormtype="asset" href="sco229_Media/image004.gif" >
+
+      <file href="sco229_Media/image004.gif"/>
+   </resource>
+   <resource identifier="R_A229_5" type="webcontent" adlcp:scormtype="asset" href="sco229_Media/image006.gif" >
+
+      <file href="sco229_Media/image006.gif"/>
+   </resource>
+   <resource identifier="R_A229_6" type="webcontent" adlcp:scormtype="asset" href="sco229_Media/image008.gif" >
+
+      <file href="sco229_Media/image008.gif"/>
+   </resource>
+   <resource identifier="R_A229_7" type="webcontent" adlcp:scormtype="asset" href="sco229_Media/image010.gif" >
+
+      <file href="sco229_Media/image010.gif"/>
+   </resource>
+   <resource identifier="R_A229_8" type="webcontent" adlcp:scormtype="asset" href="sco229_Media/image012.gif" >
+
+      <file href="sco229_Media/image012.gif"/>
+   </resource>
+   <resource identifier="R_S229" type="webcontent" adlcp:scormtype="sco" href="sco229.htm">
+
+      <file href="sco229.htm"/>
+      <dependency identifierref="R_A229_1" />
+      <dependency identifierref="R_A229_2" />
+      <dependency identifierref="R_A229_3" />
+      <dependency identifierref="R_A229_4" />
+      <dependency identifierref="R_A229_5" />
+      <dependency identifierref="R_A229_6" />
+      <dependency identifierref="R_A229_7" />
+      <dependency identifierref="R_A229_8" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S230" type="webcontent" adlcp:scormtype="sco" href="sco230.htm">
+
+      <file href="sco230.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A231_1" type="webcontent" adlcp:scormtype="asset" href="sco231_Media/13.gif" >
+
+      <file href="sco231_Media/13.gif"/>
+   </resource>
+   <resource identifier="R_A231_2" type="webcontent" adlcp:scormtype="asset" href="sco231_Media/14.gif" >
+
+      <file href="sco231_Media/14.gif"/>
+   </resource>
+   <resource identifier="R_A231_3" type="webcontent" adlcp:scormtype="asset" href="sco231_Media/image004.gif" >
+
+      <file href="sco231_Media/image004.gif"/>
+   </resource>
+   <resource identifier="R_A231_4" type="webcontent" adlcp:scormtype="asset" href="sco231_Media/image006.gif" >
+
+      <file href="sco231_Media/image006.gif"/>
+   </resource>
+   <resource identifier="R_S231" type="webcontent" adlcp:scormtype="sco" href="sco231.htm">
+
+      <file href="sco231.htm"/>
+      <dependency identifierref="R_A231_1" />
+      <dependency identifierref="R_A231_2" />
+      <dependency identifierref="R_A231_3" />
+      <dependency identifierref="R_A231_4" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A232_1" type="webcontent" adlcp:scormtype="asset" href="sco232_Media/15.gif" >
+
+      <file href="sco232_Media/15.gif"/>
+   </resource>
+   <resource identifier="R_A232_2" type="webcontent" adlcp:scormtype="asset" href="sco232_Media/16.gif" >
+
+      <file href="sco232_Media/16.gif"/>
+   </resource>
+   <resource identifier="R_A232_3" type="webcontent" adlcp:scormtype="asset" href="sco232_Media/17.gif" >
+
+      <file href="sco232_Media/17.gif"/>
+   </resource>
+   <resource identifier="R_A232_4" type="webcontent" adlcp:scormtype="asset" href="sco232_Media/18.gif" >
+
+      <file href="sco232_Media/18.gif"/>
+   </resource>
+   <resource identifier="R_A232_5" type="webcontent" adlcp:scormtype="asset" href="sco232_Media/image028.gif" >
+
+      <file href="sco232_Media/image028.gif"/>
+   </resource>
+   <resource identifier="R_A232_6" type="webcontent" adlcp:scormtype="asset" href="sco232_Media/image032.gif" >
+
+      <file href="sco232_Media/image032.gif"/>
+   </resource>
+   <resource identifier="R_S232" type="webcontent" adlcp:scormtype="sco" href="sco232.htm">
+
+      <file href="sco232.htm"/>
+      <dependency identifierref="R_A232_1" />
+      <dependency identifierref="R_A232_2" />
+      <dependency identifierref="R_A232_3" />
+      <dependency identifierref="R_A232_4" />
+      <dependency identifierref="R_A232_5" />
+      <dependency identifierref="R_A232_6" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A233_1" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/20.gif" >
+
+      <file href="sco233_Media/20.gif"/>
+   </resource>
+   <resource identifier="R_A233_2" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/21.gif" >
+
+      <file href="sco233_Media/21.gif"/>
+   </resource>
+   <resource identifier="R_A233_3" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/22.gif" >
+
+      <file href="sco233_Media/22.gif"/>
+   </resource>
+   <resource identifier="R_A233_4" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/23.gif" >
+
+      <file href="sco233_Media/23.gif"/>
+   </resource>
+   <resource identifier="R_A233_5" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/image002.gif" >
+
+      <file href="sco233_Media/image002.gif"/>
+   </resource>
+   <resource identifier="R_A233_6" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/image004.gif" >
+
+      <file href="sco233_Media/image004.gif"/>
+   </resource>
+   <resource identifier="R_A233_7" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/image008.gif" >
+
+      <file href="sco233_Media/image008.gif"/>
+   </resource>
+   <resource identifier="R_A233_8" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/image010.gif" >
+
+      <file href="sco233_Media/image010.gif"/>
+   </resource>
+   <resource identifier="R_A233_9" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/image012.gif" >
+
+      <file href="sco233_Media/image012.gif"/>
+   </resource>
+   <resource identifier="R_A233_10" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/image014.gif" >
+
+      <file href="sco233_Media/image014.gif"/>
+   </resource>
+   <resource identifier="R_A233_11" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/image016.gif" >
+
+      <file href="sco233_Media/image016.gif"/>
+   </resource>
+   <resource identifier="R_A233_12" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/image018.gif" >
+
+      <file href="sco233_Media/image018.gif"/>
+   </resource>
+   <resource identifier="R_A233_13" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/image020.gif" >
+
+      <file href="sco233_Media/image020.gif"/>
+   </resource>
+   <resource identifier="R_A233_14" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/image022.gif" >
+
+      <file href="sco233_Media/image022.gif"/>
+   </resource>
+   <resource identifier="R_A233_15" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/image024.gif" >
+
+      <file href="sco233_Media/image024.gif"/>
+   </resource>
+   <resource identifier="R_A233_16" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/image026.gif" >
+
+      <file href="sco233_Media/image026.gif"/>
+   </resource>
+   <resource identifier="R_A233_17" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/image028.gif" >
+
+      <file href="sco233_Media/image028.gif"/>
+   </resource>
+   <resource identifier="R_A233_18" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/image030.gif" >
+
+      <file href="sco233_Media/image030.gif"/>
+   </resource>
+   <resource identifier="R_A233_19" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/image032.gif" >
+
+      <file href="sco233_Media/image032.gif"/>
+   </resource>
+   <resource identifier="R_A233_20" type="webcontent" adlcp:scormtype="asset" href="sco233_Media/image034.gif" >
+
+      <file href="sco233_Media/image034.gif"/>
+   </resource>
+   <resource identifier="R_S233" type="webcontent" adlcp:scormtype="sco" href="sco233.htm">
+
+      <file href="sco233.htm"/>
+      <dependency identifierref="R_A233_1" />
+      <dependency identifierref="R_A233_2" />
+      <dependency identifierref="R_A233_3" />
+      <dependency identifierref="R_A233_4" />
+      <dependency identifierref="R_A233_5" />
+      <dependency identifierref="R_A233_6" />
+      <dependency identifierref="R_A233_7" />
+      <dependency identifierref="R_A233_8" />
+      <dependency identifierref="R_A233_9" />
+      <dependency identifierref="R_A233_10" />
+      <dependency identifierref="R_A233_11" />
+      <dependency identifierref="R_A233_12" />
+      <dependency identifierref="R_A233_13" />
+      <dependency identifierref="R_A233_14" />
+      <dependency identifierref="R_A233_15" />
+      <dependency identifierref="R_A233_16" />
+      <dependency identifierref="R_A233_17" />
+      <dependency identifierref="R_A233_18" />
+      <dependency identifierref="R_A233_19" />
+      <dependency identifierref="R_A233_20" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A234_1" type="webcontent" adlcp:scormtype="asset" href="sco234_Media/image002.gif" >
+
+      <file href="sco234_Media/image002.gif"/>
+   </resource>
+   <resource identifier="R_A234_2" type="webcontent" adlcp:scormtype="asset" href="sco234_Media/image004.gif" >
+
+      <file href="sco234_Media/image004.gif"/>
+   </resource>
+   <resource identifier="R_A234_3" type="webcontent" adlcp:scormtype="asset" href="sco234_Media/image006.gif" >
+
+      <file href="sco234_Media/image006.gif"/>
+   </resource>
+   <resource identifier="R_A234_4" type="webcontent" adlcp:scormtype="asset" href="sco234_Media/image008.gif" >
+
+      <file href="sco234_Media/image008.gif"/>
+   </resource>
+   <resource identifier="R_A234_5" type="webcontent" adlcp:scormtype="asset" href="sco234_Media/image010.gif" >
+
+      <file href="sco234_Media/image010.gif"/>
+   </resource>
+   <resource identifier="R_A234_6" type="webcontent" adlcp:scormtype="asset" href="sco234_Media/image012.gif" >
+
+      <file href="sco234_Media/image012.gif"/>
+   </resource>
+   <resource identifier="R_A234_7" type="webcontent" adlcp:scormtype="asset" href="sco234_Media/image014.gif" >
+
+      <file href="sco234_Media/image014.gif"/>
+   </resource>
+   <resource identifier="R_A234_8" type="webcontent" adlcp:scormtype="asset" href="sco234_Media/image016.gif" >
+
+      <file href="sco234_Media/image016.gif"/>
+   </resource>
+   <resource identifier="R_A234_9" type="webcontent" adlcp:scormtype="asset" href="sco234_Media/image018.gif" >
+
+      <file href="sco234_Media/image018.gif"/>
+   </resource>
+   <resource identifier="R_A234_10" type="webcontent" adlcp:scormtype="asset" href="sco234_Media/image020.gif" >
+
+      <file href="sco234_Media/image020.gif"/>
+   </resource>
+   <resource identifier="R_A234_11" type="webcontent" adlcp:scormtype="asset" href="sco234_Media/image022.gif" >
+
+      <file href="sco234_Media/image022.gif"/>
+   </resource>
+   <resource identifier="R_A234_12" type="webcontent" adlcp:scormtype="asset" href="sco234_Media/image024.gif" >
+
+      <file href="sco234_Media/image024.gif"/>
+   </resource>
+   <resource identifier="R_A234_13" type="webcontent" adlcp:scormtype="asset" href="sco234_Media/image026.gif" >
+
+      <file href="sco234_Media/image026.gif"/>
+   </resource>
+   <resource identifier="R_A234_14" type="webcontent" adlcp:scormtype="asset" href="sco234_Media/image028.gif" >
+
+      <file href="sco234_Media/image028.gif"/>
+   </resource>
+   <resource identifier="R_A234_15" type="webcontent" adlcp:scormtype="asset" href="sco234_Media/image030.gif" >
+
+      <file href="sco234_Media/image030.gif"/>
+   </resource>
+   <resource identifier="R_S234" type="webcontent" adlcp:scormtype="sco" href="sco234.htm">
+
+      <file href="sco234.htm"/>
+      <dependency identifierref="R_A234_1" />
+      <dependency identifierref="R_A234_2" />
+      <dependency identifierref="R_A234_3" />
+      <dependency identifierref="R_A234_4" />
+      <dependency identifierref="R_A234_5" />
+      <dependency identifierref="R_A234_6" />
+      <dependency identifierref="R_A234_7" />
+      <dependency identifierref="R_A234_8" />
+      <dependency identifierref="R_A234_9" />
+      <dependency identifierref="R_A234_10" />
+      <dependency identifierref="R_A234_11" />
+      <dependency identifierref="R_A234_12" />
+      <dependency identifierref="R_A234_13" />
+      <dependency identifierref="R_A234_14" />
+      <dependency identifierref="R_A234_15" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A235_1" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/26.gif" >
+
+      <file href="sco235_Media/26.gif"/>
+   </resource>
+   <resource identifier="R_A235_2" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image002.gif" >
+
+      <file href="sco235_Media/image002.gif"/>
+   </resource>
+   <resource identifier="R_A235_3" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image004.gif" >
+
+      <file href="sco235_Media/image004.gif"/>
+   </resource>
+   <resource identifier="R_A235_4" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image006.gif" >
+
+      <file href="sco235_Media/image006.gif"/>
+   </resource>
+   <resource identifier="R_A235_5" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image008.gif" >
+
+      <file href="sco235_Media/image008.gif"/>
+   </resource>
+   <resource identifier="R_A235_6" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image010.gif" >
+
+      <file href="sco235_Media/image010.gif"/>
+   </resource>
+   <resource identifier="R_A235_7" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image012.gif" >
+
+      <file href="sco235_Media/image012.gif"/>
+   </resource>
+   <resource identifier="R_A235_8" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image014.gif" >
+
+      <file href="sco235_Media/image014.gif"/>
+   </resource>
+   <resource identifier="R_A235_9" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image016.gif" >
+
+      <file href="sco235_Media/image016.gif"/>
+   </resource>
+   <resource identifier="R_A235_10" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image018.gif" >
+
+      <file href="sco235_Media/image018.gif"/>
+   </resource>
+   <resource identifier="R_A235_11" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image020.gif" >
+
+      <file href="sco235_Media/image020.gif"/>
+   </resource>
+   <resource identifier="R_A235_12" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image023.gif" >
+
+      <file href="sco235_Media/image023.gif"/>
+   </resource>
+   <resource identifier="R_A235_13" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image025.gif" >
+
+      <file href="sco235_Media/image025.gif"/>
+   </resource>
+   <resource identifier="R_A235_14" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image027.gif" >
+
+      <file href="sco235_Media/image027.gif"/>
+   </resource>
+   <resource identifier="R_A235_15" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image029.gif" >
+
+      <file href="sco235_Media/image029.gif"/>
+   </resource>
+   <resource identifier="R_A235_16" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image031.gif" >
+
+      <file href="sco235_Media/image031.gif"/>
+   </resource>
+   <resource identifier="R_A235_17" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image033.gif" >
+
+      <file href="sco235_Media/image033.gif"/>
+   </resource>
+   <resource identifier="R_A235_18" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image035.gif" >
+
+      <file href="sco235_Media/image035.gif"/>
+   </resource>
+   <resource identifier="R_A235_19" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image037.gif" >
+
+      <file href="sco235_Media/image037.gif"/>
+   </resource>
+   <resource identifier="R_A235_20" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image039.gif" >
+
+      <file href="sco235_Media/image039.gif"/>
+   </resource>
+   <resource identifier="R_A235_21" type="webcontent" adlcp:scormtype="asset" href="sco235_Media/image041.gif" >
+
+      <file href="sco235_Media/image041.gif"/>
+   </resource>
+   <resource identifier="R_S235" type="webcontent" adlcp:scormtype="sco" href="sco235.htm">
+
+      <file href="sco235.htm"/>
+      <dependency identifierref="R_A235_1" />
+      <dependency identifierref="R_A235_2" />
+      <dependency identifierref="R_A235_3" />
+      <dependency identifierref="R_A235_4" />
+      <dependency identifierref="R_A235_5" />
+      <dependency identifierref="R_A235_6" />
+      <dependency identifierref="R_A235_7" />
+      <dependency identifierref="R_A235_8" />
+      <dependency identifierref="R_A235_9" />
+      <dependency identifierref="R_A235_10" />
+      <dependency identifierref="R_A235_11" />
+      <dependency identifierref="R_A235_12" />
+      <dependency identifierref="R_A235_13" />
+      <dependency identifierref="R_A235_14" />
+      <dependency identifierref="R_A235_15" />
+      <dependency identifierref="R_A235_16" />
+      <dependency identifierref="R_A235_17" />
+      <dependency identifierref="R_A235_18" />
+      <dependency identifierref="R_A235_19" />
+      <dependency identifierref="R_A235_20" />
+      <dependency identifierref="R_A235_21" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A236_1" type="webcontent" adlcp:scormtype="asset" href="sco236_Media/26.gif" >
+
+      <file href="sco236_Media/26.gif"/>
+   </resource>
+   <resource identifier="R_A236_2" type="webcontent" adlcp:scormtype="asset" href="sco236_Media/image002.gif" >
+
+      <file href="sco236_Media/image002.gif"/>
+   </resource>
+   <resource identifier="R_A236_3" type="webcontent" adlcp:scormtype="asset" href="sco236_Media/image004.gif" >
+
+      <file href="sco236_Media/image004.gif"/>
+   </resource>
+   <resource identifier="R_S236" type="webcontent" adlcp:scormtype="sco" href="sco236.htm">
+
+      <file href="sco236.htm"/>
+      <dependency identifierref="R_A236_1" />
+      <dependency identifierref="R_A236_2" />
+      <dependency identifierref="R_A236_3" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A237_1" type="webcontent" adlcp:scormtype="asset" href="sco237_Media/image002.gif" >
+
+      <file href="sco237_Media/image002.gif"/>
+   </resource>
+   <resource identifier="R_S237" type="webcontent" adlcp:scormtype="sco" href="sco237.htm">
+
+      <file href="sco237.htm"/>
+      <dependency identifierref="R_A237_1" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A238_1" type="webcontent" adlcp:scormtype="asset" href="sco238_Media/image002.gif" >
+
+      <file href="sco238_Media/image002.gif"/>
+   </resource>
+   <resource identifier="R_A238_2" type="webcontent" adlcp:scormtype="asset" href="sco238_Media/image004.gif" >
+
+      <file href="sco238_Media/image004.gif"/>
+   </resource>
+   <resource identifier="R_A238_3" type="webcontent" adlcp:scormtype="asset" href="sco238_Media/image006.gif" >
+
+      <file href="sco238_Media/image006.gif"/>
+   </resource>
+   <resource identifier="R_A238_4" type="webcontent" adlcp:scormtype="asset" href="sco238_Media/image008.gif" >
+
+      <file href="sco238_Media/image008.gif"/>
+   </resource>
+   <resource identifier="R_A238_5" type="webcontent" adlcp:scormtype="asset" href="sco238_Media/image010.gif" >
+
+      <file href="sco238_Media/image010.gif"/>
+   </resource>
+   <resource identifier="R_A238_6" type="webcontent" adlcp:scormtype="asset" href="sco238_Media/image012.gif" >
+
+      <file href="sco238_Media/image012.gif"/>
+   </resource>
+   <resource identifier="R_S238" type="webcontent" adlcp:scormtype="sco" href="sco238.htm">
+
+      <file href="sco238.htm"/>
+      <dependency identifierref="R_A238_1" />
+      <dependency identifierref="R_A238_2" />
+      <dependency identifierref="R_A238_3" />
+      <dependency identifierref="R_A238_4" />
+      <dependency identifierref="R_A238_5" />
+      <dependency identifierref="R_A238_6" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A239_1" type="webcontent" adlcp:scormtype="asset" href="sco239_Media/image001.gif" >
+
+      <file href="sco239_Media/image001.gif"/>
+   </resource>
+   <resource identifier="R_A239_2" type="webcontent" adlcp:scormtype="asset" href="sco239_Media/image004.gif" >
+
+      <file href="sco239_Media/image004.gif"/>
+   </resource>
+   <resource identifier="R_A239_3" type="webcontent" adlcp:scormtype="asset" href="sco239_Media/image006.gif" >
+
+      <file href="sco239_Media/image006.gif"/>
+   </resource>
+   <resource identifier="R_S239" type="webcontent" adlcp:scormtype="sco" href="sco239.htm">
+
+      <file href="sco239.htm"/>
+      <dependency identifierref="R_A239_1" />
+      <dependency identifierref="R_A239_2" />
+      <dependency identifierref="R_A239_3" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S240" type="webcontent" adlcp:scormtype="sco" href="sco240.htm">
+
+      <file href="sco240.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A241_1" type="webcontent" adlcp:scormtype="asset" href="sco241_Media/image002.gif" >
+
+      <file href="sco241_Media/image002.gif"/>
+   </resource>
+   <resource identifier="R_A241_2" type="webcontent" adlcp:scormtype="asset" href="sco241_Media/image004.gif" >
+
+      <file href="sco241_Media/image004.gif"/>
+   </resource>
+   <resource identifier="R_A241_3" type="webcontent" adlcp:scormtype="asset" href="sco241_Media/image005.gif" >
+
+      <file href="sco241_Media/image005.gif"/>
+   </resource>
+   <resource identifier="R_A241_4" type="webcontent" adlcp:scormtype="asset" href="sco241_Media/image008.gif" >
+
+      <file href="sco241_Media/image008.gif"/>
+   </resource>
+   <resource identifier="R_A241_5" type="webcontent" adlcp:scormtype="asset" href="sco241_Media/image010.gif" >
+
+      <file href="sco241_Media/image010.gif"/>
+   </resource>
+   <resource identifier="R_S241" type="webcontent" adlcp:scormtype="sco" href="sco241.htm">
+
+      <file href="sco241.htm"/>
+      <dependency identifierref="R_A241_1" />
+      <dependency identifierref="R_A241_2" />
+      <dependency identifierref="R_A241_3" />
+      <dependency identifierref="R_A241_4" />
+      <dependency identifierref="R_A241_5" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S242" type="webcontent" adlcp:scormtype="sco" href="sco242.htm">
+
+      <file href="sco242.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S243" type="webcontent" adlcp:scormtype="sco" href="sco243.htm">
+
+      <file href="sco243.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S244" type="webcontent" adlcp:scormtype="sco" href="sco244.htm">
+
+      <file href="sco244.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A245_1" type="webcontent" adlcp:scormtype="asset" href="sco245_Media/35.gif" >
+
+      <file href="sco245_Media/35.gif"/>
+   </resource>
+   <resource identifier="R_S245" type="webcontent" adlcp:scormtype="sco" href="sco245.htm">
+
+      <file href="sco245.htm"/>
+      <dependency identifierref="R_A245_1" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S246" type="webcontent" adlcp:scormtype="sco" href="sco246.htm">
+
+      <file href="sco246.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S247" type="webcontent" adlcp:scormtype="sco" href="sco247.htm">
+
+      <file href="sco247.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S248" type="webcontent" adlcp:scormtype="sco" href="sco248.htm">
+
+      <file href="sco248.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A249_1" type="webcontent" adlcp:scormtype="asset" href="sco249_Media/40.gif" >
+
+      <file href="sco249_Media/40.gif"/>
+   </resource>
+   <resource identifier="R_A249_2" type="webcontent" adlcp:scormtype="asset" href="sco249_Media/41.gif" >
+
+      <file href="sco249_Media/41.gif"/>
+   </resource>
+   <resource identifier="R_A249_3" type="webcontent" adlcp:scormtype="asset" href="sco249_Media/image002.gif" >
+
+      <file href="sco249_Media/image002.gif"/>
+   </resource>
+   <resource identifier="R_A249_4" type="webcontent" adlcp:scormtype="asset" href="sco249_Media/image004.gif" >
+
+      <file href="sco249_Media/image004.gif"/>
+   </resource>
+   <resource identifier="R_A249_5" type="webcontent" adlcp:scormtype="asset" href="sco249_Media/image008.gif" >
+
+      <file href="sco249_Media/image008.gif"/>
+   </resource>
+   <resource identifier="R_S249" type="webcontent" adlcp:scormtype="sco" href="sco249.htm">
+
+      <file href="sco249.htm"/>
+      <dependency identifierref="R_A249_1" />
+      <dependency identifierref="R_A249_2" />
+      <dependency identifierref="R_A249_3" />
+      <dependency identifierref="R_A249_4" />
+      <dependency identifierref="R_A249_5" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A250_1" type="webcontent" adlcp:scormtype="asset" href="sco250_Media/image002.gif" >
+
+      <file href="sco250_Media/image002.gif"/>
+   </resource>
+   <resource identifier="R_A250_2" type="webcontent" adlcp:scormtype="asset" href="sco250_Media/image004.gif" >
+
+      <file href="sco250_Media/image004.gif"/>
+   </resource>
+   <resource identifier="R_A250_3" type="webcontent" adlcp:scormtype="asset" href="sco250_Media/image006.gif" >
+
+      <file href="sco250_Media/image006.gif"/>
+   </resource>
+   <resource identifier="R_A250_4" type="webcontent" adlcp:scormtype="asset" href="sco250_Media/image008.gif" >
+
+      <file href="sco250_Media/image008.gif"/>
+   </resource>
+   <resource identifier="R_A250_5" type="webcontent" adlcp:scormtype="asset" href="sco250_Media/image010.gif" >
+
+      <file href="sco250_Media/image010.gif"/>
+   </resource>
+   <resource identifier="R_A250_6" type="webcontent" adlcp:scormtype="asset" href="sco250_Media/image012.gif" >
+
+      <file href="sco250_Media/image012.gif"/>
+   </resource>
+   <resource identifier="R_A250_7" type="webcontent" adlcp:scormtype="asset" href="sco250_Media/image014.gif" >
+
+      <file href="sco250_Media/image014.gif"/>
+   </resource>
+   <resource identifier="R_A250_8" type="webcontent" adlcp:scormtype="asset" href="sco250_Media/image016.gif" >
+
+      <file href="sco250_Media/image016.gif"/>
+   </resource>
+   <resource identifier="R_S250" type="webcontent" adlcp:scormtype="sco" href="sco250.htm">
+
+      <file href="sco250.htm"/>
+      <dependency identifierref="R_A250_1" />
+      <dependency identifierref="R_A250_2" />
+      <dependency identifierref="R_A250_3" />
+      <dependency identifierref="R_A250_4" />
+      <dependency identifierref="R_A250_5" />
+      <dependency identifierref="R_A250_6" />
+      <dependency identifierref="R_A250_7" />
+      <dependency identifierref="R_A250_8" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A251_1" type="webcontent" adlcp:scormtype="asset" href="sco251_Media/image002.gif" >
+
+      <file href="sco251_Media/image002.gif"/>
+   </resource>
+   <resource identifier="R_S251" type="webcontent" adlcp:scormtype="sco" href="sco251.htm">
+
+      <file href="sco251.htm"/>
+      <dependency identifierref="R_A251_1" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S252" type="webcontent" adlcp:scormtype="sco" href="sco252.htm">
+
+      <file href="sco252.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S253" type="webcontent" adlcp:scormtype="sco" href="sco253.htm">
+
+      <file href="sco253.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S254" type="webcontent" adlcp:scormtype="sco" href="sco254.htm">
+
+      <file href="sco254.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S255" type="webcontent" adlcp:scormtype="sco" href="sco255.htm">
+
+      <file href="sco255.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S256" type="webcontent" adlcp:scormtype="sco" href="sco256.htm">
+
+      <file href="sco256.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S257" type="webcontent" adlcp:scormtype="sco" href="sco257.htm">
+
+      <file href="sco257.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_A258_1" type="webcontent" adlcp:scormtype="asset" href="sco258_Media/image002.gif" >
+
+      <file href="sco258_Media/image002.gif"/>
+   </resource>
+   <resource identifier="R_S258" type="webcontent" adlcp:scormtype="sco" href="sco258.htm">
+
+      <file href="sco258.htm"/>
+      <dependency identifierref="R_A258_1" />
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S259" type="webcontent" adlcp:scormtype="sco" href="sco259.htm">
+
+      <file href="sco259.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S260" type="webcontent" adlcp:scormtype="sco" href="sco260.htm">
+
+      <file href="sco260.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S261" type="webcontent" adlcp:scormtype="sco" href="sco261.htm">
+
+      <file href="sco261.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S263" type="webcontent" adlcp:scormtype="sco" href="sco263.htm">
+
+      <file href="sco263.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+   <resource identifier="R_S264" type="webcontent" adlcp:scormtype="sco" href="sco264.htm">
+      <file href="sco264.htm"/>
+      <dependency identifierref="R_API" />
+      <dependency identifierref="R_SCO" />
+   </resource>
+</resources>
+</manifest>

@@ -1,0 +1,53 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="31 Mar 2007 18:07:58 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title> Sơ đồ thuật toán</title>
+</head>
+<body onLoad="loadPage()" onUnload="return unloadPage('incomplete')">
+
+<P class=MsoNormal style="MARGIN: 0cm 0cm 3pt 36pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman">Procedure<SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>Greedy;
+<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 3pt 36pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>{*Giả sử C là tập các ứng cử viên*}<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 3pt 36pt; LINE-HEIGHT: 150%; tab-stops: 18.0pt"><I><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>begin<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 3pt 36pt; LINE-HEIGHT: 150%; tab-stops: 18.0pt"><I><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>S := </FONT></SPAN></I><I><SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">Æ</SPAN></SPAN></I><I><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman">; <SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>{* S là lời giải xây dựng theo thuật toán *}<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 3pt 36pt; LINE-HEIGHT: 150%; tab-stops: 18.0pt"><I><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>While<SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>(C </FONT></SPAN></I><I><SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">¹</SPAN></SPAN></I><I><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"> 0) and not Solution(S) do<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 3pt 36pt; LINE-HEIGHT: 150%; tab-stops: 18.0pt"><I><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Begin<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 3pt 36pt; LINE-HEIGHT: 150%; tab-stops: 18.0pt"><I><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>x </FONT></SPAN></I><I><SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">¬</SPAN></SPAN></I><I><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"> Select(C);<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 3pt 36pt; LINE-HEIGHT: 150%; tab-stops: 18.0pt"><I><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>C := C\x;<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 3pt 36pt; LINE-HEIGHT: 150%; tab-stops: 18.0pt"><I><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>If Feasible(S </FONT></SPAN></I><I><SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">È</SPAN></SPAN></I><I><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"> x) then<SPAN style="mso-spacerun: yes">&nbsp; </SPAN><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>S := S </FONT></SPAN></I><I><SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">È</SPAN></SPAN></I><I><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"> x<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 3pt 36pt; LINE-HEIGHT: 150%; tab-stops: 18.0pt"><I><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>End;<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 3pt 36pt; LINE-HEIGHT: 150%; tab-stops: 18.0pt"><I><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>If Solution(S)<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>then <SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Return S
+        <o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 3pt 36pt; LINE-HEIGHT: 150%; tab-stops: 18.0pt"><I><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>end;<o:p></o:p></FONT></SPAN></I></P>
+<HR>
+
+<FORM>
+<TABLE cols=3 width="100%" align=center>
+<TBODY>
+<TR>
+<TD align=middle><INPUT id=button2 onClick="doQuit('completed')" type=button value="  Done  " name=button2></TD></TR></TBODY></TABLE></FORM>
+</body></html>

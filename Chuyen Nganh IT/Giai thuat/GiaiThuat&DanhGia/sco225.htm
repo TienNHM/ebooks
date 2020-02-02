@@ -1,0 +1,65 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="30 Mar 2007 17:48:06 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title>Tại sao lại cần thuật toán có hiệu quả.</title>
+</head>
+<body onLoad="loadPage()" onunload="return unloadPage('incomplete')">
+
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Kỹ thuật máy tính tiến bộ rất nhanh, ngày nay các máy tính lớn có thể đạt tốc đọ tính toán hàng trăm triệu phép tính một giây. Vởy thì có bõ công phải tiêu tốn thời gian để thiết kế các thuật toán có hiệu quả không ? Ví dụ sau đây sẽ trả lời<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>câu<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>hỏi này.<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><FONT face="Times New Roman"><I style="mso-bidi-font-style: normal"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Ví dụ:</SPAN></I><U><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"> </SPAN></U><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Bài toán tháp Hà Nội.<o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Có 3 cọc A,B,C. Lúc đầu ,ở cọc A có n đĩa được lồng theo thứ tự nhỏ dần từ thấp lên cao. Đòi hỏi phải chuyển n đĩa từ cọc A sang cọc B, được quyền sử dụng cọc C làm vị trí trung gian , nhưng không được phép đặt đĩa lớn lên trên dĩa nhỏ.<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Để chuyển n đĩa từ cọc A sang cọc B ta cần thực hiện thủ tục sau :đầu tiên là chuyển n-1 đĩa từ cọc A sang cọc C, sau đó chuyển đĩa lớn nhất từ cọc A sang cọc B .Đến đây chỉ cần chuyển n-1 đĩa từ cọc C sang cọc B. Việc chuyển<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>n-1 đĩa từ cọc này sang cọc kia được thực hiện bằng cách áp dụng đệ qui thủ tục trên.<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">procedure Move(n,A,B,C);<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">(*thủ tục chuyển n đĩa từ cọc A sang cọc B*)<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">begin</P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">if n=1 then chuyển 1 đĩa từ cọc A sang cọc B<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>else<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>begin<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Move(n-1,A,C,B);<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Chuyển 1 đĩa từ cọc A sang cọc B;<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Move(n-1,C,B,A);<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>End;<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">End;<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Trong ví dụ trên ,ta thử tính xem cần thực hiện bao nhiêu lần chuyển đĩa từ cọc này sang cọc khác (không đặt đĩa to lên<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>trên đĩa nhỏ) để chuyển được n đĩa từ cọc A sang cọc B .Gọi số đó là F(n). Từ thuật toán ta có:<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">F(1) = 1,<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">F(n) = 2F(n-1) +1 với n&gt;1.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">F(1)=1; F(2)=3; F(3) = 7; với n=1,2,3.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Bằng cách qui nạp ta chứng minh được F(n) = 2<SUP>n</SUP> – 1.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN lang=FR style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-ansi-language: FR">Với n=64, ta có F(64) = 2<SUP>64</SUP> –1 lần chuyển. Giả sử mỗi lần chuyển 1 đĩa từ cọc này sang cọc kia, cần 1 giây. Khi đó để thực hiện 2<SUP>64</SUP> –1 lần chuyển cần 5.10<SUP>11</SUP> năm. Nếu tuổi của vũ trụ là 10 tỉ năm ,ta cần 50 lần tuổi của vũ trụ để chuyển 64 đĩa !<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN lang=FR style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-ansi-language: FR">Đối với một vấn đề có thể có nhiều thuật toán , trong số đó có thể thuật toán này hiệu quả hơn thuật toán kia (chạy nhanh hơn). Tuy nhiên cũng có những vấn đề không tồn tại thuật toán hiệu quả, tức là có thuật toán song thời gian thực hiện nó là quá lớn,trong thực tế không thể thực hiện được, dù là trên các máy tính lớn hiện đại nhất.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN lang=FR style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-ansi-language: FR"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><o:p></o:p></FONT></SPAN></P><hr>
+<form>
+<table cols="3"	width="100%" align="center">
+<tr>
+<td	align="middle"><input type = "button" value	= "  Done  " onClick = "doQuit('completed')" id=button2 name=button2></td>
+</tr>
+</table>
+</form>
+
+</body></html>

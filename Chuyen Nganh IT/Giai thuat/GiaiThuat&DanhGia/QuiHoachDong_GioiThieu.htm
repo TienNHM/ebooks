@@ -1,0 +1,51 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="30 Mar 2007 16:28:45 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title> Thiết kế thuật toán</title>
+<style type="text/css">
+<!--
+.style1 {font-size: 13pt;
+		line-height:1.5em;
+
+}
+-->
+</style>
+</head>
+<body onLoad="loadPage()" onUnload="return unloadPage('incomplete')">
+
+<p align="justify" class="style1"> Quy hoạch động có những nét giống như  phương pháp “Chia để trị”, nó đòi hỏi việc chia bài toán thành những bài toán  con kích thước nhỏ hơn. Như chúng ta đã thấy trong chương trước, phương pháp  chia để trị chia bài toán cần giải ra thành các bài toán con độc lập, sau đó  các bài toán con này được giải một cách đệ quy, và cuối cùng tổng hợp các lời  giải của các bài toán con ta thu được lời giải của bài toán đặt ra. Điểm khác cơ  bản của quy hoạch động với phương pháp chia để trị là các bài toán con là không  độc lập với nhau, nghĩa là các bài toán con cùng có chung các bài toán con nhỏ  hơn. Trong tình huống đó, phương pháp chia để trị sẽ tỏ ra không hiệu quả, khi  nó phải lặp đi lặp lại việc giải các bài toán con chung đó. Quy hoạch động sẽ  giải một bài toán con một lần và lời giải của các bài toán con sẽ được ghi  nhận, để thoát khỏi việc giải lại bài toán con mỗi khi ta đòi hỏi lời giải của  nó.</p>
+<HR>
+
+<FORM>
+<TABLE cols=3 width="100%" align=center>
+<TBODY>
+<TR>
+<TD align=middle><div align="center">
+  <INPUT id=button2 onClick="doQuit('completed')" type=button value="  Done  " name=button2>
+</div></TD></TR></TBODY></TABLE>
+</FORM>
+</body></html>

@@ -1,0 +1,67 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="30 Mar 2007 16:28:45 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title> Thiết kế thuật toán</title>
+<style type="text/css">
+<!--
+.style1 {font-size: 13pt;
+		line-height:1.5em;
+
+}
+-->
+</style>
+</head>
+<body onLoad="loadPage()" onUnload="return unloadPage('incomplete')">
+<p align="justify" class="style1"><strong>1. </strong>Tìm trình tự nhân tối ưu để tính tích của dãy ma trận A1x A2 x A3 x A4 x A5’ trong đó kích thước của A1 là 10 x 4, A2 - 4 x 5, A3 – 5 x 20, A4 -20 x 2, và X5-2 x 50.</p>
+<p align="justify" class="style1"><strong>2.</strong>Xét bài toán sau: Cho dãy gồm n số nguyên dương a1, a2,…an và số nguyên dương k. cần tìm dãy con gồm nhiều phần tử nhất của dãy đã xho có tổng chia hết cho k . Sử dụng phương pháp qui hoạch động thiết kế thuật toán giải bài toán đặt ra. Đánh giá thời gian tính của thuật toán đề nghị.</p>
+<p align="justify" class="style1"><strong>3.</strong>Xét Bài toán về các đoạn thẳng không giao nhau có trọng số.<br>
+Đầu vào: Cho họ các đoạn thẳng mở: C = {(a1, b1), (a2,b2),…,(an,bn)}. Đoạn thẳng (ai,bi) được gán với trọng số ci , i = 1,2,…n.<br>
+Đầu ra: Tập các đoạn không giao nhau có tổng các trọng số là lớn nhất.<br>
+Thiết kế thuật toán giải bài toán đặt ra. Phân tích thời gian tính của thuật toán.</p>
+<p align="justify" class="style1"><strong>4. </strong>Phát triển thuật toán đa thức giải bài toán tìm xâu con chung dài nhất của ba xâuA,B,C;<br>
+Input: 3 xâu A,B và C,<br>
+Output: Xâu con chung dài nhất S của 3 xâu A,B và C</p>
+<p align="justify" class="style1"><strong>5.</strong>Phát triển thuật toán đa thức giải bài toán tìm xâu ngắn nhất phủ hai xâu A và B. Xâu C được gọi là xâu phủ của A nếu A là xâu con của C.</p>
+<p align="justify" class="style1"><strong>6.</strong>Có n cuộc họp, cuộc họp thứ i bắt đầu vào thời điểm ai và kết thúc ở thời điểm bi. Do chỉ có một phòng hội thảo nên 2 cuộc họp bất kì sẽ được cùng bố trí phục vụ nếu khoảng thời gian làm việc của chúng chỉ giao nhau tại đầu mút. Hãy bố trí phòng họp để phục vụ được nhiều cuộc họp nhất.</p>
+<p align="justify" class="style1"><strong>7.</strong>Cho n gói kẹo, gói thứ i có ai viên. Hãy chia các gói thành 2 phần sao cho chênh lệch giữa 2 phần là ít nhất.</p>
+<p align="justify" class="style1"><strong>8.</strong>Một xâu gọi là xâu đối xứng (palindrom) nếu xâu đó đọc từ trái sang phải hay từ phải sang trái đều như nhau. Cho một xâu S, hãy tìm số kí tự ít nhất cần thêm vào S để S trở thành xâu đối xứng.</p>
+<p align="justify" class="style1"><strong>9</strong>.Ở đất nước Omega người ta chỉ tiêu tiền xu. Có N loại tiền xu, loại thứ i có mệnh giá là ai đồng. Một người khách du lịch đến Omega du lịch với số tiền M đồng. Ông ta muốn đổi số tiền đó ra tiền xu Omega để tiện tiêu dùng. Ông ta cũng muốn số đồng tiền đổi được là ít nhất (cho túi tiền đỡ nặng khi đi đây đi đó). Bạn hãy giúp ông ta tìm cách đổi tiền.</p>
+<p align="justify" class="style1"><strong>10.</strong>Cho một tam giác gồm các số nguyên không âm. Hãy tính tổng lớn nhất các số trên đường đi từ đỉnh tam giác xuống một điểm nào đó ở đáy tam giác nào đó. Tại mỗi ô ta chỉ có đi thẳng xuống, sang ô bên trái hoặc bên phải.</p>
+<p align="justify" class="style1"><strong>11.</strong>Cho cây T với trọng số nguyên trên cạnh. Trọng số có thể là số dương, âm hay bằng không tuỳ ý. Xây dựng thuật toán thời gian tuyến tính để tìm đường đi đơn ngắn nhất trên cây T. Nhắc lại là đường đi đơn là đường đi mà không có đỉnh nào xuất hiện trên nó quá một lần. Độ dài đường đi là tổng trọng số của các cạnh trên đường đi. Lưu ý là không có hạn chế gì về hai đỉnh đầu và cuối của đường đi.</p>
+<p align="justify" class="style1"><strong>12.</strong>Xét bài toán thuê xe sau đây. Bạn nhận nhiệm vụ chuyển công văn hoả tốc. Trên tuyến đường đi từ địa điểm xuất phát đánh số là 1 đến điạ điểm cần chuyển giấy mời đánh số là n có n-2 địa điểm trung gian được đánh số từ 2 đến n-. Tại điạ điểm i bạn có thể thuê xe ôm để đi đến địa điểm j&gt;i với thời gian t(i,j) (phút). Giả thiết rằng thời gian đổi xe là bằng 0. Hãy phát triển thuật toán tìm cách đi bằng xe ôm để đạt đích với thời gian nhanh nhất và đánh giá độ phức tạp tính toán của thuật toán đề nghị.</p>
+<HR>
+
+<FORM>
+<TABLE cols=3 width="100%" align=center>
+<TBODY>
+<TR>
+<TD align=middle><div align="center">
+  <INPUT id=button2 onClick="doQuit('completed')" type=button value="  Done  " name=button2>
+</div></TD></TR></TBODY></TABLE>
+</FORM>
+</body>
+</html>

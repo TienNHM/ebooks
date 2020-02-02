@@ -1,0 +1,48 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="31 Mar 2007 17:02:35 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title>Sơ đồ tổng quát thuật toán chia để trị</title>
+</head>
+<body onLoad="loadPage()" onunload="return unloadPage('incomplete')">
+
+<P class=MsoBodyText style="MARGIN: 6pt 0in 6pt 0.25in"><I><SPAN style="FONT-FAMILY: 'Times New Roman'"><FONT size=4>Procedure<SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>D_and_C(n)<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoBodyText style="MARGIN: 6pt 0in 6pt 0.25in"><I><SPAN style="FONT-FAMILY: 'Times New Roman'"><FONT size=4><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Begin<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoBodyText style="MARGIN: 6pt 0in 6pt 0.25in"><I><SPAN style="FONT-FAMILY: 'Times New Roman'"><FONT size=4><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>If<SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>n ( n<SUB>0</SUB> <SPAN style="mso-tab-count: 1">&nbsp; </SPAN>Then <o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoBodyText style="MARGIN: 6pt 0in 6pt 0.25in"><I><SPAN style="FONT-FAMILY: 'Times New Roman'"><FONT size=4><SPAN style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Giải bài toán một cách trực tiếp<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoBodyText style="MARGIN: 6pt 0in 6pt 0.25in"><I><SPAN style="FONT-FAMILY: 'Times New Roman'"><FONT size=4><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Else<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoBodyText style="MARGIN: 6pt 0in 6pt 1.5in; TEXT-INDENT: -1.5in; mso-list: l0 level3 lfo1; tab-stops: list 1.5in; mso-text-indent-alt: -9.0pt"><I><SPAN style="FONT-FAMILY: 'Times New Roman'"><SPAN style="mso-list: Ignore"><SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><FONT size=4>i.</FONT><SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN></I><I><SPAN style="FONT-FAMILY: 'Times New Roman'"><FONT size=4>Chia bài toán thành r bài toán con kích thước n/k<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoBodyText style="MARGIN: 6pt 0in 6pt 1.5in; TEXT-INDENT: -1.5in; mso-list: l0 level3 lfo1; tab-stops: list 1.5in; mso-text-indent-alt: -9.0pt"><I><SPAN style="FONT-FAMILY: 'Times New Roman'"><SPAN style="mso-list: Ignore"><SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><FONT size=4>ii.</FONT><SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN></I><I><SPAN style="FONT-FAMILY: 'Times New Roman'"><FONT size=4>For (Mỗi bài toán trong r bài toán con)<SPAN style="mso-tab-count: 1">&nbsp;&nbsp; </SPAN>Do <SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>D_and_C(n)<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoBodyText style="MARGIN: 6pt 0in 6pt 1.5in; TEXT-INDENT: -1.5in; mso-list: l0 level3 lfo1; tab-stops: list 1.5in; mso-text-indent-alt: -9.0pt"><I><SPAN style="FONT-FAMILY: 'Times New Roman'"><SPAN style="mso-list: Ignore"><SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><FONT size=4>iii.</FONT><SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN></I><I><SPAN style="FONT-FAMILY: 'Times New Roman'"><FONT size=4>Tổng hợp lời giải của r bài toán con để thu được lời giải của bài toán gốc<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoBodyText style="MARGIN: 6pt 0in 6pt 0.25in"><I><SPAN style="FONT-FAMILY: 'Times New Roman'"><FONT size=4><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>End;<o:p></o:p></FONT></SPAN></I></P>
+<HR>
+
+<FORM>
+<TABLE cols=3 width="100%" align=center>
+<TBODY>
+<TR>
+<TD align=middle><INPUT id=button2 onclick="doQuit('completed')" type=button value="  Done  " name=button2></TD></TR></TBODY></TABLE></FORM>
+</body></html>

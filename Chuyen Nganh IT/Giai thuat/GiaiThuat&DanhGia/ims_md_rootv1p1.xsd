@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- filename=ims_md_rootv1p1.xsd                                            -->
+<!-- Conforms to w3c http://www.w3.org/2001/XMLSchema                        -->
+
+<xsd:schema xmlns="http://www.imsproject.org/xsd/ims_md_rootv1p1" 
+            targetNamespace="http://www.imsproject.org/xsd/ims_md_rootv1p1" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+            xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+            version="IMS:MD1.1" elementFormDefault="unqualified">
+
+   <xsd:import namespace="http://www.w3.org/XML/1998/namespace" 
+               schemaLocation="ims_xml.xsd"/>
+
+   <!-- ******************** -->
+   <!-- ** Change History ** -->
+   <!-- ******************** -->
+   <xsd:annotation>
+      <xsd:documentation> Copyright (c) 2001 IMS GLC, Inc.                         </xsd:documentation>
+      <xsd:documentation> edited by Thomas D. Wason IMS GLC, Inc.                  </xsd:documentation>
+      <xsd:documentation> 2000-07-06 Initial XSD                                   </xsd:documentation>
+      <xsd:documentation> 2001-01-08 TDW:converted to XML-Schema                   </xsd:documentation>
+      <xsd:documentation>  Draft version 2000-10-24                                 </xsd:documentation>
+      <xsd:documentation> 2001-03-09 TDW: revised.                                 </xsd:documentation>                                      
+      <xsd:documentation> 2001-03-19 TDW: revised for use of langstrings.          </xsd:documentation>              
+      <xsd:documentation> Conforms to w3c http://www.w3.org/2000/10/XMLSchema      </xsd:documentation>         
+      <xsd:documentation> 2001-03-21 T.D. Wason: Adjustments to add durtime with   </xsd:documentation>
+      <xsd:documentation> a data type of timePeriod. MmaxOccurs=&quot;0&quot;.     </xsd:documentation>
+      <xsd:documentation> 2001-07-25 Schawn Thropp.  Updates to bring the XSD      </xsd:documentation>
+      <xsd:documentation> up to speed with the W3C XML Schema Recommendation.  The </xsd:documentation>
+      <xsd:documentation> following changes were made: Change the namespace to     </xsd:documentation>
+      <xsd:documentation> reference the 5/2/2001 W3C XML Schema Recommendation,    </xsd:documentation>
+      <xsd:documentation> the base type for the durtimeType, simpleType, was       </xsd:documentation>
+      <xsd:documentation> changed from timeDuration to duration.                   </xsd:documentation>  
+   </xsd:annotation>
+   
+   <!-- **************************** -->
+   <!-- ** Attribute Declarations ** -->
+   <!-- **************************** -->
+   
+   <xsd:attributeGroup name="attr.lang">
+      <xsd:attribute ref="xml:lang"/>
+   </xsd:attributeGroup>
+
+   <xsd:attributeGroup name="attr.type">
+      <xsd:attribute name="type" type="xsd:string"/>
+   </xsd:attributeGroup>
+
+   <!-- ************************** -->
+   <!-- ** Element Declarations ** -->
+   <!-- ************************** -->
+
+   <xsd:element name="aggregationlevel" type="aggregationlevelType"/>
+   <xsd:element name="annotation" type="annotationType"/>
+   <xsd:element name="catalogentry" type="catalogentryType"/>
+   <xsd:element name="catalogue" type="catalogueType"/>
+   <xsd:element name="centity" type="centityType"/>
+   <xsd:element name="classification" type="classificationType">
+      <xsd:annotation>
+         <xsd:documentation>Definition: Description of a characteristic of the resource by entries in classifications.</xsd:documentation>
+      </xsd:annotation>
+   </xsd:element>
+   <xsd:element name="contribute" type="contributeType">
+      <xsd:annotation>
+         <xsd:documentation>Definition: Persons or organizattion contributing.</xsd:documentation>
+      </xsd:annotation>
+   </xsd:element>
+   <xsd:element name="copyrightandotherrestrictions" type="copyrightandotherrestrictionsType"/>
+   <xsd:element name="cost" type="costType"/>
+   <xsd:element name="coverage" type="coverageType"/>
+   <xsd:element name="date" type="dateType"/>
+   <xsd:element name="datetime" type="datetimeType"/>
+   <xsd:element name="description" type="descriptionType"/>
+   <xsd:element name="difficulty" type="difficultyType"/>
+   <xsd:element name="duration" type="durationType"/>
+   <xsd:element name="durtime" type="durtimeType"/>
+   <xsd:element name="educational" type="educationalType"/>
+   <xsd:element name="entry" type="entryType"/>
+   <xsd:element name="extension" type="extensionType"/>
+   <xsd:element name="format" type="formatType"/>
+   <xsd:element name="general" type="generalType">
+      <xsd:annotation>
+         <xsd:documentation>Definition: Context independent features of the resource.</xsd:documentation>
+      </xsd:annotation>
+   </xsd:element>
+   <xsd:element name="id" type="idType"/>
+   <xsd:element name="identifier" type="identifierType"/>
+   <xsd:element name="installationremarks" type="installationremarksType"/>
+   <xsd:element name="intendedenduserrole" type="intendedenduserroleType"/>
+   <xsd:element name="interactivitylevel" type="interactivitylevelType"/>
+   <xsd:element name="interactivitytype" type="interactivitytypeType"/>
+   <xsd:element name="keywords" type="keywordsType"/>
+   <xsd:element name="kind" type="kindType"/>
+   <xsd:element name="langstring" type="langstringType">
+      <xsd:annotation>
+         <xsd:documentation>Definition: String(s) in one or more human languages.</xsd:documentation>
+      </xsd:annotation>
+   </xsd:element>
+   <xsd:element name="language" type="languageType"/>
+   <xsd:element name="learningcontext" type="learningcontextType"/>
+   <xsd:element name="learningresourcetype" type="learningresourcetypeType"/>
+   <xsd:element name="lifecycle" type="lifecycleType"/>
+   <xsd:element name="location" type="locationType"/>
+   <xsd:element name="maximumversion" type="maximumversionType"/>
+   <xsd:element name="metadatascheme" type="metadataschemeType"/>
+   <xsd:element name="metametadata" type="metametadataType">
+      <xsd:annotation>
+         <xsd:documentation>Definition: Features of the description rather than the resource.</xsd:documentation>
+      </xsd:annotation>
+   </xsd:element>
+   <xsd:element name="minimumversion" type="minimumversionType"/>
+   <xsd:element name="name" type="nameType"/>
+   <xsd:element name="otherplatformrequirements" type="otherplatformrequirementsType"/>
+   <xsd:element name="purpose" type="purposeType"/>
+   <xsd:element name="record" type="recordType"/>
+   <xsd:element name="relation" type="relationType"/>
+   <xsd:element name="requirements" type="requirementsType"/>
+   <xsd:element name="resource" type="resourceType"/>
+   <xsd:element name="rights" type="rightsType"/>
+   <xsd:element name="role" type="roleType"/>
+   <xsd:element name="semanticdensity" type="semanticdensityType"/>
+   <xsd:element name="size" type="sizeType"/>
+   <xsd:element name="source" type="sourceType"/>
+   <xsd:element name="status" type="statusType"/>
+   <xsd:element name="structure" type="structureType"/>
+   <xsd:element name="taxon" type="taxonType"/>
+   <xsd:element name="taxonpath" type="taxonpathType"/>
+   <xsd:element name="technical" type="technicalType"/>
+   <xsd:element name="title" type="titleType">
+      <xsd:annotation>
+         <xsd:documentation>Definition:Name given to the resource.</xsd:documentation>
+      </xsd:annotation>
+   </xsd:element>
+   <xsd:element name="type" type="typeType"/>
+   <xsd:element name="typicalagerange" type="typicalagerangeType"/>
+   <xsd:element name="typicallearningtime" type="typicallearningtimeType"/>
+   <xsd:element name="vcard" type="vcardType"/>
+   <xsd:element name="version" type="versionType"/>
+
+   4yy<!-- ******************* -->
+   <!-- ** Complex Types ** -->
+   <!-- ******************* -->
+
+   <xsd:complexType name="annotationType">
+      <xsd:sequence>
+         <xsd:element ref="centity" minOccurs="0"/>
+         <xsd:element ref="date" minOccurs="0"/>
+         <xsd:element ref="description" minOccurs="0"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="catalogentryType">
+      <xsd:sequence>
+         <xsd:element ref="catalogue" minOccurs="0"/>
+         <xsd:element ref="entry" minOccurs="0"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="centityType">
+      <xsd:sequence>
+         <xsd:element ref="vcard" minOccurs="0"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="classificationType">
+      <xsd:sequence>
+         <xsd:element ref="purpose" minOccurs="0"/>
+         <xsd:element ref="taxonpath" minOccurs="0" maxOccurs="16"/>
+         <xsd:element ref="description" minOccurs="0"/>
+         <xsd:element ref="keywords" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="contributeType">
+      <xsd:sequence>
+         <xsd:element ref="role" minOccurs="0"/>
+         <xsd:element ref="centity" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="date" minOccurs="0"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="coverageType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="dateType">
+      <xsd:annotation>
+         <xsd:documentation>durtime added to express a duration according to the XMLdata type of timeDuration.  durtime is an experimental element, an not part of the specification at this time.</xsd:documentation>
+      </xsd:annotation>
+      <xsd:sequence>
+         <xsd:element ref="datetime" minOccurs="0"/>
+         <xsd:element ref="description" minOccurs="0"/>
+         <xsd:element ref="durtime" minOccurs="0" maxOccurs="0"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="descriptionType">
+      <xsd:annotation>
+         <xsd:documentation>durtime added to express a duration according to the XMLdata type of timeDuration.  durtime is an experimental element, an not part of the specification at this time.</xsd:documentation>
+      </xsd:annotation>
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="durationType">
+      <xsd:sequence>
+         <xsd:element ref="datetime" minOccurs="0"/>
+         <xsd:element ref="durtime" minOccurs="0" maxOccurs="0">
+            <xsd:annotation>
+               <xsd:documentation>Experimental.  Datetime not adequate data type.</xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="description" minOccurs="0"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="educationalType">
+      <xsd:sequence>
+         <xsd:element ref="interactivitytype" minOccurs="0"/>
+         <xsd:element ref="learningresourcetype" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="interactivitylevel" minOccurs="0"/>
+         <xsd:element ref="semanticdensity" minOccurs="0"/>
+         <xsd:element ref="intendedenduserrole" minOccurs="0" maxOccurs="4"/>
+         <xsd:element ref="learningcontext" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="typicalagerange" minOccurs="0" maxOccurs="4"/>
+         <xsd:element ref="difficulty" minOccurs="0"/>
+         <xsd:element ref="typicallearningtime" minOccurs="0"/>
+         <xsd:element ref="description" minOccurs="0"/>
+         <xsd:element ref="language" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="entryType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0" maxOccurs="8"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="extensionType" mixed="true">
+      <xsd:choice minOccurs="0" maxOccurs="unbounded">
+         <xsd:any namespace="" processContents="strict"/>
+      </xsd:choice>
+   </xsd:complexType>
+   
+   <xsd:complexType name="formatType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0" maxOccurs="8"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="generalType">
+      <xsd:sequence>
+         <xsd:element ref="identifier" minOccurs="0" maxOccurs="0"/>
+         <xsd:element ref="title" minOccurs="0"/>
+         <xsd:element ref="catalogentry" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="language" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="description" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="keywords" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="coverage" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="structure" minOccurs="0"/>
+         <xsd:element ref="aggregationlevel" minOccurs="0"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="identifierType"/>
+   
+   <xsd:complexType name="installationremarksType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="intendedenduserroleType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0" maxOccurs="8"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="interactivitylevelType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0" maxOccurs="8"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="interactivitytypeType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="keywordsType">
+      <xsd:sequence>
+         <xsd:element ref="langstring"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="kindType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0" maxOccurs="8"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="langstringType">
+      <xsd:simpleContent>
+         <xsd:extension base="xsd:string">
+            <xsd:attributeGroup ref="attr.lang"/>
+         </xsd:extension>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   
+   <xsd:complexType name="learningcontextType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0" maxOccurs="8"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="learningresourcetypeType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="lifecycleType">
+      <xsd:sequence>
+         <xsd:element ref="version" minOccurs="0"/>
+         <xsd:element ref="status" minOccurs="0"/>
+         <xsd:element ref="contribute" minOccurs="0" maxOccurs="32"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="locationType">
+      <xsd:simpleContent>
+         <xsd:extension base="xsd:string">
+            <xsd:attributeGroup ref="attr.type"/>
+         </xsd:extension>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   
+   <xsd:complexType name="metametadataType">
+      <xsd:sequence>
+         <xsd:element ref="identifier" minOccurs="0" maxOccurs="0"/>
+         <xsd:element ref="catalogentry" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="contribute" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="metadatascheme" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="language" minOccurs="0"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="nameType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="otherplatformrequirementsType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="purposeType">
+      <xsd:annotation>
+         <xsd:documentation>128 characters maximum.</xsd:documentation>
+      </xsd:annotation>
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="recordType">
+      <xsd:sequence>
+         <xsd:element ref="metametadata" minOccurs="0"/>
+         <xsd:element ref="general" minOccurs="0"/>
+         <xsd:element ref="lifecycle" minOccurs="0"/>
+         <xsd:element ref="technical" minOccurs="0"/>
+         <xsd:element ref="educational" minOccurs="0"/>
+         <xsd:element ref="rights" minOccurs="0"/>
+         <xsd:element ref="relation" minOccurs="0" maxOccurs="32"/>
+         <xsd:element ref="annotation" minOccurs="0" maxOccurs="32"/>
+         <xsd:element ref="classification" minOccurs="0" maxOccurs="10"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="relationType">
+      <xsd:sequence>
+         <xsd:element ref="kind" minOccurs="0"/>
+         <xsd:element ref="resource" minOccurs="0"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="requirementsType">
+      <xsd:sequence>
+         <xsd:element ref="type" minOccurs="0"/>
+         <xsd:element ref="name" minOccurs="0"/>
+         <xsd:element ref="minimumversion" minOccurs="0"/>
+         <xsd:element ref="maximumversion" minOccurs="0"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="resourceType">
+      <xsd:sequence>
+         <xsd:element ref="identifier" minOccurs="0" maxOccurs="0"/>
+         <xsd:element ref="description" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="rightsType">
+      <xsd:sequence>
+         <xsd:element ref="cost" minOccurs="0"/>
+         <xsd:element ref="copyrightandotherrestrictions" minOccurs="0"/>
+         <xsd:element ref="description" minOccurs="0"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="roleType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="statusType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0" maxOccurs="8"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="structureType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0" maxOccurs="8"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="taxonpathType">
+      <xsd:sequence>
+         <xsd:element ref="source" minOccurs="0"/>
+         <xsd:element ref="taxon" minOccurs="0" maxOccurs="16"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="taxonType">
+      <xsd:sequence>
+         <xsd:element ref="id" minOccurs="0"/>
+         <xsd:element ref="entry" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="technicalType">
+      <xsd:sequence>
+         <xsd:element ref="format" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="size" minOccurs="0"/>
+         <xsd:element ref="location" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="requirements" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="installationremarks" minOccurs="0"/>
+         <xsd:element ref="otherplatformrequirements" minOccurs="0"/>
+         <xsd:element ref="duration" minOccurs="0"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="titleType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0" maxOccurs="8"/>
+         <xsd:element ref="extension" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="typeType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="typicalagerangeType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0" maxOccurs="4"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="typicallearningtimeType">
+      <xsd:sequence>
+         <xsd:element ref="datetime" minOccurs="0"/>
+         <xsd:element ref="durtime" minOccurs="0">
+            <xsd:annotation>
+               <xsd:documentation>Experimental.  Datetime data type inadequate.</xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="description" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   
+   <xsd:complexType name="versionType">
+      <xsd:sequence>
+         <xsd:element ref="langstring" minOccurs="0" maxOccurs="10"/>
+      </xsd:sequence>
+   </xsd:complexType>
+
+   <!-- ****************** -->
+   <!-- ** Simple Types ** -->
+   <!-- ****************** -->
+
+   <xsd:simpleType name="aggregationlevelType">
+      <xsd:restriction base="xsd:integer">
+         <xsd:maxInclusive value="4"/>
+         <xsd:minInclusive value="0"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   
+   <xsd:simpleType name="catalogueType">
+      <xsd:restriction base="xsd:string">
+         <xsd:maxLength value="1024"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   
+   <xsd:simpleType name="copyrightandotherrestrictionsType">
+      <xsd:restriction base="xsd:string">
+         <xsd:enumeration value="yes"/>
+         <xsd:enumeration value="no"/>
+         <xsd:maxLength value="8"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   
+   <xsd:simpleType name="costType">
+      <xsd:restriction base="xsd:string">
+         <xsd:enumeration value="yes"/>
+         <xsd:enumeration value="no"/>
+         <xsd:maxLength value="8"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   
+   <xsd:simpleType name="datetimeType">
+      <xsd:restriction base="xsd:date"/>
+   </xsd:simpleType>
+   
+   <xsd:simpleType name="difficultyType">
+      <xsd:restriction base="xsd:integer">
+         <xsd:maxInclusive value="4"/>
+         <xsd:minInclusive value="0"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   
+   <xsd:simpleType name="durtimeType">
+                <xsd:restriction base="xsd:duration"/>
+   </xsd:simpleType>
+   
+   <xsd:simpleType name="idType">
+      <xsd:restriction base="xsd:string">
+         <xsd:maxLength value="256"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   
+   <xsd:simpleType name="languageType">
+      <xsd:restriction base="xsd:string">
+         <xsd:maxLength value="128"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   
+   <xsd:simpleType name="maximumversionType">
+      <xsd:restriction base="xsd:string">
+         <xsd:maxLength value="32"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   
+   <xsd:simpleType name="metadataschemeType">
+      <xsd:restriction base="xsd:string">
+         <xsd:maxLength value="32"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   
+   <xsd:simpleType name="minimumversionType">
+      <xsd:restriction base="xsd:string">
+         <xsd:maxLength value="32"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   
+   <xsd:simpleType name="semanticdensityType">
+      <xsd:restriction base="xsd:integer">
+         <xsd:maxInclusive value="4"/>
+         <xsd:minInclusive value="0"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   
+   <xsd:simpleType name="sizeType">
+      <xsd:restriction base="xsd:long"/>
+   </xsd:simpleType>
+   
+   <xsd:simpleType name="sourceType">
+      <xsd:restriction base="xsd:string">
+         <xsd:maxLength value="1024"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   
+   <xsd:simpleType name="stringType">
+      <xsd:restriction base="xsd:string"/>
+   </xsd:simpleType>
+   
+   <xsd:simpleType name="vcardType">
+      <xsd:restriction base="xsd:string">
+         <xsd:maxLength value="1024"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+
+</xsd:schema>

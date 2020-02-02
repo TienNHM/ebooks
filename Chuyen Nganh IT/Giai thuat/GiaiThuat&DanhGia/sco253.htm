@@ -1,0 +1,50 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="31 Mar 2007 18:08:57 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title>Danh Sách Kề</title>
+</head>
+<body onLoad="loadPage()" onUnload="return unloadPage('incomplete')">
+
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in .5in"><SPAN lang=DE style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-ansi-language: DE"><FONT face="Times New Roman">Danh sách kề (là danh sách các đỉnh kề của đồ thị G = (V, E)) được mô tả bởi mảng Adj của |V| danh sách, mỗi một danh sách tương ứng với mỗi một đỉnh thuộc V. Với mỗi đỉnh u </FONT></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">Î</SPAN></SPAN><SPAN lang=DE style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-ansi-language: DE"><FONT face="Times New Roman"> V, danh sách kề Adj[u] chứa (hay còn nói là trỏ tới) tất cả các đỉnh v mà từ v có cạnh nối tới u (có nghĩa là (u,v) </FONT></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">Î</SPAN></SPAN><SPAN lang=DE style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-ansi-language: DE"><FONT face="Times New Roman"> E). Điều này có nghĩa là Adj[u] chứa tất cả các đỉnh kề với u trên đồ thị G. Các đỉnh trong mỗi một danh sách kề thông thường được lưu theo một trật tự tùy ý. 
+<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in .5in"><SPAN lang=DE style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-ansi-language: DE"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Nếu G là đồ thị có hướng, tổng chiều dài của tất cả các danh sách kề là |E|, do có cạnh nối (u,v) chỉ khi đỉnh v xuất hiện trong Adj[u]. Nếu G là một đồ thị vô hướng, tổng độ dài của tất cả các danh sách kề là 2|E|, do tồn tại cạnh vô hướng (u,v) chỉ khi đỉnh u xuất hiện trong danh sách các đỉnh kề của v và đỉnh v xuất hiện trong danh sách các đỉnh kề của u. Dù đồ thị có hướng hay vô hướng, việc biểu diễn qua danh sách kề chiếm một vùng bộ nhớ có kích thước là O(max(V,E)) = O(V + E).<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in .5in"><SPAN lang=DE style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-ansi-language: DE"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Các danh sách các đỉnh kề có thể dễ dàng được sử dụng để biểu diễn các đồ thị có trọng số. Đó là đồ thị mà mỗi cạnh đều có một trọng số riêng, được tính bằng hàm trọng số w: E </FONT></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">®</SPAN></SPAN><SPAN lang=DE style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-ansi-language: DE"><FONT face="Times New Roman"> R. <o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in .5in"><FONT face="Times New Roman"><B><I style="mso-bidi-font-style: normal"><U><SPAN lang=DE style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-ansi-language: DE">Ví dụ:</SPAN></U></I></B><B><SPAN lang=DE style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-ansi-language: DE"> <o:p></o:p></SPAN></B></FONT></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in .5in"><SPAN lang=DE style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-ansi-language: DE"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Cho G = (V,E) là một đồ thị trọng số với hàm trọng số w. Trọng số w(u,v) của cạnh (u,v) </FONT></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">Î</SPAN></SPAN><SPAN lang=DE style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-ansi-language: DE"><FONT face="Times New Roman"> E được chứa cùng với đỉnh v trong danh sách các đỉnh kề với đỉnh u. Biểu diễn danh sách đỉnh kề khá mạnh, xét từ khía cạnh nó có thể được biến đổi để hỗ trợ nhiều đồ thị đa dạng khác.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in .5in"><SPAN lang=DE style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; mso-ansi-language: DE"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Một nhược điểm của cách biểu diễn đồ thị qua danh sách các đỉnh kề là để xác nhận cạnh (u,v) đã cho có tồn tại trên đồ thị G(V,E) không, không có một cách nào nhanh hơn là tiến hành tìm kiếm đỉnh v trong danh sách đỉnh Adj[u]. Có thể khắc phục nhược điểm này bằng cách chuyển sang biểu diễn đồ thị qua ma trận kề, tuy nhiên, việc này sẽ dòi hỏi phải sử dụng nhiều bộ nhớ hơn. <o:p></o:p></FONT></SPAN></P>
+<HR align="JUSTIFY">
+
+<FORM>
+  <div align="justify">
+    <TABLE cols=3 width="100%" align=center>
+      <TBODY>
+        <TR>
+      <TD align=middle><INPUT id=button2 onClick="doQuit('completed')" type=button value="  Done  " name=button2></TD></TR></TBODY>
+    </TABLE>
+  </div>
+</FORM>
+</body></html>

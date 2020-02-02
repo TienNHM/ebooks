@@ -1,0 +1,61 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="29 Mar 2007 17:36:16 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title>2</title>
+</head>
+<body onLoad="loadPage()" onUnload="return unloadPage('incomplete')">
+
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in">&nbsp;</P>
+<DIV>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Thuật toán (algorithm) là một trong những khái niệm quan trọng trong lĩnh vực tin học. Thuật ngữ thuật toán được xuất phát từ nhà toán học Arập Abu Ja’far Mohammed ibn Musa al Khowarizmi (khoảng năm 825). Tuy nhiên lúc bấy giờ và trong nhiều thế kỷ sau, nó không mang nội dung như ngày nay chúng ta quan niệm. Thuật toán nổi tiếng nhất có từ thời cổ Hy lạp là thuật toán Euclid., thuật toán tìm ước chung lớn nhất của hai số nguyên . Có thể mô tả thuật toán đó như sau:
+  <o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></B><FONT face="Times New Roman"><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Thuật toán </SPAN></B>
+    <st1:City>
+      <st1:place><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Euclid</SPAN></B></st1:place>
+    </st1:City>
+    <B style="mso-bidi-font-weight: normal"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"> .
+    <o:p></o:p>
+  </SPAN></B></FONT></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 35.45pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Input: m, n nguyên dương <o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 35.45pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Output: g<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>(ước chung lớn nhất của m và n)<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Phương pháp:<o:p></o:p></FONT></SPAN></B></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 35.45pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Bước 1: Tìm r, phần dư của m cho n<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt 35.45pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Bước 2: Nếu r = 0, thì g:=n (gán giá trị của n cho g),và dừng lại. Trong trường hợp ngược lại (r</FONT></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">¹</SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">0) ,thì<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>m:=n; n:=r và quay lại bước 1.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt 35.45pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Chúng ta có thể quan niệm các bước cần thực hiện để làm một món ăn, được mô tả trong các sách dạy chế biến món ăn, là một thuật toán . Cũng có thể xem các bước cần tiến hành để gấp đồ chơi bằng giấy ,được trình bày trong sách dạy gấp đồ chơi bằng giấy là một<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>thuật toán. Phương pháp cộng nhân các số nguuyên, chúng ta đã được học ở cấp I cũng là các thuật toán.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Vì vậy ta có định nghĩa không hình thức về thuật toán như sau:<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Thuật toán là một dãy hữu hạn các bước, mỗi bước mô tả chính xác các phép toán, hoặc hành động cần thực hiện ... để cho ta lời giải của bài toán.<o:p></o:p></FONT></SPAN></P>
+</DIV><hr>
+<form>
+<table cols="3"	width="100%" align="center">
+<tr>
+<td	align="middle"><input type = "button" value	= "  Done  " onClick = "doQuit('completed')" id=button2 name=button2></td>
+</tr>
+</table>
+</form>
+
+</body></html>

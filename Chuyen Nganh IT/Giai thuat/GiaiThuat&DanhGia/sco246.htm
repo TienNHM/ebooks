@@ -1,0 +1,52 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="31 Mar 2007 18:07:49 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title>Đặc điểm chung của thuật toán tham lam</title>
+</head>
+<body onLoad="loadPage()" onUnload="return unloadPage('incomplete')">
+
+<P align="justify"><SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">Mục đích xây dựng bài toán giải nhiều lớp bài toán khác nhau, đ&shy;ưa ra quyết định dựa ngay vào thuật toán đang có, và trong tương lai sẽ không xem xét lại quyết định trong quá khứ. - &gt; thuật toán dễ đề xuất , thời gian tính nhanh nhưng thường không cho kết quả đúng.</SPAN></P>
+<SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0cm 3pt 54pt; TEXT-INDENT: -18pt; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: list 54.0pt; mso-list: l3 level1 lfo11"><SPAN style="FONT-SIZE: 13pt">-<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN><SPAN style="FONT-SIZE: 13pt">Lời giải cần tìm có thể mô tả nh&shy;ư là bộ gồm hữu hạn các thành phần thoả mãn điều kiện nhất định, ta phải giải quyết bài toán một cách tối &shy;ưu -&gt; hàm mục tiêu
+<o:p></o:p></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0cm 3pt 54pt; TEXT-INDENT: -18pt; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: list 54.0pt; mso-list: l3 level1 lfo11"><SPAN style="FONT-SIZE: 13pt">-<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN><SPAN style="FONT-SIZE: 13pt">Để xây dựng lời giải ta có một tập các ứng cử viên<o:p></o:p></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0cm 3pt 54pt; TEXT-INDENT: -18pt; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: list 54.0pt; mso-list: l3 level1 lfo11"><SPAN style="FONT-SIZE: 13pt">-<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN><SPAN style="FONT-SIZE: 13pt">Xuất phát từ lời giải rỗng, thực hiện việc xây dựng lời giải từng bước, mỗi bư&shy;ớc sẽ lựa chọn trong tập ứng cử viên để bổ xung vào lời giải hiện có.<o:p></o:p></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0cm 3pt 54pt; TEXT-INDENT: -18pt; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: list 54.0pt; mso-list: l3 level1 lfo11"><SPAN style="FONT-SIZE: 13pt">-<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN><SPAN style="FONT-SIZE: 13pt">Xây dựng một hàm nhận biết tính chấp nhận đ&shy;ược của lời giải hiện có -&gt; Hàm Solution(S) -&gt; Kiểm tra thoả mãn điều kiện chưa.<o:p></o:p></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0cm 3pt 54pt; TEXT-INDENT: -18pt; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: list 54.0pt; mso-list: l3 level1 lfo11"><SPAN style="FONT-SIZE: 13pt">-<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN><SPAN style="FONT-SIZE: 13pt">Một hàm quan trọng nữa : Select(C) cho phép tại mỗi b&shy;ước của thuật toán lựa chọn ứng cử viên có triển vọng nhất để bổ xung vào lời giải hiện có -&gt; dựa trên căn cứ vào ảnh h&shy;ưởng của nó vào hàm mục tiêu, thực tế là ứng cử viên đó phải giúp chúng ta phát triển tiếp tục bài toán.<o:p></o:p></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0cm 3pt 54pt; TEXT-INDENT: -18pt; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: list 54.0pt; mso-list: l3 level1 lfo11"><SPAN style="FONT-SIZE: 13pt">-<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN><SPAN style="FONT-SIZE: 13pt">Xây dựng hàm nhận biết tính chấp nhận đ&shy;ược của ứng cử viên đ&shy;ược lựa chọn, để có thể quyết định bổ xung ứng cử viên đ&shy;ược lựa chọn bởi hàm Select vào lời giải -&gt; Feasible(S </SPAN><SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">È</SPAN></SPAN><SPAN style="FONT-SIZE: 13pt"> x).<o:p></o:p></SPAN></P>
+<P align="justify">
+<HR align="JUSTIFY">
+<FORM>
+  <div align="justify">
+    <TABLE cols=3 width="100%" align=center>
+      <TBODY>
+        <TR>
+      <TD align=middle><INPUT id=button2 onClick="doQuit('completed')" type=button value="  Done  " name=button2></TD></TR></TBODY>
+    </TABLE>
+  </div>
+</FORM>
+</body></html>

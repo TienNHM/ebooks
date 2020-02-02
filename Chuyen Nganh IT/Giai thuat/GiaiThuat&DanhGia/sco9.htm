@@ -1,0 +1,66 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="29 Mar 2007 17:37:50 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title>New Page</title>
+</head>
+<body onLoad="loadPage()" onUnload="return unloadPage('incomplete')">
+
+<DIV>&nbsp;</DIV>
+<FORM>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Định nghĩa trên về thuật toán tất nhiên còn chứa nhiều điều chưa rõ ràng. Để hiểu đầy đủ ý nghĩa của khái niệm thuật toán ,chúng ta đưa ra 5 đặc trưng sau đây của thuật toán.
+  <o:p></o:p></FONT></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">
+  <o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p>
+  </SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">1. Input<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><FONT face="Times New Roman"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Mỗi thuật toán đều có một số (có thể bằng không ) các dữ liệu vào (input) . Đó là các giá trị cần đưa vào khi thuật toán bắt đầu làm việc. Các dữ liệu này cần được lấy từ các tập hợp giá trị cụ thể nào đó. Chẳng hạn, trong thuật toán </SPAN>
+  <st1:City><st1:place><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Euclid</SPAN></st1:place></st1:City><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"> ở trên, các số<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>m và n là các dữ liệu lấy từ tập các số nguyên<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>dương .<o:p></o:p></SPAN></FONT></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">2. Output
+  <o:p></o:p>
+</FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Mỗi thuật toán cần có một hoặc nhiều dữ liệu ra (output). Đó là các giá trị có quan hệ hoàn toàn xác định với các dữ liệu vào, và là kết quả của sự thực hiện thuật toán .Trong thuật toán Euclid, có một dữ liệu ra đó là ƯSCLN g, khi thuật toán dừng lại (trường hợp r=0) thì giá trị của g là ước chung lớn nhất của m và n.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">3. Tính<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>xác định.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">ở mỗi bước ,các bước thao tác phải hết sức rõ ràng, không gây nên sự nhập nhằng. Nói rõ hơn là trong cùng một điều kiện hai bộ xử lý cùng thực hiện một thuật toán phải cho cùng một kết quả như nhau.Nếu biểu diễn thuật toán bằng phương pháp thông thường không có gì đảm bảo được ngươì đọc hiểu đúng ý của người viết thuật toán. Để đảm bảo đòi hỏi này, thuật toán cần được mô tả trong các ngôn ngữ lập trình (ngôn ngữ máy,hợp ngữ hoặc ngôn ngữ bậc cao như Pascal..<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>). Trong các ngôn ngữ này các mệnh đề được tạo theo các qui tắc cú pháp nghiêm ngặt và chỉ có<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>một nghĩa duy nhất .<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">4. Tính khả thi/đa năng . <o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><FONT face="Times New Roman"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Tất cả các phép toán có mặt trong thuật toán phải đủ đơn giản . Điều đó có nghĩa là, các phép toán phải sao cho, ít nhất về nguyên tắc có thể thực hiện bởi con người chỉ bằng giấy trắng và bút chì trong một khoảng thời gian hữu hạn. Chẳng hạn, trong thuật toán </SPAN><st1:City><st1:place><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Euclid</SPAN></st1:place></st1:City><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"> ta chỉ cần thực hiện các phép chia các số nguyên, các phép gán và các phép so sánh r=0 hay<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>r </SPAN></FONT><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">¹</SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"> 0. Điều quan trọng nữa là thuật toán phải có tính đa năng làm việc được với tất cả các tập hợp dữ liệu có thể của đầu vào.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">5. Tính dừng. <o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><FONT face="Times New Roman"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Với mọi bộ dữ liệu vào thoả mãn các điều kiện của dữ liệu vào (tức là được lấy ra từ các tập của dữ liệu vào), thuật toán phải dừng lại sau một số hữu hạn bước thực hiện.Ví dụ, thuật toán </SPAN><st1:City><st1:place><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Euclid</SPAN></st1:place></st1:City><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"> thoả mãn điêù kiện này. Bởi vì giá trị của r luôn nhỏ hơn n (khi thực hiện bước 1), nếu r &lt;&gt;0 thì giá trị của n ở bước i (ký hiệu là ni) sẽ là gía trị của ri<SUB>-1</SUB> ở bước i-1, ta phải có bất đẳng thức n&gt;r =n<SUB>1</SUB>&gt;r<SUB>1</SUB> = n<SUB>2</SUB> &gt; r<SUB>2</SUB>. Dãy số nguyên dương này giảm dần và cần phải kết thúc ở 0, do đó sau một số hữu hạn bước nào đó giá trị của r phải = 0 và thuật toán phải dừng lại.<o:p></o:p></SPAN></FONT></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Với một vấn đề đặt ra ,có thể có một hoặc nhiều thuật toán giải .Một vấn đề có thuật toán giải gọi là vấn đề giải được (bằng thuật toán). Chẳng hạn, tìm nghiệm của hệ phương trình tuyến tính<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>là vấn đề giải được. Một vấn đề không tồn tại thuật toán gọi là vấn đề không giải được (bằng thuật toán).<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Một trong những thành tựu suất xắc nhất của toán học thế kỷ 20 là đã tìm ra những vấn đề không giải được bằng thuật toán. Chẳng hạn thuật toán chắc thắng cho người thứ hai của cờ ca rô hoặc thuật toán xác định xem một máy Turing có dừng lại sau n bước<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>không, đềulà những vấn đề không tồn tại thuật toán giải được.<o:p></o:p></FONT></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">
+  <o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p>
+</SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></P>
+<div align="justify">
+  <TABLE cols=3 width="100%" align=center>
+    <TBODY>
+      <TR>
+      <TD align=middle><INPUT id=button2 onClick="doQuit('completed')" type=button value="  Done  " name=button2></TD></TR></TBODY>
+  </TABLE>
+</div>
+</FORM>
+</body></html>

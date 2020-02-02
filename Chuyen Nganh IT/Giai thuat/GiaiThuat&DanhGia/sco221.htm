@@ -1,0 +1,63 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="30 Mar 2007 17:20:13 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title> Phương pháp liệt kê từng bước</title>
+</head>
+<body onLoad="loadPage()" onunload="return unloadPage('incomplete')">
+
+<DIV>&nbsp; 
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Có nhiều phương pháp biểu diễn thuật toán .Có thể biểu diễn thuật toán bằng danh sách các bước, các bước được diễn đạt bằng ngôn ngữ thông thường và các ký hiệu toán học. Có thể biểu diễn thuật toán bằng sơ đồ khối. Tuy nhiên, để đảm bảo tính xác định của thuật toán như đã trình bày trên, thuật toán cần được viết trên các ngôn ngữ lập trình. Một chương trình là sự biểu diễn của một thuật toán trong ngôn ngữ lập trình đã chọn. Thông thường ta dùng ngôn ngữ lập trình Pascal, một ngôn ngữ thường được chọn để trình bày các thuật toán trong sách báo.<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Ngôn ngữ thuật toán là ngôn ngữ dùng để miêu tả thuật toán .Thông thường ngôn ngữ thuật toán bao gồm ba loại:<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>+ Ngôn ngữ liệt kê từng bước;<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>+ Sơ đồ khối;<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>+ Ngôn ngữ lập trình;<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Ngôn ngữ liệt kê từng bước nội dung như sau:<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Thuật toán: Tên thuật toán và chức năng.<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Vào: Dữ liệu vào với tên kiểu.<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Ra: Các dữ liệu ra với tên kiểu.<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-spacerun: yes">&nbsp;</SPAN>Biến phụ (nếu có) gồm tên kiểu.<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Hành động là các thao tác với các lệnh có nhãn là các số tự nhiên.<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><FONT face="Times New Roman"><I style="mso-bidi-font-style: normal"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Ví dụ. </SPAN></I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Để giải<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>phương trình bậc hai ax<SUP>2</SUP> + bx +c = 0, ta có thể mô tả thuật toán bằng ngôn ngữ liệt kê như sau:<o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Bước 1: Xác định các hệ số a,b,c.<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Bước 2 :Kiểm tra xem các hệ số a,b,c có khác 0 hay không ?<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Nếu a=0 quay lại thực hiện bước 1.<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Bước 3: Tính biểu thức <IMG height=17 src="sco221_Media/image002.gif" width=15 align=absMiddle>&nbsp;<SPAN style="POSITION: relative; TOP: 2pt; mso-text-raise: -2.0pt"><?xml:namespace prefix = v ns = "urn:schemas-microsoft-com:vml" /><v:shapetype id=_x0000_t75 coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"><v:stroke joinstyle="miter"></v:stroke><v:formulas><v:f eqn="if lineDrawn pixelLineWidth 0"></v:f><v:f eqn="sum @0 1 0"></v:f><v:f eqn="sum 0 0 @1"></v:f><v:f eqn="prod @2 1 2"></v:f><v:f eqn="prod @3 21600 pixelWidth"></v:f><v:f eqn="prod @3 21600 pixelHeight"></v:f><v:f eqn="sum @0 0 1"></v:f><v:f eqn="prod @6 1 2"></v:f><v:f eqn="prod @7 21600 pixelWidth"></v:f><v:f eqn="sum @8 21600 0"></v:f><v:f eqn="prod @7 21600 pixelHeight"></v:f><v:f eqn="sum @10 21600 0"></v:f></v:formulas><v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"></v:path><o:lock v:ext="edit" aspectratio="t"></o:lock></v:shapetype><v:shape id=_x0000_i1025 style="WIDTH: 11.25pt; HEIGHT: 12.75pt" type="#_x0000_t75" o:ole="" fillcolor="window"><v:imagedata src="file:///C:\DOCUME~1\vnis05\LOCALS~1\Temp\msohtml1\01\clip_image001.wmz" o:title=""></v:imagedata></v:shape></SPAN> = b<SUP>2 </SUP>– 4*a*c.<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Bước 4:Nếu </FONT></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">D</SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"> &lt;0 thông báo phương trình vô nghiệm và chuyển sang bước 8.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></FONT></SPAN></P><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><o:p>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Bước 5:Nếu </SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">D</SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">=0,tính x<SUB>1</SUB>=x<SUB>2</SUB>=&nbsp;<IMG height=41 src="sco221_Media/image004.gif" width=36 align=middle><SPAN style="mso-spacerun: yes">&nbsp;</SPAN>và chuyển sang bước 7.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Bước 6: Tính x<SUB>1</SUB>=<IMG height=45 src="sco221_Media/image006.gif" width=65 align=middle><SPAN style="POSITION: relative; TOP: 12pt; mso-text-raise: -12.0pt"><v:shape id=_x0000_i1026 style="WIDTH: 48.75pt; HEIGHT: 33.75pt" type="#_x0000_t75" o:ole="" fillcolor="window">&nbsp;<v:imagedata src="file:///C:\DOCUME~1\vnis\LOCALS~1\Temp\msohtml1\01\clip_image003.wmz" o:title=""></v:imagedata></v:shape></SPAN><SPAN style="mso-spacerun: yes">&nbsp;</SPAN>, x<SUB>2</SUB>=<SPAN style="POSITION: relative; TOP: 12pt; mso-text-raise: -12.0pt"><v:shape id=_x0000_i1027 style="WIDTH: 48.75pt; HEIGHT: 33.75pt" type="#_x0000_t75" o:ole="" fillcolor="window"> <v:imagedata src="file:///C:\DOCUME~1\vnis\LOCALS~1\Temp\msohtml1\01\clip_image005.wmz" o:title=""></v:imagedata></v:shape></SPAN><SPAN style="mso-spacerun: yes"><IMG height=45 src="sco221_Media/image008.gif" width=65 align=middle>&nbsp;</SPAN>và chuyển sang bước 7.</SPAN></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Bước 7: Thông báo các nghiệm x<SUB>1</SUB> , x<SUB>2</SUB> .<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Bước 8: Kết thúc thuật toán.<o:p></o:p></FONT></SPAN></P>
+<P class=MsoTitle style="MARGIN: 12pt 0in 3pt 0.5in; TEXT-ALIGN: justify; tab-stops: .25in"><SPAN lang=EN-GB style="FONT-WEIGHT: normal; FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-family: Arial; mso-bidi-font-weight: bold"><o:p>&nbsp;</o:p></SPAN></P>
+<HR>
+</DIV>
+<FORM>
+<TABLE cols=3 width="100%" align=center>
+<TBODY>
+<TR>
+<TD align=middle><INPUT id=button2 onclick="doQuit('completed')" type=button value="  Done  " name=button2></TD></TR></TBODY></TABLE></FORM>
+</body></html>

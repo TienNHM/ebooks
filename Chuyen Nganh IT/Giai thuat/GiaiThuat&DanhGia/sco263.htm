@@ -1,0 +1,66 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="31 Mar 2007 18:10:38 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title>Giới thiệu</title>
+</head>
+<body onLoad="loadPage()" onUnload="return unloadPage('incomplete')">
+
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Ta xét một ứng dụng kinh điển của việc tìm kiếm theo chiều sâu: phân rã một đồ thị có hướng thành các thành phần liên thông mạnh. Trong phần này sẽ trình bày cách phân rã sử dụng hai lần tìm kiếm theo chiều sâu. Có rất nhiều các thuật toán làm việc với đồ thị có hướng sử dụng phép phân rã này; cách tiếp cận này cho phép chia một bài toán thành các bài toán nhỏ, mỗi bài toán tương ứng với một thành phần liên thông mạnh. Kết hợp các giải pháp của các bài toán nhỏ theo kiến trúc liên kết giữa các thành phần liên thông mạnh; kiến trúc này có thể được biểu diễn bởi một đồ thị được gọi là đồ thị thành phần.
+<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Một thành phần liên thông mạnh của một đồ thị có hướng G=(V, E) là tập cực đại các đỉnh U </FONT></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">Í</SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"> V sao cho mỗi cặp đỉnh u và v thuộc U ta có uv và vu có nghĩa là u và v đều có thể được đi tới từ các đỉnh khác. <o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Thuật toán tìm kiếm các thành phần liên thông mạnh của một đồ thị G=(V, E) sử dụng đồ thị đảo của G, đồ thị này gọi là GT = (V, ET), trong đó ET = {(u,v): (v,u) </FONT></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">Î</SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"> E}. ET bao gồm các cung của đồ thị G với chiều đảo ngược. Với danh sách kề biểu diễn cho đồ thị G, thời gian để xây dựng GT là O(V+E). Có một điều khá thú vị đó là G và GT có cùng số lượng các thành phần liên thông: u và v có thể được đi tới từ các đỉnh thuộc G nếu và chỉ nếu chúng có thể được đi tới từ các đỉnh thuộc GT. Hình 5.1(b) biểu diễn đồ thị đảo của đồ thị ở hình 5.1(a), các thành phần liên thông được tô đậm.</FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><o:p><IMG height=392 src="http://server:8080/LCMS/Materials/Image/45/baitoan5_files/image001.png" width=354></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; TEXT-ALIGN: center; tab-stops: .25in" align=justify><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">
+<v:shapetype id=_x0000_t75 stroked="f" filled="f" path="m@4@5l@4@11@9@11@9@5xe" o:preferrelative="t" o:spt="75" coordsize="21600,21600"><v:stroke joinstyle="miter"></v:stroke><v:formulas><v:f eqn="if lineDrawn pixelLineWidth 0"></v:f><v:f eqn="sum @0 1 0"></v:f><v:f eqn="sum 0 0 @1"></v:f><v:f eqn="prod @2 1 2"></v:f><v:f eqn="prod @3 21600 pixelWidth"></v:f><v:f eqn="prod @3 21600 pixelHeight"></v:f><v:f eqn="sum @0 0 1"></v:f><v:f eqn="prod @6 1 2"></v:f><v:f eqn="prod @7 21600 pixelWidth"></v:f><v:f eqn="sum @8 21600 0"></v:f><v:f eqn="prod @7 21600 pixelHeight"></v:f><v:f eqn="sum @10 21600 0"></v:f></v:formulas><v:path o:connecttype="rect" gradientshapeok="t" o:extrusionok="f"></v:path><o:lock aspectratio="t" v:ext="edit"></o:lock></v:shapetype><v:shape id=_x0000_i1025 style="WIDTH: 265.5pt; HEIGHT: 294pt" type="#_x0000_t75"><v:imagedata o:title="" src="file:///C:\DOCUME~1\vnis\LOCALS~1\Temp\msohtml1\01\clip_image001.png"></v:imagedata></v:shape><o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; TEXT-ALIGN: center; tab-stops: .25in" align=justify><B style="mso-bidi-font-weight: normal"><I style="mso-bidi-font-style: normal"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Hình 6.1<o:p></o:p></FONT></SPAN></I></B></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0in 0pt 0.75in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: .25in list .75in; mso-list: l0 level1 lfo1"><FONT face="Times New Roman"><I style="mso-bidi-font-style: normal"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><SPAN style="mso-list: Ignore">a)<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN></I><I style="mso-bidi-font-style: normal"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Một đồ thị có hướng G. Các thành phần liên thông mạnh của G<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>là các vùng được tô đậm. Mỗi đỉnh được đánh nhãn là thời gian thăm và thời gian kết thúc. Các cung của cây được tô đậm.<o:p></o:p></SPAN></I></FONT></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0in 0pt 0.75in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: .25in list .75in; mso-list: l0 level1 lfo1"><FONT face="Times New Roman"><I style="mso-bidi-font-style: normal"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><SPAN style="mso-list: Ignore">b)<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN></I><I style="mso-bidi-font-style: normal"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">GT - đồ thị đảo của G. Cây tìm kiếm chiều sâu được tính toán ở dòng 3 của STRONGLY-CONNECTED-COMPONENTS được chỉ ra với các cung của cây được tô đậm. Mỗi thành phần liên thông mạnh tương ứng với một cây tìm kiếm chiều sâu. Các đỉnh b, c, g và h được tô đậm hơn là tổ tiên của tất cả các đỉnh trong thành phần liên thông mạnh của chúng; các đỉnh này cũng là các gốc của các cây tìm kiếm chiều sâu được tạo ra do tìm kiếm theo chiều sâu trên GT.<o:p></o:p></SPAN></I></FONT></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0in 0pt 0.75in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: .25in list .75in; mso-list: l0 level1 lfo1"><FONT face="Times New Roman"><I style="mso-bidi-font-style: normal"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><SPAN style="mso-list: Ignore">c)<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN></I><I style="mso-bidi-font-style: normal"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">ồ thị thành phần GSCC được thu được bằng cách co mỗi thành phần của G thành một đỉnh đơn.<o:p></o:p></SPAN></I></FONT><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">
+  <o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p>
+</SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">
+  <o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p>
+</SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Thuật toán với thời gian tính tuyến tính sau tính toán các thành phần liên thông của đồ thị có hướng G= (V, E) bằng cách sử dụng 2 lần tìm kiếm theo chiều sâu, một trên G và một trên GT.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">STRONGLY-CONNECTED-COMPONENTS(G)<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 5pt 0in 5pt 0.75in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; tab-stops: .25in .5in list .75in"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; gọi DFS(G) để tính toán thời gian kết thúc f[u] cho mỗi đỉnh u<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 5pt 0in 5pt 0.75in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; tab-stops: .25in .5in list .75in"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tính GT<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 5pt 0in 5pt 0.75in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; tab-stops: .25in .5in list .75in"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; gọi DFS(GT), nhưng trong vòng lặp chính của DFS, xem xét các đỉnh để giảm f[u] (như tính toán trong bước 1)<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 5pt 0in 5pt 0.75in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; tab-stops: .25in .5in list .75in"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; đưa ra các đỉnh của mỗi cây trong rừng tìm kiếm theo chiều sâu của bước 3 như một thành phần liên thông mạnh riêng rẽ<o:p></o:p></FONT></SPAN></I></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Thuật toán trông khá đơn giản và có vẻ như không liên quan gì tới các thành phần liên thông mạnh. Tuy nhiên, bí mật thiết kế và tính đúng đắn của nó sẽ được nghiên cứu trong phần tiếp theo.<o:p></o:p></FONT></SPAN></P>
+<HR align="JUSTIFY">
+
+<FORM>
+  <div align="justify">
+    <TABLE cols=3 width="100%" align=center>
+      <TBODY>
+        <TR>
+      <TD align=middle><INPUT id=button2 onClick="doQuit('completed')" type=button value="  Done  " name=button2></TD></TR></TBODY>
+    </TABLE>
+  </div>
+</FORM>
+</body></html>

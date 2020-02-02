@@ -1,0 +1,74 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="31 Mar 2007 18:04:20 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title>Bài toán con trùng lặp</title>
+</head>
+<body onLoad="loadPage()" onUnload="return unloadPage('incomplete')">
+
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 0.25in; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Như đã trình bày ở trên một trong những điều kiện để áp dụng được quy hoạch động để giải bài toán tối ưu là số lượng các bài toán con phải không quá lớn, nghĩa là thuật toán đệ quy để giải bài toán phải giải đi, giải lại cùng một bài toán con chứ không phải luôn giải các bài toán con mới. Khi một thuật toán đệ quy phải giải đi, giải lại cùng một bài toán con ta sẽ nói là bài toán tối ưu có các bài toán con trùng lặp. Để minh hoạ cho tính chất này, ta sẽ tìm hiểu bài toán nhân dãy ma trận.
+<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Xét thuật toán đệ quy sau đây để tính m[i,j] là số phép nhân ít nhất cần thực hiện để tính tích dãy ma trận MiMi<SUB>+1</SUB> … Mj.<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><B style="mso-bidi-font-weight: normal"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">function RMat(d,i,j);<o:p></o:p></FONT></SPAN></I></B></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">begin<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN>if i = j then return 0;<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN>m[i,j]: = </FONT></SPAN></I><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">¥</SPAN></SPAN></I><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">;<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN>for k: = i to j - 1 do<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN>begin<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>q: = RMat(d,i,k) + RMat(d, k+1,j) + d[i - 1]*d[k]*d[j];<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>if q &lt; m[i,j] then m[i,j]: = q;<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN>end;<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><I><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">end;<o:p></o:p></FONT></SPAN></I></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Để tính giá trị m[1,4] chúng ta phải thực hiện<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 6pt 0in 0pt 24pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; mso-list: l0 level1 lfo1; tab-stops: list 84.0pt"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><SPAN style="mso-list: Ignore">·<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">4 lần gọi RMat(d,1,1),<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 6pt 0in 0pt 24pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; mso-list: l0 level1 lfo1; tab-stops: list 84.0pt"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><SPAN style="mso-list: Ignore">·<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">5 lần gọi RMat(d,2,2),<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 6pt 0in 0pt 24pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; mso-list: l0 level1 lfo1; tab-stops: list 84.0pt"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><SPAN style="mso-list: Ignore">·<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">5 lần gọi RMat(d,3,3),<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 6pt 0in 0pt 24pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; mso-list: l0 level1 lfo1; tab-stops: list 84.0pt"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><SPAN style="mso-list: Ignore">·<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">3 lần gọi RMat(d,4,4),<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 6pt 0in 0pt 24pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; mso-list: l0 level1 lfo1; tab-stops: list 84.0pt"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><SPAN style="mso-list: Ignore">·<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">2 lần gọi RMat(d,1,2),<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 6pt 0in 0pt 24pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; mso-list: l0 level1 lfo1; tab-stops: list 84.0pt"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><SPAN style="mso-list: Ignore">·<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">2 lần gọi RMat(d,2,3),<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 6pt 0in 0pt 24pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; mso-list: l0 level1 lfo1; tab-stops: list 84.0pt"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><SPAN style="mso-list: Ignore">·<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">…..<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Hình vẽ dưới đây cho thấy cây đệ quy thực hiện lệnh gọi RMat(d,1,4). Mỗi đỉnh của cây được đánh dấu bởi giá trị của hai tham số i,j.</FONT></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">
+  <o:p></o:p>
+</FONT></SPAN>&nbsp;</P>
+<SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p></o:p></SPAN>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><IMG height=339 src="sco239_Media/image001.gif" width=700>Ta có thể chứng minh thời gian tính T(n) của lệnh gọi RMat(d,1,n) thực hiện thủ tục đệ quy trên để tính m[1,n] tăng theo hàm mũ của n. thực vậy, ta có</FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><o:p><IMG height=93 src="sco239_Media/image004.gif" width=203></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="POSITION: relative; TOP: 32pt; mso-text-raise: -32.0pt"><v:shape id=_x0000_i1025 style="WIDTH: 152.25pt; HEIGHT: 69.75pt" o:ole="" type="#_x0000_t75"><v:imagedata o:title="" src="file:///C:\DOCUME~1\vnis05\LOCALS~1\Temp\msohtml1\01\clip_image003.wmz"></v:imagedata></v:shape></SPAN><o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Do đó</FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><o:p><IMG height=163 src="sco239_Media/image006.gif" width=226></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><BR clear=all>
+<FONT face="Times New Roman">Với n&gt;1<o:p></o:p></FONT></SPAN></P><P class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Từ công thức cuối cùng có thể chứng minh bằng quy nạp là T(n) = 2<SUP>n</SUP>.<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 0.25in; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">So sánh thuật toán đệ quy thực hiện phân tích từ trên xuống (top – down) này với thuật toán quy hoạch động thực hiện tính toán từ dưới lên ta thấy thuật toán dựa trên quy hoạch động có hiệu quả hơn hẳn do đã xử lý đúng đắn các bài toán con trùng lặp. Số lượng bài toán con khác nhau ở đây chỉ là (n<SUP>2</SUP>), và quy hoạch động chỉ cần giải mỗi bài toán đúng một lần. Trong khi đó thủ tục đệ quy đã phải lặp lại viêc giải các bài toán con mỗi khi chúng xuất hiện trong cây đệ quy. Mỗi khi cây đệ quy trong thuật toán đệ quy giải một bài toán nào đó chứa nhiều bài toán trùng lặp và tổng số bài toán con khác nhau cần giải là nhỏ thì cách tiếp cận tốt nhất để giải bài toán đặt ra là dùng quy hoạch động.<o:p></o:p></FONT></SPAN></P>
+<HR>
+
+<FORM>
+<TABLE cols=3 width="100%" align=center>
+<TBODY>
+<TR>
+<TD align=middle><INPUT id=button2 onClick="doQuit('completed')" type=button value="  Done  " name=button2></TD></TR></TBODY></TABLE></FORM>
+</body></html>

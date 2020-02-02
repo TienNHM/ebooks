@@ -1,0 +1,76 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+
+<head>
+<meta http-equiv="expires" content="30 Mar 2007 16:28:45 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title> Thiết kế thuật toán</title>
+<style type="text/css">
+<!--
+.style1 {font-size: 13pt;
+		line-height:1.5em;
+
+}
+-->
+</style>
+</head>
+<body onLoad="loadPage()" onUnload="return unloadPage('incomplete')">
+
+<p class="style1"><strong>1. </strong>Đầu  vào : Tập S = {(xi, yi) | 1 £  i £ n} <br>
+  Đầu ra : Tập con với lực lượng lớn nhất S* của S  sao cho không có hai khoảng nào trong S* có điểm chung.<br>
+  Xét thuật toán sau :<br>
+Lặp lại cho đến khi S là rỗng các thao tác sau :</p>
+<blockquote>
+  <p class="style1">1. Chọn  khoảng I có số điểm chung với một số ít nhất các khoảng khác<br>
+  2. Bổ sung  I vào tập cần tìm S*<br>
+ 3. Loại  bỏ mọi khoảng có điểm chung với </p>
+</blockquote>
+
+<p class="style1">Hãy chứng minh tính đúng đắn hoặc nêu phản ví dụ cho nó.</p>
+<p class="style1"><strong>2.</strong> Xét  bài toán tô màu khoảng <em>(Interval Coloring Problem)</em><br>
+  Đầu vào : Tập S = {(xi, yi) | 1 £  i £ n}<br>
+  Hãy coi rằng mỗi khoảng (xi, yi) tương  ứng với một yêu cầu sử dụng phòng học bắt đầu từ thời điểm xi , kết  thúc tại yi.<br>
+  Đầu ra : Tìm các phân bổ lớp vào phòng sao cho số phòng cần  sử dụng là ít nhất. Chú ý là mỗi yêu cầu sử dụng phòng cần được thỏa mãn và  không có hai lớp nào sử dụng cùng một phòng tại cùng một thời điểm.</p>
+<p align="justify" class="style1"><strong>a. </strong>Xét thuật toán lặp sau : Phân bổ một số nhiều nhất có thể được các lớp phòng thứ nhất, sau đó phân bổ một số nhiều nhất có thể các lớp vào phòng thứ hai, rồi đến phòng thứ 3, … Hỏi rằng thuật toán vừa nêu có cho lời giải đúng của bài toán tô màu khoảng ? Giải thích câu trả lời của bạn.</p>
+<p align="justify" class="style1"><strong>b.</strong> Xét thuật toán sau : Lần lượt xét các lớp theo thứ tự tăng dần của thời điểm bắt đầu. Giả sử đang xét lớp C, nếu có phòng R đã được sử dụng để xếp một lớp nào đấy và C có thể xếp vào phòng này mà không mâu thuẫn với các lớp đã xếp vào R trước đó thì xếp C vào R. Nếu trái lại xếp C vào phòng mới. Hỏi rằng thuật toán vừa nêu có cho lời giải đúng của bài toán tô màu khoảng ? Giải thích câu trả lời của bạn.</p>
+<P align="justify" class=style1 style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><strong>3. </strong>Xét bài toán đổi tiền sau : Đầu vào là một số nguyên L. Đầu ra là số lượng ít nhất các đồng tiền để đổi lượng tiền L. Các đồng tiền có mệnh giá là 1, 2, 22, …, 21000. Giả thiết rằng số lượng đồng tiền của mỗi mệnh giá là không hạn chế. Xét thuật toán đổi tiền sau đây :<br>
+  Sử dụng nhiều nhất đồng tiền có mệnh giá cao nhất. Ví dụ L = 31 : sử dụng một đồng tiền 24; còn lại giá trị 15, lại lấy một đồng tiền 23; còn lại giá trị 7, lấy 1 đồng tiền 22; giá trị còn lại 3 cần đổi bởi một đồng 21 và 1 đồng 20.<br>
+Hỏi thuật toán này có cho lời giải tối ưu của bài toán không ? giải thích câu trả lời của bạn</P>
+<P align="justify" class=style1 style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in">&nbsp;</P>
+<P align="justify" class=style1 style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><strong>4.</strong> Xét bài toán sau đây : Đầu vào là n đôi dày với các kích thước S1, S2, …, Sn và n học sinh với dãy yêu cầu về kích thước dày là p1, p2, …, pn. Bài toán đặt ra là phân bố giày cho các học sinh sao cho tổng độ chênh lệch là cực tiểu, chính xác hơn nếu học sinh i nhận đôi dày a(i) thì độ lệch trung bình của cách phân giày này là :</P>
+<P align="justify" class=style1 style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><strong>a. Xét thuật toán tham lam sau : </strong>Tìm học sinh và đôi dày có độ chên lệch nhỏ nhất. Phân đổi dày tìm được cho học sinh này. Lặp lại với các học sinh và các đôi giày còn lại. Hãy chứng minh tính đúng đắn của thuật toán hoặc nêu phản ví dụ cho thuật toán vừa mô tả.</P>
+<P align="justify" class=style1 style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><strong>b. Xét thuật toán tham lam sau :</strong>Đôi giày bé nhất cho học sinh có yêu cầu giày bé nhất, đôi giày bé nhì cho học sinh có yêu cầu bé nhì … Hãy chứng minh tính đúng đắn của thuật toán hoặc nêu phản ví dụ cho thuật toán vừa nêu.</P>
+<HR>
+
+<FORM>
+<TABLE cols=3 width="100%" align=center>
+<TBODY>
+<TR>
+<TD align=middle><div align="center">
+  <INPUT id=button2 onClick="doQuit('completed')" type=button value="  Done  " name=button2>
+</div></TD></TR></TBODY></TABLE>
+</FORM>
+</body>
+</html>

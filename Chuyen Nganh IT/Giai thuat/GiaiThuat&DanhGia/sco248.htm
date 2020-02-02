@@ -1,0 +1,80 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="31 Mar 2007 18:08:08 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title> Chứng minh tính đúng đắn của thuật toán tham lam</title>
+</head>
+<body onLoad="loadPage()" onUnload="return unloadPage('incomplete')">
+
+<P align="justify" class=MsoNormal style="MARGIN: 0cm 0cm 3pt; LINE-HEIGHT: 150%; tab-stops: 18.0pt"><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman">Công việc này không phải đơn giản. Ta sẽ nêu một lập luận đ&shy;ược sử dụng để chúng minh tính đúng đắn. 
+<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0cm 3pt 36pt; TEXT-INDENT: -18pt; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: 18.0pt list 36.0pt; mso-list: l11 level1 lfo35"><FONT face="Times New Roman"><SPAN style="FONT-SIZE: 13pt">-<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN><SPAN style="FONT-SIZE: 13pt">Để chỉ ra thuật toán không cho lời giải đúng chỉ cần đư&shy;a ra một phản ví dụ<o:p></o:p></SPAN></FONT></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0cm 3pt 36pt; TEXT-INDENT: -18pt; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: 18.0pt list 36.0pt; mso-list: l11 level1 lfo35"><FONT face="Times New Roman"><SPAN style="FONT-SIZE: 13pt">-<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN><SPAN style="FONT-SIZE: 13pt">Việc chứng minh thuật toán đúng khó hơn nhiều và ta sẽ nghiên cứu cụ thể trong phần sau :<o:p></o:p></SPAN></FONT></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0cm 0cm 3pt; LINE-HEIGHT: 150%; tab-stops: 18.0pt"><FONT face="Times New Roman"><B><U><SPAN style="FONT-SIZE: 13pt">Lập luận biến đổi </SPAN></U></B><B><SPAN style="FONT-SIZE: 13pt">(Exchange Argument)<o:p></o:p></SPAN></B></FONT></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0cm 0cm 3pt; LINE-HEIGHT: 150%; tab-stops: 18.0pt"><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman">Giả sử cần chứng minh thuật toán A cho lời giải đúng. A(I) là lời giải tìm đ&shy;ược bởi thuật toán A đối với bộ dữ liệu I. Còn O là lời giải tối ư&shy;u của bài toán với bộ dữ liệu này.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0cm 0cm 3pt; LINE-HEIGHT: 150%; tab-stops: 18.0pt"><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman">Ta cần tìm cách xây dựng phép biến đổi </FONT></SPAN><SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">j</SPAN></SPAN><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"> để biến đổi O thành O<SUP>’</SUP> sao cho :<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0cm 0cm 3pt; LINE-HEIGHT: 150%; tab-stops: 18.0pt"><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>. O<SUP>’</SUP> cũng tốt không kém gì O (Nghĩa là O<SUP>’</SUP> vẫn tối &shy;ưu) <o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0cm 0cm 3pt; LINE-HEIGHT: 150%; tab-stops: 18.0pt"><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>. O<SUP>’</SUP> giống với A(I) nhiều hơn O.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0cm 0cm 3pt; LINE-HEIGHT: 150%; tab-stops: 18.0pt"><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman">Giả sử đã xây dựng đ&shy;ược phép biến đổi vừa nêu. Để chứng minh tính đúng đắn dựa vào hai sơ đồ chứng minh sau <o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0cm 3pt 36pt; TEXT-INDENT: -18pt; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: 18.0pt list 36.0pt; mso-list: l32 level1 lfo12"><FONT face="Times New Roman"><SPAN style="FONT-SIZE: 13pt">1)<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN><B><SPAN style="FONT-SIZE: 13pt">CM bằng phản chứng : </SPAN></B><SPAN style="FONT-SIZE: 13pt">Giả sử A không đúng đắn, hãy tìm bộ dữ liệu I sao cho A(I) khác với lời giải tối &shy;ưu của bài toán. Gọi O là lời giải tối ưu giống với A(I) nhất =&gt; A(I) khác O. Dùng phép biến đổi </SPAN></FONT><SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">j</SPAN></SPAN><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"> chúng ta có thể biến đổi O </FONT></SPAN><SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">®</SPAN></SPAN><SPAN style="FONT-SIZE: 13pt"><FONT face="Times New Roman"> O<SUP>’</SUP> sao cho O<SUP>’</SUP><SPAN style="mso-spacerun: yes">&nbsp; </SPAN>vẫn tối ư&shy;u và O<SUP>’ </SUP>giống với A(I) hơn =&gt; mâu thuẫn giả thiết O là lời giải tối &shy;ưu giống với A(I) nhất.<o:p></o:p></FONT></SPAN></P>
+<P align="justify"><SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><STRONG>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </STRONG>2)&nbsp;&nbsp;<STRONG>CM trực tiếp :</STRONG> </SPAN><SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">O là lời giải tối &shy;u. Biến đổi O </SPAN><SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-family: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">®</SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"> O<SUP>’</SUP> giống với A(I) hơn là O. Nếu O<SUP>’</SUP> = A(I) thì A(I) chính là ph&shy;ương án tối &shy;u ngư&shy;ợc lại biến đổi O<SUP>’</SUP></SPAN><span style="FONT-SIZE: 13pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">&nbsp; <SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-family: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">®</SPAN></SPAN>  O<SUP>’’ </SUP>&nbsp;giống với A(I) hơn. Cứ thế ta thu đ&shy;ược dãy O<SUP>’</SUP>, O<SUP>’’</SUP> ,O<SUP>’’’</SUP>
+      <v:shapetype id=_x0000_t75 stroked="f" filled="f" path="m@4@5l@4@11@9@11@9@5xe" o:preferrelative="t" o:spt="75" coordsize="21600,21600"> 
+        <v:stroke joinstyle="miter"></v:stroke>
+        <v:formulas>
+          <v:f eqn="if lineDrawn pixelLineWidth 0"></v:f>
+          <v:f eqn="sum @0 1 0"></v:f>
+          <v:f eqn="sum 0 0 @1"></v:f>
+          <v:f eqn="prod @2 1 2"></v:f>
+          <v:f eqn="prod @3 21600 pixelWidth"></v:f>
+          <v:f eqn="prod @3 21600 pixelHeight"></v:f>
+          <v:f eqn="sum @0 0 1"></v:f>
+          <v:f eqn="prod @6 1 2"></v:f>
+          <v:f eqn="prod @7 21600 pixelWidth"></v:f>
+          <v:f eqn="sum @8 21600 0"></v:f>
+          <v:f eqn="prod @7 21600 pixelHeight"></v:f>
+          <v:f eqn="sum @10 21600 0"></v:f>
+        </v:formulas>
+        <v:path o:connecttype="rect" gradientshapeok="t" o:extrusionok="f"></v:path>
+        <o:lock aspectratio="t" v:ext="edit"></o:lock>
+      </v:shapetype>
+      <v:shape id=_x0000_i1025 style="WIDTH: 9pt; HEIGHT: 17.25pt" o:ole="" type="#_x0000_t75">
+          <v:imagedata o:title="" src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/03/clip_image001.wmz"></v:imagedata>
+  </v:shape>
+      <SUP></SUP>…..ngày càng giống hơn, và chỉ có một số hữu hạn điều kiện để so sánh nên chỉ sau một số hữu hạn lần phép biến đổi sẽ kết thúc và đó là tại A(I).
+      <o:p></o:p>
+</span></P>
+<P align="justify">
+<HR align="JUSTIFY">
+<FORM>
+  <div align="justify">
+    <TABLE cols=3 width="100%" align=center>
+      <TBODY>
+        <TR>
+      <TD align=middle><INPUT id=button2 onClick="doQuit('completed')" type=button value="  Done  " name=button2></TD></TR></TBODY>
+    </TABLE>
+  </div>
+</FORM>
+</body></html>

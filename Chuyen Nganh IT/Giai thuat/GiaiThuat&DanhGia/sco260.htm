@@ -1,0 +1,61 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="31 Mar 2007 18:10:02 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title>Phân loại cạnh</title>
+</head>
+<body onLoad="loadPage()" onUnload="return unloadPage('incomplete')">
+
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 0.25in; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Một trong các thuộc tính đáng quan tâm của tìm kiếm sâu là quá trình tìm kiếm có thể sử dụng để phân loại các cạnh của đồ thị đầu vào G=(V,E). Việc phân loại các cạnh có thể sử dụng để thu thập thông tin về đồ thị. Ví dụ, trong phần tiếp theo chúng ta sẽ thấy một đồ thị có hướng là không có chu trình nếu quá trình tìm kiếm sâu không gồm các cạnh <B style="mso-bidi-font-weight: normal">back</B>.
+<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Chúng ta có thể định nghĩa 4 loại cạnh trong rừng tìm kiếm sâu G</FONT></SPAN><SUB><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">p</SPAN></SPAN></SUB><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">. khi tìm kiếm sâu trên đồ thị G.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Các cạnh <B style="mso-bidi-font-weight: normal">cây</B> là các cạnh trong rừng tìm kiếm sâu G</FONT></SPAN><SUB><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN style="mso-char-type: symbol; mso-symbol-font-family: Symbol">p</SPAN></SPAN></SUB><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">&shy;. Cạnh (u,v) là một cạnh của cây nếu v được thăm lần đầu khi duyệt cạnh (u,v).<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Cạnh <B style="mso-bidi-font-weight: normal">Back</B> là những cạnh (u,v) mà đỉnh u<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>nối tới tổ tiên v trong cây tìm kiếm sâu. Cạnh của một đỉnh (cạnh nối một đỉnh với chính nó) cũng được coi như là cạnh Back.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Cạnh <B style="mso-bidi-font-weight: normal">Forward</B> là các cạnh không phải là cạnh cây (u,v) nối một đỉnh u tới con v trong một cây tìm kiếm sâu.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Cạnh <B style="mso-bidi-font-weight: normal">Chéo </B>là tất cả các cạnh khác các loại cạnh trên. Chúng có thể là cạnh giữa các đỉnh trong cùng một cây tìm kiếm sâu khi một đỉnh không là tổ tiên của đỉnh khác, chúng cũng có thể là cạnh giữa các đỉnh trong các cây tìm kiếm sâu khác nhau.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Thuật toán <I style="mso-bidi-font-style: normal">DFS</I> có thể thay đổi để giúp ta có thể phân loại các cạnh khi thực hiện tìm kiếm sâu trên đồ thị. ý tưởng chủ đạo của nó là mỗi cạnh (u,v) có thể phân lớp bằng màu của đỉnh <I style="mso-bidi-font-style: normal">v</I> - tức là đỉnh tới được khi thăm cạnh lần đầu tiên - (ngoại trừ các cạnh <I style="mso-bidi-font-style: normal">forward</I> và chéo không thể phân biệt được):<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Màu trắng chỉ một cạnh của cây<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Màu xám chỉ một cạnh <B style="mso-bidi-font-weight: normal">back</B><o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Màu đen chỉ một cạnh <B style="mso-bidi-font-weight: normal">forward</B> hay một cạnh chéo<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Trường hợp 1 xuất phát từ đặc điểm của thuật toán. Trường hợp 2 là do khi quan sát quá trình tìm kiếm sâu ta thấy các đỉnh tô màu xám luôn tạo ra một chuỗi các đỉnh con tương ứng với stack của đỉnh đang gọi thủ tục DFS_VISIT. Số các đỉnh xám lớn hơn 1 so với độ sâu rừng tìm kiếm sâu của đỉnh được thăm gần đây nhất . Quá trình duyệt được tiếp tục từ đỉnh xám có độ sâu lớn nhất qua một cạnh để tới đỉnh xám khác,.. rồi đến đỉnh xám tổ tiên. Trường hợp thứ 3 là các khả năng còn lại, cạnh (u,v) là cạnh <I style="mso-bidi-font-style: normal">forward</I> nếu d[u] &lt; d[v] và là cạnh <I style="mso-bidi-font-style: normal">chéo</I> nếu d[u] &gt; d[v].<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></P>
+<H4 align="justify" style="MARGIN: 6pt 0in auto"><A name=_Toc30428344><SPAN lang=EN-GB style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: 'Times New Roman'"><EM>Định lý </EM></SPAN></A><SPAN lang=EN-GB style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: 'Times New Roman'"><EM>4<o:p></o:p></EM></SPAN></H4>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Khi tìm kiếm theo chiều sâu trên một đồ thị vô hướng G, mọi cạnh của G hoặc là cạnh cây hoặc là cạnh <I style="mso-bidi-font-style: normal">back</I>.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><B style="mso-bidi-font-weight: normal"><I style="mso-bidi-font-style: normal"><U><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Chứng minh:<o:p></o:p></FONT></SPAN></U></I></B></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Cho (u, v) là một cạnh tuỳ ý của G, không làm mất tính tổng quát ta có thể giả sử d[u]&lt;d[v]. Đỉnh v phải được thăm và duyệt xong trước khi đỉnh u duyệt xong, do đó v thuộc danh sách kề của u. Nếu cạnh (u,v) được thăm trước theo hướng u tới v thì (u,v) trở thành cạnh <I style="mso-bidi-font-style: normal">cây</I>. Nếu cạnh (u,v) được thăm trước theo hướng v tới u, thì sau đó (u,v) sẽ là cạnh <I style="mso-bidi-font-style: normal">back</I>, khi đó u vẫn tô màu xám tại thời điểm cạnh được thăm lần đầu tiên.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Chúng ta sẽ còn thấy rất nhiều ứng dụng của các định lý trên trong các phần sau.<o:p></o:p></FONT></SPAN></P>
+<HR align="JUSTIFY">
+
+<FORM>
+  <div align="justify">
+    <TABLE cols=3 width="100%" align=center>
+      <TBODY>
+        <TR>
+      <TD align=middle><INPUT id=button2 onClick="doQuit('completed')" type=button value="  Done  " name=button2></TD></TR></TBODY>
+    </TABLE>
+  </div>
+</FORM>
+</body></html>

@@ -1,0 +1,51 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="31 Mar 2007 18:09:17 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title>Khái niệm</title>
+</head>
+<body onLoad="loadPage()" onUnload="return unloadPage('incomplete')">
+
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Duyệt theo chiều rộng (Breadth – first search, BFS) là một trong những thuật toán đơn giản nhất được sử dụng trong việc duyệt và tím kiếm trên đồ thị. Trên cơ sở của thuật toán này mà nhiều các thuật toán đồ thị quan trọng khác đã ra đời, như là:
+<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0in 0pt 0.5in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: .25in list .5in; mso-list: l0 level1 lfo1"><FONT face="Times New Roman"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><SPAN style="mso-list: Ignore">-<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Thuật toán Dijkstra giải bài toán đường đi ngắn nhất <o:p></o:p></SPAN></FONT></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0in 0pt 0.5in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: .25in list .5in; mso-list: l0 level1 lfo1"><FONT face="Times New Roman"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><SPAN style="mso-list: Ignore">-<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Thuật toán Prim giải bài toán cây khung nhỏ nhất.<o:p></o:p></SPAN></FONT></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: 150%; tab-stops: .25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Giả sử cho đồ thị G=(V,E) vô hướng hoặc có hướng và một đỉnh xuất phát s bất kỳ. Thuật toán duyệt theo chiều sâu tiến hành:<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0in 0pt 0.5in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: .25in list .5in; mso-list: l0 level1 lfo1"><FONT face="Times New Roman"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><SPAN style="mso-list: Ignore">-<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Duyệt các cạnh của đồ thị G để tìm ra từ đỉnh xuất phát s có thể đến được các đỉnh nào. Các đỉnh này còng được gọi là các đỉnh được “thăm”.<o:p></o:p></SPAN></FONT></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0in 0pt 0.5in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: .25in list .5in; mso-list: l0 level1 lfo1"><FONT face="Times New Roman"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><SPAN style="mso-list: Ignore">-<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Tính toán khoảng cách (là số ít nhất các cạnh) từ s tới tất cả các đỉnh có thể đến được từ s.<o:p></o:p></SPAN></FONT></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0in 0pt 0.5in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; tab-stops: .25in list .5in; mso-list: l0 level1 lfo1"><FONT face="Times New Roman"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><SPAN style="mso-list: Ignore">-<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Xây dựng cây (breath-first tree) có gốc là s và chứa tất cả các đỉnh có thể đến được từ s.Với một đỉnh v được thăm bất kỳ, tồn tại một đường đi trên cây này từ gốc s tới nút tương ứng với đỉnh v đó. Đường đi này chính là đường đi nhắn nhất từ s tới v trong đồ thị G, có nghĩa là số các cạnh của đường này là ít nhất.<o:p></o:p></SPAN></FONT></P>
+<HR align="JUSTIFY">
+
+<FORM>
+  <div align="justify">
+    <TABLE cols=3 width="100%" align=center>
+      <TBODY>
+        <TR>
+      <TD align=middle><INPUT id=button2 onClick="doQuit('completed')" type=button value="  Done  " name=button2></TD></TR></TBODY>
+    </TABLE>
+  </div>
+</FORM>
+</body></html>

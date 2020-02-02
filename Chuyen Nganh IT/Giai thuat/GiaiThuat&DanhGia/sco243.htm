@@ -1,0 +1,44 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="31 Mar 2007 18:07:12 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title>Đặc tính lựa chọn tham lam(Greedy_choice property)</title>
+</head>
+<body onLoad="loadPage()" onUnload="return unloadPage('incomplete')">
+<div align="justify"><SPAN style="FONT-SIZE: 13pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">Toàn bộ phương pháp tối &shy;ưu có thể đạt đ&shy;ược từ việc chọn tối ư&shy;u trong từng bước chọn. Về khía cạnh này giải thuật tham lam khác với giải thuật quy hoạch động ở chỗ: Trong qui hoạch động chúng ta thực hiện chọn cho từng bước, như&shy;ng việc lựa chọn này phụ thuộc vào cách giải quyết các bài toán con. Với giải thuật tham lam, tại mỗi b&shy;ước chúng ta chọn bất cứ cái gì là tốt nhất vào thời điểm hiện tại, và sau đó giải quyết các vấn đề phát sinh từ việc chọn này. Vấn đề chọn thực hiện bởi giải thuật tham lam không phụ thuộc vào việc lựa chọn trong t&shy;ương lai hay cách giải quyết các bài toán con. Vì vậy khác với quy hoạch động, giải quyết các bài toán con theo kiểu bottom up (từ d&shy;ưới lên), giải thuật tham lam th&shy;ường sử dụng giải pháp top-down (từ trên xuống).<SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Chúng ta phải chứng minh rằng với giải thuật tham lam, toàn bộ bài toán đ&shy;ược giải quyết một cách tối ư&shy;u nếu mỗi b&shy;ước việc chọn đ&shy;ược thực hiện tối ư&shy;u. Các bư&shy;ớc chọn tiếp theo đ&shy;ược thực hiện t&shy;ương tự nh&shy;ư bư&shy;ớc đầu tiên, như&shy;ng với bài toán nhỏ hơn. Ph&shy;ương pháp qui nạp đ&shy;ược ứng dụng trong giải thuật tham lam có thể đ&shy;ược sử dụng cho tất cả các b&shy;ước chọn</SPAN> 
+</div>
+<HR align="JUSTIFY">
+
+<FORM>
+  <div align="justify">
+    <TABLE cols=3 width="100%" align=center>
+      <TBODY>
+        <TR>
+      <TD align=middle><INPUT id=button2 onClick="doQuit('completed')" type=button value="  Done  " name=button2></TD></TR></TBODY>
+    </TABLE>
+  </div>
+</FORM>
+</body></html>

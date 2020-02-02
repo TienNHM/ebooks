@@ -1,0 +1,54 @@
+<html>
+<!--/*******************************************************************************
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="3 Apr 2007 18:06:11 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script	language=javascript	src="APIWrapper.js"></script>
+<script	language=javascript	src="SCOFunctions.js"></script>
+<title>Sơ đồ chung thuật toán</title>
+</head>
+<body onLoad="loadPage()" onUnload="return unloadPage('incomplete')">
+
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 0.25in; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Quy hoạch động có những nét giống như phương pháp “Chia để trị”, nó đòi hỏi việc chia bài toán thành những bài toán con kích thước nhỏ hơn. Như chúng ta đã thấy trong chương trước, phương pháp chia để trị chia bài toán cần giải ra thành các bài toán con độc lập, sau đó các bài toán con này được giải một cách đệ quy, và cuối cùng tổng hợp các lời giải của các bài toán con ta thu được lời giải của bài toán đặt ra. Điểm khác cơ bản của quy hoạch động với phương pháp chia để trị là các bài toán con là không độc lập với nhau, nghĩa là các bài toán con cùng có chung các bài toán con nhỏ hơn. Trong tình huống đó, phương pháp chia để trị sẽ tỏ ra không hiệu quả, khi nó phải lặp đi lặp lại việc giải các bài toán con chung đó. Quy hoạch động sẽ giải một bài toán con một lần và lời giải của các bài toán con sẽ được ghi nhận, để thoát khỏi việc giải lại bài toán con mỗi khi ta đòi hỏi lời giải của nó.
+<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Quy hoạch động thường được áp dụng để giải các bài toán tối ưu. Trong các bài toán tối ưu, ta có một tập các lời giải, mà mỗi lời giải như vậy được gán với một giá trị số. Ta cần tìm lời giải với giá trị số tối ưu (nhỏ nhất hoặc lớn nhất). Lời giải như vậy ta sẽ gọi là lời giải tối ưu.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Việc phát triển giải thuật dựa trên quy hoạch động có thể chia làm 3 giai đoạn:<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0in 0pt 0.5in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; mso-list: l0 level1 lfo1; tab-stops: list .5in 1.25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><SPAN style="mso-list: Ignore">·<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Phân rã: Chia bài toán cần giải thành những bài toán con nhỏ hơn có cùng dạng với bài toán ban đầu sao cho bài toán con kích thước nhỏ nhất có thể giải một cách trực tiếp. Bản thân bài toán xuất phát có thể coi là bài toán con có kích thước lớn nhất trong họ các bài toán con này.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0in 0pt 0.5in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; mso-list: l0 level1 lfo1; tab-stops: list .5in 1.25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><SPAN style="mso-list: Ignore">·<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Ghi nhận lời giải: Lưu trữ lời giải của các bài toán con vào một bảng. Việc làm này là cần thiết vì lời giải của các bài toán con thường được sử dụng lại rất nhiều lần, và điều đó nâng cao hiệu quả của giải thuật do không phải giải lặp lại cùng một bài toán nhiều lần.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0in 0pt 0.5in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; mso-list: l0 level1 lfo1; tab-stops: list .5in 1.25in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><SPAN style="mso-list: Ignore">·<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Tổng hợp lời giải: Lần lượt từ lời giải của các bài toán con kích thước nhỏ hơn tìm cách xây dựng lời giải của bài toán kích thước lớn hơn, cho đến khi thu được lời giải của bài toán xuất phát (là bài toán con có kích thước lớn nhất). Kỹ thuật giải các bài toán con của quy hoạch động là quá trình đi từ dưới lên (bottom – up) là điểm khác quan trọng với phương pháp chia để trị, trong đó các bài toán con được trị một cách đệ quy (top – down).<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 0.25in; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Yêu cầu quan trọng nhất trong việc thiết kế thuật toán nhờ quy hoạch động là thực hiện khâu phân rã, tức là xác định được cấu trúc của bài toán con. Việc phân rã cần được tiến hành sao cho không những bài toán con kích thước nhỏ nhất có thể giải được một cách trực tiếp mà còn có thể dễ dàng việc thực hiện tổng hợp lời giải.<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><FONT face="Times New Roman">Không phải lúc nào việc áp dụng phương pháp quy hoạch động đối với bài toán tối ưu hoá cũng dẫn đến thuật toán hiệu quả. Có hai tính chất quan trọng mà một bài toán tối ưu cần phải thoả mãn để có thể áp dụng quy hoạch động để giải nó là:<o:p></o:p></FONT></SPAN></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0in 0pt 0.5in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; mso-list: l1 level1 lfo2; tab-stops: list .5in .75in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><SPAN style="mso-list: Ignore">·<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><FONT face="Times New Roman"><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Cấu trúc con tối ưu:</SPAN></B><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"> Tính chất này còn được gọi là tiêu chuẩn tối ưu và có thể phát biểu như sau: Để giải đực bài toán đặt ra một cách tối ưu, mỗi bài toán con cũng phải được giải một cách tối ưu. Mặc dù sự kiện này có vẻ là hiển nhiên, nhưng nó thường không được thoả mãn do các bài toán con là giao nhau. Điều đó dẫn đến là một lời giải có thể là “kém tối ưu hơn” trong một bài toán con này nhưng lại có thể là lời giải tốt trong một bài toán con khác.<o:p></o:p></SPAN></FONT></P>
+<P align="justify" class=MsoNormal style="MARGIN: 6pt 0in 0pt 0.5in; TEXT-INDENT: -0.25in; LINE-HEIGHT: 150%; TEXT-ALIGN: justify; mso-list: l1 level1 lfo2; tab-stops: list .5in .75in"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol"><SPAN style="mso-list: Ignore">·<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><FONT face="Times New Roman"><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%">Số lượng các bài toán con phải không quá lớn.</SPAN></B><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"> Rất nhiều các bài toán NP – khó có thể giải được nhờ quy hoạch động, nhưng việc làm này là không hiệu quả do số lượng các bài toán con tăng theo hàm mũ. Một đòi hỏi quan trọng đối với quy hoạch động là tổng số các bài toán con cần giải là không quá lớn, cùng lắm phải bị chặn bởi một đa thức của kích thước dữ liệu vào.<o:p></o:p></SPAN></FONT></P>
+<P align="justify" class=MsoNormal style="MARGIN: 0in 0in 0pt 24pt; LINE-HEIGHT: 150%"><SPAN style="FONT-SIZE: 13pt; LINE-HEIGHT: 150%"><o:p><FONT face="Times New Roman">&nbsp;</FONT></o:p></SPAN></P><hr align="JUSTIFY">
+<form>
+  <div align="justify">
+    <table cols="3"	width="100%" align="center">
+      <tr>
+        <td	align="middle"><input type = "button" value	= "  Done  " onClick = "doQuit('completed')" id=button2 name=button2></td>
+    </tr>
+    </table>
+  </div>
+</form>
+
+</body></html>
