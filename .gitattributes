@@ -1,0 +1,6 @@
+* text=auto
+
+*.html linguist-vendored
+*.htm linguist-vendored
+*.HTM linguist-vendored
+*.HTML linguist-vendored
