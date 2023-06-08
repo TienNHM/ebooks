@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html class='v2' dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/2727757643-css_bundle_v2.css' rel='stylesheet' type='text/css'/>
+<meta content='width=1100' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link href='https://cunglaptrinh.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Cùng Lập Trình - Atom" href="https://cunglaptrinh.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Cùng Lập Trình - RSS" href="https://cunglaptrinh.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Cùng Lập Trình - Atom" href="https://www.blogger.com/feeds/7875394537939659011/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="Cùng Lập Trình - Atom" href="https://cunglaptrinh.blogspot.com/feeds/4635538498946985313/comments/default" />
+<!--[if IE]><script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/864213505-ieretrofit.js"></script>
+<![endif]-->
+<meta content='Một số bài tập cơ bản về mảng một chiều dành cho các bạn học Nhập môn lập trình' name='description'/>
+<meta content='http://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html' property='og:url'/>
+<meta content='Một số bài tập cơ bản về mảng một chiều' property='og:title'/>
+<meta content='Một số bài tập cơ bản về mảng một chiều dành cho các bạn học Nhập môn lập trình' property='og:description'/>
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>
+Một số bài tập cơ bản về mảng một chiều
+        | 
+        Cùng Lập Trình
+</title>
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     CungLapTrinh
+Designer: NguyenTuan
+URL:
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="keycolor" description="Main Color" type="color" default="#66bbdd"/>
+<Group description="Page Text" selector="body">
+<Variable name="body.font" description="Font" type="font"
+default="normal normal 14px &#39;Segoe UI&#39;, Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="body.text.color" description="Text Color" type="color" default="#222222"/>
+</Group>
+<Group description="Backgrounds" selector=".body-fauxcolumns-outer">
+<Variable name="body.background.color" description="Outer Background" type="color" default="#ffffff"/>
+<Variable name="content.background.color" description="Main Background" type="color" default="#ffffff"/>
+<Variable name="header.background.color" description="Header Background" type="color" default="transparent"/>
+</Group>
+<Group description="Links" selector=".main-outer">
+<Variable name="link.color" description="Link Color" type="color" default="#2288bb"/>
+<Variable name="link.visited.color" description="Visited Color" type="color" default="#888888"/>
+<Variable name="link.hover.color" description="Hover Color" type="color" default="#33aaff"/>
+</Group>
+<Group description="Blog Title" selector=".header h1">
+<Variable name="header.font" description="Font" type="font"
+default="normal normal 50px &#39;Segoe UI Light&#39;, Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="header.text.color" description="Title Color" type="color" default="#000000" />
+</Group>
+<Group description="Blog Description" selector=".header .description">
+<Variable name="description.text.color" description="Description Color" type="color"
+default="#000000" />
+</Group>
+<Group description="Tabs Text" selector=".tabs-inner .widget li a">
+<Variable name="tabs.font" description="Font" type="font"
+default="normal normal 23px &#39;Segoe UI Light&#39;, Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="tabs.text.color" description="Text Color" type="color" default="#222222"/>
+<Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#000000"/>
+</Group>
+<Group description="Tabs Background" selector=".tabs-outer .PageList">
+<Variable name="tabs.background.color" description="Background Color" type="color" default="#f5f5f5"/>
+<Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="#39C6F5"/>
+</Group>
+<Group description="Post Title" selector="h3.post-title, .comments h4">
+<Variable name="post.title.font" description="Font" type="font"
+default="normal normal 26px  &#39;Segoe UI&#39;, Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+</Group>
+<Group description="Date Header" selector=".date-header">
+<Variable name="date.header.color" description="Text Color" type="color"
+default="#222222"/>
+<Variable name="date.header.background.color" description="Background Color" type="color"
+default="transparent"/>
+<Variable name="date.header.font" description="Text Font" type="font"
+default="normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="date.header.padding" description="Date Header Padding" type="string" default="inherit"/>
+<Variable name="date.header.letterspacing" description="Date Header Letter Spacing" type="string" default="inherit"/>
+<Variable name="date.header.margin" description="Date Header Margin" type="string" default="inherit"/>
+</Group>
+<Group description="Post Footer" selector=".post-footer">
+<Variable name="post.footer.text.color" description="Text Color" type="color" default="#666666"/>
+<Variable name="post.footer.background.color" description="Background Color" type="color"
+default="#f9f9f9"/>
+<Variable name="post.footer.border.color" description="Shadow Color" type="color" default="#eeeeee"/>
+</Group>
+<Group description="Gadgets" selector="h2">
+<Variable name="widget.title.font" description="Title Font" type="font"
+default="normal bold 14px &#39;Segoe UI&#39;, Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="widget.title.text.color" description="Title Color" type="color" default="#000000"/>
+<Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#999999"/>
+</Group>
+<Group description="Images" selector=".main-inner">
+<Variable name="image.background.color" description="Background Color" type="color" default="#ffffff"/>
+<Variable name="image.border.color" description="Border Color" type="color" default="#eeeeee"/>
+<Variable name="image.text.color" description="Caption Text Color" type="color" default="#222222"/>
+</Group>
+<Group description="Accents" selector=".content-inner">
+<Variable name="body.rule.color" description="Separator Line Color" type="color" default="#eeeeee"/>
+<Variable name="tabs.border.color" description="Tabs Border Color" type="color" default="transparent"/>
+</Group>
+<Variable name="body.background" description="Body Background" type="background"
+color="#ffffff" default="$(color) none repeat scroll top left"/>
+<Variable name="body.background.override" description="Body Background Override" type="string" default=""/>
+<Variable name="body.background.gradient.cap" description="Body Gradient Cap" type="url"
+default="url(https://resources.blogblog.com/blogblog/data/1kt/simple/gradients_light.png)"/>
+<Variable name="body.background.gradient.tile" description="Body Gradient Tile" type="url"
+default="url(https://resources.blogblog.com/blogblog/data/1kt/simple/body_gradient_tile_light.png)"/>
+<Variable name="content.background.color.selector" description="Content Background Color Selector" type="string" default=".content-inner"/>
+<Variable name="content.padding" description="Content Padding" type="length" default="10px" min="0" max="100px"/>
+<Variable name="content.padding.horizontal" description="Content Horizontal Padding" type="length" default="10px" min="0" max="100px"/>
+<Variable name="content.shadow.spread" description="Content Shadow Spread" type="length" default="40px" min="0" max="100px"/>
+<Variable name="content.shadow.spread.webkit" description="Content Shadow Spread (WebKit)" type="length" default="5px" min="0" max="100px"/>
+<Variable name="content.shadow.spread.ie" description="Content Shadow Spread (IE)" type="length" default="10px" min="0" max="100px"/>
+<Variable name="main.border.width" description="Main Border Width" type="length" default="0" min="0" max="10px"/>
+<Variable name="header.background.gradient" description="Header Gradient" type="url" default="none"/>
+<Variable name="header.shadow.offset.left" description="Header Shadow Offset Left" type="length" default="-1px" min="-50px" max="50px"/>
+<Variable name="header.shadow.offset.top" description="Header Shadow Offset Top" type="length" default="-1px" min="-50px" max="50px"/>
+<Variable name="header.shadow.spread" description="Header Shadow Spread" type="length" default="1px" min="0" max="100px"/>
+<Variable name="header.padding" description="Header Padding" type="length" default="30px" min="0" max="100px"/>
+<Variable name="header.border.size" description="Header Border Size" type="length" default="1px" min="0" max="10px"/>
+<Variable name="header.bottom.border.size" description="Header Bottom Border Size" type="length" default="1px" min="0" max="10px"/>
+<Variable name="header.border.horizontalsize" description="Header Horizontal Border Size" type="length" default="0" min="0" max="10px"/>
+<Variable name="description.text.size" description="Description Text Size" type="string" default="140%"/>
+<Variable name="tabs.margin.top" description="Tabs Margin Top" type="length" default="0" min="0" max="100px"/>
+<Variable name="tabs.margin.side" description="Tabs Side Margin" type="length" default="30px" min="0" max="100px"/>
+<Variable name="tabs.background.gradient" description="Tabs Background Gradient" type="url"
+default="url(https://resources.blogblog.com/blogblog/data/1kt/simple/gradients_light.png)"/>
+<Variable name="tabs.border.width" description="Tabs Border Width" type="length" default="1px" min="0" max="10px"/>
+<Variable name="tabs.bevel.border.width" description="Tabs Bevel Border Width" type="length" default="1px" min="0" max="10px"/>
+<Variable name="post.margin.bottom" description="Post Bottom Margin" type="length" default="25px" min="0" max="100px"/>
+<Variable name="image.border.small.size" description="Image Border Small Size" type="length" default="2px" min="0" max="10px"/>
+<Variable name="image.border.large.size" description="Image Border Large Size" type="length" default="5px" min="0" max="10px"/>
+<Variable name="page.width.selector" description="Page Width Selector" type="string" default=".region-inner"/>
+<Variable name="page.width" description="Page Width" type="string" default="auto"/>
+<Variable name="main.section.margin" description="Main Section Margin" type="length" default="15px" min="0" max="100px"/>
+<Variable name="main.padding" description="Main Padding" type="length" default="15px" min="0" max="100px"/>
+<Variable name="main.padding.top" description="Main Padding Top" type="length" default="30px" min="0" max="100px"/>
+<Variable name="main.padding.bottom" description="Main Padding Bottom" type="length" default="30px" min="0" max="100px"/>
+<Variable name="paging.background"
+color="#ffffff"
+description="Background of blog paging area" type="background"
+default="transparent none no-repeat scroll top center"/>
+<Variable name="footer.bevel" description="Bevel border length of footer" type="length" default="0" min="0" max="10px"/>
+<Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string"
+default="transparent none repeat scroll top left"/>
+<Variable name="mobile.background.size" description="Mobile Background Size" type="string" default="auto"/>
+<Variable name="mobile.button.color" description="Mobile Button Color" type="color" default="#ffffff" />
+<Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
+<Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
+*/
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 14px 'Segoe UI', Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #222222;
+background: #ffffff none repeat scroll top left;
+padding: 0 0 0 0;
+}
+html body .region-inner {
+min-width: 0;
+max-width: 100%;
+width: auto;
+}
+h2 {
+font-size: 22px;
+}
+a:link {
+text-decoration:none;
+color: #2288bb;
+}
+a:visited {
+text-decoration:none;
+color: #888888;
+}
+a:hover {
+text-decoration:underline;
+color: #33aaff;
+}
+.body-fauxcolumn-outer .fauxcolumn-inner {
+background: transparent none repeat scroll top left;
+_background-image: none;
+}
+.body-fauxcolumn-outer .cap-top {
+position: absolute;
+z-index: 1;
+height: 400px;
+width: 100%;
+}
+.body-fauxcolumn-outer .cap-top .cap-left {
+width: 100%;
+background: transparent none repeat-x scroll top left;
+_background-image: none;
+}
+.content-outer {
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 0 #333333;
+box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+margin-bottom: 1px;
+}
+.content-inner {
+padding: 10px 40px;
+}
+.content-inner {
+background-color: #ffffff;
+}
+/* Header
+----------------------------------------------- */
+.header-outer {
+background: transparent none repeat-x scroll 0 -400px;
+_background-image: none;
+}
+.Header h1 {
+font: normal normal 50px 'Segoe UI Light', Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #000000;
+text-shadow: 0 0 0 rgba(0, 0, 0, .2);
+text-align: center;
+}
+.Header h1 a {
+color: #000000;
+}
+.Header .description {
+font: normal normal 50px 'Segoe UI Light', Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+font-size: 18px;
+color: #666666;
+text-align: center;
+}
+.header-inner .Header .titlewrapper {
+padding: 22px 0;
+}
+.header-inner .Header .descriptionwrapper {
+padding: 0 0;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-inner .section:first-child {
+border-top: 0 solid transparent;
+}
+.tabs-inner .section:first-child ul {
+margin-top: -1px;
+border-top: 1px solid transparent;
+border-left: 0px solid transparent;
+border-right: 0px solid transparent;
+}
+.tabs-inner .widget ul {
+background: transparent none repeat-x scroll 0 -800px;
+_background-image: none;
+border-bottom: 1px solid transparent;
+margin-top: 0;
+margin-left: -30px;
+margin-right: -30px;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+padding: .6em 1em;
+font: normal normal 23px 'Segoe UI Light', Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #222222;
+}
+.tabs-inner .widget li:first-child a {
+border-left: none;
+}
+.tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover {
+color: #222222;
+background-color: transparent;
+text-decoration: none;
+border-bottom: #39C6F5 solid 3px;
+font-weight: bold;
+}
+/* Columns
+----------------------------------------------- */
+.main-outer {
+border-top: 0 solid transparent;
+}
+.fauxcolumn-left-outer .fauxcolumn-inner {
+border-right: 1px solid transparent;
+}
+.fauxcolumn-right-outer .fauxcolumn-inner {
+border-left: 1px solid transparent;
+}
+/* Headings
+----------------------------------------------- */
+div.widget > h2,
+div.widget h2.title {
+margin: 0 0 1em 0;
+font: normal normal 16px 'Segoe UI Light', Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #222222;
+}
+/* Widgets
+----------------------------------------------- */
+.widget .zippy {
+color: #999999;
+text-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
+}
+.PopularPosts .widget-content ul li {
+border-bottom: #999999 dashed 1px;
+padding: 1em 0;
+}
+.widget .popular-posts ul {
+list-style: none;
+padding: 0;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+font: normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+}
+.date-header span {
+background-color: #bbbbbb;
+color: #ffffff;
+padding: 0.4em;
+letter-spacing: 3px;
+margin: inherit;
+}
+.main-inner {
+padding-top: 35px;
+padding-bottom: 65px;
+}
+.main-inner .column-center-inner {
+padding: 0 0;
+}
+.main-inner .column-center-inner .section {
+margin: 0 1em;
+}
+.post {
+margin: 0 0 45px 0;
+}
+h3.post-title {
+border-bottom: 1px solid #DFE2E1;
+padding-bottom: 7px;
+}
+h3.post-title, .comments h4 {
+font: normal normal 26px  'Segoe UI', Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+margin: .75em 0 0;
+}
+.post-body {
+font-size: 110%;
+line-height: 1.4;
+position: relative;
+}
+.post-body img, .post-body .tr-caption-container, .Profile img, .Image img,
+.BlogList .item-thumbnail img {
+padding: 2px;
+background: #ffffff;
+border: 1px solid #eeeeee;
+-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+}
+.post-body img, .post-body .tr-caption-container {
+padding: 5px;
+}
+.post-body .tr-caption-container {
+color: #666666;
+}
+.post-body .tr-caption-container img {
+padding: 0;
+background: transparent;
+border: none;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+}
+.post-header {
+margin: 0 0 1.5em;
+line-height: 1.6;
+font-size: 90%;
+}
+.post-footer {
+margin: 20px -2px 0;
+padding: 5px 10px;
+color: #666666;
+background-color: #eeeeee;
+border-bottom: 1px solid #eeeeee;
+line-height: 1.6;
+font-size: 90%;
+}
+#comments .comment-author {
+padding-top: 1.5em;
+border-top: 1px solid transparent;
+background-position: 0 1.5em;
+}
+#comments .comment-author:first-child {
+padding-top: 0;
+border-top: none;
+}
+.avatar-image-container {
+margin: .2em 0 0;
+}
+#comments .avatar-image-container img {
+border: 1px solid #eeeeee;
+}
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #999999;
+border-bottom: 1px solid #999999;
+}
+.comments .comment-thread.inline-thread {
+background-color: #eeeeee;
+}
+.comments .continue {
+border-top: 2px solid #999999;
+}
+/* Accents
+---------------------------------------------- */
+.section-columns td.columns-cell {
+border-left: 1px solid transparent;
+}
+.blog-pager {
+background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/simple/paging_dot.png) repeat-x scroll top center;
+}
+.blog-pager-older-link, .home-link,
+.blog-pager-newer-link {
+background-color: #ffffff;
+padding: 5px;
+}
+.footer-outer {
+border-top: 1px dashed #bbbbbb;
+}
+/* Mobile
+----------------------------------------------- */
+body.mobile  {
+background-size: auto;
+}
+.mobile .body-fauxcolumn-outer {
+background: transparent none repeat scroll top left;
+}
+.mobile .body-fauxcolumn-outer .cap-top {
+background-size: 100% auto;
+}
+.mobile .content-outer {
+-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+}
+.mobile .tabs-inner .widget ul {
+margin-left: 0;
+margin-right: 0;
+}
+.mobile .post {
+margin: 0;
+}
+.mobile .main-inner .column-center-inner .section {
+margin: 0;
+}
+.mobile .date-header span {
+padding: 0.1em 10px;
+margin: 0 -10px;
+}
+.mobile h3.post-title {
+margin: 0;
+}
+.mobile .blog-pager {
+background: transparent none no-repeat scroll top center;
+}
+.mobile .footer-outer {
+border-top: none;
+}
+.mobile .main-inner, .mobile .footer-inner {
+background-color: #ffffff;
+}
+.mobile-index-contents {
+color: #222222;
+}
+.mobile-link-button {
+background-color: #2288bb;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile .tabs-inner .section:first-child {
+border-top: none;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background-color: transparent;
+color: #222222;
+border-top: 1px solid transparent;
+border-bottom: 1px solid transparent;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid transparent;
+}
+/* Other
+------------------------------------------ */
+code {
+font-family: "Consolas", "Courier New";
+color: #0000ff;
+font-weight: bold;
+}
+#Attribution1, #Navbar1 {
+display: none;
+}
+.table_post {
+border-collapse: collapse;
+background-color: #f8f8f8;
+border: 1px solid #dddddd;
+text-align: center;
+align: center;
+}
+.table_post thead {
+background-color: #f8f8f8;
+border: 1px solid #dddddd;
+text-align: center;
+font-weight: bold;
+align: center;
+}
+.code {
+background-color: #ffffff;
+}
+tr {
+border: 1px solid #dddddd;
+height: 30px;
+}
+h1, h2, h3, h4, h5, h6 {
+margin-top: 20px;
+margin-bottom: 10px;
+color: #2288bb;
+}
+h3 {
+font-size: 22px;
+font-weight: normal;
+}
+h4 {
+font-size: 19px;
+font-weight: normal;
+}
+
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body {
+min-width: 1100px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 1100px;
+max-width: 1100px;
+_width: 1100px;
+}
+.main-inner .columns {
+padding-left: 0px;
+padding-right: 320px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0px;
+right: 320px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0px") -
+parseInt("320px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0px;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 320px;
+}
+.main-inner .column-left-outer {
+width: 0px;
+right: 100%;
+margin-left: -0px;
+}
+.main-inner .column-right-outer {
+width: 320px;
+margin-right: -320px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+body#layout div.add_widget {
+padding: 8px;
+}
+body#layout div.add_widget a {
+margin-left: 32px;
+}
+--></style>
+<!-- the code tag include-->
+<link href="//agorbatchev.typepad.com/pub/sh/3_0_83/styles/shThemeDefault.css" rel="stylesheet" type="text/css">
+<link href="//agorbatchev.typepad.com/pub/sh/3_0_83/styles/shCore.css" rel="Stylesheet" type="text/css">
+<!-- end the code tag include -->
+<!-- widget whos.amung.us-->
+<script id='_waugwy'>
+      var _wau = _wau || [];
+      _wau.push(["tab", "eeis0dab5cd2", "gwy", "left-lower"]);
+      (function() {var s=document.createElement("script"); s.async=true;
+                   s.src="http://widgets.amung.us/tab.js";
+                   document.getElementsByTagName("head")[0].appendChild(s);
+                  })();</script>
+<!--end widget whos.amung.us-->
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=7875394537939659011&amp;zx=8a760f16-3fb5-4554-b006-9185355c508e' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=7875394537939659011&amp;zx=8a760f16-3fb5-4554-b006-9185355c508e' rel='stylesheet'/></noscript>
+
+</head>
+<body class='loading'>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script async='async' src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55af91f61a89cf26' type='text/javascript'></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<!-- SyntaxHighlighter Code-->
+<script src="//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shCore.js" type="text/javascript"></script>
+<script src="//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushCsharp.js" type="text/javascript"></script>
+<script src="//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushCpp.js" type="text/javascript"></script>
+<script src="//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushXml.js" type="text/javascript"></script>
+<script type='text/javascript'>
+      SyntaxHighlighter.config.bloggerMode=true;
+      SyntaxHighlighter.all();
+    </script>
+<!-- end syntaxhighlighter-->
+<div class='body-fauxcolumns'>
+<div class='fauxcolumn-outer body-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content'>
+<div class='content-fauxcolumns'>
+<div class='fauxcolumn-outer content-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content-outer'>
+<div class='content-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left content-fauxborder-left'>
+<div class='fauxborder-right content-fauxborder-right'></div>
+<div class='content-inner'>
+<header>
+<div class='header-outer'>
+<div class='header-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left header-fauxborder-left'>
+<div class='fauxborder-right header-fauxborder-right'></div>
+<div class='region-inner header-inner'>
+<div class='header section' id='header' name='Tiêu đề'><div class='widget Header' data-version='1' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+<a href='https://cunglaptrinh.blogspot.com/'>
+Cùng Lập Trình
+</a>
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<p class='description'><span>Nơi chia sẻ bài tập, tài liệu, kiến thức về lập trình, thủ thuật máy tính, tiếng Nhật công nghệ thông tin,...</span></p>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class='header-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</header>
+<div class='tabs-outer'>
+<div class='tabs-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left tabs-fauxborder-left'>
+<div class='fauxborder-right tabs-fauxborder-right'></div>
+<div class='region-inner tabs-inner'>
+<div class='tabs section' id='crosscol' name='Trên tất cả các cột'><div class='widget PageList' data-version='1' id='PageList1'>
+<h2>TRANG</h2>
+<div class='widget-content'>
+<ul>
+<li>
+<a href='https://cunglaptrinh.blogspot.com/'>home</a>
+</li>
+<li>
+<a href='#'>lập trình</a>
+</li>
+<li>
+<a href='http://'>tản mạn</a>
+</li>
+<li>
+<a href='https://cunglaptrinh.blogspot.com/p/about.html'>about</a>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=7875394537939659011&widgetType=PageList&widgetId=PageList1&action=editWidget&sectionId=crosscol' onclick='return _WidgetManager._PopupConfig(document.getElementById("PageList1"));' rel='nofollow' target='configPageList1' title='Chỉnh sửa'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class='tabs-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='main-outer'>
+<div class='main-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left main-fauxborder-left'>
+<div class='fauxborder-right main-fauxborder-right'></div>
+<div class='region-inner main-inner'>
+<div class='columns fauxcolumns'>
+<div class='fauxcolumn-outer fauxcolumn-center-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-left-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-right-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class='columns-inner'>
+<div class='column-center-outer'>
+<div class='column-center-inner'>
+<div class='main section' id='main' name='Số điện thoại chính'><div class='widget Blog' data-version='1' id='Blog1'>
+<div class='blog-posts hfeed'>
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>16/01/2015</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='7875394537939659011' itemprop='blogId'/>
+<meta content='4635538498946985313' itemprop='postId'/>
+<a name='4635538498946985313'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+Một số bài tập cơ bản về mảng một chiều
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-4635538498946985313' itemprop='articleBody'>
+Hầu hết những bài tập dưới đây là rất cơ bản dành cho các bạn mới học Nhập môn lập trình tham khảo.<br />
+<br />
+<span style="font-size: large;">1. Viết hàm nhập mảng một chiều các số nguyên</span><br />
+Phải luôn luôn định trước số phần tử cần dùng cho mảng. Trong C/C++, mảng được đánh chỉ số từ 0.<br />
+Nếu là mảng các số thực chỉ việc thay <code>int a[]</code> thành <code>float a[]</code> và đổi mã đặc tả của hàm <code>scanf</code> trong vòng lặp thành <code>%f</code>.<br />
+Code C:<br />
+<pre class="brush:cpp">//Cách 1: Nhập n trong hàm nhập mảng
+void InputArray1(int a[], int &amp;n)
+{
+   printf("Nhập số phần tử: ");
+   scanf("%d", &amp;n);
+   for(int i = 0; i &lt; n; i++);
+   {
+      printf("A[%d] = ", i);
+      scanf("%d", &amp;a[i]);
+   }
+}
+
+//Cách 2: Nhập n ngoài hàm nhập mảng
+void InputArray2(int a[], int n)
+{
+   for(int i = 0; i &lt; n; i++)
+   {
+      printf("A[%d] = ", i);
+      scanf("%d", &amp;a[i]);
+   }
+}
+</pre>
+<br />
+<span style="font-size: large;">2. Viết hàm xuất mảng một chiều các số nguyên</span><br />
+Code C:<br />
+<pre class="brush:cpp">void OutputArray(int a[], int n)
+{
+   for(int i = 0; i &lt; n; i++)
+      printf("%d\t", a[i]);
+}
+</pre>
+<br />
+<a name='more'></a><br />
+<br />
+<span style="font-size: large;">3. Viết hàm tìm giá trị lớn nhất trong mảng nguyên một chiều</span><br />
+Code C:<br />
+<pre class="brush:cpp">int MaxOfArray(int a[], int n)
+{
+   int max = a[0];
+   for(int i = 1; i &lt; n; i++)
+      if(a[i]&gt;max)
+         max = a[i];
+   return max;
+}
+</pre>
+<br />
+<span style="font-size: large;">4. Viết hàm tìm chỉ số của phần tử có giá trị lớn nhất trong mảng nguyên một chiều</span><br />
+Code C:<br />
+<pre class="brush:cpp">int IndexOfMaxOfArray(int a[], int n)
+{
+   int index = 0;
+   for(int i = 0; i &lt; n; i++)
+      if(a[i]&gt;a[index])
+         index = i;
+   return index;
+}
+</pre>
+<br />
+<span style="font-size: large;">5. Viết hàm tìm giá trị trung bình của các phần tử chẵn trong mảng nguyên một chiều</span><br />
+Dùng một biến lưu tổng giá trị các phần tử chẵn và một biến đếm các phần tử chẵn, giá trị trung bình sẽ bằng tổng chia cho biến đếm.<br />
+Code C:<br />
+<pre class="brush:cpp">float AverageOfEvenOfArray(int a[], int n)
+{
+   float sum = 0;
+   int dem = 0;
+   for(int i = 0; i &lt; n; i++)
+      if(a[i]%2==0)
+      {
+         sum += a[i];
+         dem++;
+      }
+   return sum / dem;
+}
+</pre>
+<br />
+<span style="font-size: large;">6. Viết hàm tìm <a href="http://cunglaptrinh.blogspot.com/2015/01/cac-van-de-co-ban-ve-so-nguyen-to-trong-lap-trinh.html" target="_blank">số nguyên tố</a> lớn nhất trong mảng nguyên một chiều</span><br />
+Trả về số nguyên tố lớn nhất nếu tìm được, trả về -1 nếu không tìm được.<br />
+Code C:<br />
+<pre class="brush:cpp">int MaxPrimeOfArray(int a[], int n)
+{
+   int max = -1;
+   for(int i = 0; i &lt; n; i++)
+      if(IsPrime(a[i]) &amp;&amp; a[i]&gt;max)
+         max = a[i];
+   return max;
+}
+</pre>
+<br />
+<span style="font-size: large;">7. Viết hàm kiểm tra một mảng có là mảng đối xứng</span><br />
+Ví dụ: <code>a[] = {1, 2, 3, 2, 1,}</code>, <code>b[] = {1, 4, 4, 1}</code> là mảng đối xứng, <code>c[] = {1, 2, 3, 3, 1}</code> không là mảng đối xứng.<br />
+Trả về 1 nếu là mảng đối xứng, trả về 0 nếu không là mảng đối xứng.<br />
+Code C:<br />
+<pre class="brush:cpp">//Cách 1
+int DoiXung(int a[], int n)
+{
+   for(int i = 0; i &lt; n; i++)
+      if(a[i] != a[n-1-i])
+         return 0;
+   return 1;
+}
+
+//Cách 2
+int DoiXung(int a[], int n)
+{
+   for(int i = 0, j = n-1; i &lt; j; i++, j--)
+      if(a[i]!=a[j])
+         return 0;
+   return 1;
+}
+</pre>
+<br />
+<span style="font-size: large;">8. Viết hàm xoá một phần tử trong mảng nguyên một chiều</span><br />
+Code C:<br />
+<pre class="brush:cpp">void XoaPhanTu(int a[], int &amp;n, int index)
+{
+   for(int i = index; i &lt; n-1; i++)
+      a[i] = a[i+1];
+   n--;
+}
+</pre>
+<br />
+<span style="font-size: large;">9. Viết hàm xoá các phần tử giống nhau trong mảng sao cho mỗi phần tử trong mảng đều có giá trị khác nhau</span><br />
+Code C:<br />
+<pre class="brush:cpp">void XoaGiongNhau(int a[], int &amp;n)
+{
+   for(int i = 0; i &lt; n-1; i++)
+      for(int j = i+1; j &lt; n; )
+      {
+         if (a[i] == a[j])
+            XoaPhanTu(a, n, j);
+         else
+            j++; //Xoá triệt để các số liền nhau rồi mới tăng j
+      }
+}
+</pre>
+<br />
+<br />
+<br />
+<br />
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Đăng bởi
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://plus.google.com/102192674308620370862' itemprop='url'/>
+<a class='g-profile' href='https://plus.google.com/102192674308620370862' rel='author' title='author profile'>
+<span itemprop='name'>Tuan Nguyen</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+lúc
+<meta content='http://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html' itemprop='url'/>
+<a class='timestamp-link' href='https://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2015-01-16T00:14:00+07:00'>00:14:00</abbr></a>
+</span>
+<span class='reaction-buttons'>
+</span>
+<span class='post-comment-link'>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1290369189'>
+<a href='https://www.blogger.com/post-edit.g?blogID=7875394537939659011&postID=4635538498946985313&from=pencil' title='Sửa Bài đăng'>
+<img alt='' class='icon-action' height='18' src='https://resources.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='https://www.blogger.com/share-post.g?blogID=7875394537939659011&postID=4635538498946985313&target=email' target='_blank' title='Gửi email bài đăng này'><span class='share-button-link-text'>Gửi email bài đăng này</span></a><a class='goog-inline-block share-button sb-blog' href='https://www.blogger.com/share-post.g?blogID=7875394537939659011&postID=4635538498946985313&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='https://www.blogger.com/share-post.g?blogID=7875394537939659011&postID=4635538498946985313&target=twitter' target='_blank' title='Chia sẻ lên Twitter'><span class='share-button-link-text'>Chia sẻ lên Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='https://www.blogger.com/share-post.g?blogID=7875394537939659011&postID=4635538498946985313&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Chia sẻ lên Facebook'><span class='share-button-link-text'>Chia sẻ lên Facebook</span></a><a class='goog-inline-block share-button sb-pinterest' href='https://www.blogger.com/share-post.g?blogID=7875394537939659011&postID=4635538498946985313&target=pinterest' target='_blank' title='Chia sẻ lên Pinterest'><span class='share-button-link-text'>Chia sẻ lên Pinterest</span></a><div class='goog-inline-block google-plus-share-container'><g:plusone source='blogger:blog:plusone' href='http://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+Tags:
+<a href='https://cunglaptrinh.blogspot.com/search/label/b%C3%A0i%20t%E1%BA%ADp' rel='tag'>bài tập</a>,
+<a href='https://cunglaptrinh.blogspot.com/search/label/C%2FCpp' rel='tag'>C/Cpp</a>,
+<a href='https://cunglaptrinh.blogspot.com/search/label/m%E1%BA%A3ng%20m%E1%BB%99t%20chi%E1%BB%81u' rel='tag'>mảng một chiều</a>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+<div class='comments' id='comments'>
+<a name='comments'></a>
+<h4>11 nhận xét:</h4>
+<div class='comments-content'>
+<script async='async' src='' type='text/javascript'></script>
+<script type='text/javascript'>
+    (function() {
+      var items = null;
+      var msgs = null;
+      var config = {};
+
+// <![CDATA[
+      var cursor = null;
+      if (items && items.length > 0) {
+        cursor = parseInt(items[items.length - 1].timestamp) + 1;
+      }
+
+      var bodyFromEntry = function(entry) {
+        var text = (entry &&
+                    ((entry.content && entry.content.$t) ||
+                     (entry.summary && entry.summary.$t))) ||
+            '';
+        if (entry && entry.gd$extendedProperty) {
+          for (var k in entry.gd$extendedProperty) {
+            if (entry.gd$extendedProperty[k].name == 'blogger.contentRemoved') {
+              return '<span class="deleted-comment">' + text + '</span>';
+            }
+          }
+        }
+        return text;
+      }
+
+      var parse = function(data) {
+        cursor = null;
+        var comments = [];
+        if (data && data.feed && data.feed.entry) {
+          for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
+            var comment = {};
+            // comment ID, parsed out of the original id format
+            var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
+            comment.id = id ? id[2] : null;
+            comment.body = bodyFromEntry(entry);
+            comment.timestamp = Date.parse(entry.published.$t) + '';
+            if (entry.author && entry.author.constructor === Array) {
+              var auth = entry.author[0];
+              if (auth) {
+                comment.author = {
+                  name: (auth.name ? auth.name.$t : undefined),
+                  profileUrl: (auth.uri ? auth.uri.$t : undefined),
+                  avatarUrl: (auth.gd$image ? auth.gd$image.src : undefined)
+                };
+              }
+            }
+            if (entry.link) {
+              if (entry.link[2]) {
+                comment.link = comment.permalink = entry.link[2].href;
+              }
+              if (entry.link[3]) {
+                var pid = /.*comments\/default\/(\d+)\?.*/.exec(entry.link[3].href);
+                if (pid && pid[1]) {
+                  comment.parentId = pid[1];
+                }
+              }
+            }
+            comment.deleteclass = 'item-control blog-admin';
+            if (entry.gd$extendedProperty) {
+              for (var k in entry.gd$extendedProperty) {
+                if (entry.gd$extendedProperty[k].name == 'blogger.itemClass') {
+                  comment.deleteclass += ' ' + entry.gd$extendedProperty[k].value;
+                } else if (entry.gd$extendedProperty[k].name == 'blogger.displayTime') {
+                  comment.displayTime = entry.gd$extendedProperty[k].value;
+                }
+              }
+            }
+            comments.push(comment);
+          }
+        }
+        return comments;
+      };
+
+      var paginator = function(callback) {
+        if (hasMore()) {
+          var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
+          if (cursor) {
+            url += '&published-min=' + new Date(cursor).toISOString();
+          }
+          window.bloggercomments = function(data) {
+            var parsed = parse(data);
+            cursor = parsed.length < 50 ? null
+                : parseInt(parsed[parsed.length - 1].timestamp) + 1
+            callback(parsed);
+            window.bloggercomments = null;
+          }
+          url += '&callback=bloggercomments';
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = url;
+          document.getElementsByTagName('head')[0].appendChild(script);
+        }
+      };
+      var hasMore = function() {
+        return !!cursor;
+      };
+      var getMeta = function(key, comment) {
+        if ('iswriter' == key) {
+          var matches = !!comment.author
+              && comment.author.name == config.authorName
+              && comment.author.profileUrl == config.authorUrl;
+          return matches ? 'true' : '';
+        } else if ('deletelink' == key) {
+          return config.baseUri + '/delete-comment.g?blogID='
+               + config.blogId + '&postID=' + comment.id;
+        } else if ('deleteclass' == key) {
+          return comment.deleteclass;
+        }
+        return '';
+      };
+
+      var replybox = null;
+      var replyUrlParts = null;
+      var replyParent = undefined;
+
+      var onReply = function(commentId, domId) {
+        if (replybox == null) {
+          // lazily cache replybox, and adjust to suit this style:
+          replybox = document.getElementById('comment-editor');
+          if (replybox != null) {
+            replybox.height = '250px';
+            replybox.style.display = 'block';
+            replyUrlParts = replybox.src.split('#');
+          }
+        }
+        if (replybox && (commentId !== replyParent)) {
+          replybox.src = '';
+          document.getElementById(domId).insertBefore(replybox, null);
+          replybox.src = replyUrlParts[0]
+              + (commentId ? '&parentID=' + commentId : '')
+              + '#' + replyUrlParts[1];
+          replyParent = commentId;
+        }
+      };
+
+      var hash = (window.location.hash || '#').substring(1);
+      var startThread, targetComment;
+      if (/^comment-form_/.test(hash)) {
+        startThread = hash.substring('comment-form_'.length);
+      } else if (/^c[0-9]+$/.test(hash)) {
+        targetComment = hash.substring(1);
+      }
+
+      // Configure commenting API:
+      var configJso = {
+        'maxDepth': config.maxThreadDepth
+      };
+      var provider = {
+        'id': config.postId,
+        'data': items,
+        'loadNext': paginator,
+        'hasMore': hasMore,
+        'getMeta': getMeta,
+        'onReply': onReply,
+        'rendered': true,
+        'initComment': targetComment,
+        'initReplyThread': startThread,
+        'config': configJso,
+        'messages': msgs
+      };
+
+      var render = function() {
+        if (window.goog && window.goog.comments) {
+          var holder = document.getElementById('comment-holder');
+          window.goog.comments.render(holder, provider);
+        }
+      };
+
+      // render now, or queue to render when library loads:
+      if (window.goog && window.goog.comments) {
+        render();
+      } else {
+        window.goog = window.goog || {};
+        window.goog.comments = window.goog.comments || {};
+        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
+        window.goog.comments.loadQueue.push(render);
+      }
+    })();
+// ]]>
+  </script>
+<div id='comment-holder'>
+<div class="comment-thread toplevel-thread"><ol id="top-ra"><li class="comment" id="c2110419877390901699"><div class="avatar-image-container"><img src="//lh5.googleusercontent.com/-I4A92dMltkk/AAAAAAAAAAI/AAAAAAAAABY/wiZc9bax3L8/s35-c/photo.jpg" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/10992982246319049003">Duy Tân Phan Lê</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html?showComment=1445821484811#c2110419877390901699">08:04, 26/10/2015</a></span></div><p class="comment-content">Làm sao để thao tác với mảng ban đầu (phần tử và thứ tự phần tử) như lúc ban đầu sau khi thao tác với một hàm. Vì sau khi thao tác với hàm thì mảng sẽ bị thay đổi, ví dụ như xóa phần tử. Mong bạn giúp đỡ. :)</p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="2110419877390901699">Trả lời</a><span class="item-control blog-admin blog-admin pid-8958635"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=7875394537939659011&amp;postID=2110419877390901699">Xóa</a></span></span></div><div class="comment-replies"><div id="c2110419877390901699-rt" class="comment-thread inline-thread"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Trả lời</a></span></span><ol id="c2110419877390901699-ra" class="thread-chrome thread-expanded"><div><li class="comment" id="c7666657163662973164"><div class="avatar-image-container"><img src="//lh6.googleusercontent.com/-ti4O7KxFSCk/AAAAAAAAAAI/AAAAAAAAACQ/A7Pn67AaFy4/s35-c/photo.jpg" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/02524813381596347871">Tuấn Nguyễn</a></cite><span class="icon user blog-author"></span><span class="datetime secondary-text"><a rel="nofollow" href="https://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html?showComment=1446836674247#c7666657163662973164">02:04, 07/11/2015</a></span></div><p class="comment-content">Nếu bạn truyền tên mảng vào hàm để thao tác thì coi như bạn đã truyền con trỏ đến mảng nên sao khi thao tác chắc chắn sẽ bị thay đổi.<br>Cách đơn giản là bạn có thể tạo mảng copy trong hàm và thao tác với nó.<br>Thân mến.</p><span class="comment-actions secondary-text"><span class="item-control blog-admin blog-admin pid-1290369189"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=7875394537939659011&amp;postID=7666657163662973164">Xóa</a></span></span></div><div class="comment-replies"><div id="c7666657163662973164-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Trả lời</a></span></span><ol id="c7666657163662973164-ra" class="thread-chrome thread-expanded"><div></div><div id="c7666657163662973164-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="7666657163662973164">Trả lời</a></div></ol></div></div><div class="comment-replybox-single" id="c7666657163662973164-ce"></div></li></div><div id="c2110419877390901699-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="2110419877390901699">Trả lời</a></div></ol></div></div><div class="comment-replybox-single" id="c2110419877390901699-ce"></div></li><li class="comment" id="c2608273464033482654"><div class="avatar-image-container"><img src="//lh4.googleusercontent.com/-v2097vD9y8s/AAAAAAAAAAI/AAAAAAAAAGc/mGFfgTzxLYc/s35-c/photo.jpg" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/13311553258103123612">DIENTU RID</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html?showComment=1451062189069#c2608273464033482654">23:49, 25/12/2015</a></span></div><p class="comment-content">A cho e hỏi luôn tiện với ạ?<br>Tại sao đối số của hàm khai báo là: ví dụ:<br>void doixung(int a[],int n)<br>int *p<br>doixung(p,n) =&gt; ok chạy<br>a[?] không có chỉ số &#39;?&#39; .Tại sao lại có thể không cần chỉ số trong đó?<br>Với trường hợp a[50] chẳng hạn ở trong hàm khi khai báo.<br>void doixung(int a[50],int n)<br>int *p;<br>Trong trường hợp này khi gọi hàm lại không thể truyền được tham số dạng con trỏ ?<br>doixung(p,n) =&gt; báo lỗi</p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="2608273464033482654">Trả lời</a><span class="item-control blog-admin blog-admin pid-895801354"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=7875394537939659011&amp;postID=2608273464033482654">Xóa</a></span></span></div><div class="comment-replies"><div id="c2608273464033482654-rt" class="comment-thread inline-thread"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Trả lời</a></span></span><ol id="c2608273464033482654-ra" class="thread-chrome thread-expanded"><div><li class="comment" id="c317743243851595532"><div class="avatar-image-container"><img src="//lh6.googleusercontent.com/-ti4O7KxFSCk/AAAAAAAAAAI/AAAAAAAAACQ/A7Pn67AaFy4/s35-c/photo.jpg" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/02524813381596347871">Tuấn Nguyễn</a></cite><span class="icon user blog-author"></span><span class="datetime secondary-text"><a rel="nofollow" href="https://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html?showComment=1451063576050#c317743243851595532">00:12, 26/12/2015</a></span></div><p class="comment-content">a[] trong void doixung(int a[], int n) là tham số hình thức. Vì vậy, nó phải tồn tại trước 1 mảng a[] bên ngoài rồi khi bạn truyền vào mới có thể chạy được.<br>a[50] là một mảng tĩnh được cấp phát vùng nhớ nên khi bạn truyền vào có thể chạy được.<br>p là một con trỏ chưa trỏ đến đâu cả, vì vậy phải cấp phát vùng nhớ cho p.<br>int *p = new int[n]; //cấp phát vùng nhớ<br>doixung(p,n); //OK, chạy được</p><span class="comment-actions secondary-text"><span class="item-control blog-admin blog-admin pid-1290369189"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=7875394537939659011&amp;postID=317743243851595532">Xóa</a></span></span></div><div class="comment-replies"><div id="c317743243851595532-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Trả lời</a></span></span><ol id="c317743243851595532-ra" class="thread-chrome thread-expanded"><div></div><div id="c317743243851595532-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="317743243851595532">Trả lời</a></div></ol></div></div><div class="comment-replybox-single" id="c317743243851595532-ce"></div></li></div><div id="c2608273464033482654-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="2608273464033482654">Trả lời</a></div></ol></div></div><div class="comment-replybox-single" id="c2608273464033482654-ce"></div></li><li class="comment" id="c4397985784440648934"><div class="avatar-image-container"><img src="//img1.blogblog.com/img/blank.gif" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user">Nặc danh</cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html?showComment=1451960125104#c4397985784440648934">09:15, 05/01/2016</a></span></div><p class="comment-content">Mấy bài tập này hữu ích quá . Tks ad nhiều nhé !</p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="4397985784440648934">Trả lời</a><span class="item-control blog-admin blog-admin pid-335141936"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=7875394537939659011&amp;postID=4397985784440648934">Xóa</a></span></span></div><div class="comment-replies"><div id="c4397985784440648934-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Trả lời</a></span></span><ol id="c4397985784440648934-ra" class="thread-chrome thread-expanded"><div></div><div id="c4397985784440648934-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="4397985784440648934">Trả lời</a></div></ol></div></div><div class="comment-replybox-single" id="c4397985784440648934-ce"></div></li><li class="comment" id="c8985664663646843734"><div class="avatar-image-container"><img src="//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/00231439826335030016">Unknown</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html?showComment=1474875862963#c8985664663646843734">14:44, 26/09/2016</a></span></div><p class="comment-content">Ad thêm mấy bài chèn, xóa đầu, xóa đuôi, gộp mảng vào cho đủ bộ</p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="8985664663646843734">Trả lời</a><span class="item-control blog-admin blog-admin pid-1938565039"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=7875394537939659011&amp;postID=8985664663646843734">Xóa</a></span></span></div><div class="comment-replies"><div id="c8985664663646843734-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Trả lời</a></span></span><ol id="c8985664663646843734-ra" class="thread-chrome thread-expanded"><div></div><div id="c8985664663646843734-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="8985664663646843734">Trả lời</a></div></ol></div></div><div class="comment-replybox-single" id="c8985664663646843734-ce"></div></li><li class="comment" id="c7908317494746594112"><div class="avatar-image-container"><img src="//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/18443961704988736837">Scanfmylove</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html?showComment=1476064267885#c7908317494746594112">08:51, 10/10/2016</a></span></div><p class="comment-content">viết hàm tăng 1 số 1 đơn vị thì viết sao ạ</p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="7908317494746594112">Trả lời</a><span class="item-control blog-admin blog-admin pid-1599997707"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=7875394537939659011&amp;postID=7908317494746594112">Xóa</a></span></span></div><div class="comment-replies"><div id="c7908317494746594112-rt" class="comment-thread inline-thread"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Trả lời</a></span></span><ol id="c7908317494746594112-ra" class="thread-chrome thread-expanded"><div><li class="comment" id="c1812138864416242840"><div class="avatar-image-container"><img src="//lh5.googleusercontent.com/-K3A-F63GbQQ/AAAAAAAAAAI/AAAAAAAAABY/Ud48J63ctOw/s35-c/photo.jpg" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/03948414782093465294">Linh Quang</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html?showComment=1529862574397#c1812138864416242840">00:49, 25/06/2018</a></span></div><p class="comment-content">for(int i=0;i&lt;n;i++)<br>   a[i]+=1;</p><span class="comment-actions secondary-text"><span class="item-control blog-admin blog-admin pid-1481627216"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=7875394537939659011&amp;postID=1812138864416242840">Xóa</a></span></span></div><div class="comment-replies"><div id="c1812138864416242840-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Trả lời</a></span></span><ol id="c1812138864416242840-ra" class="thread-chrome thread-expanded"><div></div><div id="c1812138864416242840-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="1812138864416242840">Trả lời</a></div></ol></div></div><div class="comment-replybox-single" id="c1812138864416242840-ce"></div></li></div><div id="c7908317494746594112-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="7908317494746594112">Trả lời</a></div></ol></div></div><div class="comment-replybox-single" id="c7908317494746594112-ce"></div></li><li class="comment" id="c5451035489948759181"><div class="avatar-image-container"><img src="//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/06803136424101805523">Unknown</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html?showComment=1526793135028#c5451035489948759181">12:12, 20/05/2018</a></span></div><p class="comment-content">Này chạy trên C++ hả ?</p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="5451035489948759181">Trả lời</a><span class="item-control blog-admin blog-admin pid-163721602"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=7875394537939659011&amp;postID=5451035489948759181">Xóa</a></span></span></div><div class="comment-replies"><div id="c5451035489948759181-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Trả lời</a></span></span><ol id="c5451035489948759181-ra" class="thread-chrome thread-expanded"><div></div><div id="c5451035489948759181-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="5451035489948759181">Trả lời</a></div></ol></div></div><div class="comment-replybox-single" id="c5451035489948759181-ce"></div></li><li class="comment" id="c8535109977637022382"><div class="avatar-image-container"><img src="//lh3.googleusercontent.com/-7HLTAJt1_sg/AAAAAAAAAAI/AAAAAAAAArQ/za5wjZe_XMI/s35-c/photo.jpg" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/12364778050282088898">Cường&#39;s Cường&#39;s</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html?showComment=1530374743576#c8535109977637022382">23:05, 30/06/2018</a></span></div><p class="comment-content">Em sai chỗ nào ạ : :((((<br>/* Nhap và hien thi mot day so nguyen gom n phan tu<br>tim va in ra so nguyen to lon nat co trong mang */<br><br>#include<br>#include<br>#include<br>#include<br>void Nhap (int a[], int n)<br>{<br><br>   for(int i = 0; i &lt; n; i++)<br>   {<br>      printf(&quot;a[%d] = &quot;, i);<br>      scanf(&quot;%d&quot;, &amp;a[i]);<br>   }<br>}<br>void Hienthi(int a[], int n)<br>{<br>     int i;<br>     printf(&quot;cac PT trong mang\n&quot;);<br>     for(i=0;i1;<br>    }<br>}<br>void SonguyentoMax (int a[], int n)<br>{<br>    int i;<br>    int max = -1 ;<br>    printf(&quot; So nguyen to lon nhat trong mang la : &quot;);<br>    for (  i =0 ; i &lt; n ; i ++)<br>    {<br><br><br>        if(KTNT(a[i]) &amp;&amp; a[i] &gt; max)<br>        {<br><br><br>        max = a[i];<br>        }<br>        printf(&quot;%d\t&quot;, a[i]);<br><br>}<br>int main()<br>{<br>    int a[20];<br>    int n;<br>    int i;<br>    int max;<br>    printf(&quot;Nhap so phan tu: &quot;);<br>    scanf(&quot;%d&quot;, &amp;n);<br>    Nhap(a,n);<br>    Hienthi(a,n);<br>    SonguyentoMax(a,n);<br>    return 0;<br>}<br></p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="8535109977637022382">Trả lời</a><span class="item-control blog-admin blog-admin pid-1819119382"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=7875394537939659011&amp;postID=8535109977637022382">Xóa</a></span></span></div><div class="comment-replies"><div id="c8535109977637022382-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Trả lời</a></span></span><ol id="c8535109977637022382-ra" class="thread-chrome thread-expanded"><div></div><div id="c8535109977637022382-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="8535109977637022382">Trả lời</a></div></ol></div></div><div class="comment-replybox-single" id="c8535109977637022382-ce"></div></li><li class="comment" id="c7901797916292211773"><div class="avatar-image-container"><img src="//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/07020405464119752979">Unknown</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html?showComment=1540190695242#c7901797916292211773">13:44, 22/10/2018</a></span></div><p class="comment-content">khong đúng với yêu cầu<br></p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="7901797916292211773">Trả lời</a><span class="item-control blog-admin blog-admin pid-1049626430"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=7875394537939659011&amp;postID=7901797916292211773">Xóa</a></span></span></div><div class="comment-replies"><div id="c7901797916292211773-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Trả lời</a></span></span><ol id="c7901797916292211773-ra" class="thread-chrome thread-expanded"><div></div><div id="c7901797916292211773-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="7901797916292211773">Trả lời</a></div></ol></div></div><div class="comment-replybox-single" id="c7901797916292211773-ce"></div></li></ol><div id="top-continue" class="continue"><a class="comment-reply" target="_self">Thêm nhận xét</a></div><div class="comment-replybox-thread" id="top-ce"></div><div class="loadmore hidden" data-post-id="4635538498946985313"><a target="_self">Tải thêm...</a></div></div>
+</div>
+</div>
+<p class='comment-footer'>
+<div class='comment-form'>
+<a name='comment-form'></a>
+<p>
+</p>
+<a href='https://www.blogger.com/comment-iframe.g?blogID=7875394537939659011&postID=4635538498946985313' id='comment-editor-src'></a>
+<iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410px' id='comment-editor' name='comment-editor' src='' width='100%'></iframe>
+<!--Can't find substitution for tag [post.friendConnectJs]-->
+<script src='https://www.blogger.com/static/v1/jsbin/55386745-comment_from_post_iframe.js' type='text/javascript'></script>
+<script type='text/javascript'>
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html');
+    </script>
+</div>
+</p>
+<div id='backlinks-container'>
+<div id='Blog1_backlinks-container'>
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-newer-link'>
+<a class='blog-pager-newer-link' href='https://cunglaptrinh.blogspot.com/2015/01/khoi-tao-so-ngau-nhien-trong-CCpp.html' id='Blog1_blog-pager-newer-link' title='Bài đăng Mới hơn'>Bài đăng Mới hơn</a>
+</span>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='https://cunglaptrinh.blogspot.com/2015/01/cac-van-de-co-ban-ve-so-nguyen-to-trong-lap-trinh.html' id='Blog1_blog-pager-older-link' title='Bài đăng Cũ hơn'>Bài đăng Cũ hơn</a>
+</span>
+<a class='home-link' href='https://cunglaptrinh.blogspot.com/'>Trang chủ</a>
+</div>
+<div class='clear'></div>
+<div class='post-feeds'>
+<div class='feed-links'>
+Đăng ký:
+<a class='feed-link' href='https://cunglaptrinh.blogspot.com/feeds/4635538498946985313/comments/default' target='_blank' type='application/atom+xml'>Đăng Nhận xét (Atom)</a>
+</div>
+</div>
+<script type='text/javascript'>
+    window.___gcfg = { 'lang': 'vi' };
+  </script>
+</div></div>
+</div>
+</div>
+<div class='column-left-outer'>
+<div class='column-left-inner'>
+<aside>
+</aside>
+</div>
+</div>
+<div class='column-right-outer'>
+<div class='column-right-inner'>
+<aside>
+<div class='sidebar section' id='sidebar-right-1'>
+<div class='widget FeaturedPost' data-version='1' id='FeaturedPost1'>
+<h2 class='title'>NỔI BẬT</h2>
+<div class='post-summary'>
+<h3><a href='https://cunglaptrinh.blogspot.com/2016/09/visual-studio-nhung-meo-su-dung.html'>[Visual Studio] Những mẹo sử dụng Visual Studio một cách hiệu quả</a></h3>
+<p>
+Visual Studio là một IDE rất mạnh mẽ của Microsoft, nó hỗ trợ rất nhiều tính năng từ cơ bản đến nâng cao. Nếu là lần đầu dùng Visual Studio ...
+</p>
+<img class='image' src='https://1.bp.blogspot.com/-gmGdsZskwWM/V-F25N9r5BI/AAAAAAAAD0I/m7LzQtYpoZwRF7k0bJREqoNJcb84iSBGQCLcB/s1600/visual-studio-logo.jpg'/>
+</div>
+<style type='text/css'>
+    .image {
+      width: 100%;
+    }
+  </style>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=7875394537939659011&widgetType=FeaturedPost&widgetId=FeaturedPost1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("FeaturedPost1"));' rel='nofollow' target='configFeaturedPost1' title='Chỉnh sửa'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget PopularPosts' data-version='1' id='PopularPosts1'>
+<h2>PHỔ BIẾN</h2>
+<div class='widget-content popular-posts'>
+<ul>
+<li>
+<a href='https://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-ma-tran-mang-hai-chieu.html'>Một số bài tập cơ bản về ma trận, mảng hai chiều</a>
+</li>
+<li>
+<a href='https://cunglaptrinh.blogspot.com/2015/01/khoi-tao-so-ngau-nhien-trong-CCpp.html'>Cách khởi tạo số ngẫu nhiên trong C/C++</a>
+</li>
+<li>
+<a href='https://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html'>Một số bài tập cơ bản về mảng một chiều</a>
+</li>
+<li>
+<a href='https://cunglaptrinh.blogspot.com/2015/08/cai-dat-su-dung-bo-go-tieng-nhat-tren-windows-10.html'>Cài đặt và sử dụng bộ gõ tiếng Nhật trên Windows 10</a>
+</li>
+<li>
+<a href='https://cunglaptrinh.blogspot.com/2015/07/danh-sach-lien-ket-don-va-cac-thao-tac.html'>Danh sách liên kết đơn và các thao tác cơ bản</a>
+</li>
+<li>
+<a href='https://cunglaptrinh.blogspot.com/2015/06/ve-cay-nhi-phan-tim-kiem-tu-kq-duyet.html'>Cách vẽ lại cây nhị phân tìm kiếm từ kết quả duyệt</a>
+</li>
+<li>
+<a href='https://cunglaptrinh.blogspot.com/2015/12/bai-tap-co-ban-ve-vong-lap-phan-1.html'>Bài tập cơ bản về vòng lặp (Phần 1)</a>
+</li>
+<li>
+<a href='https://cunglaptrinh.blogspot.com/2015/03/tong-quan-ve-kieu-string-trong-cpp.html'>Tổng quan về kiểu string trong C++</a>
+</li>
+<li>
+<a href='https://cunglaptrinh.blogspot.com/2015/05/tai-sao-can-xoa-bo-dem-ban-phim.html'>Tại sao cần xóa bộ đệm bàn phím trước khi nhập chuỗi?</a>
+</li>
+<li>
+<a href='https://cunglaptrinh.blogspot.com/2015/02/thao-tac-co-ban-voi-cau-truc-phan-so.html'>Một số thao tác cơ bản với cấu trúc Phân số</a>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=7875394537939659011&widgetType=PopularPosts&widgetId=PopularPosts1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("PopularPosts1"));' rel='nofollow' target='configPopularPosts1' title='Chỉnh sửa'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Label' data-version='1' id='Label1'>
+<h2>TAGS</h2>
+<div class='widget-content cloud-label-widget-content'>
+<span class='label-size label-size-5'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/C%2FCpp'>C/Cpp</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/ki%E1%BA%BFn%20th%E1%BB%A9c'>kiến thức</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/b%C3%A0i%20t%E1%BA%ADp'>bài tập</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/th%E1%BB%A7%20thu%E1%BA%ADt'>thủ thuật</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/c%E1%BA%A5p%20ph%C3%A1t%20%C4%91%E1%BB%99ng'>cấp phát động</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/c%E1%BA%A5u%20tr%C3%BAc'>cấu trúc</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/gi%E1%BA%A3i%20thu%E1%BA%ADt'>giải thuật</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/m%E1%BA%A3ng%20m%E1%BB%99t%20chi%E1%BB%81u'>mảng một chiều</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/ti%E1%BA%BFng%20Nh%E1%BA%ADt'>tiếng Nhật</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/m%E1%BA%A3ng%20hai%20chi%E1%BB%81u'>mảng hai chiều</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/chu%E1%BB%97i'>chuỗi</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/con%20tr%E1%BB%8F'>con trỏ</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/danh%20s%C3%A1ch%20li%C3%AAn%20k%E1%BA%BFt'>danh sách liên kết</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/h%C6%B0%E1%BB%9Bng%20%C4%91%E1%BB%91i%20t%C6%B0%E1%BB%A3ng'>hướng đối tượng</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/s%E1%BA%AFp%20x%E1%BA%BFp'>sắp xếp</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/C%23'>C#</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/Pascal'>Pascal</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/l%E1%BA%ADp%20tr%C3%ACnh'>lập trình</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/ma%20tr%E1%BA%ADn'>ma trận</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/thao%20t%C3%A1c%20file'>thao tác file</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/Git'>Git</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/Java'>Java</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/Ruby'>Ruby</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/Ruby%20on%20Rails'>Ruby on Rails</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/c%C3%A2y%20nh%E1%BB%8B%20ph%C3%A2n'>cây nhị phân</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/c%C3%A2y%20nh%E1%BB%8B%20ph%C3%A2n%20t%C3%ACm%20ki%E1%BA%BFm'>cây nhị phân tìm kiếm</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/l%E1%BA%ADp%20tr%C3%ACnh%20Windows%20Form'>lập trình Windows Form</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='https://cunglaptrinh.blogspot.com/search/label/t%C3%A0i%20li%E1%BB%87u'>tài liệu</a>
+</span>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=7875394537939659011&widgetType=Label&widgetId=Label1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Label1"));' rel='nofollow' target='configLabel1' title='Chỉnh sửa'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' data-version='1' id='HTML1'>
+<h2 class='title'>THEO DÕI TRÊN FACEBOOK</h2>
+<div class='widget-content'>
+<div style="margin-left:0px;margin-top:0px;margin-bottom:0px;"><iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fcungnhaulaptrinh&amp;width=300&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:558px;background:white;" allowtransparency="false"></iframe></div>
+
+<style type="text/css">
+#chiase 
+{
+    position:fixed; 
+    top:225px; 
+    left:0%; 
+    background-color:#eeeeee;
+    padding:1px;
+    z-index:10;
+    border-bottom-right-radius:0px;
+    border-top-right-radius:0px;
+}
+#chiase .button 
+{
+    float:left;
+    clear:both;
+    padding: 2px;
+}
+</style> 
+
+<div id='chiase'>
+
+    <div style="margin:4px;">
+        <div class='button' id='facebook'>
+            <script src="//connect.facebook.net/vi_VN/all.js#xfbml=1"></script>
+            <fb:like layout='box_count' show_faces='false'></fb:like>
+        </div>
+        <br /><br />
+        <div class='button' id='google'>
+            <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script> 
+            <g:plusone size="tall"></g:plusone>
+        </div>
+    </div>
+</div>
+
+<!-- Google Analytics-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-64965138-1', 'auto');
+      ga('send', 'pageview');
+	</script>
+    <!-- End Google Analytics-->
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=7875394537939659011&widgetType=HTML&widgetId=HTML1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' rel='nofollow' target='configHTML1' title='Chỉnh sửa'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget BlogArchive' data-version='1' id='BlogArchive1'>
+<h2>BÀI VIẾT</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://cunglaptrinh.blogspot.com/2017/'>
+2017
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://cunglaptrinh.blogspot.com/2017/01/'>
+tháng một
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://cunglaptrinh.blogspot.com/2016/'>
+2016
+</a>
+<span class='post-count' dir='ltr'>(5)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://cunglaptrinh.blogspot.com/2016/10/'>
+tháng mười
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://cunglaptrinh.blogspot.com/2016/09/'>
+tháng chín
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>
+
+        &#9660;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://cunglaptrinh.blogspot.com/2015/'>
+2015
+</a>
+<span class='post-count' dir='ltr'>(46)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://cunglaptrinh.blogspot.com/2015/12/'>
+tháng mười hai
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://cunglaptrinh.blogspot.com/2015/11/'>
+tháng mười một
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://cunglaptrinh.blogspot.com/2015/08/'>
+tháng tám
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://cunglaptrinh.blogspot.com/2015/07/'>
+tháng bảy
+</a>
+<span class='post-count' dir='ltr'>(5)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://cunglaptrinh.blogspot.com/2015/06/'>
+tháng sáu
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://cunglaptrinh.blogspot.com/2015/05/'>
+tháng năm
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://cunglaptrinh.blogspot.com/2015/04/'>
+tháng tư
+</a>
+<span class='post-count' dir='ltr'>(5)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://cunglaptrinh.blogspot.com/2015/03/'>
+tháng ba
+</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://cunglaptrinh.blogspot.com/2015/02/'>
+tháng hai
+</a>
+<span class='post-count' dir='ltr'>(5)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>
+
+        &#9660;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://cunglaptrinh.blogspot.com/2015/01/'>
+tháng một
+</a>
+<span class='post-count' dir='ltr'>(11)</span>
+<ul class='posts'>
+<li><a href='https://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-ma-tran-mang-hai-chieu.html'>Một số bài tập cơ bản về ma trận, mảng hai chiều</a></li>
+<li><a href='https://cunglaptrinh.blogspot.com/2015/01/cap-phat-dong-cho-mang-hai-chieu-trong-Cpp.html'>Cấp phát động cho mảng hai chiều trong C++</a></li>
+<li><a href='https://cunglaptrinh.blogspot.com/2015/01/tu-vung-ve-windows-trong-tieng-nhat.html'>Từ vựng về Windows trong tiếng Nhật</a></li>
+<li><a href='https://cunglaptrinh.blogspot.com/2015/01/nhap-xuat-co-ban-trong-c-va-cpp.html'>Nhập xuất cơ bản trong C và C++</a></li>
+<li><a href='https://cunglaptrinh.blogspot.com/2015/01/tu-vung-ve-tin-hoc-tieng-nhat.html'>Từ vựng về Tin học tiếng Nhật</a></li>
+<li><a href='https://cunglaptrinh.blogspot.com/2015/01/cap-phat-dong-trong-CCpp.html'>Cấp phát động trong C/C++</a></li>
+<li><a href='https://cunglaptrinh.blogspot.com/2015/01/khoi-tao-so-ngau-nhien-trong-CCpp.html'>Cách khởi tạo số ngẫu nhiên trong C/C++</a></li>
+<li><a href='https://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html'>Một số bài tập cơ bản về mảng một chiều</a></li>
+<li><a href='https://cunglaptrinh.blogspot.com/2015/01/cac-van-de-co-ban-ve-so-nguyen-to-trong-lap-trinh.html'>Các vấn đề cơ bản về số nguyên tố trong lập trình</a></li>
+<li><a href='https://cunglaptrinh.blogspot.com/2015/01/cac-ham-xu-ly-chuoi-trong-C.html'>Các hàm xử lý chuỗi trong C</a></li>
+<li><a href='https://cunglaptrinh.blogspot.com/2015/01/tong-hop-giao-trinh-lap-trinh-CCpp.html'>Tổng hợp một số sách, giáo trình lập trình C/C++</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=7875394537939659011&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' rel='nofollow' target='configBlogArchive1' title='Chỉnh sửa'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Navbar' data-version='1' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+      gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+        if (gapi.iframes && gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+              url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d7875394537939659011\x26blogName\x3dC%C3%B9ng+L%E1%BA%ADp+Tr%C3%ACnh\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://cunglaptrinh.blogspot.com/search\x26blogLocale\x3dvi\x26v\x3d2\x26homepageUrl\x3dhttps://cunglaptrinh.blogspot.com/\x26targetPostID\x3d4635538498946985313\x26blogPostOrPageUrl\x3dhttps://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html\x26vt\x3d-7668937751034204082',
+              where: document.getElementById("navbar-iframe-container"),
+              id: "navbar-iframe"
+          });
+        }
+      });
+    </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+</aside>
+</div>
+</div>
+</div>
+<div style='clear: both'></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class='main-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<footer>
+<div class='footer-outer'>
+<div class='footer-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left footer-fauxborder-left'>
+<div class='fauxborder-right footer-fauxborder-right'></div>
+<div class='region-inner footer-inner'>
+<div class='foot no-items section' id='footer-1'></div>
+<!--Footer-->
+<div style='font-size:13px;text-align:center'>
+        Tất cả bài viết trên blog này nhằm chia sẻ kiến thức và quan điểm cá nhân của tôi, không đại diện cho bất kỳ tổ chức nào
+        <br/>
+        &#169; bản quyền 2015 - 2016 Nguyễn Tuấn, mọi quyền được bảo lưu 
+        <!-- begin DCMA-->
+<a class='dmca-badge' href='http://www.dmca.com/Protection/Status.aspx?ID=bd5ee909-5b1e-4c7f-9aba-b217098c319e' title='DMCA.com Protection Status'>
+<img alt='DMCA.com Protection Status' src='//images.dmca.com/Badges/dmca-badge-w100-5x1-10.png?ID=bd5ee909-5b1e-4c7f-9aba-b217098c319e'/></a>
+<script src='//images.dmca.com/Badges/DMCABadgeHelper.min.js'> </script>
+<!--end DCMA-->
+</div>
+<!--end Footer-->
+<!-- outside of the include in order to lock Attribution widget -->
+<div class='foot section' id='footer-3' name='Chân trang'><div class='widget Attribution' data-version='1' id='Attribution1'>
+<div class='widget-content' style='text-align: center;'>
+Bản quyền &#169; 2015 Tuấn Nguyễn. Được tạo bởi <a href='https://www.blogger.com' target='_blank'>Blogger</a>.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=7875394537939659011&widgetType=Attribution&widgetId=Attribution1&action=editWidget&sectionId=footer-3' onclick='return _WidgetManager._PopupConfig(document.getElementById("Attribution1"));' rel='nofollow' target='configAttribution1' title='Chỉnh sửa'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div>
+</div>
+<div class='footer-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class='content-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<script type='text/javascript'>
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/3234676992-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY6GpuunFzcvfsVjiQGBJ0Xs2-f9JQ:1543759255336';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d7875394537939659011','//cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html','7875394537939659011');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '7875394537939659011', 'title': 'Cùng Lập Trình', 'url': 'https://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html', 'canonicalUrl': 'http://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html', 'homepageUrl': 'https://cunglaptrinh.blogspot.com/', 'searchUrl': 'https://cunglaptrinh.blogspot.com/search', 'canonicalHomepageUrl': 'http://cunglaptrinh.blogspot.com/', 'blogspotFaviconUrl': 'https://cunglaptrinh.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'vi', 'localeUnderscoreDelimited': 'vi', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Cùng Lập Trình - Atom\x22 href\x3d\x22https://cunglaptrinh.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Cùng Lập Trình - RSS\x22 href\x3d\x22https://cunglaptrinh.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Cùng Lập Trình - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/7875394537939659011/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Cùng Lập Trình - Atom\x22 href\x3d\x22https://cunglaptrinh.blogspot.com/feeds/4635538498946985313/comments/default\x22 /\x3e\n', 'meTag': '', 'adsenseClientId': 'ca-pub-7880475274476983', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'ieCssRetrofitLinks': '\x3c!--[if IE]\x3e\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://www.blogger.com/static/v1/jsbin/864213505-ieretrofit.js\x22\x3e\x3c/script\x3e\n\x3c![endif]--\x3e', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/e4b136af0978e911', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sharing': {'platforms': [{'name': 'Nhận liên kết', 'key': 'link', 'shareMessage': 'Nhận liên kết', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Chia sẻ với Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Chia sẻ với Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Chia sẻ với Pinterest', 'target': 'pinterest'}, {'name': 'Google+', 'key': 'googlePlus', 'shareMessage': 'Chia sẻ với Google+', 'target': 'googleplus'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27vi\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': true, 'jumpLinkMessage': 'Đọc tiếp &#187;', 'pageType': 'item', 'postId': '4635538498946985313', 'pageName': 'Một số bài tập cơ bản về mảng một chiều', 'pageTitle': 'Cùng Lập Trình: Một số bài tập cơ bản về mảng một chiều', 'metaDescription': 'Một số bài tập cơ bản về mảng một chiều dành cho các bạn học Nhập môn lập trình'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Chỉnh sửa', 'linkCopiedToClipboard': 'Đã sao chép liên kết vào khay nhớ tạm!', 'ok': 'Ok', 'postLink': 'Liên kết bài đăng'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Tùy chỉnh', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Một số bài tập cơ bản về mảng một chiều', 'description': 'Một số bài tập cơ bản về mảng một chiều dành cho các bạn học Nhập môn lập trình', 'url': 'https://cunglaptrinh.blogspot.com/2015/01/bai-tap-co-ban-ve-mang-mot-chieu.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 4635538498946985313}}]);
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'crosscol', document.getElementById('PageList1'), {'title': 'TRANG', 'links': [{'isCurrentPage': false, 'href': 'https://cunglaptrinh.blogspot.com/', 'title': 'home'}, {'isCurrentPage': false, 'href': '#', 'title': 'lập trình'}, {'isCurrentPage': false, 'href': 'http://', 'title': 'tản mạn'}, {'isCurrentPage': false, 'href': 'https://cunglaptrinh.blogspot.com/p/about.html', 'id': '2482829874285754078', 'title': 'about'}], 'mobile': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'useNgc': true, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/2871407971-lbx__vi.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/368954415-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_FeaturedPostView', new _WidgetInfo('FeaturedPost1', 'sidebar-right-1', document.getElementById('FeaturedPost1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'sidebar-right-1', document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar-right-1', document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar-right-1', document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar-right-1', document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': 'Đang tải\x26hellip;'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'sidebar-right-1', document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', document.getElementById('Attribution1'), {}, 'displayModeFull'));
+</script>
+</body>
+</html>

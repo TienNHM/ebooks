@@ -1,0 +1,1467 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8"> <![endif]-->
+<!--[if IE 9]><html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html lang="vi"> <!--<![endif]-->
+<head>
+<!-- Basic -->
+<meta charset="utf-8">
+<title>string.h trong C | Thư viện C chuẩn</title>
+<meta name="description" content="string.h trong C | Thư viện C chuẩn - Học C cơ bản và nâng cao theo các ví dụ về Thư viện C chuẩn, Macro trong C, Các hàm trong C, Hằng, Header file, Hàm xử lý chuỗi, Hàm xử lý ngày tháng." />
+
+
+
+<meta name="keywords" content="Thư viện C, thu vien c, Học C cơ bản và nâng cao, Thư viện C chuẩn, thu vien c chuan, C Standard Library, Chương trình C, Ví dụ C, cơ bản về C, Macro trong C, Hàm trong C, Hằng trong C, Hàm xử lý chuỗi, Hàm xử lý ngày tháng, Hàm toán học trong C." />
+<base href="../thu-vien-c/" />
+<meta property="article:author" content="https://www.facebook.com/tuyen.vietjack" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<meta name="author" content="vietjack.com">
+<script type="text/javascript"  src="../theme/js/script-min-v1.js"></script>
+<link rel="stylesheet" href="../theme/css/style-min-v1.css">
+<script type="text/javascript"  src="../FrontEndWeb/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript"  src="../FrontEndWeb/js/bootstrap.min.js"></script>
+<script type="text/javascript"  src="../FrontEndWeb/js/javascript-v3.js?v=1"></script>
+<link rel="stylesheet" href="../FrontEndWeb/css/style-v3.css?v=1.10"><link rel="stylesheet" href="../theme/css/vietjack-v3.css?v=1.8">
+<script>
+$(document).ready(function() {
+  $('input[name="q"]').keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
+</script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'UA-65991607-1', 'auto');
+  ga('send', 'pageview');</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.12&appId=1642028219373274&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'vi'}
+</script>
+
+<meta property="fb:app_id" content="1642028219373274">
+<meta property="og:site_name" content="www.vietjack.com">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2373417360267295",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/424536528/Vietjack_mobile_336x280', [336, 280], 'div-gpt-ad-1537172873030-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/424536528/Vietjack_mobile_336x280', [336, 280], 'div-gpt-ad-1537172958326-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/424536528/Vietjack_mobile_336x280', [336, 280], 'div-gpt-ad-1537173013669-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/424536528/Vietjack_mobile_336x280', [336, 280], 'div-gpt-ad-1537173094642-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+
+
+
+
+<meta property="og:image" content="https://vietjack.com/thu-vien-c/images/lap-trinh-c-logo.jpg" itemprop="thumbnailUrl">
+<!-- SOCIAL META TAGs -->
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="string.h trong C | Thư viện C chuẩn">
+<meta property="og:description" content="string.h trong C | Thư viện C chuẩn - Học C cơ bản và nâng cao theo các ví dụ về Thư viện C chuẩn, Macro trong C, Các hàm trong C, Hằng, Header file, Hàm xử lý chuỗi, Hàm xử lý ngày tháng." />
+<meta property="og:url" content="https://vietjack.com/thu-vien-c/string-h-trong-c.jsp">
+<link rel="canonical" href="https://vietjack.com/thu-vien-c/string-h-trong-c.jsp" />
+
+<!-- END SOCIAL META TAGs -->
+
+<script>
+$(document).ready(function() {
+  $('input[name="q"]').keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
+</script>
+</head>
+<body onload="prettyPrint()">
+
+<div class="wrapLoader">
+   <div class="imgLoader">
+      <img  src="../images/loading-cg.gif" alt="" width="70" height="70" />
+   </div>
+</div>
+
+ 
+<header>
+        <div class="top-header">
+            <div class="container">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="logo logo-desktop"  href="../index.jsp"><img src="../git/images/logo3.png" width="" height="" alt=""></a>
+                        </div>
+                        <div class="pull-right top-right-header">
+					        <div class="pull-left">
+	                            <div class="clearfix">
+	                                <div class="pull-left slogan">
+	                                    <p>Website giáo dục nhiều người truy cập nhất Việt Nam</p>
+	                                </div>
+	                                <div class="overflow box-share" >
+                                        <ul class="clearfix ">
+                                            <li class="pull-left"><a href="https://www.facebook.com/hoc.cung.vietjack" class="facebook"><svg enable-background="new 0 0 28 28" height="28px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="28px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="facebook"><path d="M278.5,219.5v-26.998c0-12.187,2.946-18.002,21.864-18.002H323.5v-45h-39.007   c-48.535,0-63.993,21.553-63.993,59.744V219.5h-33v46h33v136h58v-136h40.216l5.385-46H278.5z" fill="#344C8A"/><path d="M254.5,16.5c-131.996,0-239,107.004-239,239s107.004,239,239,239s239-107.004,239-239   S386.496,16.5,254.5,16.5z M412.892,413.892C370.584,456.2,314.333,479.5,254.5,479.5c-59.833,0-116.084-23.3-158.392-65.608   C53.8,371.584,30.5,315.333,30.5,255.5c0-59.833,23.3-116.084,65.608-158.392C138.416,54.8,194.667,31.5,254.5,31.5   c59.833,0,116.084,23.3,158.392,65.608C455.2,139.416,478.5,195.667,478.5,255.5C478.5,315.333,455.2,371.584,412.892,413.892z" fill="#344C8A"/></g></svg></a> </li>
+                                            <li class="pull-left"><a href="https://plus.google.com/115811842818849244008" class="google"><svg enable-background="new 0 0 28 28" height="28px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="28px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="google"><path d="M254.5,16.5c-131.996,0-239,107.004-239,239s107.004,239,239,239s239-107.004,239-239   S386.496,16.5,254.5,16.5z M412.892,413.892C370.584,456.2,314.333,479.5,254.5,479.5c-59.833,0-116.084-23.3-158.392-65.608   C53.8,371.584,30.5,315.333,30.5,255.5c0-59.833,23.3-116.084,65.608-158.392C138.416,54.8,194.667,31.5,254.5,31.5   c59.833,0,116.084,23.3,158.392,65.608C455.2,139.416,478.5,195.667,478.5,255.5C478.5,315.333,455.2,371.584,412.892,413.892z" fill="#C1211D"/><path d="M329.931,273.5h10.239c2.757,0,5.33-1.813,5.33-4.569V232.5h35.608c2.74,0,4.98-2,4.98-5h0.412v-9.763   c0-2.74-2.66-5.237-5.4-5.237h-35.6v-35.701c0-2.757-2.582-5.299-5.339-5.299h-10.239c-2.757,0-5.423,2.543-5.423,5.299V212.5   h-35.532c-2.724,0-4.468,2.497-4.468,5.237v10.255c0,2.74,1.745,4.508,4.468,4.508H324.5v36.431   C324.5,271.687,327.175,273.5,329.931,273.5z" fill="#C1211D"/><path d="M275.456,330.498c0-20.461-6.572-32.693-24.227-45.188c-7.556-5.349-14.431-13.2-14.562-15.62   c0-4.414,0.402-6.506,10.255-14.185c12.757-9.984,19.772-23.329,19.772-37.202c0-12.569-3.831-23.803-10.386-31.803h5.062   c1.05,0,2.076-0.102,2.929-0.709l14.152-10.122c1.747-1.272,2.502-3.584,1.813-5.651c-0.673-2.051-2.56-3.518-4.725-3.518H212.26   c-6.924,0-13.955,1.345-20.863,3.733c-23.061,7.95-39.182,27.656-39.182,47.846c0,28.566,22.151,50.266,51.735,50.955   c-0.574,2.256-0.861,4.569-0.861,6.767c0,4.389,1.124,8.699,3.413,12.699c-0.263,0-0.533,0-0.82,0   c-28.214,0-53.671,13.767-63.352,34.359c-2.519,5.374-3.798,10.752-3.798,16.101c0,5.185,1.329,10.171,3.954,14.88   c6.071,10.87,19.115,19.303,36.754,23.742c9.106,2.305,18.886,3.474,29.042,3.474c9.131,0,17.819-1.192,25.876-3.514   C259.237,370.265,275.456,351.788,275.456,330.498z M184.875,217.257c-1.37-10.46,0.812-19.902,6.038-25.85   c3.364-3.848,7.769-5.906,12.724-5.906h0.558c13.988,1,27.369,16.076,29.838,34.838c1.378,10.493-0.943,20.322-6.235,26.328   c-3.364,3.848-7.72,5.834-12.88,5.834h-0.222C200.996,252.5,187.328,235.986,184.875,217.257z M208.158,360.993   c-20.666,0-36.844-12.536-36.844-28.706c0-14.882,18.902-27.787,40.438-27.787h0.591c4.676,0,9.262,0.599,13.569,1.928   c1.469,1.009,2.896,1.907,4.274,2.834c9.968,6.793,16.572,11.242,18.418,18.461c0.418,1.805,0.624,3.598,0.624,5.362   C249.228,351.618,235.412,360.993,208.158,360.993z" fill="#C1211D"/></g></svg></a> </li>
+                                            <li class="pull-left"><a href="https://goo.gl/Dsf8AE" class="youtube"><svg enable-background="new 0 0 28 28" height="28px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="28px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="youtube"><path d="M374.5,333.527v-35.075c0-24.097-19.133-43.951-43.215-43.951H179.729   c-24.098,0-43.229,19.854-43.229,43.951v35.075c0,24.082,19.132,43.973,43.229,43.973h151.556   C355.367,377.5,374.5,357.608,374.5,333.527z M211.5,282.5h-14v70h-14v-70h-14v-12h42V282.5z M251.5,352.5h-12v-6.992   c-2,2.442-4.654,4.292-7.064,5.603c-2.411,1.296-4.809,1.913-7.077,1.913c-2.798,0-5.089-0.893-6.528-2.687   c-1.407-1.834-2.331-4.489-2.331-8.101V291.5h12v46.563c0,1.423,0.491,2.458,0.981,3.09c0.522,0.648,1.447,0.956,2.593,0.956   c0.869,0,2.063-0.479,3.422-1.325c1.359-0.862,2.664-2.285,3.794-3.285h0.211v-46h12V352.5z M295.5,339.66   c0,4.276-1.099,7.548-2.996,9.848c-1.865,2.284-4.703,3.414-8.267,3.414c-2.379,0-4.623-0.435-6.457-1.312   c-1.849-0.885-3.279-2.245-5.279-4.11v5h-12v-82h12v26.11c2-1.834,3.449-3.256,5.259-4.213c1.834-0.956,3.736-1.438,5.617-1.438   c3.825,0,6.907,1.296,8.915,3.873c2.039,2.561,3.209,6.331,3.209,11.286V339.66z M306.193,348.812   c-3.106-3.304-4.693-7.872-4.693-13.704v-27.172c0-5.2,1.737-9.492,5.151-12.78c3.43-3.319,7.816-4.955,13.237-4.955   c5.524,0,9.987,1.525,12.967,4.576c2.972,3.074,4.644,7.453,4.644,13.167V323.5h-23v11.252c0,3.193,0.133,5.39,0.924,6.639   c0.806,1.217,2.043,1.818,3.971,1.818c2.007,0,3.268-0.522,4.05-1.557c0.782-1.035,1.055-3.335,1.055-6.9V332.5h13v2.607   c0,6.204-1.697,10.867-4.755,14.013c-3.011,3.122-7.641,4.679-13.663,4.679C313.668,353.799,309.299,352.131,306.193,348.812z" fill="#B30017"/><path d="M324.5,307.864c0-2.537-0.354-4.371-1.184-5.422c-0.822-1.13-2.157-1.668-3.974-1.668   c-1.928,0-3.533,0.537-4.379,1.668c-0.846,1.051-1.463,2.893-1.463,5.422v5.636h11V307.864z" fill="#B30017"/><path d="M277.723,300.554c-0.861,0-1.821,0.182-2.651,0.601c-0.83,0.379-1.572,1.004-2.572,1.849v37.652   c1,0.98,2.019,1.715,2.944,2.134c0.94,0.419,1.942,0.648,2.962,0.648c1.478,0,2.454-0.419,3.15-1.28   c0.695-0.846,0.945-2.221,0.945-4.165v-31.219c0-2.055-0.29-3.596-1.136-4.663C280.479,301.075,279.344,300.554,277.723,300.554z" fill="#B30017"/><polygon fill="#B30017" points="214.5,233.5 214.5,196.395 232.698,143.5 217.136,143.5 207.676,179.5 206.703,179.5    196.761,143.5 181.334,143.5 199.5,198.062 199.5,233.5  "/><path d="M284.5,167.5v55.379c0,3.999,0.714,6.963,2.286,8.923c1.604,1.992,3.921,2.995,7.067,2.995   c2.561,0,5.152-0.727,7.855-2.134c2.727-1.407,5.792-3.485,7.792-6.188v7.025h14v-66h-14v50.273c-1,1.47-2.662,2.656-4.171,3.612   c-1.541,0.925-2.801,1.407-3.789,1.407c-1.28,0-2.411-0.371-2.964-1.083c-0.569-0.695-1.075-1.826-1.075-3.414V167.5H284.5z" fill="#B30017"/><path d="M233.5,182.5v34.475c0,5.651,1.946,10.156,5.511,13.523c3.572,3.319,8.414,4.987,14.357,4.987   c6.18,0,11.172-1.62,14.721-4.845c3.501-3.225,5.411-7.682,5.411-13.396v-34.38c0-5.09-1.903-9.263-5.483-12.472   c-3.612-3.209-8.266-4.829-13.901-4.829c-6.173,0-11.124,1.557-14.799,4.584c-3.659,3.09-5.504,7.353-5.504,12.353H233.5z    M247.5,181.979c0-1.446,0.66-2.64,1.696-3.517c1.051-0.909,2.472-1.359,4.124-1.359c1.81,0,3.327,0.451,4.442,1.359   c1.114,0.877,1.739,2.063,1.739,3.517v36.277c0,1.77-0.586,3.177-1.668,4.213c-1.083,1.004-2.569,1.494-4.418,1.494   c-1.786,0-3.34-0.49-4.296-1.494c-0.972-0.988-1.617-2.395-1.617-4.213V181.979z" fill="#B30017"/><path d="M254.5,16.5c-131.996,0-239,107.004-239,239s107.004,239,239,239s239-107.004,239-239   S386.496,16.5,254.5,16.5z M412.892,413.892C370.584,456.2,314.333,479.5,254.5,479.5c-59.833,0-116.084-23.3-158.392-65.608   C53.8,371.584,30.5,315.333,30.5,255.5c0-59.833,23.3-116.084,65.608-158.392C138.416,54.8,194.667,31.5,254.5,31.5   c59.833,0,116.084,23.3,158.392,65.608C455.2,139.416,478.5,195.667,478.5,255.5C478.5,315.333,455.2,371.584,412.892,413.892z" fill="#B30017"/></g></svg></a> </li>
+                                        </ul>
+	                                </div>
+	                            </div>
+                            </div>
+                            <div class="box-app pull-left">
+                                <a href='https://play.google.com/store/apps/details?id=com.vietjack&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Tải nội dung trên Google Play' src='../git/images/google-badge-play.png?v1' /></a>
+                                <a href="https://itunes.apple.com/vn/app/vietjack/id1374739725" target="_blank"><img alt="Tải nội dung trên IOS Store" src="../git/images/ios-store-badge.png"></a>
+                            </div>
+<div class="box-search overflow">
+					            <form style="margin:0px;" name="search_box" id="search_box" target="_blank" action="https://www.google.com/cse">
+					             <input type="hidden" value="000101843498206225654:bnqd99qkega" name="cx"/><input type="hidden" value="UTF-8" name="ie"/>
+					                <div class="form-group">
+					                    <input class="form-control" id="search" placeholder="Tìm kiếm" type="text" name="q" spellcheck="false" autocomplete="off" value="Tìm kiếm" onblur="javascript:if(this.value==''){this.value='Tìm kiếm'}" onfocus="javascript:if(this.value=='Tìm kiếm'){this.value=''}" />
+					                    <button type="submit" class="btn btn-search"  onclick="document.search_box.submit()"><i class="fa fa-search" aria-hidden="true"></i></button>
+					                </div>
+					            </form>
+					        </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-default navbar-header">
+	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+	                        <span class="sr-only">Toggle navigation</span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                    </button>
+	                <span class="icon-menu-category"> <i class="fa fa-list-ul fa-3" aria-hidden="true"></i></span>
+	                <h1 class="logo-new logo logo-mobile">
+	                    <a class="logo logo-mobile"  href="../index.jsp" title="vietjack">
+	                    	<img alt="Series các bài soạn văn, soạn bài Ngữ văn, giải bài tập và để học tốt Toán, Lí, Hóa, Sinh, Sử, Địa, Tiếng Anh và học lập trình miễn phí" src="../git/images/logo3.png" width="" height="" alt=""></a>
+	                </h1>
+                	
+                	
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                        <div class="menu-mobile">
+                        	<span class="close-menu-menu"><i class="fa fa-times" aria-hidden="true"></i></span>
+                            <ul class="nav navbar-nav">
+                                <li class="level-1"><a href="../index.jsp" class=""><img src="../git/images/icon.png"></a></li>
+                                <li class="level-1">
+                                   <a href="../series/lop-3.jsp" class="">Lớp 3</a>
+                                    <ul class="menu-2 row">
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Sách giáo khoa</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../tieng-viet-lop-3/index.jsp">Soạn Tiếng Việt lớp 3</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../van-mau-lop-3/index.jsp">Văn mẫu lớp 3</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-toan-lop-3/index.jsp">Giải Toán lớp 3</a> </li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">&nbsp;</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../tieng-anh-3/index.jsp">Giải Tiếng Anh 3</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-tu-nhien-va-xa-hoi-3/index.jsp">Giải Tự nhiên và Xã hội 3</a> </li>
+                                                    
+                                            </ul>
+                                            
+                                        </li>
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Sách/Vở bài tập</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-tieng-viet-3/index.jsp">Giải VBT Tiếng Việt 3</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-toan-3/index.jsp">Giải VBT Toán 3</a> </li>
+                                                    
+                                            </ul>
+                                        </li>
+                                        
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">&nbsp;</h3>
+                                            <ul>
+                                               <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-tu-nhien-va-xa-hoi-3/index.jsp">Giải VBT Tự nhiên và Xã hội 3</a> </li>
+                                               <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-dao-duc-3/index.jsp">Giải VBT Đạo Đức 3</a> </li>
+                                                         
+                                            </ul>
+                                        </li>
+                                        
+                                    </ul>
+                                    </li>
+                                    <li class="level-1">
+                                    <a href="../series/lop-4.jsp" class="">Lớp 4</a>
+                                    <ul class="menu-2 row">
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Sách giáo khoa</h3>
+                                            <ul>
+                                               <li class="level-2 col-xs-3"><a href="../tieng-viet-lop-4/index.jsp">Soạn Tiếng Việt lớp 4</a> </li>
+                                               <li class="level-2 col-xs-3"><a href="../van-mau-lop-4/index.jsp">Văn mẫu lớp 4</a> </li>
+                                               <li class="level-2 col-xs-3"><a href="../giai-toan-lop-4/index.jsp">Giải Toán lớp 4</a> </li>
+                                               <li class="level-2 col-xs-3"><a href="../tieng-anh-4-moi/index.jsp">Giải Tiếng Anh 4 mới</a> </li>
+                                                  
+                                            </ul>
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-khoa-hoc-4/index.jsp">Giải Khoa học 4</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../lich-su-va-dia-li-4/index.jsp">Giải Lịch Sử và Địa Lí 4</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-dao-duc-4/index.jsp">Giải Đạo Đức 4</a> </li>
+                                                 
+                                            </ul>
+                                            
+                                            <h3 class="title">Sách/Vở bài tập</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-tieng-viet-4/index.jsp">Giải VBT Tiếng Việt 4</a> </li>
+                                                           
+                                            </ul>
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-toan-4/index.jsp">Giải VBT Toán 4</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-tieng-anh-4-moi/index.jsp">Giải SBT Tiếng Anh 4 mới</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-dao-duc-4/index.jsp">Giải VBT Đạo Đức 4</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../vo-bai-tap-lop-4/index.jsp">VBT Lịch Sử, Địa Lí, Khoc học 4</a> </li>
+                                                               
+                                            </ul>
+                                            
+                                            
+                                        </li>    
+                                         <li class="main-content col-md-3">
+                                            <h3 class="title">Đề kiểm tra</h3>
+                                            <ul>
+                                                 <li class="level-2 col-xs-3"><a href="../de-kiem-tra-toan-lop-4/index.jsp">Đề ktra Toán 4 (phần 2)</a> </li>
+                                                         
+                                            </ul>
+                                        </li>
+                                         
+                                    </ul>
+                                    </li>
+                                    <li class="level-1">
+                                    <a href="../series/lop-5.jsp" class="">Lớp 5</a>
+                                    <ul class="menu-2 row">
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Sách giáo khoa</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../tieng-viet-lop-5/index.jsp">Soạn Tiếng Việt lớp 5</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../van-mau-lop-5/index.jsp">Văn mẫu lớp 5</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-toan-lop-5/index.jsp">Giải Toán lớp 5</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../tieng-anh-5-moi/index.jsp">Giải Tiếng Anh 5 mới</a> </li>
+                                                                       
+                                            </ul>
+                                        </li>
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">&nbsp;</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-khoa-hoc-5/index.jsp">Giải Khoa học 5</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../lich-su-va-dia-li-5/index.jsp">Giải Lịch Sử và Địa Lí 5</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-dao-duc-5/index.jsp">Giải Đạo Đức 5</a> </li>
+                                                                       
+                                            </ul>
+                                        </li>   
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Sách/Vở bài tập</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-tieng-viet-5/index.jsp">Giải VBT Tiếng Việt 5</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-toan-5/index.jsp">Giải VBT Toán 5</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-tieng-anh-5-moi/index.jsp">Giải SBT Tiếng Anh 5 mới</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-dao-duc-5/index.jsp">Giải VBT Đạo Đức 5</a> </li>
+                                                      
+                                            </ul>
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Đề kiểm tra</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../de-kiem-tra-toan-5/index.jsp">Đề kiểm tra Toán 5</a> </li>
+                                                         
+                                            </ul>
+                                        </li>    
+                                        
+                                    </ul>
+                                    </li>
+                                    <li class="level-1">
+                                    <a href="../series/lop-6.jsp" class="">Lớp 6</a>
+                                    <ul class="menu-2 row">
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Sách giáo khoa</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../soan-van-lop-6/index.jsp">Soạn Văn 6</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../soan-van-6/index.jsp">Soạn Văn 6 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../ngu-van-6/index.jsp">Soạn Văn 6 (siêu ngắn)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../van-mau-lop-6/index.jsp">Văn mẫu lớp 6</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../ngu-van-6/tac-gia-tac-pham-lop-6.jsp">Tác giả - Tác phẩm Văn 6</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-toan-lop-6/index.jsp">Giải Toán 6</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-vat-ly-6/index.jsp">Giải Vật Lí 6</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-sinh-hoc-6/index.jsp">Giải Sinh 6</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-sinh-6/index.jsp">Giải Sinh 6 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-dia-li-6/index.jsp">Giải Địa Lí 6</a> </li>
+                                                               
+                                            </ul>
+                                        </li> 
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">&nbsp;</h3>
+                                            <ul>
+                                                 <li class="level-2 col-xs-3"><a href="../giai-dia-li-lop-6/index.jsp">Giải Địa Lí 6 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../tieng-anh-6/index.jsp">Giải Tiếng Anh 6</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../tieng-anh-6-moi/index.jsp">Giải Tiếng Anh 6 mới</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-lich-su-6/index.jsp">Giải Lịch sử 6</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-lich-su-lop-6/index.jsp">Giải Lịch sử 6 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-tin-hoc-6/index.jsp">Giải Tin học 6</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-giao-duc-cong-dan-6/index.jsp">Giải GDCD 6</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-gdcd-6/index.jsp">Giải GDCD 6 (ngắn nhất)</a> </li>
+                                                 <li class="level-2 col-xs-3"><a href="../giai-bai-tap-cong-nghe-6/index.jsp">Giải Công nghệ 6</a> </li>
+                                                                  
+                                            </ul>
+                                        </li>   
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Sách/Vở bài tập</h3>
+                                            <ul>
+                                                  <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-ngu-van-6/index.jsp">Giải VBT Ngữ Văn 6</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-toan-6/index.jsp">Giải SBT Toán 6</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-vat-li-6/index.jsp">Giải SBT Vật Lí 6</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-sinh-hoc-6/index.jsp">Giải VBT Sinh học 6</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-dia-li-6/index.jsp">Giải SBT Địa Lí 6</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-tap-ban-do-va-bai-tap-thuc-hanh-dia-li-6/index.jsp">Tập bản đồ Địa Lí 6</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-tieng-anh-6/index.jsp">Giải SBT Tiếng Anh 6</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-tieng-anh-6-moi/index.jsp">Giải SBT Tiếng Anh 6 mới</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-lich-su-6/index.jsp">Giải VBT Lịch Sử 6</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-tap-ban-do-lich-su-lop-6/index.jsp">Tập bản đồ Lịch Sử 6</a> </li>
+                                                                
+                                            </ul>
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                             <ul>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-cong-nghe-6/index.jsp">Giải VBT Công nghệ 6</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-gdcd-6/index.jsp">Giải VBT GDCD 6</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-gdcd-6/index.jsp">Giải SBT GDCD 6</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-tinh-huong-giao-duc-cong-dan-6/index.jsp">Giải BT tình huống GDCD 6</a> </li>
+                                             </ul>      
+                                            <h3 class="title">Đề kiểm tra</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-6/de-kiem-tra-ngu-van-6.jsp">Đề kiểm tra Ngữ Văn 6</a> </li>
+                                                 <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-6/de-kiem-tra-toan-6.jsp">Đề kiểm tra Toán 6</a> </li>
+                                                 <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-6/de-kiem-tra-vat-li-6.jsp">Đề kiểm tra Vật Lí 6</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-6/de-kiem-tra-sinh-hoc-6.jsp">Đề kiểm tra Sinh 6</a> </li>
+                                                              
+                                            </ul>
+                                        </li>    
+                                        
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Bài tập trắc nghiệm</h3>
+                                            <ul>
+                                                  <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-sinh-hoc-6/index.jsp">BT trắc nghiệm Sinh 6</a> </li>
+                                                            
+                                            </ul>
+                                        </li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li class="level-1">
+                                        <a href="../series/lop-7.jsp" class="">Lớp 7</a>
+                                        <ul class="menu-2 row">
+                                            <li class="main-content col-md-3">
+                                            <h3 class="title">Sách giáo khoa</h3>
+                                            <ul>
+                                                  <li class="level-2 col-xs-3"><a href="../soan-van-lop-7/index.jsp">Soạn Văn 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../soan-van-7/index.jsp">Soạn Văn 7 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../ngu-van-7/index.jsp">Soạn Văn 7 (siêu ngắn)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../van-mau-lop-7/index.jsp">Văn mẫu lớp 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../ngu-van-7/tac-gia-tac-pham-lop-7.jsp">Tác giả - Tác phẩm Văn 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-toan-lop-7/index.jsp">Giải Toán 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-vat-ly-7/index.jsp">Giải Vật Lí 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-sinh-hoc-7/index.jsp">Giải Sinh 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-sinh-7/index.jsp">Giải Sinh 7 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-dia-li-7/index.jsp">Giải Địa Lí 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-dia-li-lop-7/index.jsp">Giải Địa Lí 7 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../tieng-anh-7/index.jsp">Giải Tiếng Anh 7</a> </li>
+                                                      
+                                            </ul>
+                                        </li>
+                                        <li class="main-content col-md-3">
+                                            <ul>
+                                                  <li class="level-2 col-xs-3"><a href="../tieng-anh-7-moi/index.jsp">Giải Tiếng Anh 7 mới</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-lich-su-7/index.jsp">Giải Lịch sử 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-lich-su-lop-7/index.jsp">Giải Lịch sử 7 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-tin-hoc-7/index.jsp">Giải Tin học 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-giao-duc-cong-dan-7/index.jsp">Giải GDCD 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-gdcd-7/index.jsp">Giải GDCD 7 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-cong-nghe-7/index.jsp">Giải Công nghệ 7</a> </li>
+                                                      
+                                            </ul>
+                                            <h3 class="title">Sách/Vở bài tập</h3>
+                                            <ul>
+                                                  <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-ngu-van-7/index.jsp">Giải VBT Ngữ Văn 7</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-toan-7/index.jsp">Giải SBT Toán 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-vat-li-7/index.jsp">Giải SBT Vật Lí 7</a> </li>
+                                            </ul>
+                                        </li> 
+                                            
+                                        <li class="main-content col-md-3">
+                                            <ul>
+                                                  <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-sinh-hoc-7/index.jsp">Giải VBT Sinh học 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-dia-li-7/index.jsp">Giải SBT Địa Lí 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-dia-li-7/index.jsp">Giải VBT Địa Lí 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-tap-ban-do-va-bai-tap-thuc-hanh-dia-li-7/index.jsp">Tập bản đồ Địa Lí 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-tieng-anh-7/index.jsp">Giải SBT Tiếng Anh 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-tieng-anh-7-moi/index.jsp">Giải SBT Tiếng Anh 7 mới</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-lich-su-7/index.jsp">Giải VBT Lịch Sử 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-tap-ban-do-lich-su-lop-7/index.jsp">Tập bản đồ Lịch Sử 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-cong-nghe-7/index.jsp">Giải VBT Công nghệ 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-gdcd-7/index.jsp">Giải SBT GDCD 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-tinh-huong-gdcd-7/index.jsp">Giải BT tình huống GDCD 7</a> </li>
+                                                     
+                                            </ul>
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Đề kiểm tra</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-7/de-kiem-tra-ngu-van-7.jsp">Đề kiểm tra Ngữ Văn 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-7/de-kiem-tra-toan-7.jsp">Đề kiểm tra Toán 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-7/de-kiem-tra-vat-li-7.jsp">Đề kiểm tra Vật Lí 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-7/de-kiem-tra-sinh-hoc-7.jsp">Đề kiểm tra Sinh 7</a> </li>
+                                                        
+                                            </ul>
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Bài tập trắc nghiệm</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../vat-ly-lop-7/index.jsp">Lý thuyết - Bài tập Lí 7 (có đáp án)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-vat-li-7/index.jsp">BT trắc nghiệm Vật Lí 7</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-sinh-hoc-7/index.jsp">BT trắc nghiệm Sinh 7</a> </li>
+                                                      
+                                            </ul>
+                                        </li>    
+                                        
+
+                                        </ul>
+                                    </li>
+                                    <li class="level-1">
+                                        <a href="../series/lop-8.jsp" class="">Lớp 8</a>
+                                        <ul class="menu-2 row">
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Sách giáo khoa</h3>
+                                            <ul>
+                                                 <li class="level-2 col-xs-3"><a href="../soan-van-lop-8/index.jsp">Soạn Văn 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../soan-van-8/index.jsp">Soạn Văn 8 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../ngu-van-8/index.jsp">Soạn Văn 8 (siêu ngắn)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../van-mau-lop-8/index.jsp">Văn mẫu lớp 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../ngu-van-8/tac-gia-tac-pham-lop-8.jsp">Tác giả - Tác phẩm Văn 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-toan-lop-8/index.jsp">Giải Toán 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-vat-ly-8/index.jsp">Giải Vật Lí 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-hoa-lop-8/index.jsp">Giải Hóa 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-sinh-hoc-8/index.jsp">Giải Sinh 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-sinh-8/index.jsp">Giải Sinh 8 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-dia-li-8/index.jsp">Giải Địa Lí 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-dia-li-lop-8/index.jsp">Giải Địa Lí 8 (ngắn nhất)</a> </li>
+                                                       
+                                            </ul>
+                                        </li>
+                                        <li class="main-content col-md-3">
+                                            <ul>
+                                                 <li class="level-2 col-xs-3"><a href="../tieng-anh-8/index.jsp">Giải Tiếng Anh 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../tieng-anh-8-moi/index.jsp">Giải Tiếng Anh 8 mới</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-lich-su-8/index.jsp">Giải Lịch sử 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-lich-su-lop-8/index.jsp">Giải Lịch sử 8 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-tin-hoc-8/index.jsp">Giải Tin học 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-giao-duc-cong-dan-8/index.jsp">Giải GDCD 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-gdcd-8/index.jsp">Giải GDCD 8 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-cong-nghe-8/index.jsp">Giải Công nghệ 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-cong-nghe-lop-8/index.jsp">Giải Công nghệ 8 (ngắn nhất)</a> </li>
+                                                         
+                                            </ul>
+                                            <h3 class="title">Sách/Vở bài tập</h3>
+                                            <ul>
+                                                  <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-ngu-van-8/index.jsp">Giải VBT Ngữ Văn 8</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-toan-8/index.jsp">Giải SBT Toán 8</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-vat-li-8/index.jsp">Giải SBT Vật Lí 8</a> </li>
+                                            </ul>      
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                            <ul>
+                                                  <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-hoa-8/index.jsp">Giải SBT Hóa 8</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-sinh-hoc-8/index.jsp">Giải VBT Sinh học 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-dia-li-8/index.jsp">Giải SBT Địa Lí 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-dia-li-8/index.jsp">Giải VBT Địa Lí 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-tap-ban-do-va-bai-tap-thuc-hanh-dia-li-8/index.jsp">Tập bản đồ Địa Lí 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-tieng-anh-8-moi/index.jsp">Giải SBT Tiếng Anh 8 mới</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-lich-su-8/index.jsp">Giải VBT Lịch sử 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-tap-ban-do-lich-su-lop-8/index.jsp">Tập bản đồ Lịch Sử 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-cong-nghe-8/index.jsp">Giải VBT Công nghệ 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-gdcd-8/index.jsp">Giải SBT GDCD 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-tinh-huong-gdcd-8/index.jsp">Giải BT tình huống GDCD 8</a> </li>
+                                                          
+                                            </ul>
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Đề kiểm tra</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-8/de-kiem-tra-ngu-van-8.jsp">Đề kiểm tra Ngữ Văn 8</a> </li>
+                                                 <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-8/de-kiem-tra-toan-8.jsp">Đề kiểm tra Toán 8</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-8/de-kiem-tra-vat-li-8.jsp">Đề kiểm tra Vật Lí 8</a> </li>
+                                                 <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-8/de-kiem-tra-hoa-hoc-8.jsp">Đề kiểm tra Hóa 8</a> </li>
+                                                 <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-8/de-kiem-tra-sinh-hoc-8.jsp">Đề ktra Sinh 8 (hay nhất)</a> </li>
+                                                            
+                                            </ul>
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Chuyên đề - Bài tập trắc nghiệm</h3>
+                                            <ul>
+                                                  <li class="level-2 col-xs-3"><a href="../vat-ly-lop-8/index.jsp">Lý thuyết - Bài tập Lí 8 (có đáp án)</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../hoa-hoc-lop-8/index.jsp">Lý thuyết - Bài tập Hóa 8 (có đáp án)</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-sinh-hoc-8/index.jsp">BT trắc nghiệm Sinh 8</a> </li>
+                                                       
+                                            </ul>
+                                        </li>    
+                                        
+                                        </ul>
+                                    </li>
+                                    <li class="level-1">
+                                    <a href="../series/lop-9.jsp" class="">Lớp 9</a>
+                                    <ul class="menu-2 row">
+                                       <li class="main-content col-md-3">
+                                            <h3 class="title">Sách giáo khoa</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../soan-van-lop-9/index.jsp">Soạn Văn 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../soan-van-9/index.jsp">Soạn Văn 9 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../ngu-van-9/index.jsp">Soạn Văn 9 (siêu ngắn)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../van-mau-lop-9/index.jsp">Văn mẫu lớp 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../ngu-van-6/tac-gia-tac-pham-lop-9.jsp">Tác giả - Tác phẩm Văn 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-toan-lop-9/index.jsp">Giải Toán 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-vat-ly-9/index.jsp">Giải Vật Lí 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-hoa-lop-9/index.jsp">Giải Hóa 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-sinh-hoc-9/index.jsp">Giải Sinh 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-dia-li-9/index.jsp">Giải Địa Lí 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-dia-li-lop-9/index.jsp">Giải Địa Lí 9 (ngắn nhất)</a> </li>
+                                                      
+                                            </ul>
+                                        </li>
+                                        <li class="main-content col-md-3">
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../tieng-anh-9/index.jsp">Giải Tiếng Anh 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../tieng-anh-9-moi/index.jsp">Giải Tiếng Anh 9 mới</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-lich-su-9/index.jsp">Giải Lịch sử 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-lich-su-lop-9/index.jsp">Giải Lịch sử 9 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-tin-hoc-9/index.jsp">Giải Tin học 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-giao-duc-cong-dan-9/index.jsp">Giải GDCD 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-gdcd-9/index.jsp">Giải GDCD 9 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-cong-nghe-9/index.jsp">Giải Công nghệ 9</a> </li>
+                                                       
+                                            </ul>
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Sách/Vở bài tập</h3>
+                                            <ul>
+                                               <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-ngu-van-9/index.jsp">Giải VBT Ngữ Văn 9</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-toan-9/index.jsp">Giải SBT Toán 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-vat-li-9/index.jsp">Giải SBT Vật Lí 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-hoa-9/index.jsp">Giải SBT Hóa 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-sinh-hoc-9/index.jsp">Giải VBT Sinh học 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-dia-li-9/index.jsp">Giải SBT Địa Lí 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-tap-ban-do-va-bai-tap-thuc-hanh-dia-li-9/index.jsp">Tập bản đồ Địa Lí 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-tieng-anh-9/index.jsp">Giải SBT Tiếng Anh 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-tieng-anh-9-moi/index.jsp">Giải SBT Tiếng Anh 9 mới</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-lich-su-9/index.jsp">Giải VBT Lịch sử 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-tap-ban-do-lich-su-lop-9/index.jsp">Tập bản đồ Lịch Sử 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-vo-bai-tap-cong-nghe-9/index.jsp">Giải VBT Công nghệ 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-gdcd-9/index.jsp">Giải SBT GDCD 9</a> </li>
+                                                        
+                                            </ul>
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Đề kiểm tra</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-9/de-kiem-tra-ngu-van-9.jsp">Đề kiểm tra Ngữ Văn 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-9/de-kiem-tra-toan-9.jsp">Đề kiểm tra Toán 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../de-thi-vao-10-mon-toan/index.jsp">Đề thi vào 10 môn Toán</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-9/de-kiem-tra-vat-li-9.jsp">Đề kiểm tra Vật Lí 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-9/de-kiem-tra-hoa-hoc-9.jsp">Đề kiểm tra Hóa 9</a> </li>
+                                                    
+                                            </ul>
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Chuyên đề</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../toan-lop-9/index.jsp">Chuyên đề Toán 9 (có đáp án)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../chuyen-de-toan-9/index.jsp">Chuyên đề Toán 9</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../vat-ly-lop-9/index.jsp">Lý thuyết - Bài tập Lí 9 (có đáp án)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../hoa-hoc-lop-9/index.jsp">Chuyên đề Hóa 9 (có đáp án)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../chuyen-de-sinh-hoc-9/index.jsp">Chuyên đề Sinh 9</a> </li>
+                                                    
+                                            </ul>
+                                        </li>    
+                                        
+
+                                        </ul>
+                                    </li>
+                                    <li class="level-1">
+                                        <a href="../series/lop-10.jsp" class="">Lớp 10</a>
+                                        <ul class="menu-2 row">
+                                            <li class="main-content col-md-3">
+                                            <h3 class="title">Sách giáo khoa</h3>
+                                            <ul>
+                                              <li class="level-2 col-xs-3"><a href="../soan-van-lop-10/index.jsp">Soạn Văn 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../soan-van-10/index.jsp">Soạn Văn 10 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../ngu-van-10/index.jsp">Soạn Văn 10 (siêu ngắn)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../van-mau-lop-10/index.jsp">Văn mẫu lớp 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../ngu-van-10/tac-gia-tac-pham-lop-10.jsp">Tác giả - Tác phẩm Văn 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-toan-lop-10/index.jsp">Giải Toán 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-toan-10-nang-cao/index.jsp">Giải Toán 10 nâng cao</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-vat-ly-10/index.jsp">Giải Vật Lí 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-ly-10-nang-cao/index.jsp">Giải Vật Lí 10 nâng cao</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-hoa-lop-10/index.jsp">Giải Hóa 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-hoa-10-nang-cao/index.jsp">Giải Hóa 10 nâng cao</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-sinh-hoc-10/index.jsp">Giải Sinh 10</a> </li>
+                                                        
+                                            </ul>
+                                        </li>
+                                        <li class="main-content col-md-3">
+                                            <ul>
+                                              <li class="level-2 col-xs-3"><a href="../giai-bai-tap-sinh-10/index.jsp">Giải Sinh 10 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-dia-li-10/index.jsp">Giải Địa Lí 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-dia-li-lop-10/index.jsp">Giải Địa Lí 10 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../tieng-anh-10/index.jsp">Giải Tiếng Anh 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../tieng-anh-10-moi/index.jsp">Giải Tiếng Anh 10 mới</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-lich-su-10/index.jsp">Giải Lịch sử 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-lich-su-lop-10/index.jsp">Giải Lịch sử 10 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-tin-hoc-10/index.jsp">Giải Tin học 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-giao-duc-cong-dan-10/index.jsp">Giải GDCD 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-gdcd-10/index.jsp">Giải GDCD 10 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-cong-nghe-10/index.jsp">Giải Công nghệ 10</a> </li>
+                                                         
+                                            </ul>
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Sách/Vở bài tập</h3>
+                                            <ul>
+                                                  <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-toan-10/index.jsp">Giải SBT Toán 10</a> </li>
+                                                 <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-vat-li-10/index.jsp">Giải SBT Vật Lí 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-hoa-10/index.jsp">Giải SBT Hóa 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-tap-ban-do-va-bai-tap-thuc-hanh-dia-li-10/index.jsp">Tập bản đồ Địa Lí 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-tieng-anh-10/index.jsp">Giải SBT Tiếng Anh 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-tieng-anh-10-moi/index.jsp">Giải SBT Tiếng Anh 10 mới</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-tap-ban-do-lich-su-lop-10/index.jsp">Tập bản đồ Lịch Sử 10</a> </li>
+                                                     
+                                            </ul>
+                                            <h3 class="title">Chuyên đề</h3>
+                                            <ul>
+                                                 <li class="level-2 col-xs-3"><a href="../toan-lop-10/index.jsp">Chuyên đề Toán 10 (có đáp án)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../vat-ly-lop-10/index.jsp">Chuyên đề Vật Lí 10 (có đáp án)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../hoa-hoc-lop-10/index.jsp">Chuyên đề Hóa 10 (có đáp án)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../chuyen-de-sinh-hoc-10/index.jsp">Chuyên đề Sinh 10</a> </li>
+                                                     
+                                            </ul>
+                                        </li>    
+                                          
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Bài tập trắc nghiệm</h3>
+                                            <ul>
+                                                 <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-hinh-hoc-10/index.jsp">BT trắc nghiệm Hình 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-vat-li-10/index.jsp">BT trắc nghiệm Vật Lí 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-hoa-10/index.jsp">BT trắc nghiệm Hóa 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-sinh-hoc-10/index.jsp">BT trắc nghiệm Sinh 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-dia-li-10/index.jsp">BT trắc nghiệm Địa Lí 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-lich-su-10/index.jsp">BT trắc nghiệm Lịch Sử 10</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-gdcd-10/index.jsp">BT trắc nghiệm GDCD 10</a> </li>
+                                                      
+                                            </ul>
+                                            <h3 class="title">Đề kiểm tra</h3>
+                                            <ul>
+                                                 <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-10/de-kiem-tra-hoa-hoc-10.jsp">Đề kiểm tra Hóa 10</a> </li>
+                                                 <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-10/de-kiem-tra-dia-li-10.jsp">Đề kiểm tra Địa Lí 10</a> </li>
+                                                 <li class="level-2 col-xs-3"><a href="../de-kiem-tra-lop-10/de-kiem-tra-lich-su-10.jsp">Đề kiểm tra Lịch Sử 10</a> </li>
+                                                           
+                                            </ul>
+                                        </li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li class="level-1">
+                                        <a href="../series/lop-11.jsp" class="">Lớp 11</a>
+                                        <ul class="menu-2 row">
+                                            <li class="main-content col-md-3">
+                                            <h3 class="title">Sách giáo khoa</h3>
+                                            <ul>
+                                               <li class="level-2 col-xs-3"><a href="../soan-van-lop-11/index.jsp">Soạn Văn 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../soan-van-11/index.jsp">Soạn Văn 11 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../ngu-van-11/index.jsp">Soạn Văn 11 (siêu ngắn)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../van-mau-lop-11/index.jsp">Văn mẫu lớp 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../ngu-van-11/tac-gia-tac-pham-lop-11.jsp">Tác giả - Tác phẩm Văn 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-toan-lop-11/index.jsp">Giải Toán 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-toan-11-nang-cao/index.jsp">Giải Toán 11 nâng cao</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-vat-ly-11/index.jsp">Giải Vật Lí 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-ly-11-nang-cao/index.jsp">Giải Vật Lí 11 nâng cao</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-hoa-lop-11/index.jsp">Giải Hóa 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-hoa-11-nang-cao/index.jsp">Giải Hóa 11 nâng cao</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-sinh-hoc-11/index.jsp">Giải Sinh 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-dia-li-11/index.jsp">Giải Địa Lí 11</a> </li>
+                                                        
+                                            </ul>
+                                        </li>
+                                        <li class="main-content col-md-3">
+                                            <ul>
+                                               <li class="level-2 col-xs-3"><a href="../giai-dia-li-lop-11/index.jsp">Giải Địa Lí 11 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../tieng-anh-11/index.jsp">Giải Tiếng Anh 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../tieng-anh-11-moi/index.jsp">Giải Tiếng Anh 11 mới</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-lich-su-11/index.jsp">Giải Lịch sử 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-lich-su-lop-11/index.jsp">Giải Lịch Sử 11 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-tin-hoc-11/index.jsp">Giải Tin học 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-giao-duc-cong-dan-11/index.jsp">Giải GDCD 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-gdcd-11/index.jsp">Giải GDCD 11 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-cong-nghe-11/index.jsp">Giải Công nghệ 11</a> </li>
+                                                        
+                                            </ul>
+                                            <h3 class="title">Sách/Vở bài tập</h3>
+                                            <ul>
+                                                  <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-toan-11/index.jsp">Giải SBT Toán 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-vat-li-11/index.jsp">Giải SBT Vật Lí 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-hoa-11/index.jsp">Giải SBT Hóa 11</a> </li>
+                                                
+                                            </ul>
+                                        </li>   
+                                        <li class="main-content col-md-3">
+                                            <ul>
+                                                  <li class="level-2 col-xs-3"><a href="../giai-tap-ban-do-va-bai-tap-thuc-hanh-dia-li-11/index.jsp">Tập bản đồ Địa Lí 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-tieng-anh-11/index.jsp">Giải SBT Tiếng Anh 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-tieng-anh-11-moi/index.jsp">Giải SBT Tiếng Anh 11 mới</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-tap-ban-do-lich-su-lop-11/index.jsp">Tập bản đồ Lịch Sử 11</a> </li>
+                                                     
+                                            </ul>
+                                            <h3 class="title">Chuyên đề</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../toan-lop-11/index.jsp">Chuyên đề Toán 11 (có đáp án)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../vat-ly-lop-11/index.jsp">Chuyên đề Vật Lí 11 (có đáp án)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../hoa-hoc-lop-11/index.jsp">Chuyên đề Hóa 11 (có đáp án)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../chuyen-de-hoa-11/index.jsp">Chuyên đề Hóa 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../chuyen-de-sinh-hoc-11/index.jsp">Chuyên đề Sinh 11</a> </li>
+                                                    
+                                            </ul>
+                                            
+                                        </li>    
+                                            
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Bài tập trắc nghiệm</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-dai-so-va-giai-tich-11/index.jsp">BT trắc nghiệm Giải tích 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-hinh-hoc-11/index.jsp">BT trắc nghiệm Hình 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-vat-li-11/index.jsp">BT trắc nghiệm Vật Lí 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-hoa-11/index.jsp">BT trắc nghiệm Hóa 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-sinh-hoc-11/index.jsp">BT trắc nghiệm Sinh 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-dia-li-11/index.jsp">BT trắc nghiệm Địa Lí 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../de-kiem-tra-dia-li-11/index.jsp">Đề kiểm tra Địa Lí 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-lich-su-11/index.jsp">BT trắc nghiệm Lịch Sử 11</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-gdcd-11/index.jsp">BT trắc nghiệm GDCD 11</a> </li>
+                                                   
+                                            </ul>
+                                            <h3 class="title">Đề kiểm tra</h3>
+                                            <ul>
+                                               <li class="level-2 col-xs-3"><a href="../de-kiem-tra-toan-11/index.jsp">Đề kiểm tra Toán lớp 11</a> </li>
+                                                             
+                                            </ul>
+                                        </li> 
+
+                                        </ul>
+                                    </li>
+                                    <li class="level-1">
+                                        <a href="../series/lop-12.jsp" class="">Lớp 12</a>
+                                        <ul class="menu-2 row">
+                                            <li class="main-content col-md-3">
+                                            <h3 class="title">Sách giáo khoa</h3>
+                                            <ul>
+                                               <li class="level-2 col-xs-3"><a href="../soan-van-lop-12/index.jsp">Soạn Văn 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../soan-van-12/index.jsp">Soạn Văn 12 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../van-mau-lop-12/index.jsp">Văn mẫu lớp 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../ngu-van-12/index.jsp">Tác giả - Tác phẩm Văn 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-toan-lop-12/index.jsp">Giải Toán 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-toan-12-nang-cao/index.jsp">Giải Toán 12 nâng cao</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-vat-ly-12/index.jsp">Giải Vật Lí 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-ly-12-nang-cao/index.jsp">Giải Vật Lí 12 nâng cao</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-hoa-lop-12/index.jsp">Giải Hóa 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-hoa-12-nang-cao/index.jsp">Giải Hóa 12 nâng cao</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-sinh-hoc-12/index.jsp">Giải Sinh 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-sinh-12/index.jsp">Giải Sinh 12 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-dia-li-12/index.jsp">Giải Địa Lí 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-dia-li-lop-12/index.jsp">Giải Địa Lí 12 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../tieng-anh-12/index.jsp">Giải Tiếng Anh 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../tieng-anh-12-moi/index.jsp">Giải Tiếng Anh 12 mới</a> </li>
+                                                       
+                                            </ul>
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                            <ul>
+                                               <li class="level-2 col-xs-3"><a href="../giai-bai-tap-lich-su-12/index.jsp">Giải Lịch sử 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-tin-hoc-12/index.jsp">Giải Tin học 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-giao-duc-cong-dan-12/index.jsp">Giải GDCD 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-gdcd-12/index.jsp">Giải GDCD 12 (ngắn nhất)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-bai-tap-cong-nghe-12/index.jsp">Giải Công nghệ 12</a> </li>
+                                                        
+                                            </ul>
+                                            <h3 class="title">Sách/Vở bài tập</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-toan-12/index.jsp">Giải SBT Toán 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-vat-li-12/index.jsp">Giải SBT Vật Lí 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-hoa-12/index.jsp">Giải SBT Hóa 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-tap-ban-do-va-bai-tap-thuc-hanh-dia-li-12/index.jsp">Tập bản đồ Địa Lí 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-sach-bai-tap-tieng-anh-12-moi/index.jsp">Giải SBT Tiếng Anh 12 mới</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../giai-tap-ban-do-lich-su-lop-12/index.jsp">Tập bản đồ Lịch Sử 12</a> </li>
+                                                      
+                                            </ul>
+                                            <h3 class="title">Chuyên đề</h3>
+                                            <ul>
+                                              <li class="level-2 col-xs-3"><a href="../toan-lop-12/index.jsp">Chuyên đề Toán 12 (có đáp án)</a> </li>
+                                              <li class="level-2 col-xs-3"><a href="../vat-ly-lop-12/index.jsp">Chuyên đề Vật Lí 12 (có đáp án)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../hoa-hoc-lop-12/index.jsp">Chuyên đề Hóa 12 (có đáp án)</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../chuyen-de-sinh-hoc-12/index.jsp">Chuyên đề Sinh 12</a> </li>
+                                                     
+                                            </ul>
+                                            
+                                        </li>    
+                                            
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Bài tập trắc nghiệm</h3>
+                                            <ul>
+                                              <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-giai-tich-12/index.jsp">BT trắc nghiệm Giải tích 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-hinh-hoc-12/index.jsp">BT trắc nghiệm Hình 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-vat-li-12/index.jsp">BT trắc nghiệm Vật Lí 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-hoa-12/index.jsp">BT trắc nghiệm Hóa 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-sinh-hoc-12/index.jsp">BT trắc nghiệm Sinh 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-dia-li-12/index.jsp">BT trắc nghiệm Địa Lí 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-lich-su-12/index.jsp">BT trắc nghiệm Lịch Sử 12</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-trac-nghiem-gdcd-12/index.jsp">BT trắc nghiệm GDCD 12</a> </li>  
+                                                     
+                                            </ul>
+                                            <h3 class="title">Đề kiểm tra</h3>
+                                            <ul>
+                                                  <li class="level-2 col-xs-3"><a href="../de-kiem-tra-sinh-12/index.jsp">Đề ktra Sinh 12 (hay nhất)</a> </li>
+                                                     
+                                            </ul>
+                                            
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Luyện thi Đại học</h3>
+                                            <ul>
+                                                 <li class="level-2 col-xs-3"><a href="../luyen-thi-dai-hoc-mon-vat-li/index.jsp">Luyện thi đại học môn Vật Lí</a> </li>
+                                                 <li class="level-2 col-xs-3"><a href="../luyen-thi-dai-hoc-mon-hoa-hoc/index.jsp">Luyện thi đại học môn Hóa</a> </li>
+                                                 <li class="level-2 col-xs-3"><a href="../on-thi-dai-hoc-mon-sinh-hoc/index.jsp">Ôn thi đại học môn Sinh</a> </li>
+                                                 <li class="level-2 col-xs-3"><a href="../luyen-thi-dai-hoc-mon-sinh-hoc/index.jsp">Luyện thi đại học môn Sinh</a> </li>
+                                                 <li class="level-2 col-xs-3"><a href="../luyen-thi-dai-hoc-mon-dia-li/index.jsp">Luyện thi đại học môn Địa</a> </li>
+                                                 <li class="level-2 col-xs-3"><a href="../luyen-thi-dai-hoc-mon-giao-duc-cong-dan/index.jsp">Luyện thi đại học môn GDCD</a> </li>
+                                                 <li class="level-2 col-xs-3"><a href="../luyen-thi-dai-hoc-mon-lich-su/index.jsp">Luyện thi đại học môn Sử</a> </li>
+                                        
+                                            </ul>
+                                            <h3 class="title">Thông tin tuyển sinh</h3>
+                                            <ul>
+                                                  <li class="level-2 col-xs-3"><a href="../thong-tin-tuyen-sinh/ma-truong-thpt.jsp">Mã tỉnh, mã trường THPT</a></li>
+                                                  <li class="level-2 col-xs-3"><a href="../thong-tin-tuyen-sinh/ma-truong-dai-hoc.jsp">Mã, thông tin trường Đại học, Học viện</a></li>
+                                                  <li class="level-2 col-xs-3"><a href="../diem-chuan-dai-hoc/diem-chuan-dai-hoc-nam-2017.jsp">Điểm chuẩn Đại học năm 2017</a></li>
+                                                  <li class="level-2 col-xs-3"><a href="../diem-chuan-dai-hoc-2016/diem-chuan-dai-hoc-nam-2016.jsp">Điểm chuẩn Đại học năm 2016</a></li>
+                                                  <li class="level-2 col-xs-3"><a href="../diem-chuan-dai-hoc-2015/diem-chuan-dai-hoc-nam-2015.jsp">Điểm chuẩn Đại học năm 2015</a></li>
+                                    
+                                            </ul>
+                                            
+                                            
+                                        </li>
+                                           
+                                        </ul>
+                                    </li>
+                                    <li class="level-1">
+                                        <a href="#" class="active">Khác</a>
+                                        <ul class="menu-2 row">
+                                            <li class="main-content col-md-3">
+                                            <h3 class="title">Java</h3>
+                                            <ul>
+                                                  <li class="level-2 col-xs-3"><a href="../java/khoa-hoc-java-offline.jsp">Khóa học Java</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../java/khoa-hoc-java-online.jsp">Khóa học Java online trên Udemy</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../servlets/index.jsp">Học Servlets</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../java/index.jsp">Học Java</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../bai_tap_java/bai_tap_mau_java_va_vi_du_java.jsp">Bài tập Java</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../jsp/index.jsp">Học JSP</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../java/inner_class_trong_java.jsp">Inner Class &amp; Đổi kiểu dữ liệu</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../struts_2/index.jsp">Học Struts 2</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../java_jdbc/index.jsp">Kết nối database với Java JDBC</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../java_swing/index.jsp">Học Java Swing</a> </li>
+                                                  <li class="level-2 col-xs-3"><a href="../cau_hoi_phong_van_java/index.jsp">200 Câu hỏi phỏng vấn Java</a> </li>
+                                       
+                                            </ul>
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Phát triển web</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../php/index.jsp">Học PHP</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-php/index.jsp">Bài tập PHP có giải</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../javascript/index.jsp">Học Javascript</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../csharp/hoc_c_sharp_co_ban_nang_cao.jsp">Học C#</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-csharp/index.jsp">Bài tập C# có giải</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../jquery/index.jsp">Học jQuery</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../html/index.jsp">Học HTML</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../html5/index.jsp">Học HTML5</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../angularjs/index.jsp">Học AngularJs</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../css/index.jsp">Học CSS</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../ajax/index.jsp">Học AJAX</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../http/index.jsp">Học HTTP</a> </li>
+                                        
+                                            </ul>
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Lập trình</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../lap_trinh_c/index.jsp">Học C</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-c/index.jsp">Bài tập C có giải</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../cplusplus/index.jsp">Học C++</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai_tap_cplusplus_co_giai/index.jsp">Bài tập C++ có giải</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../cau-truc-du-lieu-va-giai-thuat/index.jsp">Cấu trúc dữ liệu và giải thuật</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../thu-vien-c/index.jsp">Thư viện C chuẩn</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../python/index.jsp">Học Python</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../nodejs/index.jsp">Học NodeJs</a> </li>
+                                        
+                                            </ul>
+                                            <h3 class="title">Cơ sở dữ liệu</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../sql/index.jsp">Học SQL Server</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../unix/index.jsp">Học Unix</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../mysql/index.jsp">Học MySQL</a> </li>
+                                                   
+                                            </ul>
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../git/index.jsp">Học Git</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../mongodb/index.jsp">Học MongoDB</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../svn/index.jsp">Học SVN</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../sqlite/index.jsp">Học SQLite</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../xml/index.jsp">Học XML</a> </li>
+                                   
+                                            </ul>
+                                        </li>    
+                                        <li class="main-content col-md-3">
+                                            <h3 class="title">Tiếng Anh</h3>
+                                            <ul>
+                                                <li class="level-2 col-xs-3"><a href="../ngu-phap-tieng-anh/index.jsp">Ngữ pháp Tiếng Anh thực hành</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bai-tap-ngu-phap-tieng-anh/index.jsp"> Bài tập ngữ pháp Tiếng Anh thực hành</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../ngu-phap-tieng-anh-co-ban/index.jsp">Ngữ pháp Tiếng Anh cơ bản</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../bang-dong-tu-bat-qui-tac/bang-dong-tu-bat-qui-tac-trong-tieng-anh.jsp">Bảng động từ bất qui tắc</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../tinh-huong-tieng-anh-thong-dung/index.jsp">Tình huống tiếng Anh thông dụng</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../part-5-toeic/index.jsp">Luyện thi Part 5 TOEIC</a> </li>
+                                                <li class="level-2 col-xs-3"><a href="../cum-dong-tu/index.jsp">Cụm động từ Tiếng Anh</a> </li>
+                                       
+                                            </ul>
+                                        </li>    
+                                        
+                                            
+                                            
+                                        </ul>
+                                        
+                                        
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--end header-->
+   
+<div style="clear:both;"></div>
+<div role="main" class="main">
+<div class="container">
+<div class="row">
+<div class="col-md-2">
+
+<aside class="sidebar">
+<div class="mini-logo">
+<img src="../thu-vien-c/images/c_logo.jpg" alt="Thư viện C chuẩn" />
+</div>
+<span class="close-menu-list"><i class="fa fa-times" aria-hidden="true"></i></span>
+<ul class="nav nav-list primary left-menu" >
+<li class="heading">Thư viện C chuẩn (C Standard Library)</li>
+<li><a target="_top" href="../thu-vien-c/index.jsp">Giới thiệu</a></li>
+<li><a target="_top" href="../thu-vien-c/assert-h-trong-c.jsp">&lt;assert.h&gt;</a></li>
+<li><a target="_top" href="../thu-vien-c/ctype-h-trong-c.jsp">&lt;ctype.h&gt;</a></li>
+<li><a target="_top" href="../thu-vien-c/errorno-h-trong-c.jsp">&lt;errno.h&gt;</a></li>
+<li><a target="_top" href="../thu-vien-c/float-h-trong-c.jsp">&lt;float.h&gt;</a></li>
+<li><a target="_top" href="../thu-vien-c/limits-h-trong-c.jsp">&lt;limits.h&gt;</a></li>
+<li><a target="_top" href="../thu-vien-c/locale-h-trong-c.jsp">&lt;locale.h&gt;</a></li>
+<li><a target="_top" href="../thu-vien-c/math-h-trong-c.jsp">&lt;math.h&gt;</a></li>
+<li><a target="_top" href="../thu-vien-c/setjmp-h-trong-c.jsp">&lt;setjmp.h&gt;</a></li>
+<li><a target="_top" href="../thu-vien-c/signal-h-trong-c.jsp">&lt;signal.h&gt;</a></li>
+<li><a target="_top" href="../thu-vien-c/stdarg-h-trong-c.jsp">&lt;stdarg.h&gt;</a></li>
+<li><a target="_top" href="../thu-vien-c/stddef-h-trong-c.jsp">&lt;stddef.h&gt;</a></li>
+<li><a target="_top" href="../thu-vien-c/stdio-h-trong-c.jsp">&lt;stdio.h&gt;</a></li>
+<li><a target="_top" href="../thu-vien-c/stdlib-h-trong-c.jsp">&lt;stdlib.h&gt;</a></li>
+<li><a target="_top" href="../thu-vien-c/string-h-trong-c.jsp">&lt;string.h&gt;</a></li>
+<li><a target="_top" href="../thu-vien-c/time-h-trong-c.jsp">&lt;time.h&gt;</a></li>
+</ul>
+<ul class="nav nav-list primary left-menu" >
+<li class="heading">Tài liệu C tham khảo</li>
+<li><a target="_top" href="../lap_trinh_c/index.jsp">Học C cơ bản và nâng cao</a></li>
+<li><a target="_top" href="../bai-tap-c/index.jsp">140 bài tập C có giải</a></li>
+<li><a target="_top" href="../cplusplus/index.jsp">Học C++ cơ bản và nâng cao</a></li>
+<li><a target="_top" href="../bai_tap_cplusplus_co_giai/index.jsp">100 bài tập C++ có giải</a></li>
+<li><a target="_top" href="../csharp/index.jsp">Học C# cơ bản và nâng cao</a></li>
+
+</ul>
+
+
+
+</aside>
+
+</div>
+<!-- PRINTING STARTS HERE -->
+<div class="row">
+<div class="content">
+<div class="col-md-7 middle-col">
+<h1>string.h trong C | Thư viện C chuẩn</h1>
+<hr>
+    
+
+
+ 
+<hr>
+<div class="pre-btn">
+<a href="../thu-vien-c/stdlib-h-trong-c.jsp"><i class="icon icon-arrow-circle-o-left big-font"></i> Trang trước</a>
+</div>
+<div class="social-btn center" >
+<div class="fb-like"  data-layout="button"></div>
+<div class="fb-share-button" data-href="http://vietjack.com/thu-vien-c/string-h-trong-c.jsp" data-layout="button_count"></div>
+<div class="g-plusone" data-size="medium" data-annotation="none" data-width="300"></div>
+<div class="fb-send" data-href="http://vietjack.com/thu-vien-c/string-h-trong-c.jsp"  data-layout="button_count"></div>
+</div>
+
+<div class="nxt-btn">
+<a href="../thu-vien-c/time-h-trong-c.jsp">Trang sau <i class="icon icon-arrow-circle-o-right big-font"></i>&nbsp;</a>
+</div>
+<div class="clearer"></div>
+<hr />
+
+<h2>string.h trong C</h2>
+<p>Header file có tên <b>string.h</b> trong Thư viện C chuẩn định nghĩa một kiểu biến, một macro và các hàm đa dạng để thao tác các mảng ký tự.</p>
+<h2>Các biến được định nghĩa trong string.h</h2>
+<p>Bảng dưới liệt kê các kiểu biến đã được định nghĩa trước trong string.h:</p>
+<table class="table table-bordered">
+<tr>
+<th style="width:10%">STT</th>
+<th>Biến &amp; Miêu tả</th>
+</tr>
+<tr>
+<td>1</td>
+<td>
+<p><b>size_t</b></p>
+<p>Đây là kiểu nguyên không dấu và là kết quả của từ khóa <b>sizeof</b></p></td>
+</tr>
+</table>
+<h2>Các macro được định nghĩa trong string.h</h2>
+<p>Bảng sau liệt kê các macro đã được định nghĩa trước trong string.h:</p>
+<table class="table table-bordered">
+<tr>
+<th style="width:10%">STT</th>
+<th>Macro &amp; Miêu tả</th>
+</tr>
+<tr>
+<td>1</td>
+<td>
+<p><b>NULL</b></p>
+<p>Macro này là giá trị của một hằng con trỏ null</p>
+</tr>
+</table>
+<h2>Các hàm được định nghĩa trong string.h</h2>
+<p>Dưới đây là một số hàm được định nghĩa trong string.h:</p>
+<table class="table table-bordered">
+<tr>
+<th style="width:10%">STT</th>
+<th>Hàm &amp; Miêu tả</th>
+</tr>
+<tr>
+<td>1</td>
+<td>
+<p><a href="../thu-vien-c/ham-memchr-trong-c.jsp">Hàm void *memchr(const void *str, int c, size_t n)</a></p>
+<p>Tìm kiếm sự xuất hiện đầu tiên của ký tự c (một unsigned char) trong n byte đầu tiên của chuỗi được trỏ tới bởi tham số <i>str</i>.</p></td>
+</tr>
+<tr>
+<td>2</td>
+<td>
+<p><a href="../thu-vien-c/ham-memcmp-trong-c.jsp">Hàm int memcmp(const void *str1, const void *str2, size_t n)</a></p>
+<p>So sánh n byte đầu của hai chuỗi <i>str1</i> và <i>str2</i>.</p></td>
+</tr>
+<tr>
+<td>3</td>
+<td>
+<p><a href="../thu-vien-c/ham-memcpy-trong-c.jsp">Hàm void *memcpy(void *dest, const void *src, size_t n)</a></p>
+<p>Sao chép n ký tự từ src tới dest</p></td>
+</tr>
+<tr>
+<td>4</td>
+<td>
+<p><a href="../thu-vien-c/ham-memmove-trong-c.jsp">Hàm void *memmove(void *dest, const void *src, size_t n)</a></p>
+<p>Hàm khác để sao chép n ký tự từ src tới dest</p></td>
+</tr>
+<tr>
+<td>5</td>
+<td>
+<p><a href="../thu-vien-c/ham-memset-trong-c.jsp">Hàm void *memset(void *str, int c, size_t n)</a></p>
+<p>Sao chép ký tự c (một unsigned char) tới n ký tự đầu tiên của chuỗi được trỏ tới bởi tham số <i>str</i>.</p></td>
+</tr>
+<tr>
+<td>6</td>
+<td>
+<p><a href="../thu-vien-c/ham-strcat-trong-c.jsp">Hàm char *strcat(char *dest, const char *src)</a></p>
+<p>Phụ thêm (append) chuỗi được trỏ tới bởi src, vào cuối chuỗi được trỏ tới bởi dest </p></td>
+</tr>
+<tr>
+<td>7</td>
+<td>
+<p><a href="../thu-vien-c/ham-strncat-trong-c.jsp">Hàm char *strncat(char *dest, const char *src, size_t n)</a></p>
+<p>Phụ thêm (append) chuỗi, được trỏ tới bởi src, vào cuối chuỗi được trỏ tới bởi dest, với độ dài lên tới n ký tự</p></td>
+</tr>
+<tr>
+<td>8</td>
+<td>
+<p><a href="../thu-vien-c/ham-strchr-trong-c.jsp">Hàm char *strchr(const char *str, int c)</a></p>
+<p>Tìm kiếm sự xuất hiện đầu tiên của ký tự c (một unsigned char) trong chuỗi được trỏ tới bởi tham số str</p></td>
+</tr>
+<tr>
+<td>9</td>
+<td>
+<p><a href="../thu-vien-c/ham-strcmp-trong-c.jsp">Hàm int strcmp(const char *str1, const char *str2)</a></p>
+<p>So sánh chuỗi được trỏ tới bởi sr1 với chuỗi được trỏ tới bởi srt2</p></td>
+</tr>
+<tr>
+<td>10</td>
+<td>
+<p><a href="../thu-vien-c/ham-strncmp-trong-c.jsp">Hàm int strncmp(const char *str1, const char *str2, size_t n)</a></p>
+<p>So sánh n byte đầu tiên của str1 và str2.</p></td>
+</tr>
+<tr>
+<td>11</td>
+<td>
+<p><a href="../thu-vien-c/ham-strcoll-trong-c.jsp">Hàm int strcoll(const char *str1, const char *str2)</a></p>
+<p>So sánh chuỗi str1 và str2. Kết quả phụ thuộc vào thiết lập LC_COLLATE</p></td>
+</tr>
+<tr>
+<td>12</td>
+<td>
+<p><a href="../thu-vien-c/ham-strcpy-trong-c.jsp">Hàm char *strcpy(char *dest, const char *src)</a></p>
+<p>Sao chép chuỗi được trỏ tới bởi src tới dest</p></td>
+</tr>
+<tr>
+<td>13</td>
+<td>
+<p><a href="../thu-vien-c/ham-strncpy-trong-c.jsp">Hàm char *strncpy(char *dest, const char *src, size_t n)</a></p>
+<p>Sao chép tới n ký tự từ chuỗi được trỏ tới bởi src tới dest</p></td>
+</tr>
+<tr>
+<td>14</td>
+<td>
+<p><a href="../thu-vien-c/ham-strcspn-trong-c.jsp">Hàm size_t strcspn(const char *str1, const char *str2)</a></p>
+<p>Tính độ dài của đoạn ký tự của chuỗi str1 mà không chứa các ký tự trong str2</p></td>
+</tr>
+<tr>
+<td>15</td>
+<td>
+<p><a href="../thu-vien-c/ham-strerror-trong-c.jsp">Hàm char *strerror(int errnum)</a></p>
+<p>Tìm kiếm một mảng nội tại cho số lỗi errnum và trả về một con trỏ tới một chuỗi thông báo lỗi</p></td>
+</tr>
+<tr>
+<td>16</td>
+<td>
+<p><a href="../thu-vien-c/ham-strlen-trong-c.jsp">Hàm size_t strlen(const char *str)</a></p>
+<p>Tính toán độ dài của chuỗi str (không bao gồm ký tự null kết thúc)</p></td>
+</tr>
+<tr>
+<td>17</td>
+<td>
+<p><a href="../thu-vien-c/ham-strpbrk-trong-c.jsp">Hàm char *strpbrk(const char *str1, const char *str2)</a></p>
+<p>Tìm ký tự đầu tiên trong chuỗi str1 mà kết nối bất cứ ký tự nào đã được xác định trong str2</p></td>
+</tr>
+<tr>
+<td>18</td>
+<td>
+<p><a href="../thu-vien-c/ham-strrchr-trong-c.jsp">Hàm char *strrchr(const char *str, int c)</a></p>
+<p>Tìm kiếm sự xuất hiện cuối cùng của ký tự c (một unsigned char) trong chuỗi được trỏ tới bởi tham số str</p></td>
+</tr>
+<tr>
+<td>19</td>
+<td>
+<p><a href="../thu-vien-c/ham-strspn-trong-c.jsp">Hàm size_t strspn(const char *str1, const char *str2)</a></p>
+<p>Tính toán độ dài của đoạn ký tự đầu tiên của chuỗi str1 mà chứa các ký tự trong str2</p></td>
+</tr>
+<tr>
+<td>20</td>
+<td>
+<p><a href="../thu-vien-c/ham-strstr-trong-c.jsp">Hàm char *strstr(const char *haystack, const char *needle)</a></p>
+<p>Tìm kiếm sự xuất hiện cuối cùng của cả chuỗi needle (không bao gồm ký tự null kết thúc) mà có mặt trong chuỗi haystack</p></td>
+</tr>
+<tr>
+<td>21</td>
+<td>
+<p><a href="../thu-vien-c/ham-strtok-trong-c.jsp">Hàm char *strtok(char *str, const char *delim)</a></p>
+<p>Chia chuỗi str thành một dãy các token (các chuỗi nhỏ hơn) được phân biệt riêng rẽ bởi dấu tách delim</p>
+</td>
+</tr>
+<tr>
+<td>22</td>
+<td>
+<p><a href="../thu-vien-c/ham-strxfrm-trong-c.jsp">Hàm size_t strxfrm(char *dest, const char *src, size_t n)</a></p>
+<p>Biến đổi n ký tự đầu tiên của chuỗi src vào trong locale hiện tại và đặt chúng trong chuỗi dest</p></td>
+</tr>
+</table>
+
+
+
+<div class="vj-note">
+	<div class="share-vj">
+		<div class="fb-like" data-href="https://www.facebook.com/hoc.cung.vietjack/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div> 
+		<div class="g-ytsubscribe" data-channelid="UCTmKz2bAMiz1Lb54z2gHjXg" data-layout="default" data-count="default"></div>
+	</div>
+
+
+ 
+<p>Follow fanpage của team <a href="https://www.facebook.com/vietjackteam/">https://www.facebook.com/vietjackteam/ </a> hoặc facebook cá nhân Nguyễn Thanh Tuyền <a href="https://www.facebook.com/tuyen.vietjack">https://www.facebook.com/tuyen.vietjack </a>để tiếp tục theo dõi các loạt bài mới nhất về Java,C,C++,Javascript,HTML,Python,Database,Mobile.... mới nhất của chúng tôi.
+</p>
+</div>
+<p><b>Các bài Thư viện C phổ biến khác tại VietJack</b>:</p>
+<ul class="list">
+<li><a  href="https://vietjack.com/thu-vien-c/assert-h-trong-c.jsp">&lt;assert.h&gt;</a></li>
+<li><a  href="https://vietjack.com/thu-vien-c/ctype-h-trong-c.jsp">&lt;ctype.h&gt;</a></li>
+<li><a  href="https://vietjack.com/thu-vien-c/errorno-h-trong-c.jsp">&lt;errno.h&gt;</a></li>
+<li><a  href="https://vietjack.com/thu-vien-c/float-h-trong-c.jsp">&lt;float.h&gt;</a></li>
+<li><a  href="https://vietjack.com/thu-vien-c/limits-h-trong-c.jsp">&lt;limits.h&gt;</a></li>
+<li><a  href="https://vietjack.com/thu-vien-c/locale-h-trong-c.jsp">&lt;locale.h&gt;</a></li>
+<li><a  href="https://vietjack.com/thu-vien-c/math-h-trong-c.jsp">&lt;math.h&gt;</a></li>
+</ul>
+
+<hr />
+<div class="pre-btn">
+<a href="../thu-vien-c/stdlib-h-trong-c.jsp"><i class="icon icon-arrow-circle-o-left big-font"></i> Trang trước</a>
+</div>
+ 
+<div class="nxt-btn">
+<a href="../thu-vien-c/time-h-trong-c.jsp">Trang sau <i class="icon icon-arrow-circle-o-right big-font"></i>&nbsp;</a>
+</div>
+<hr />
+<!-- PRINTING ENDS HERE -->
+
+
+
+<div class="fb-comments" data-order-by="social"  data-href="http://vietjack.com/thu-vien-c/string-h-trong-c.jsp" data-numposts="5"></div>
+
+<hr />
+
+
+
+
+
+<div class="bottomgooglead">
+	<div class="bottomadtag">Bài viết liên quan</div>
+<div>
+
+<ul class="list sub-list">
+<li><p><a href="https://vietjack.com/ngu-phap-tieng-anh/index.jsp">160 bài học ngữ pháp tiếng Anh hay nhất</a></p></li> 
+<li><p><a href="https://vietjack.com/java/index.jsp">155 bài học Java tiếng Việt hay nhất</a></p></li>
+<li><p><a href="https://vietjack.com/android/index.jsp">100 bài học Android tiếng Việt hay nhất</a></p></li> 
+<li><p><a href="https://vietjack.com/css/index.jsp">247 bài học CSS tiếng Việt hay nhất</a></p></li>  
+<li><p><a href="https://vietjack.com/html/index.jsp">197 thẻ HTML cơ bản</a></p></li> 
+<li><p><a href="https://vietjack.com/php/index.jsp">297 bài học PHP</a></p></li> 
+<li><p><a href="https://vietjack.com/csharp/index.jsp">85 bài học C# hay nhất</a></p></li> 
+<li><p><a href="https://vietjack.com/cplusplus/index.jsp">101 bài học C++ hay nhất</a></p></li> 
+<li><p><a href="https://vietjack.com/bai_tap_cplusplus_co_giai/index.jsp">97 bài tập C++ có giải hay nhất</a></p></li> 
+<li><p><a href="https://vietjack.com/javascript/index.jsp">208 bài học Javascript có giải hay nhất</a></p></li> 
+ </ul> 
+</div>
+ 
+
+</div>
+</div>
+      
+<div class="row">
+<div class="col-md-3" id="rightbar">
+
+<div>
+<p><b>Học tiếng Anh tại vietjack.com:</b></p>
+<ul class="list">
+<li><p><a href="https://vietjack.com/ngu-phap-tieng-anh/index.jsp">160 bài học ngữ pháp tiếng Anh hay nhất</a></p></li> 
+<li><p><a href="https://vietjack.com/bai-tap-ngu-phap-tieng-anh/index.jsp">160 bài tập ngữ pháp tiếng Anh hay nhất</a></p></li>
+<li><p><a href="https://vietjack.com/ngu-phap-tieng-anh-co-ban/index.jsp">72 bài ngữ pháp thực hành</a></p></li> 
+<li><p><a href="https://vietjack.com/tinh-huong-tieng-anh-thong-dung/index.jsp">50 tình huống tiếng Anh thông dụng</a></p></li>  
+<li><p><a href="https://vietjack.com/part-5-toeic/index.jsp">120 bí kíp luyện phần V TOEIC</a></p></li> 
+</ul> 
+</div>
+<div class="fb-page" data-href="https://www.facebook.com/vietjackteam" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- geniee_300x600_passback -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-2373417360267295"
+     data-ad-slot="2191699761"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><div id="ancher" style="height:180px;" >
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="footer-v1" id="footer_id">
+   <div class="footer">
+       <div class="main-content">
+           <div class="row">
+               <!-- About -->
+               <div class="col-md-8">
+                   <a href="https://vietjack.com/"><img id="logo-footer" class="footer-logo" src="../git/images/logo4.png" alt=""></a>
+                   <p>Trang web chia sẻ nội dung miễn phí dành cho người Việt.</p>
+                   <p class="text-justify row">
+                       <strong class="col-xs-2"><a href="../series/lop-3.jsp">Lớp 3</a></strong>
+                       <strong class="col-xs-2"><a href="../series/lop-4.jsp">Lớp 4</a></strong>
+                       <strong class="col-xs-2"><a href="../series/lop-5.jsp">Lớp 5</a></strong>
+                       <strong class="col-xs-2"><a href="../series/lop-6.jsp">Lớp 6</a></strong>
+                       <strong class="col-xs-2"><a href="../series/lop-7.jsp">Lớp 7</a></strong>
+                       <strong class="col-xs-2"><a href="../series/lop-8.jsp">Lớp 8</a></strong>
+                       <strong class="col-xs-2"><a href="../series/lop-9.jsp">Lớp 9</a></strong>
+                       <strong class="col-xs-2"><a href="../series/lop-10.jsp">Lớp 10</a></strong>
+                       <strong class="col-xs-2"><a href="../series/lop-11.jsp">Lớp 11</a></strong>
+                       <strong class="col-xs-2"><a href="../series/lop-12.jsp">Lớp 12</a></strong>
+                       <strong class="col-xs-2"><a href="../series/it-lap-trinh.jsp">Lập trình</a></strong>
+                       <strong class="col-xs-2"><a href="../series/mon-tieng-anh.jsp">Tiếng Anh</a></strong>
+                   </p>
+               </div>
+
+               <!-- End About -->
+               <!-- End Latest -->
+
+               <div class="col-md-4 map-img">
+                   <div class="headline"><h2>Liên hệ với chúng tôi</h2></div>                         
+                   <address class="md-margin-bottom-40">
+                       <p class="address"><i class="fa fa-map-marker" aria-hidden="true"></i>Ngõ 18 Tả Thanh Oai, Thanh Trì, Hà Nội</p>
+                       <p class="phone"><i class="fa fa-mobile" aria-hidden="true"></i>Phone: 01689933602</p>
+                       <p class="email"><i class="fa fa-envelope" aria-hidden="true"></i>Email: <a href="mailto:vietjackteam@gmail.com" class=""  style="color: #fb9f45;">vietjackteam@gmail.com</a></p>
+                       <p class="app-download">
+                            <a href='https://play.google.com/store/apps/details?id=com.vietjack&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank"><img alt='Tải nội dung trên Google Play' src='../git/images/android.svg' /></a>
+                            <a href='https://itunes.apple.com/vn/app/vietjack/id1374739725' target="_blank"><img alt='Tải nội dung trên IOS Store' src='../git/images/ios.svg' /></a>
+                       </p>
+                   </address>
+               </div><!--/col-md-3-->
+               <!-- End Address -->
+   </div>
+   <!--/footer-->
+			
+   </div>
+   <div class="copyright">
+	            <div class="main-content">
+	                <div class="row">
+	                    <div class="col-md-6">                     
+	                        <p>
+	                            2015 &copy; All Rights Reserved.
+	                          <!--  <a href="#"  style="color: #72c02c;background:none;">Privacy Policy</a> | <a href="#" style="color: #72c02c;background:none;">Terms of Service</a> -->
+	                        </p>
+	                        <p class="txt-footer-1"><a href="https://vietjack.com/lien-he/tuyen-dung.jsp">Tuyển dụng</a></p>
+                       		<p class="txt-footer-1"><a href="https://vietjack.com/lien-he/">Về chúng tôi</a></p>
+	                    </div>
+	
+	                    <!-- Social Links -->
+	                    <div class="social-icons col-md-6">
+			               <div class="social-icons-top">
+						        <ul class="social-icons">
+                                    <li class=""><a href="https://www.facebook.com/hoc.cung.vietjack" class="facebook"><svg enable-background="new 0 0 30 30" height="30px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="30px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="facebook"><path d="M278.5,219.5v-26.998c0-12.187,2.946-18.002,21.864-18.002H323.5v-45h-39.007   c-48.535,0-63.993,21.553-63.993,59.744V219.5h-33v46h33v136h58v-136h40.216l5.385-46H278.5z" fill="#ffffff"/><path d="M254.5,16.5c-131.996,0-239,107.004-239,239s107.004,239,239,239s239-107.004,239-239   S386.496,16.5,254.5,16.5z M412.892,413.892C370.584,456.2,314.333,479.5,254.5,479.5c-59.833,0-116.084-23.3-158.392-65.608   C53.8,371.584,30.5,315.333,30.5,255.5c0-59.833,23.3-116.084,65.608-158.392C138.416,54.8,194.667,31.5,254.5,31.5   c59.833,0,116.084,23.3,158.392,65.608C455.2,139.416,478.5,195.667,478.5,255.5C478.5,315.333,455.2,371.584,412.892,413.892z" fill="#ffffff"/></g></svg></a> </li>
+                                    <li class=""><a href="https://plus.google.com/115811842818849244008" class="google"><svg enable-background="new 0 0 30 30" height="30px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="30px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="google"><path d="M254.5,16.5c-131.996,0-239,107.004-239,239s107.004,239,239,239s239-107.004,239-239   S386.496,16.5,254.5,16.5z M412.892,413.892C370.584,456.2,314.333,479.5,254.5,479.5c-59.833,0-116.084-23.3-158.392-65.608   C53.8,371.584,30.5,315.333,30.5,255.5c0-59.833,23.3-116.084,65.608-158.392C138.416,54.8,194.667,31.5,254.5,31.5   c59.833,0,116.084,23.3,158.392,65.608C455.2,139.416,478.5,195.667,478.5,255.5C478.5,315.333,455.2,371.584,412.892,413.892z" fill="#ffffff"/><path d="M329.931,273.5h10.239c2.757,0,5.33-1.813,5.33-4.569V232.5h35.608c2.74,0,4.98-2,4.98-5h0.412v-9.763   c0-2.74-2.66-5.237-5.4-5.237h-35.6v-35.701c0-2.757-2.582-5.299-5.339-5.299h-10.239c-2.757,0-5.423,2.543-5.423,5.299V212.5   h-35.532c-2.724,0-4.468,2.497-4.468,5.237v10.255c0,2.74,1.745,4.508,4.468,4.508H324.5v36.431   C324.5,271.687,327.175,273.5,329.931,273.5z" fill="#ffffff"/><path d="M275.456,330.498c0-20.461-6.572-32.693-24.227-45.188c-7.556-5.349-14.431-13.2-14.562-15.62   c0-4.414,0.402-6.506,10.255-14.185c12.757-9.984,19.772-23.329,19.772-37.202c0-12.569-3.831-23.803-10.386-31.803h5.062   c1.05,0,2.076-0.102,2.929-0.709l14.152-10.122c1.747-1.272,2.502-3.584,1.813-5.651c-0.673-2.051-2.56-3.518-4.725-3.518H212.26   c-6.924,0-13.955,1.345-20.863,3.733c-23.061,7.95-39.182,27.656-39.182,47.846c0,28.566,22.151,50.266,51.735,50.955   c-0.574,2.256-0.861,4.569-0.861,6.767c0,4.389,1.124,8.699,3.413,12.699c-0.263,0-0.533,0-0.82,0   c-28.214,0-53.671,13.767-63.352,34.359c-2.519,5.374-3.798,10.752-3.798,16.101c0,5.185,1.329,10.171,3.954,14.88   c6.071,10.87,19.115,19.303,36.754,23.742c9.106,2.305,18.886,3.474,29.042,3.474c9.131,0,17.819-1.192,25.876-3.514   C259.237,370.265,275.456,351.788,275.456,330.498z M184.875,217.257c-1.37-10.46,0.812-19.902,6.038-25.85   c3.364-3.848,7.769-5.906,12.724-5.906h0.558c13.988,1,27.369,16.076,29.838,34.838c1.378,10.493-0.943,20.322-6.235,26.328   c-3.364,3.848-7.72,5.834-12.88,5.834h-0.222C200.996,252.5,187.328,235.986,184.875,217.257z M208.158,360.993   c-20.666,0-36.844-12.536-36.844-28.706c0-14.882,18.902-27.787,40.438-27.787h0.591c4.676,0,9.262,0.599,13.569,1.928   c1.469,1.009,2.896,1.907,4.274,2.834c9.968,6.793,16.572,11.242,18.418,18.461c0.418,1.805,0.624,3.598,0.624,5.362   C249.228,351.618,235.412,360.993,208.158,360.993z" fill="#ffffff"/></g></svg></a> </li>
+                                    <li class=""><a href="https://goo.gl/Dsf8AE" class="youtube"><svg enable-background="new 0 0 30 30" height="30px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="30px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="youtube"><path d="M374.5,333.527v-35.075c0-24.097-19.133-43.951-43.215-43.951H179.729   c-24.098,0-43.229,19.854-43.229,43.951v35.075c0,24.082,19.132,43.973,43.229,43.973h151.556   C355.367,377.5,374.5,357.608,374.5,333.527z M211.5,282.5h-14v70h-14v-70h-14v-12h42V282.5z M251.5,352.5h-12v-6.992   c-2,2.442-4.654,4.292-7.064,5.603c-2.411,1.296-4.809,1.913-7.077,1.913c-2.798,0-5.089-0.893-6.528-2.687   c-1.407-1.834-2.331-4.489-2.331-8.101V291.5h12v46.563c0,1.423,0.491,2.458,0.981,3.09c0.522,0.648,1.447,0.956,2.593,0.956   c0.869,0,2.063-0.479,3.422-1.325c1.359-0.862,2.664-2.285,3.794-3.285h0.211v-46h12V352.5z M295.5,339.66   c0,4.276-1.099,7.548-2.996,9.848c-1.865,2.284-4.703,3.414-8.267,3.414c-2.379,0-4.623-0.435-6.457-1.312   c-1.849-0.885-3.279-2.245-5.279-4.11v5h-12v-82h12v26.11c2-1.834,3.449-3.256,5.259-4.213c1.834-0.956,3.736-1.438,5.617-1.438   c3.825,0,6.907,1.296,8.915,3.873c2.039,2.561,3.209,6.331,3.209,11.286V339.66z M306.193,348.812   c-3.106-3.304-4.693-7.872-4.693-13.704v-27.172c0-5.2,1.737-9.492,5.151-12.78c3.43-3.319,7.816-4.955,13.237-4.955   c5.524,0,9.987,1.525,12.967,4.576c2.972,3.074,4.644,7.453,4.644,13.167V323.5h-23v11.252c0,3.193,0.133,5.39,0.924,6.639   c0.806,1.217,2.043,1.818,3.971,1.818c2.007,0,3.268-0.522,4.05-1.557c0.782-1.035,1.055-3.335,1.055-6.9V332.5h13v2.607   c0,6.204-1.697,10.867-4.755,14.013c-3.011,3.122-7.641,4.679-13.663,4.679C313.668,353.799,309.299,352.131,306.193,348.812z" fill="#ffffff"/><path d="M324.5,307.864c0-2.537-0.354-4.371-1.184-5.422c-0.822-1.13-2.157-1.668-3.974-1.668   c-1.928,0-3.533,0.537-4.379,1.668c-0.846,1.051-1.463,2.893-1.463,5.422v5.636h11V307.864z" fill="#ffffff"/><path d="M277.723,300.554c-0.861,0-1.821,0.182-2.651,0.601c-0.83,0.379-1.572,1.004-2.572,1.849v37.652   c1,0.98,2.019,1.715,2.944,2.134c0.94,0.419,1.942,0.648,2.962,0.648c1.478,0,2.454-0.419,3.15-1.28   c0.695-0.846,0.945-2.221,0.945-4.165v-31.219c0-2.055-0.29-3.596-1.136-4.663C280.479,301.075,279.344,300.554,277.723,300.554z" fill="#ffffff"/><polygon fill="#ffffff" points="214.5,233.5 214.5,196.395 232.698,143.5 217.136,143.5 207.676,179.5 206.703,179.5    196.761,143.5 181.334,143.5 199.5,198.062 199.5,233.5  "/><path d="M284.5,167.5v55.379c0,3.999,0.714,6.963,2.286,8.923c1.604,1.992,3.921,2.995,7.067,2.995   c2.561,0,5.152-0.727,7.855-2.134c2.727-1.407,5.792-3.485,7.792-6.188v7.025h14v-66h-14v50.273c-1,1.47-2.662,2.656-4.171,3.612   c-1.541,0.925-2.801,1.407-3.789,1.407c-1.28,0-2.411-0.371-2.964-1.083c-0.569-0.695-1.075-1.826-1.075-3.414V167.5H284.5z" fill="#ffffff"/><path d="M233.5,182.5v34.475c0,5.651,1.946,10.156,5.511,13.523c3.572,3.319,8.414,4.987,14.357,4.987   c6.18,0,11.172-1.62,14.721-4.845c3.501-3.225,5.411-7.682,5.411-13.396v-34.38c0-5.09-1.903-9.263-5.483-12.472   c-3.612-3.209-8.266-4.829-13.901-4.829c-6.173,0-11.124,1.557-14.799,4.584c-3.659,3.09-5.504,7.353-5.504,12.353H233.5z    M247.5,181.979c0-1.446,0.66-2.64,1.696-3.517c1.051-0.909,2.472-1.359,4.124-1.359c1.81,0,3.327,0.451,4.442,1.359   c1.114,0.877,1.739,2.063,1.739,3.517v36.277c0,1.77-0.586,3.177-1.668,4.213c-1.083,1.004-2.569,1.494-4.418,1.494   c-1.786,0-3.34-0.49-4.296-1.494c-0.972-0.988-1.617-2.395-1.617-4.213V181.979z" fill="#ffffff"/><path d="M254.5,16.5c-131.996,0-239,107.004-239,239s107.004,239,239,239s239-107.004,239-239   S386.496,16.5,254.5,16.5z M412.892,413.892C370.584,456.2,314.333,479.5,254.5,479.5c-59.833,0-116.084-23.3-158.392-65.608   C53.8,371.584,30.5,315.333,30.5,255.5c0-59.833,23.3-116.084,65.608-158.392C138.416,54.8,194.667,31.5,254.5,31.5   c59.833,0,116.084,23.3,158.392,65.608C455.2,139.416,478.5,195.667,478.5,255.5C478.5,315.333,455.2,371.584,412.892,413.892z" fill="#ffffff"/></g></svg></a> </li>
+                                </ul>
+	
+						    </div>
+			            </div>
+	                    <!-- End Social Links -->
+	                </div>
+	            </div> 
+	        </div><!--/copyright-->
+</div>
+<!--  ad tags Size: 300x250 ZoneId:1105562-->
+<script type="text/javascript" src="https://js.genieessp.com/t/105/562/a1105562.js"></script>
+
+
+
+
+     
+<!-- Libs -->
+<script type="text/javascript" src="../theme/js/custom-min.js"></script>
+ 
+<script type="text/javascript" src="../theme/js/jquery.colorbox-min.js"></script>
+<script type="text/javascript">
+   var tryit = new $.TryIt('thu-vien-c/try_thu-vien-c.php');
+   tryit.compile();
+</script> 
+</body>
+</html>
