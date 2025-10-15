@@ -53,6 +53,10 @@
 - 📝 Sửa mô tả hoặc lỗi chính tả
 - 💡 Gửi ý tưởng hoặc phản hồi qua **[Issues](https://github.com/TienNHM/ebooks/issues)**
 
+<a href="https://github.com/TienNHM/ebooks/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=TienNHM/ebooks" />
+</a>
+
 ---
 
 ## ⚠️ Bản quyền
