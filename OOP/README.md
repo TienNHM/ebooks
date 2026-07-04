@@ -8,7 +8,7 @@
 
 | Tên tài liệu | Mô tả | Tải về |
 |--------------|-------|--------|
-| **Object Oriented Programming with C++ (4th Edition)** – Balaguruswamy | Giáo trình OOP với C++ kinh điển | [📥 PDF](./4.Balaguruswamy%20Object%20Oriented%20Programming%20With%20C++%20Fourth%20Edition.pdf) |
+| **Object Oriented Programming with C++ (4th Edition)** – Balaguruswamy | Giáo trình OOP với C++ kinh điển | [📥 PDF](./4-balaguruswamy-object-oriented-programming-with-c-fourth-edition.pdf) |
 | **Learning Design Patterns** | Mẫu thiết kế trong lập trình | [📥 PDF](./learning-design-patterns.pdf) |
 
 ---
