@@ -8,13 +8,13 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Căn bản về mạng máy tính** | [📥 PDF](./Can-ban-ve-mang-may-tinh1.pdf) |
-| **Tài liệu học mạng máy tính căn bản** | [📥 PDF](./T%C3%A0i%20li%E1%BB%87u%20h%E1%BB%8Dc%20m%E1%BA%A1ng%20m%C3%A1y%20t%C3%ADnh%20c%C4%83n%20b%E1%BA%A3n.pdf) |
-| **MMT** | [📥 PDF](./MMT.pdf) |
+| **Căn bản về mạng máy tính** | [📥 PDF](./can-ban-ve-mang-may-tinh1.pdf) |
+| **Tài liệu học mạng máy tính căn bản** | [📥 PDF](./tai-lieu-hoc-mang-may-tinh-can-ban.pdf) |
+| **MMT** | [📥 PDF](./mmt.pdf) |
 | **Giải toán và bảo mật thông tin** | [📥 PDF](./gtantoanvabaomatthongtin.pdf) |
-| **Chương 1 – Networking fundamentals** | [📥 PDF](./Chapter%201%20-%20Networking%20fundamentals.pdf) |
-| **Chương 2 – IP addressing** | [📥 PDF](./Chuong%202-%20IP%20addressing.pdf) |
-| **Chap 1, Chap 5** | [📥 Chap1](./Chap1.pdf) • [📄 Chap5](./Chap5.pdf) |
+| **Chương 1 – Networking fundamentals** | [📥 PDF](./chapter-1-networking-fundamentals.pdf) |
+| **Chương 2 – IP addressing** | [📥 PDF](./chuong-2-ip-addressing.pdf) |
+| **Chap 1, Chap 5** | [📥 Chap1](./chap1.pdf) • [📄 Chap5](./chap5.pdf) |
 
 ---
 
@@ -22,7 +22,7 @@
 
 | Gói tải | Mô tả |
 |---------|-------|
-| [Network-Slides.zip](./Network-Slides.zip) | Slide OSI, TCP/IP, LAN switching, routing, VLAN — **giải nén** |
+| [network-slides.zip](./network-slides.zip) | Slide OSI, TCP/IP, LAN switching, routing, VLAN — **giải nén** |
 
 ---
 

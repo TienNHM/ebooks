@@ -8,8 +8,8 @@
 
 | Tên tài liệu | Mô tả | Tải về |
 |--------------|-------|--------|
-| **Computer Networking Illuminated** | Giáo trình mạng máy tính (tiếng Anh) | [📥 PDF](./Computer_Networking_Illuminated.pdf) |
-| **Network+ Guide to Networks** (5th Ed.) | Hướng dẫn mạng từ căn bản đến nâng cao | [📥 PDF](./Network_Guide_to_Networks_5th_Edition_2010.pdf) |
+| **Computer Networking Illuminated** | Giáo trình mạng máy tính (tiếng Anh) | [📥 PDF](./computer-networking-illuminated.pdf) |
+| **Network+ Guide to Networks** (5th Ed.) | Hướng dẫn mạng từ căn bản đến nâng cao | [📥 PDF](./network-guide-to-networks-5th-edition-2010.pdf) |
 
 ---
 
