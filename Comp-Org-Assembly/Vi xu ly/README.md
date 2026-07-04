@@ -12,6 +12,7 @@
 | **Kỹ thuật vi xử lý (UDS)** | [📥 PDF](./Ky.thuat.vi.xu.ly_UDS.pdf) |
 | **Assembly** | [📦 RAR](./Asembly.rar) |
 | **VIXULY** | [📦 RAR](./VIXULY.rar) |
+| **Microprocessors & Microcontrollers** – Krishna Kant | [📥 PDF](./Krishna%20Kant%20-%20Microprocessors%20And%20Microcontrollers%20Architecture,%20Programming%20And%20System%20Design%208085,%208086,%208051,%208096.pdf) |
 
 ---
 

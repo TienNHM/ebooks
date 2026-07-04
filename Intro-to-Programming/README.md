@@ -15,6 +15,14 @@
 
 ---
 
+## 📘 Sách tham khảo
+
+| Tên tài liệu | Mô tả | Tải về |
+|--------------|-------|--------|
+| **SICP** – Abelson & Sussman | Structure and Interpretation of Computer Programs | [📥 PDF](./Hal%20Abelson_%20Gerald%20Jay%20Sussman%20-%20Structure%20and%20Interpretation%20of%20Computer%20Programs-MIT%20Press%20(2002).pdf) |
+
+---
+
 ## 📌 Ghi chú
 
 - Tài liệu thuật toán chuyên sâu (quy hoạch động, đánh giá thuật toán…): xem [Algorithms](../Algorithms/).

@@ -1,16 +1,19 @@
 # ??? Operating Systems
 
-> Tài li?u **h? ?i?u hành (HDH/OS)**: ghi chú h?c thu?t và giáo trình ti?ng Vi?t.
+> Tài li?u **h? ?i?u hành (OS)**: sách tham kh?o qu?c t? và giáo trình ti?ng Vi?t.
 
 ---
 
-## ?? Tài li?u tham kh?o
+## ?? Sách tham kh?o
 
-| Tên tài li?u | Mô t? | T?i v? |
-|--------------|-------|--------|
-| **EE3751 Class Notes** | Ghi chú l?p h?c h? ?i?u hành | [?? PDF](./EE3751%20Class%20Notes.pdf) |
-
-> Sách HDH kinh ?i?n (Silberschatz, Tanenbaum…) n?m trong [Comp-Org-Assembly](../Comp-Org-Assembly/).
+| Tên tài li?u | T?i v? |
+|--------------|--------|
+| **Operating System Concepts** – Silberschatz (9th Ed.) | [?? PDF](./Operating%20System%20Concepts%20(9th%20Ed)%20-%20Gagne,%20Silberschatz,%20and%20Galvin.pdf) |
+| **Operating System Concepts** (10th Ed.) | [?? PDF](./2018-Operating%20System%20Concepts-10th.pdf) |
+| **OS Concepts Essentials** – Silberschatz et al. | [?? PDF](./Abraham%20Silberschatz,%20Peter%20B.%20Galvin,%20Greg%20Gagne%20-%20Operating%20System%20Concepts%20Essentials-Wiley%20(2013).pdf) |
+| **OS Concepts – 9th Ed. Solutions** | [?? PDF](./Operating%20System%20Concepts%20-%209ed%20Solution.pdf) |
+| **Modern Operating Systems** – Tanenbaum (4th Ed.) | [?? PDF](./Modern%20Operating%20Systems%204th%20Edition--Andrew%20Tanenbaum.pdf) |
+| **EE3751 Class Notes** | [?? PDF](./EE3751%20Class%20Notes.pdf) |
 
 ---
 
@@ -20,16 +23,8 @@
 |--|--|
 | **Xem toàn b? giáo trình** | [?? Th? m?c Textbooks](./Textbooks/) |
 
-Bao g?m: Hà Quang Tuy, giáo trình HDH, t?ng quan HDH, ?? câu h?i CS6303…
-
----
-
-## ?? Ghi chú
-
-- Tài li?u ph?c v? m?c ?ích **h?c t?p và nghiên c?u cá nhân**.
-
 ---
 
 <p align="center">
-  ?? Góp ý ho?c thêm sách? ?? <a href="https://github.com/TienNHM/ebooks/pulls">G?i Pull Request</a>
+  Góp tài li?u? ?? <a href="https://github.com/TienNHM/ebooks/pulls">G?i Pull Request</a>
 </p>

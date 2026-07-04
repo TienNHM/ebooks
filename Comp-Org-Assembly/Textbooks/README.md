@@ -12,6 +12,9 @@
 | **Ki?n trúc máy tính** | [?? RAR](./Kien%20truc%20may%20tinh.rar) |
 | **C?u trúc máy tính** | [?? ZIP](./Cau%20truc%20may%20tinh.zip) |
 | **Bài gi?ng C?u trúc máy tính & ASM** | [?? RAR](./Bai_giang_Cau_Truc_May_Tinh___ASM.rar) |
+| **Ki?n trúc máy tính – BKHN** | [?? PDF](./Ki%E1%BA%BFn%20tr%C3%BAc%20m%C3%A1y%20t%C3%ADnh%20-%20BKHN.pdf) |
+| **CA-20172** | [?? PDF](./CA-20172-1s.pdf) |
+| **Ch??ng 5 – HUMUS** | [?? PDF](./Chuong05%20HUMUS.pdf) |
 
 ---
 

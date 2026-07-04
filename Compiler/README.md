@@ -1,6 +1,14 @@
 # ?? Compiler
 
-> Tài li?u **trình biên d?ch (Compiler)** — giáo trình và bài gi?ng các tr??ng ??i h?c Vi?t Nam.
+> Tài li?u **trình biên d?ch (Compiler)** — sách tham kh?o và giáo trình các tr??ng ??i h?c Vi?t Nam.
+
+---
+
+## ?? Sách tham kh?o
+
+| Tên tài li?u | T?i v? |
+|--------------|--------|
+| **Compilers** (t?ng quan) | [?? PDF](./compilers.pdf) |
 
 ---
 
@@ -12,12 +20,6 @@
 
 ---
 
-## ?? Ghi chú
-
-- Tài li?u ph?c v? m?c ?ích **h?c t?p và nghiên c?u cá nhân**.
-
----
-
 <p align="center">
-  ?? Góp ý ho?c thêm sách? ?? <a href="https://github.com/TienNHM/ebooks/pulls">G?i Pull Request</a>
+  Góp tài li?u? ?? <a href="https://github.com/TienNHM/ebooks/pulls">G?i Pull Request</a>
 </p>
