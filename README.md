@@ -34,10 +34,12 @@
 | 🏁 Competitive Programming | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Competitive) |
 | 🌐 Computer Network | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Computer-Network) |
 | 🧬 Computer Org & Assembly | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Comp-Org-Assembly) |
+| ⚙️ Compiler | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Compiler) |
 | 🗄️ Database | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Database) |
 | 🌍 Full-Stack Development | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Full-Stack) |
 | 🛒 E-Commerce | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/E-Commerce) |
 | ☕ Java | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Java) |
+| 🖥️ Operating Systems | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/OS) |
 | 💻 Interview | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Interview) |
 | 📘 Intro to Programming | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Intro-to-Programming) |
 | ⚛️ ReactJS | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/ReactJS) |
