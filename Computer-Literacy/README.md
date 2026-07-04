@@ -8,7 +8,7 @@
 
 | Tên tài liệu | Mô tả | Tải về |
 |--------------|-------|--------|
-| **Technology In Action** – Evans (2012) | Giáo trình đại cương về công nghệ thông tin, phần cứng, phần mềm và ứng dụng | [📥 Tải PDF](./Evans%202012%20Technology%20In%20Action,%20Complete.pdf) |
+| **Technology In Action** – Evans (2012) | Giáo trình đại cương về công nghệ thông tin, phần cứng, phần mềm và ứng dụng | [📥 Tải PDF](./evans-2012-technology-in-action-complete.pdf) |
 
 ---
 
