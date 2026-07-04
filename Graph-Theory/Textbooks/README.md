@@ -8,7 +8,7 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Lý thuyết đồ thị** (tổng hợp) | [📦 RAR](./Ly%20thuyet%20do%20thi.rar) |
+| **Lý thuyết đồ thị** (tổng hợp) | [📦 RAR](./ly-thuyet-do-thi.rar) |
 
 ---
 

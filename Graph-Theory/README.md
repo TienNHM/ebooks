@@ -8,7 +8,7 @@
 
 | Tên tài liệu | Mô tả | Tải về |
 |--------------|-------|--------|
-| **Giáo trình lý thuyết đồ thị** | Giáo trình tiếng Việt về lý thuyết đồ thị | [📥 Tải PDF](./Gi%C3%A1o%20tr%C3%ACnh%20l%C3%BD%20thuy%E1%BA%BFt%20%C4%91%E1%BB%93%20th%E1%BB%8B.pdf) |
+| **Giáo trình lý thuyết đồ thị** | Giáo trình tiếng Việt về lý thuyết đồ thị | [📥 Tải PDF](./giao-trinh-ly-thuyet-do-thi.pdf) |
 
 ---
 
@@ -24,7 +24,7 @@
 
 | Tên tài liệu | Mô tả | Tải về |
 |--------------|-------|--------|
-| **Chương 2 – Đường đi ngắn nhất** | Bài giảng về thuật toán tìm đường đi ngắn nhất trên đồ thị | [📥 Tải PDF](./Chuong-2%20Duong%20di%20ngan%20nhat.pdf) |
+| **Chương 2 – Đường đi ngắn nhất** | Bài giảng về thuật toán tìm đường đi ngắn nhất trên đồ thị | [📥 Tải PDF](./chuong-2-duong-di-ngan-nhat.pdf) |
 
 ---
 
@@ -32,9 +32,9 @@
 
 | Tên tài liệu | Mô tả | Tải về |
 |--------------|-------|--------|
-| **Đề thi TRR-LTĐT – Kỳ I 2015–2016** | Đề thi môn Lý thuyết đồ thị | [📥 Tải PDF](./DA-TRRLTDT-ky-I-15-16.pdf) |
-| **Đề thi TRR-LTĐT – HK01 2018–2019** | Đề thi học kỳ 1 năm 2018–2019 | [📥 Tải PDF](./DA-TRR-LTDT-HK01-1819.pdf) |
-| **Đề cuối kỳ TRR-LTĐT 2017–2018** | Đề thi cuối kỳ | [📥 Tải PDF](./%C4%90A-CuoiKy-01-17-18-TRR-LT%C4%90T.pdf) |
+| **Đề thi TRR-LTĐT – Kỳ I 2015–2016** | Đề thi môn Lý thuyết đồ thị | [📥 Tải PDF](./da-trrltdt-ky-i-15-16.pdf) |
+| **Đề thi TRR-LTĐT – HK01 2018–2019** | Đề thi học kỳ 1 năm 2018–2019 | [📥 Tải PDF](./da-trr-ltdt-hk01-1819.pdf) |
+| **Đề cuối kỳ TRR-LTĐT 2017–2018** | Đề thi cuối kỳ | [📥 Tải PDF](./da-cuoiky-01-17-18-trr-ltdt.pdf) |
 
 ---
 
