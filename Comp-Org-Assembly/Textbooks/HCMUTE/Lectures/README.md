@@ -8,16 +8,16 @@
 
 | Chương | Tải về |
 |--------|--------|
-| **Chương 0** | [📥 PDF](./Chapter-0.pdf) |
-| **Chương 1** | [📥 PDF](./Chapter-1-Edit.pdf) |
-| **Chương 2** | [📥 PDF](./Chapter-2.pdf) • [📄 BT Performance](./BT-C2-Perfrormance.pdf) |
-| **Chương 3** | [📥 P1](./Chapter-3-P1.pdf) • [📄 P2](./Chapter-3-P2.pdf) • [📄 P3](./Chapter-3-P3.pdf) • [📄 P4](./Chapter-3-P4.pdf) |
-| **Chương 4** | [📥 PDF](./Chapter-4.pdf) |
-| **Chương 5** | [📥 PDF](./Chapter-5.pdf) |
-| **Chương 6** | [📥 PDF](./Chapter-6.pdf) |
-| **Chương 7** | [📥 P1](./Chapter-7-P1.pdf) • [📄 P2](./Chapter-7-P2.pdf) • [📄 P3](./Chapter-7-P3.pdf) • [📄 P4](./Chapter-7-P4.pdf) |
-| **Chương 8** | [📥 PDF](./Chapter-8.pdf) |
-| **Chương 9** | [📥 PDF](./Chapter-9.pdf) |
+| **Chương 0** | [📥 PDF](./chapter-0.pdf) |
+| **Chương 1** | [📥 PDF](./chapter-1-edit.pdf) |
+| **Chương 2** | [📥 PDF](./chapter-2.pdf) • [📄 BT Performance](./bt-c2-perfrormance.pdf) |
+| **Chương 3** | [📥 P1](./chapter-3-p1.pdf) • [📄 P2](./chapter-3-p2.pdf) • [📄 P3](./chapter-3-p3.pdf) • [📄 P4](./chapter-3-p4.pdf) |
+| **Chương 4** | [📥 PDF](./chapter-4.pdf) |
+| **Chương 5** | [📥 PDF](./chapter-5.pdf) |
+| **Chương 6** | [📥 PDF](./chapter-6.pdf) |
+| **Chương 7** | [📥 P1](./chapter-7-p1.pdf) • [📄 P2](./chapter-7-p2.pdf) • [📄 P3](./chapter-7-p3.pdf) • [📄 P4](./chapter-7-p4.pdf) |
+| **Chương 8** | [📥 PDF](./chapter-8.pdf) |
+| **Chương 9** | [📥 PDF](./chapter-9.pdf) |
 
 ---
 

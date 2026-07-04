@@ -4,12 +4,12 @@
 
 | Lab | Tải về |
 |-----|--------|
-| **Lab 1** | [📥 PDF](./Lab-1.pdf) |
-| **Lab 2** | [📥 PDF](./Lab-2.pdf) |
-| **Lab 3** | [📥 PDF](./Lab-3.pdf) |
-| **Lab 4** | [📥 PDF](./Lab-4.pdf) |
-| **Lab 5** | [📥 PDF](./Lab-5.pdf) |
-| **Lab 6** | [📥 PDF](./Lab-6.pdf) |
+| **Lab 1** | [📥 PDF](./lab-1.pdf) |
+| **Lab 2** | [📥 PDF](./lab-2.pdf) |
+| **Lab 3** | [📥 PDF](./lab-3.pdf) |
+| **Lab 4** | [📥 PDF](./lab-4.pdf) |
+| **Lab 5** | [📥 PDF](./lab-5.pdf) |
+| **Lab 6** | [📥 PDF](./lab-6.pdf) |
 
 ---
 

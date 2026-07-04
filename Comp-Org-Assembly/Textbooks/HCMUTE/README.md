@@ -19,7 +19,7 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **CAA Syllabus (3 tín chỉ)** | [📥 DOCX](./CAA_Syllabus_3_credits.docx) |
+| **CAA Syllabus (3 tín chỉ)** | [📥 DOCX](./caa-syllabus-3-credits.docx) |
 
 ---
 

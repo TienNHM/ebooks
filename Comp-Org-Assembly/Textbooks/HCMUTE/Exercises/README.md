@@ -9,7 +9,7 @@
 | Tên tài liệu | Tải về |
 |--------------|--------|
 | **Assignment 1** | [📥 PDF](./assign1.pdf) |
-| **HW1–HW5 Solutions** | [📥 HW1](./HW1_Solution.pdf) • [📄 HW2](./HW2_Solution.pdf) • [📄 HW3](./HW3_Solution.pdf) • [📄 HW4](./HW4_Solution.pdf) • [📄 HW5](./HW5_Solution.pdf) |
+| **HW1–HW5 Solutions** | [📥 HW1](./hw1-solution.pdf) • [📄 HW2](./hw2-solution.pdf) • [📄 HW3](./hw3-solution.pdf) • [📄 HW4](./hw4-solution.pdf) • [📄 HW5](./hw5-solution.pdf) |
 
 ---
 
@@ -17,8 +17,8 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Quiz 1** | [📥 Đề](./Quiz1_pdf.pdf) • [📄 Đáp án](./Quiz1_Solution.pdf) • [📄 Đáp án PDF](./Quiz1_Solution_pdf.pdf) |
-| **Quiz 2–6 Solutions** | [📥 Q2](./Quiz2_Solution.pdf) • [📄 Q3](./Quiz3_Solution.pdf) • [📄 Q4](./Quiz4_Solution.pdf) • [📄 Q5](./Quiz5_Solution.pdf) • [📄 Q6](./Quiz6_Solution.pdf) |
+| **Quiz 1** | [📥 Đề](./quiz1-pdf.pdf) • [📄 Đáp án](./quiz1-solution.pdf) • [📄 Đáp án PDF](./quiz1-solution-pdf.pdf) |
+| **Quiz 2–6 Solutions** | [📥 Q2](./quiz2-solution.pdf) • [📄 Q3](./quiz3-solution.pdf) • [📄 Q4](./quiz4-solution.pdf) • [📄 Q5](./quiz5-solution.pdf) • [📄 Q6](./quiz6-solution.pdf) |
 
 ---
 
@@ -26,15 +26,15 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Bài tập kiến trúc máy tính** | [📥 PDF](./Baitap-Kien%20truc%20may%20tinh.pdf) |
-| **BT KTMT** | [📥 PDF](./BT%20KTMT.pdf) |
-| **KTMT – Bài giải** | [📥 PDF](./KTMT%20-%20Bai%20giai.pdf) |
-| **KTMT & HN** | [📥 PDF](./KTMT&HN.pdf) |
-| **KTMT-2 Q** | [📥 PDF](./KTMT-2_Q.pdf) |
-| **KTMT2** | [📥 PDF](./KTMT2.pdf) |
+| **Bài tập kiến trúc máy tính** | [📥 PDF](./baitap-kien-truc-may-tinh.pdf) |
+| **BT KTMT** | [📥 PDF](./bt-ktmt.pdf) |
+| **KTMT – Bài giải** | [📥 PDF](./ktmt-bai-giai.pdf) |
+| **KTMT & HN** | [📥 PDF](./ktmt-hn.pdf) |
+| **KTMT-2 Q** | [📥 PDF](./ktmt-2-q.pdf) |
+| **KTMT2** | [📥 PDF](./ktmt2.pdf) |
 | **Review** | [📥 PDF](./review.pdf) |
-| **Lập trình truyền thông** | [📥 PDF](./Lap%20trinh%20truyen%20thong.pdf) |
-| **150 câu trắc nghiệm** | [📥 DOC](./ktmt_150cautracnghiem_congminh_7113.doc) |
+| **Lập trình truyền thông** | [📥 PDF](./lap-trinh-truyen-thong.pdf) |
+| **150 câu trắc nghiệm** | [📥 DOC](./ktmt-150cautracnghiem-congminh-7113.doc) |
 | **Question bank CS6303** | [📥 DOC](./question-bank-cs6303-computer-architecture.doc) |
 
 ---
