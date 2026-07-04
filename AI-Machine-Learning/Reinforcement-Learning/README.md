@@ -8,7 +8,7 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Reinforcement Learning: An Introduction** (2018) | [📥 Bản chính](./Sutton-2018-Reinforcement-learning-An-introduction.pdf) • [📄 Bản sao](./Sutton-2018-Reinforcement-learning-An-introduction%20-%20Copy.pdf) |
+| **Reinforcement Learning: An Introduction** (2018) | [📥 Bản chính](./sutton-2018-reinforcement-learning-an-introduction.pdf) • [📄 Bản sao](./sutton-2018-reinforcement-learning-an-introduction-copy.pdf) |
 
 ---
 

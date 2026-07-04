@@ -8,10 +8,10 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Machine Learning** – Tom M. Mitchell | [📥 PDF](./Machine-Learning-Tom-Mitchell.pdf) |
+| **Machine Learning** – Tom M. Mitchell | [📥 PDF](./machine-learning-tom-mitchell.pdf) |
 | **Introduction to Machine Learning with Python** | [📥 PDF](./introduction-machine-learning-python.pdf) |
-| **Introduction to Machine Learning (Partial)** | [📥 PDF](./Introduction_To_ML_Partial_2.pdf) |
-| **Python Machine Learning Cookbook** | [📥 PDF](./Python%20Machine%20Learning%20Cookbook.pdf) |
+| **Introduction to Machine Learning (Partial)** | [📥 PDF](./introduction-to-ml-partial-2.pdf) |
+| **Python Machine Learning Cookbook** | [📥 PDF](./python-machine-learning-cookbook.pdf) |
 | **thebook** | [📥 PDF](./thebook.pdf) |
 
 ---

@@ -8,11 +8,11 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Giáo trình trí tuệ nhân tạo** | [📥 Bản 1](./giao_trinh_tri_tue_nhan_tao_4834.pdf) • [📄 Bản 2](./giao_trinh_tri_tue_nhan_tao_ai_0084.pdf) |
-| **TTNT – Chương 0–4** | [📥 C0](./giao_trinh_ttnt_chuong_0_3694.pdf) • [📄 C1](./giao_trinh_ttnt_chuong_1_7785.pdf) • [📄 C2](./giao_trinh_ttnt_chuong_2_8313.pdf) • [📄 C3](./giao_trinh_ttnt_chuong_3_6121.pdf) • [📄 C4](./giao_trinh_ttnt_chuong_4_1867.pdf) |
-| **Trí tuệ nhân tạo – HV Bưu chính Viễn thông** | [📥 PDF](./Tri%20Tue%20Nhan%20Tao%20_%20HV%20Buu%20Chinh%20Vien%20Thong.pdf) |
-| **Trí tuệ nhân tạo – Lập trình tiến hóa** | [📥 PDF](./Tr%C3%AD%20tu%E1%BB%87%20nh%C3%A2n%20t%E1%BA%A1o%20-%20L%E1%BA%ADp%20tr%C3%ACnh%20ti%E1%BA%BFn%20h%C3%B3a.pdf) |
-| **Lý thuyết thông minh** | [📥 PDF](./Ly%20thuyet%20thong%20minh.pdf) |
+| **Giáo trình trí tuệ nhân tạo** | [📥 Bản 1](./giao-trinh-tri-tue-nhan-tao-4834.pdf) • [📄 Bản 2](./giao-trinh-tri-tue-nhan-tao-ai-0084.pdf) |
+| **TTNT – Chương 0–4** | [📥 C0](./giao-trinh-ttnt-chuong-0-3694.pdf) • [📄 C1](./giao-trinh-ttnt-chuong-1-7785.pdf) • [📄 C2](./giao-trinh-ttnt-chuong-2-8313.pdf) • [📄 C3](./giao-trinh-ttnt-chuong-3-6121.pdf) • [📄 C4](./giao-trinh-ttnt-chuong-4-1867.pdf) |
+| **Trí tuệ nhân tạo – HV Bưu chính Viễn thông** | [📥 PDF](./tri-tue-nhan-tao-hv-buu-chinh-vien-thong.pdf) |
+| **Trí tuệ nhân tạo – Lập trình tiến hóa** | [📥 PDF](./tri-tue-nhan-tao-lap-trinh-tien-hoa.pdf) |
+| **Lý thuyết thông minh** | [📥 PDF](./ly-thuyet-thong-minh.pdf) |
 
 ---
 
@@ -20,7 +20,7 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Hồi quy tuyến tính** | [📥 PDF](./Hoi%20quy%20tuyen%20tinh.pdf) |
+| **Hồi quy tuyến tính** | [📥 PDF](./hoi-quy-tuyen-tinh.pdf) |
 
 ---
 
