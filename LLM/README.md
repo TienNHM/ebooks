@@ -8,7 +8,7 @@
 
 | Tên tài liệu | Mô tả ngắn | Tải về |
 |-------------|------------|--------|
-| **DLI-RAG: Building RAG Agents with LLMs – NVIDIA** | Hướng dẫn xây dựng hệ thống RAG (Retrieval-Augmented Generation) sử dụng LLM, do NVIDIA phát hành | [📥 Tải PDF](./DLI-RAG-Building%20RAG%20Agents%20with%20LLMs%20NVIDIA.pdf) |
+| **DLI-RAG: Building RAG Agents with LLMs – NVIDIA** | Hướng dẫn xây dựng hệ thống RAG (Retrieval-Augmented Generation) sử dụng LLM, do NVIDIA phát hành | [📥 Tải PDF](./dli-rag-building-rag-agents-with-llms-nvidia.pdf) |
 
 ---
 

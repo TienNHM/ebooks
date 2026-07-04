@@ -8,7 +8,7 @@
 
 | Tên tài liệu | Mô tả | Tải về |
 |--------------|-------|--------|
-| **Introduction to Software Testing** | Giáo trình nhập môn kiểm thử phần mềm | [📥 Tải PDF](./Introduction%20to%20Software%20Testing.pdf) |
+| **Introduction to Software Testing** | Giáo trình nhập môn kiểm thử phần mềm | [📥 Tải PDF](./introduction-to-software-testing.pdf) |
 
 ---
 

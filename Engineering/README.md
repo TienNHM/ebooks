@@ -8,7 +8,7 @@
 
 | Tên tài liệu | Mô tả | Tải về |
 |--------------|-------|--------|
-| **Exploring Engineering** – Kosky (2010) | Giới thiệu kỹ thuật, thiết kế và tư duy kỹ sư | [📥 Tải PDF](./Kosky%202010%20Exploring%20engineering%20an%20introduction%20to%20engineering%20and%20design.pdf) |
+| **Exploring Engineering** – Kosky (2010) | Giới thiệu kỹ thuật, thiết kế và tư duy kỹ sư | [📥 Tải PDF](./kosky-2010-exploring-engineering-an-introduction-to-engineering-and-design.pdf) |
 
 ---
 

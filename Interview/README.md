@@ -8,7 +8,7 @@
 
 | Tên tài liệu | Mô tả | Tải về |
 |--------------|-------|--------|
-| **Introduction to Computer Security** | Nhập môn an toàn bảo mật máy tính | [📥 Tải PDF](./Introduction%20to%20Computer%20Security.pdf) |
+| **Introduction to Computer Security** | Nhập môn an toàn bảo mật máy tính | [📥 Tải PDF](../Computer-Network/Security/introduction-to-computer-security.pdf) |
 
 ---
 
