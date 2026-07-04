@@ -17,7 +17,7 @@
 
 | Tên tài liệu | Mô tả | Tải về |
 |--------------|-------|--------|
-| **Architecting Modern Web Applications** – ASP.NET Core & Azure | Kiến trúc ứng dụng web hiện đại | [📥 PDF](./Reference/Architecting-Modern-Web-Applications-with-ASP.NET-Core-and-Azure.pdf) |
+| **Architecting Modern Web Applications** – ASP.NET Core & Azure | Kiến trúc ứng dụng web hiện đại | [📥 PDF](./Reference/architecting-modern-web-applications-with-asp-net-core-and-azure.pdf) |
 | **Research-Based Web Design & Usability Guidelines** – HHS (2006) | Hướng dẫn thiết kế web & UX | [📥 PDF](./Health%20and%20Human%20Services%20Dept.%20(U.S.)-Research-Based%20Web%20Design%20%20Usability%20Guidelines-U.S.%20Dept.%20of%20Health%20and%20Human%20Services%20(2006).pdf) |
 
 ---
@@ -26,9 +26,9 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **FPT – Giáo trình + Lab ASP.NET** | [📦 RAR](./Textbooks/FPT%20-%20Gi%C3%A1o%20tr%C3%ACnh%20%2B%20Lab%20ASP.NET.rar) |
-| **FPT – Lập trình Web** | [📦 ZIP](./Textbooks/FPT%20-%20L%E1%BA%ADp%20tr%C3%ACnh%20Web.zip) |
-| **Đề cương bài giảng LT Web** | [📥 PDF](./Textbooks/decuongbaigiangLTWeb.pdf) |
+| **FPT – Giáo trình + Lab ASP.NET** | [📦 RAR](./Textbooks/fpt-giao-trinh-lab-asp-net.rar) |
+| **FPT – Lập trình Web** | [📦 ZIP](./Textbooks/fpt-lap-trinh-web.zip) |
+| **Đề cương bài giảng LT Web** | [📥 PDF](./Textbooks/decuongbaigiangltweb.pdf) |
 | **Quản trị web** | [📥 PDF](./Textbooks/quantriweb.pdf) |
 
 ---
