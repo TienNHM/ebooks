@@ -18,9 +18,9 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Giáo trình Pascal 7.0** | [📥 PDF](./Textbooks/Core/Gi%C3%A1o%20tr%C3%ACnh%20Pascal%207.0.pdf) |
-| **Thuật toán & kỹ thuật lập trình Pascal** | [📥 PDF](./Textbooks/Core/thuat_toan_va_ky_thuat_lap_trinh_pascal.pdf) |
-| **Giải thuật lập trình – TS Lê Minh Hoàng** | [📥 PDF](./Textbooks/Core/Giai_thuat_Lap_trinh_cua_TS_Le_Minh_Hoang.pdf) |
+| **Giáo trình Pascal 7.0** | [📥 PDF](./Textbooks/Core/giao-trinh-pascal-7-0.pdf) |
+| **Thuật toán & kỹ thuật lập trình Pascal** | [📥 PDF](./Textbooks/Core/thuat-toan-ky-thuat-lap-trinh-pascal.pdf) |
+| **Giải thuật lập trình – TS Lê Minh Hoàng** | [📥 PDF](./Textbooks/Core/giai-thuat-lap-trinh-le-minh-hoang.pdf) |
 | **Bài giảng lập trình Pascal** | [📥 PDF](./Textbooks/Lectures/bai-giang-lap-trinh-pascal.pdf) |
 
 ---

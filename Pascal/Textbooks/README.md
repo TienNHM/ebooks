@@ -18,13 +18,13 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Giáo trình Pascal 7.0** | [📥 PDF](./Core/Gi%C3%A1o%20tr%C3%ACnh%20Pascal%207.0.pdf) |
-| **Giao trinh pascal** | [📥 PDF](./Core/Giao%20trinh%20pascal.pdf) |
-| **Lập trình nâng cao** | [📥 PDF](./Core/LapTrinhNangCao.pdf) |
-| **Thuật toán & KT lập trình Pascal** | [📥 PDF](./Core/thuat_toan_va_ky_thuat_lap_trinh_pascal.pdf) |
-| **Giải thuật LT – TS Lê Minh Hoàng** | [📥 PDF](./Core/Giai_thuat_Lap_trinh_cua_TS_Le_Minh_Hoang.pdf) |
-| **Tài liệu GK chuyên Tin – Quyển 1–3** | [📥 Q1](./Core/Tai_lieu_Giao_khoa_chuyen_Tin_quyen_1.pdf) • [📄 Q2](./Core/Tai_lieu_Giao_khoa_chuyen_Tin_quyen_2.pdf) • [📄 Q3](./Core/Tai_lieu_chuyen_Tin_quyen_3.pdf) |
-| **TL bồi dưỡng HSG Tin 10–11** | [📥 Tin10](./Core/TL%20boi%20duong%20HSG%20Tin10.pdf) • [📄 Tin11](./Core/TL%20boi%20duong%20HSG%20Tin11.pdf) |
+| **Giáo trình Pascal 7.0** | [📥 PDF](./Core/giao-trinh-pascal-7-0.pdf) |
+| **Giao trinh pascal** | [📥 PDF](./Core/giao-trinh-pascal.pdf) |
+| **Lập trình nâng cao** | [📥 PDF](./Core/lap-trinh-nang-cao-pascal.pdf) |
+| **Thuật toán & KT lập trình Pascal** | [📥 PDF](./Core/thuat-toan-ky-thuat-lap-trinh-pascal.pdf) |
+| **Giải thuật LT – TS Lê Minh Hoàng** | [📥 PDF](./Core/giai-thuat-lap-trinh-le-minh-hoang.pdf) |
+| **Tài liệu GK chuyên Tin – Quyển 1–3** | [📥 Q1](./Core/tai-lieu-giao-khoa-chuyen-tin-quyen-1.pdf) • [📄 Q2](./Core/tai-lieu-giao-khoa-chuyen-tin-quyen-2.pdf) • [📄 Q3](./Core/tai-lieu-chuyen-tin-quyen-3.pdf) |
+| **TL bồi dưỡng HSG Tin 10–11** | [📥 Tin10](./Core/boi-duong-hsg-tin-10.pdf) • [📄 Tin11](./Core/boi-duong-hsg-tin-11.pdf) |
 
 ---
 
@@ -32,15 +32,15 @@
 
 | Chuyên đề | Tải về |
 |-----------|--------|
-| Đồ thị | [📦 RAR](./Topics/Do%20thi.rar) |
-| Quy hoạch động | [📦 RAR](./Topics/qui%20hoach%20dong.rar) |
-| Duyệt – Tham lam | [📦 RAR](./Topics/Duyet%20-%20Tham%20lam.rar) |
-| Cấu trúc DL đặc biệt | [📦 RAR](./Topics/Cau%20truc%20DL%20dac%20biet.rar) |
-| Hình học | [📦 RAR](./Topics/Hinh%20hoc.rar) |
-| Luồng – Cặp ghép | [📦 RAR](./Topics/Luong%20-%20Cap%20ghep.rar) |
-| Dạng khác | [📦 RAR](./Topics/Dang%20khac.rar) |
-| TS Nguyễn Thanh Tùng | [📦 RAR](./Topics/TS%20Nguyen%20Thanh%20Tung.rar) |
-| Volume No2 | [📦 RAR](./Topics/Volumn%20No2.rar) |
+| Đồ thị | [📦 RAR](./Topics/do-thi.rar) |
+| Quy hoạch động | [📦 RAR](./Topics/quy-hoach-dong.rar) |
+| Duyệt – Tham lam | [📦 RAR](./Topics/duyet-tham-lam.rar) |
+| Cấu trúc DL đặc biệt | [📦 RAR](./Topics/cau-truc-dl-dac-biet.rar) |
+| Hình học | [📦 RAR](./Topics/hinh-hoc.rar) |
+| Luồng – Cặp ghép | [📦 RAR](./Topics/luong-cap-ghep.rar) |
+| Dạng khác | [📦 RAR](./Topics/dang-khac.rar) |
+| TS Nguyễn Thanh Tùng | [📦 RAR](./Topics/ts-nguyen-thanh-tung.rar) |
+| Volume No2 | [📦 RAR](./Topics/volume-no2.rar) |
 
 ---
 
