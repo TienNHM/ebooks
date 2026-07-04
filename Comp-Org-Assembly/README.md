@@ -10,9 +10,8 @@
 |---------|-------|
 | [Architecture](./Architecture/) | Kiến trúc & tổ chức máy tính (Patterson, Stallings, CSAPP…) |
 | [Assembly](./Assembly/) | Lập trình Assembly đa kiến trúc |
-| [Textbooks](./Textbooks/) | Giáo trình tiếng Việt (KT số, kiến trúc máy tính) |
+| [Textbooks](./Textbooks/) | Giáo trình tiếng Việt (KT số, kiến trúc máy tính, HCMUTE…) |
 | [Vi xu ly](./Vi%20xu%20ly/) | Kỹ thuật vi xử lý |
-| [HCMUTE](./HCMUTE/) | Bài giảng & bài tập KTMT (HCMUTE) |
 | [Exercises](./Exercises/) | Bài tập, đề trắc nghiệm, ví dụ thực hành |
 
 ---

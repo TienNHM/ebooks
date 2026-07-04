@@ -17,5 +17,5 @@
 ---
 
 <p align="center">
-  ⬅️ [Quay lại Comp-Org-Assembly](../README.md) • [HCMUTE Exercises](../HCMUTE/Exercises/)
+  ⬅️ [Quay lại Comp-Org-Assembly](../README.md) • [HCMUTE KTMT](../Textbooks/HCMUTE/)
 </p>

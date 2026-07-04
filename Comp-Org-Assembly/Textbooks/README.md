@@ -4,7 +4,15 @@
 
 ---
 
-## ?? Tài li?u
+## ?? Theo tr??ng
+
+| Th? m?c | Mô t? |
+|---------|-------|
+| [HCMUTE](./HCMUTE/) | Giáo trình KTMT — Tr??ng SPKT TP.HCM (bài gi?ng, lab, ?? thi) |
+
+---
+
+## ?? Tài li?u chung
 
 | Tên tài li?u | T?i v? |
 |--------------|--------|
