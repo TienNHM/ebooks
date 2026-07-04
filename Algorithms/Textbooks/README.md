@@ -6,12 +6,12 @@
 
 ## 📂 Thư mục chính
 
-| Thư mục | Mô tả |
-|---------|-------|
+| Thư mục / Gói tải | Mô tả |
+|-------------------|-------|
 | [CTDL-GT](./CTDL-GT/) | Cấu trúc dữ liệu & giải thuật – slide theo chương |
-| [Algorithms-2004](./Algorithms-2004/) | Slide giải thuật nâng cao (DP, Greedy, NP-C…) |
+| [Algorithms-2004-slides.zip](./Algorithms-2004-slides.zip) | Slide giải thuật nâng cao (DP, Greedy, NP-C…) — **giải nén** |
 | [Advanced-Data-Structures](./Advanced-Data-Structures/) | Cấu trúc dữ liệu nâng cao I & II |
-| [Algorithm-Analysis](./Algorithm-Analysis/) | Giải thuật & đánh giá (bài giảng HTML/SCORM) |
+| [Algorithm-Analysis.zip](./Algorithm-Analysis.zip) | Giải thuật & đánh giá (bài giảng HTML/SCORM) — **giải nén** |
 | [Advanced-Algorithms](./Advanced-Algorithms/) | Thuật toán nâng cao – Thầy Bình |
 
 ---

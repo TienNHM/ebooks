@@ -6,10 +6,10 @@
 
 ## 📂 Nội dung
 
-| Thư mục | Mô tả |
-|---------|-------|
+| Thư mục / Gói tải | Mô tả |
+|-------------------|-------|
 | [Giáo trình](./Giáo%20trình/) | Giáo trình Pascal tiếng Việt |
-| [photo](./photo/) | Hình ảnh minh họa |
+| [Pascal-photo.zip](./Pascal-photo.zip) | Hình ảnh minh họa — **giải nén** |
 
 ---
 

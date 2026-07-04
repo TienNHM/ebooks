@@ -6,11 +6,11 @@
 
 ## 📂 Nội dung
 
-| Thư mục | Mô tả |
-|---------|-------|
+| Thư mục / Gói tải | Mô tả |
+|-------------------|-------|
 | [NMLT](./NMLT/) | Nhập môn lập trình — bài giảng, kỹ năng, tư duy lập trình |
-| [KTLT](./KTLT/) | Kỹ thuật lập trình — con trỏ, đệ quy, cấu trúc dữ liệu, phong cách code |
-| [Exercises](./Exercises/) | Bài tập thực hành |
+| [KTLT.zip](./KTLT.zip) | Kỹ thuật lập trình — con trỏ, đệ quy, cấu trúc dữ liệu — **giải nén** |
+| [NMLT-Exercises.zip](./NMLT-Exercises.zip) | Bài tập thực hành (`.doc`) — **giải nén** |
 | [Exams](./Exams/) | Đề thi & đáp án cuối kỳ, giữa kỳ |
 
 ---

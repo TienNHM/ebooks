@@ -20,9 +20,9 @@
 
 ## 📖 Slide bài giảng
 
-| Thư mục | Mô tả |
+| Gói tải | Mô tả |
 |---------|-------|
-| [Slides](./Slides/) | Slide OSI, TCP/IP, LAN switching, routing, VLAN |
+| [Network-Slides.zip](./Network-Slides.zip) | Slide OSI, TCP/IP, LAN switching, routing, VLAN — **giải nén** |
 
 ---
 
