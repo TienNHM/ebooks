@@ -23,7 +23,7 @@
 
 | Chủ đề | Liên kết |
 |--------|---------|
-| 🤖 AI - Machine Learning | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/AI%20-%20Machine%20Learning) |
+| 🤖 AI & Machine Learning | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/AI-Machine-Learning) |
 | 🧠 LLM (Large Language Models) | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/LLM) |
 | 📐 Algorithms | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Algorithms) |
 | 💻 C/C++ | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/C%20Cplusplus) |

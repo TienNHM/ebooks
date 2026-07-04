@@ -1,4 +1,4 @@
-# 🤖 AI - Machine Learning
+# 🤖 AI & Machine Learning
 
 > Tuyển tập sách hay và tài liệu học tập về Trí tuệ nhân tạo (Artificial Intelligence) và Học máy (Machine Learning), từ cơ bản đến nâng cao.
 
