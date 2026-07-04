@@ -8,8 +8,8 @@
 
 | Tên tài liệu | Mô tả | Tải về |
 |--------------|-------|--------|
-| **Thinking in Java v.3** | Cuốn sách kinh điển về tư duy và lập trình Java | [📥 Tải PDF](./Java%20English/Thinking%20in%20Java%20v.3.pdf) |
-| **Advanced Java Networking** | Lập trình mạng nâng cao với Java | [📥 Tải PDF](./Java%20English/Advanced%20Java%20Networking.pdf) |
+| **Thinking in Java v.3** | Cuốn sách kinh điển về tư duy và lập trình Java | [📥 Tải PDF](./Java%20English/thinking-in-java-v-3.pdf) |
+| **Advanced Java Networking** | Lập trình mạng nâng cao với Java | [📥 Tải PDF](./Java%20English/advanced-java-networking.pdf) |
 
 ---
 
