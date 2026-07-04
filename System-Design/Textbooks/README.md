@@ -13,6 +13,7 @@
 | **Phân tích thi?t k? h? th?ng** | [?? ZIP](./PhanTichThietKeHeThong.zip) |
 | **PTTK – ?H KH Hu?** | [?? RAR](./PTTK%20He%20Thong-DHKH%20Hue.rar) |
 | **Nh?p môn CNPM** – Gi?ng VH | [?? RAR](./Nhap_mon_cnpm_Giangvh-1.rar) |
+| **Pressman – Ch??ng 4–5** | [?? PDF](./Pressman_chapter4-5.pdf) |
 
 ---
 
