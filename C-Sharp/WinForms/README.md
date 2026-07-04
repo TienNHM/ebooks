@@ -8,8 +8,8 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Windows Forms Programming with C#** | [📥 PDF](./Reference/Windows%20Forms%20Programming%20With%20C%23.pdf) |
-| **Windows Forms – Chris Sells (2003)** | [📥 PDF](./Reference/Windows%20Forms%20Programming%20in%20C%20Sharp%20by%20chris%20sells%202003%20(1).pdf) |
+| **Windows Forms Programming with C#** | [📥 PDF](./Reference/windows-forms-programming-with-c.pdf) |
+| **Windows Forms – Chris Sells (2003)** | [📥 PDF](./Reference/windows-forms-programming-in-c-sharp-by-chris-sells-2003-1.pdf) |
 
 ---
 
@@ -17,7 +17,7 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Lập trình Windows với C#.Net** | [📦 RAR](./Lap trinh Window voi C#.Net.rar) |
+| **Lập trình Windows với C#.Net** | [📦 RAR](./lap-trinh-window-voi-c-net.rar) |
 
 ---
 
@@ -25,8 +25,8 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Chương 2 – Form and Controls** | [📥 PDF](./Lectures/Chuong2-Form%20and%20Controls%20-%20full.pdf) |
-| **Chương 2 (cont) – GDI and Timer** | [📥 PDF](./Lectures/Chuong%202%20(cont)%20-GDI%20and%20timer.pdf) |
+| **Chương 2 – Form and Controls** | [📥 PDF](./Lectures/chuong2-form-and-controls-full.pdf) |
+| **Chương 2 (cont) – GDI and Timer** | [📥 PDF](./Lectures/chuong-2-cont-gdi-and-timer.pdf) |
 
 ---
 

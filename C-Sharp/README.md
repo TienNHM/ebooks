@@ -18,9 +18,9 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Head First C#** | [📥 PDF](./Reference/O'Reilly-Head%20First%20C%23.pdf) |
-| **Pro C# 5.0 and .NET 4.5** | [📥 PDF](./Reference/Pro_CSharp_5.0_and_the_.NET_4.5_Framework_6th_edition.pdf) |
-| **Windows Forms – Chris Sells** | [📥 PDF](./WinForms/Reference/Windows%20Forms%20Programming%20in%20C%20Sharp%20by%20chris%20sells%202003%20(1).pdf) |
+| **Head First C#** | [📥 PDF](./Reference/oreilly-head-first-csharp.pdf) |
+| **Pro C# 5.0 and .NET 4.5** | [📥 PDF](./Reference/pro-csharp-5-0-and-the-net-4-5-framework-6th-edition.pdf) |
+| **Windows Forms – Chris Sells** | [📥 PDF](./WinForms/Reference/windows-forms-programming-in-c-sharp-by-chris-sells-2003-1.pdf) |
 
 ---
 

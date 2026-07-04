@@ -6,13 +6,13 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Head First C#** | [📥 PDF](./O'Reilly-Head%20First%20C%23.pdf) |
-| **Programming C# (2nd Ed.)** | [📥 PDF](./1.OReilly-Programming%20C#,%202Ed.pdf) |
-| **Beginning C# OOP (2nd Ed.)** | [📥 PDF](./2.Beginning-C-Object-Oriented-Programming-2nd-Edition.pdf) |
-| **The C# Programming Language (4th Ed.)** | [📥 PDF](./3.C%23%20Programming%20Language,%20The,%204th%20Edition.pdf) |
-| **Pro C# 5.0 and .NET 4.5 (6th Ed.)** | [📥 PDF](./Pro_CSharp_5.0_and_the_.NET_4.5_Framework_6th_edition.pdf) |
-| **C# 6.0 in a Nutshell – Albahari** | [📥 PDF](./Albahari%20J.,%20Albahari%20B.%20-%20C%23%206.0%20in%20a%20Nutshell,%206th%20Edition%20-%202015.pdf) • [📄 Alt](./c-6-0-in-a-nutshell.pdf) |
-| **Learning C# with Unity 3D** | [📥 PDF](./Learning%2020C%23%2020by%2020Developing%2020Games%20with%2020Unity%20203D.pdf) |
+| **Head First C#** | [📥 PDF](./oreilly-head-first-csharp.pdf) |
+| **Programming C# (2nd Ed.)** | [📥 PDF](./1-oreilly-programming-csharp-2ed.pdf) |
+| **Beginning C# OOP (2nd Ed.)** | [📥 PDF](./2-beginning-csharp-object-oriented-programming-2nd-edition.pdf) |
+| **The C# Programming Language (4th Ed.)** | [📥 PDF](./3-csharp-programming-language-4th-edition.pdf) |
+| **Pro C# 5.0 and .NET 4.5 (6th Ed.)** | [📥 PDF](./pro-csharp-5-0-and-the-net-4-5-framework-6th-edition.pdf) |
+| **C# 6.0 in a Nutshell – Albahari** | [📥 PDF](./albahari-j-albahari-b-c-6-0-in-a-nutshell-6th-edition-2015.pdf) • [📄 Alt](./c-6-0-in-a-nutshell.pdf) |
+| **Learning C# with Unity 3D** | [📥 PDF](./learning-20c-20by-20developing-20games-20with-20unity-203d.pdf) |
 
 ---
 
