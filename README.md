@@ -31,7 +31,7 @@
 | 💻 C/C++ | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/C-Cpp) |
 | 🧩 C# | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/C-Sharp) |
 | 🏁 Competitive Programming | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Competitive) |
-| 🌐 Computer Network | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Computer%20Network) |
+| 🌐 Computer Network | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Computer-Network) |
 | 🧬 Computer Org & Assembly | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Comp-Org-Assembly) |
 | 🗄️ Database | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Database) |
 | 🌍 Full-Stack Development | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Full-Stack) |
