@@ -12,6 +12,7 @@
 | **Tài liệu chuyên Tin – Quyển 1–3** | Bộ giáo trình chuyên tin | [📥 Q1](./TailieuChuyenTin_Quyen1.pdf) • [📄 Q2](./TailieuChuyenTin_Quyen2.pdf) • [📄 Q3.1](./TailieuChuyenTin_Quyen3(phan1).pdf) • [📄 Q3.2](./TailieuChuyenTin_Quyen3(phan2).pdf) |
 | **Một số vấn đề đáng chú ý trong tin học** | Tổng hợp các chủ đề quan trọng | [📥 Tải PDF](./Mot%20so%20van%20de%20dang%20chu%20y%20trong%20tin%20hoc.PDF) |
 | **Tin 11 – HK1** | Tài liệu học kỳ 1 lớp 11 | [📥 Tải ZIP](./tin%2011%20hk1.zip) |
+| **THCS** | Tài liệu tin học cấp THCS | [📥 Tải PDF](./THCS_2.pdf) |
 
 ---
 

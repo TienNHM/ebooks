@@ -15,6 +15,12 @@
 | **Từ C đến C++** | [📥 PDF](./Tu%20C%20den%20C++.pdf) |
 | **Phong cách lập trình C++** | [📥 PDF](./Phong%20cach%20lap%20trinh-C++.pdf) |
 | **Tài liệu hay về C++** | [📥 DOC](./tailieuhayve_C++.doc) |
+| **Tối ưu mã C** | [📥 PDF](./Toiuuma_C.pdf) |
+| **Ý nghĩa các hàm thư viện trong C** | [📥 PDF](./Y%20nghia%20cac%20ham%20thu%20vien%20trong%20C.pdf) |
+| **Quy định viết code C** | [📥 PDF](./quydinhvietcodec-140802022602-phpapp02.pdf) |
+| **C++ Template (tiếng Việt)** | [📦 RAR](./UTF-8__C++-Template-Tieng%20Viet.rar) |
+| **Nghiên cứu Visual C++ trên Windows** | [📥 PDF](./Nghien%20cuu%20Visual%20C%2B%2B%20%20tren%20Windows_2.pdf) |
+| **VC-MFC – Thành Lê** | [📥 PDF](./VC-MFC-THANHLE.pdf) |
 
 ---
 

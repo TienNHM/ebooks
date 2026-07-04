@@ -23,6 +23,15 @@
 |--------------|-------|--------|
 | **A Complete Guide to Programming in C++** | Hướng dẫn toàn diện từ căn bản đến nâng cao | [📥 Tải CHM](./A%20Complete%20Guide%20to%20Programming%20in%20C++.chm) |
 | **Standard Library C++** | Thư viện chuẩn C++ | [📥 Tải PDF](./Standard%20Library%20C++.pdf) |
+| **The Standard C++ (cppclasses)** | Tham khảo CHM về lớp C++ chuẩn | [📥 Tải CHM](./Textbooks/the%20standard%20%20C++%20cppclasses.chm) |
+
+---
+
+## 📝 Bài tập thực hành
+
+| | |
+|--|--|
+| **Xem bài tập & đề thi** | [📂 Thư mục Exercises](./Exercises/) |
 
 ---
 
