@@ -18,10 +18,10 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **The C Programming Language – K&R** | [📥 PDF](./Reference/C/The%20C%20Programming%20Language.pdf) |
+| **The C Programming Language – K&R** | [📥 PDF](./Reference/C/the-c-programming-language.pdf) |
 | **C Programming: A Modern Approach – King** | [📦 RAR](./Reference/C/%5BK.%20N.%20King%5D%20C%20Programming%20A%20Modern%20Approach%20(2nd%20Edition).rar) |
 | **Head First C (3rd Ed.)** | [📥 PDF](./Reference/C/head-first-c-3rd-edition.pdf) |
-| **A Complete Guide to Programming in C++** | [📥 CHM](./Reference/Cpp/A%20Complete%20Guide%20to%20Programming%20in%20C++.chm) |
+| **A Complete Guide to Programming in C++** | [📥 CHM](./Reference/Cpp/a-complete-guide-to-programming-in-c.chm) |
 
 ---
 

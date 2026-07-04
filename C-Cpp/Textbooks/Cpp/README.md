@@ -2,9 +2,9 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Ngôn ngữ lập trình C++** | [📥 PDF](./Ngon_ngu_lap_trinh_C++.pdf) |
-| **Lập trình hướng đối tượng C++** | [📥 PDF](./laptrinhhuongdoituong_C++.pdf) |
-| **Từ C đến C++** | [📥 PDF](./Tu%20C%20den%20C++.pdf) |
-| **Phong cách lập trình C++** | [📥 PDF](./Phong%20cach%20lap%20trinh-C++.pdf) |
-| **Tài liệu hay về C++** | [📥 DOC](./tailieuhayve_C++.doc) |
-| **C++** | [📥 DOC](./C++.doc) |
+| **Ngôn ngữ lập trình C++** | [📥 PDF](./ngon-ngu-lap-trinh-c.pdf) |
+| **Lập trình hướng đối tượng C++** | [📥 PDF](./laptrinhhuongdoituong-c.pdf) |
+| **Từ C đến C++** | [📥 PDF](./tu-c-den-c.pdf) |
+| **Phong cách lập trình C++** | [📥 PDF](./phong-cach-lap-trinh-c.pdf) |
+| **Tài liệu hay về C++** | [📥 DOC](./tailieuhayve-c.doc) |
+| **C++** | [📥 DOC](./c.doc) |

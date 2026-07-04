@@ -8,9 +8,9 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Bài tập lập trình cơ bản** | [📥 PDF](./BaiTapLapTrinhCoBan.pdf) |
-| **Bài tập chuỗi** | [📥 DOCX](./Bai%20tap%20chuoi.docx) |
-| **Giáo trình bài tập KTLT (C)** | [📥 PDF](./giao_trinh_bai_tap_ky_thuat_lap_trinh_c_5118.pdf) |
+| **Bài tập lập trình cơ bản** | [📥 PDF](./baitaplaptrinhcoban.pdf) |
+| **Bài tập chuỗi** | [📥 DOCX](./bai-tap-chuoi.docx) |
+| **Giáo trình bài tập KTLT (C)** | [📥 PDF](./giao-trinh-bai-tap-ky-thuat-lap-trinh-c-5118.pdf) |
 
 ---
 
@@ -18,7 +18,7 @@
 
 | Gói | Mô tả |
 |-----|-------|
-| [Web-Notes.zip](./Web-Notes.zip) | Mảng 1 chiều, `string.h` — **giải nén** |
+| [web-notes.zip](./web-notes.zip) | Mảng 1 chiều, `string.h` — **giải nén** |
 
 ---
 
