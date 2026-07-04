@@ -1,0 +1,19 @@
+# Python — Reference
+
+> Sách tham khảo Python (tiếng Anh)
+
+| Tên tài liệu | Tải về |
+|--------------|--------|
+| 2010 Bookmatter Pythonalgorithmsmasteringbasic | [📥](./2010-bookmatter-pythonalgorithmsmasteringbasic.pdf) |
+| Head First Python 2Nd Edition | [📥](./head-first-python-2nd-edition.pdf) |
+| Learningpython | [📥](./learningpython.pdf) |
+| Programming In Python 3 | [📥](./programming-in-python-3.pdf) |
+| Python 3.7.4Rc1 Docs Pdf A4 | [📦](./python-3.7.4rc1-docs-pdf-a4.zip) |
+| Python In A Nutshell 3Rd Edition | [📥](./python-in-a-nutshell-3rd-edition.pdf) |
+| Python | [📥](./python.pdf) |
+| Thinkpython2 | [📥](./thinkpython2.pdf) |
+| Zelle 2004 Python Programming An Introduction To Computer Science | [📥](./zelle-2004-python-programming-an-introduction-to-computer-science.pdf) |
+
+<p align="center">
+  ⬅️ [Quay lại](../README.md)
+</p>
