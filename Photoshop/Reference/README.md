@@ -6,8 +6,8 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Adobe Photoshop 7** | [📥 PDF](./Adobe%20Photoshop%207.pdf) |
-| **Công cụ chỉnh sửa ảnh đẹp mà không cần Adobe Photoshop** | [📥 PDF](./Cong_cu_chinh_sua_anh_dep_ma_khong_can_Adobe_Photoshop.pdf) |
+| **Adobe Photoshop 7** | [📥 PDF](./adobe-photoshop-7.pdf) |
+| **Công cụ chỉnh sửa ảnh đẹp mà không cần Adobe Photoshop** | [📥 PDF](./cong-cu-chinh-sua-anh-dep-ma-khong-can-adobe-photoshop.pdf) |
 
 ---
 
