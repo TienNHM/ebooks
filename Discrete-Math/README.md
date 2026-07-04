@@ -10,6 +10,7 @@
 |--------------|-------|--------|
 | **Discrete Mathematics and Its Applications** – Rosen (7th Edition) | Giáo trình kinh điển về toán rời rạc, dùng rộng rãi trong đại học | [📥 Tải PDF](./Rosen_Discrete_Mathematics_and_Its_Applications_7th_Edition.pdf) |
 | **Đại số đại cương** | Tài liệu nền tảng về đại số | [📥 Bản 1](./Sach%20Dai%20So%20Dai%20Cuong.pdf) • [📄 Bản 2](./Sach%20Dai%20So%20Dai%20Cuong_2.pdf) |
+| **Knights Tours and Zeta Functions** | Toán tổ hợp và hàm zeta | [📥 Tải PDF](./Knights%20Tours%20and%20Zeta%20Functions.pdf) |
 
 ---
 

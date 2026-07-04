@@ -15,6 +15,7 @@
 | **Python Machine Learning Cookbook** | Hơn 100 công thức code thực tiễn để giải bài toán ML bằng Python | [📥 Tải PDF](./Python%20Machine%20Learning%20Cookbook.pdf) |
 | **Searching for Solutions in Games and AI** | Tập trung vào tìm kiếm lời giải trong game và AI truyền thống | [📥 Tải PDF](./Searching%20for%20Solutions%20in%20Games%20and%20Artificial%20Intelligence.pdf) |
 | **Reinforcement Learning – Sutton & Barto (2018)** | Cuốn sách kinh điển về học tăng cường | [📥 Bản chính](./Sutton-2018-Reinforcement-learning-An-introduction.pdf) • [📄 Bản sao](./Sutton-2018-Reinforcement-learning-An-introduction%20-%20Copy.pdf) |
+| **Lý thuyết thông minh** | Giáo trình lý thuyết thông minh (tiếng Việt) | [📥 Tải PDF](./Ly%20thuyet%20thong%20minh.pdf) |
 
 ---
 

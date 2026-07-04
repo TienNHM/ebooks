@@ -22,10 +22,8 @@
 |--------------|--------|
 | **Lê Minh Hoàng – Gi?i thu?t l?p trình** | [?? PDF](./GiaiThuatLapTrinh_LeMinhHoang.pdf) • [?? Chuyên ??](./Le%20minh%20hoang%20-%20Bai%20giang%20cac%20chuyen%20de.pdf) |
 | **Giáo trình gi?i thu?t** | [?? PDF](./Giao%20trinh%20giai%20thuat.pdf) |
-| **K? thu?t l?p trình nâng cao** | [?? PDF](./Ky_thuat_lap_trinh_nang_cao.pdf) |
 | **Gi?i thu?t và l?p trình** | [?? PDF](./Giai%20thuat%20va%20Lap%20Trinh(rat%20hay).pdf) |
 | **GT_LTTT** | [?? PDF](./GT_LTTT.pdf) |
-| **Nh?p môn l?p trình không code** | [?? PDF](./Nh%E1%BA%A1p%20Mon%20Lap%20Trinh%20Khong%20Code%20-%20toidicodedao.pdf) |
 
 ---
 

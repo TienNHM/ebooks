@@ -14,6 +14,7 @@
 | **Tuyển tập đề thi & code OLP Tin học SV** | Tổng hợp đề thi Olympic Tin học sinh viên Việt Nam nhiều năm | [📥 Tải PDF](./Tuyen%20Tap%20cac%20de%20thi%20va%20Code%20OLP%20Tin%20Hoc%20SV.pdf) |
 | **Code Complete (PDF bản tiếng Anh)** | Sách kỹ năng lập trình kinh điển của Steve McConnell, hướng dẫn viết code rõ ràng, dễ bảo trì | [📥 Tải PDF](./Code%20Complete.pdf) |
 | **Code Complete (EPUB bản đầy đủ)** | Phiên bản đầy đủ EPUB (ấn bản thứ 2), phù hợp cho thiết bị di động/Kindle | [📥 Tải EPUB](./Steve%20McConnell-Code%20Complete_%20A%20Practical%20Handbook%20of%20Software%20Construction.%202%20ed.-Microsoft%20Press.epub) |
+| **Clean Code** – Robert C. Martin (2009) | Nguyên tắc viết code sạch, dễ đọc và bảo trì | [📥 Tải PDF](./Martin%202009%20Clean%20code.pdf) |
 
 ---
 

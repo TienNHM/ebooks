@@ -9,6 +9,7 @@
 | Tên tài liệu | Mô tả | Tải về |
 |--------------|-------|--------|
 | **System Design – ByteByteGo (LinkedIn Posts 2024)** | Tổng hợp kiến thức thiết kế hệ thống quy mô lớn, phỏng vấn kỹ thuật | [📥 Tải PDF](./System%20Design%20-%20Linkedin_Posts_2024_Blue%20-%20ByteByteGo.pdf) |
+| **Mastering Software Project Management** | Quản lý dự án phần mềm | [📥 Tải PDF](./Mastering%20Software%20Project%20Managament.pdf) |
 
 ---
 

@@ -46,6 +46,7 @@
 | 📊 R Programming | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/R) |
 | 🐍 Python | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Python) |
 | 🏗️ System Design & PTTK | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/System-Design) |
+| 🧪 Software Testing | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Testing) |
 | 🇻🇳 Tin học THPT | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Tin-Hoc-THPT) |
 | 🧮 Pascal | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Pascal) |
 

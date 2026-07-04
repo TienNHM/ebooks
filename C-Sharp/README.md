@@ -12,6 +12,7 @@
 | **Pro C# 5.0 and the .NET 4.5 Framework (6th Edition)** | Hướng dẫn đầy đủ về C# hiện đại và .NET | [📥 Tải PDF](./Pro_CSharp_5.0_and_the_.NET_4.5_Framework_6th_edition.pdf) |
 | **Windows Forms Programming in C#** – Chris Sells (2003) | Lập trình giao diện desktop với WinForms | [📥 Tải PDF](./Windows%20Forms%20Programming%20in%20C%20Sharp%20by%20chris%20sells%202003%20(1).pdf) |
 | **Windows Forms Programming with C#** | Bổ sung về lập trình Windows Forms | [📥 Tải PDF](./Windows%20Forms%20Programming%20With%20C%23.pdf) |
+| **Learning C# by Developing Games with Unity 3D** | Học C# qua phát triển game Unity | [📥 Tải PDF](./Learning%2020C%23%2020by%2020Developing%2020Games%2020with%2020Unity%20203D.pdf) |
 
 ---
 
