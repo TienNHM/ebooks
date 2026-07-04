@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🔬 Thực hành — HCMUTE KTMT
 
 > Bài lab **Kiến trúc máy tính** (Lab 1–6).

@@ -1,28 +1,22 @@
-# 🏫 HCMUTE — Kiến trúc máy tính
+<p align="right"><a href="./README.en.md">English</a></p>
 
-> Giáo trình môn **Kiến trúc máy tính (KTMT / CAA)** — Trường Đại học Sư phạm Kỹ thuật TP.HCM (HCMUTE).
+# HCMUTE
 
----
+> Tài liệu **HCMUTE**
 
-## 📂 Nội dung
+## 📂 Thư mục
 
-| Thư mục | Mô tả |
-|---------|-------|
-| [Lectures](./Lectures/) | Bài giảng theo chương (Chapter 0–9) |
-| [Labs](./Labs/) | Bài thực hành Lab 1–6 |
-| [Exercises](./Exercises/) | Bài tập, homework, quiz, ngân hàng câu hỏi |
-| [Exams](./Exams/) | Đề thi & đáp án giữa kỳ, cuối kỳ |
+- [Exams](./Exams/)
+- [Exercises](./Exercises/)
+- [Labs](./Labs/)
+- [Lectures](./Lectures/)
 
----
-
-## 📋 Đề cương
+## 📘 Tài liệu
 
 | Tên tài liệu | Tải về |
-|--------------|--------|
-| **CAA Syllabus (3 tín chỉ)** | [📥 DOCX](./caa-syllabus-3-credits.docx) |
-
----
+|-----|--------|
+| Caa Syllabus 3 Credits | [📥](./caa-syllabus-3-credits.docx) |
 
 <p align="center">
-  ⬅️ [Quay lại Textbooks](../README.md)
+  ⬅️ [Quay lại](../README.md)
 </p>

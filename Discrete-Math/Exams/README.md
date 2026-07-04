@@ -1,11 +1,12 @@
-# Exams
+<p align="right"><a href="./README.en.md">English</a></p>
+# Đề thi
 
 > Đề thi toán rời rạc
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| Da Trr Ky I 15 16 | [📥](./da-trr-ky-i-15-16.pdf) |
-| Trrch06 | [📥](./trrch06.pdf) |
+| Đáp án TRR kỳ I 2015–2016 | [📥](./da-trr-ky-i-15-16.pdf) |
+| TRR Chương 6 | [📥](./trrch06.pdf) |
 
 <p align="center">
   ⬅️ [Quay lại](../README.md)

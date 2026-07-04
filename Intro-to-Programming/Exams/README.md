@@ -1,29 +1,19 @@
-# 📋 Đề thi & đáp án
+<p align="right"><a href="./README.en.md">English</a></p>
 
-> Đề thi cuối kỳ, giữa kỳ và tuyển tập đề **NMLT / KTLT**.
+# Exams
 
----
-
-## 📘 Đề thi cuối kỳ
-
-| Tên tài liệu | Mô tả | Tải về |
-|--------------|-------|--------|
-| **Đáp án cuối kỳ NMLT HK1 2015–2016** | Đáp án NMLT | [📥 PDF](./dapancuoikynmlt-hk1-2015-2016.pdf) |
-| **Đề cuối kỳ NMLT HK1 2016–2017** | Đề thi NMLT | [📥 PDF](./decuoikynmlt-hk1-2016-2017-dt.pdf) |
-| **Đề cuối kỳ KTLT HK1 2013–2014** | Đề thi KTLT | [📥 PDF](./decuoikyktlt-hk1-2013-2014.pdf) |
-
----
-
-## 📖 Đề thi & kiểm tra khác
+> Tài liệu **Exams**
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **KTLT – Lần 2 (ST5, ST7)** | [📥 ST5](./ktlt-lan2-st5.pdf) • [📄 ST7](./ktlt-lan2-st7.pdf) |
-| **Đề thi một số nơi** | [📦 ZIP](./de-thi-mot-so-noi.zip) |
-| **Đề thi KTLT – Cao Thắng** | [📥 PDF](./de-thi-ky-thuat-lap-trinh-lan-1-va-lan-2-truong-cao-thang-2301.pdf) |
-
----
+| Dapancuoikynmlt Hk1 2015 2016 | [📥](./dapancuoikynmlt-hk1-2015-2016.pdf) |
+| Đề thi kỳ thuật lập trình lần 1 và lần 2 trường Cao Thang 2301 | [📥](./de-thi-ky-thuat-lap-trinh-lan-1-va-lan-2-truong-cao-thang-2301.pdf) |
+| Đề thi một So nói | [📦](./de-thi-mot-so-noi.zip) |
+| Decuoikyktlt Hk1 2013 2014 | [📥](./decuoikyktlt-hk1-2013-2014.pdf) |
+| Decuoikynmlt Hk1 2016 2017 Dt | [📥](./decuoikynmlt-hk1-2016-2017-dt.pdf) |
+| Ktlt Lan2 St5 | [📥](./ktlt-lan2-st5.pdf) |
+| Ktlt Lan2 St7 | [📥](./ktlt-lan2-st7.pdf) |
 
 <p align="center">
-  ⬅️ [Quay lại Intro to Programming](../README.md)
+  ⬅️ [Quay lại](../README.md)
 </p>

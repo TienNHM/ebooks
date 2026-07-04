@@ -1,21 +1,17 @@
-# 📝 Bài tập & thực hành
+<p align="right"><a href="./README.en.md">English</a></p>
 
-> Bài tập, đề trắc nghiệm và ví dụ **kiến trúc máy tính**.
+# Exercises
 
----
-
-## 📘 Tài liệu
+> Tài liệu **Exercises**
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **PA1** | [📥 PDF](./pa1.pdf) |
-| **Câu hỏi trắc nghiệm kiến trúc máy tính** | [📥 DOC](./cau-hoi-trac-nghiem-mon-kien-truc-may-tinh-0815.doc) |
-| **CSE 2312 – Lecture 3** | [📥 PDF](./cse2312-lecture3.pdf) |
-| **CSE 2312 Course Link** | [🔗 URL](./CSE%202312%20Computer%20Organization%20and%20Assembly%20Language%20Programming%20(Spring%202015).url) |
-| **Ví dụ cache đơn giản** | [📥 PDF](./vidu-cache-dongian.pdf) |
-
----
+| Câu Hoi Trac Nghiem môn Kien Truc May tỉnh 0815 | [📥](./cau-hoi-trac-nghiem-mon-kien-truc-may-tinh-0815.doc) |
+| Cse 2312 Computer Organization And Assembly Language Programming Spring 2015 | [📥](./cse-2312-computer-organization-and-assembly-language-programming-spring-2015.url) |
+| Cse2312 Lecture3 | [📥](./cse2312-lecture3.pdf) |
+| Pa1 | [📥](./pa1.pdf) |
+| Vidu Cache Dongian | [📥](./vidu-cache-dongian.pdf) |
 
 <p align="center">
-  ⬅️ [Quay lại Comp-Org-Assembly](../README.md) • [HCMUTE KTMT](../Textbooks/HCMUTE/)
+  ⬅️ [Quay lại](../README.md)
 </p>

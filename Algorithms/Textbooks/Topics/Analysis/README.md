@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # Đánh giá thuật toán
 
 | Tên tài liệu | Tải về |

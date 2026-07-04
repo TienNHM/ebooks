@@ -1,27 +1,16 @@
-# 📝 C/C++ Exercises
+<p align="right"><a href="./README.en.md">English</a></p>
 
-> Bài tập và tài liệu thực hành lập trình **C/C++**.
+# Exercises
 
----
-
-## 📘 Bài tập
+> Tài liệu **Exercises**
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Bài tập lập trình cơ bản** | [📥 PDF](./baitaplaptrinhcoban.pdf) |
-| **Bài tập chuỗi** | [📥 DOCX](./bai-tap-chuoi.docx) |
-| **Giáo trình bài tập KTLT (C)** | [📥 PDF](./giao-trinh-bai-tap-ky-thuat-lap-trinh-c-5118.pdf) |
-
----
-
-## 🌐 Ghi chú web (HTML)
-
-| Gói | Mô tả |
-|-----|-------|
-| [web-notes.zip](./web-notes.zip) | Mảng 1 chiều, `string.h` — **giải nén** |
-
----
+| Bai Tap Chuoi | [📥](./bai-tap-chuoi.docx) |
+| Baitaplaptrinhcoban | [📥](./baitaplaptrinhcoban.pdf) |
+| Giáo trình bài tập kỳ thuật lập trình C 5118 | [📥](./giao-trinh-bai-tap-ky-thuat-lap-trinh-c-5118.pdf) |
+| Web Notes | [📦](./web-notes.zip) |
 
 <p align="center">
-  ⬅️ [Quay lại C/C++](../README.md)
+  ⬅️ [Quay lại](../README.md)
 </p>

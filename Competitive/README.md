@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🧠 Competitive Programming
 
 > Tổng hợp các sách và tài liệu chất lượng cao phục vụ cho việc luyện tập lập trình thi đấu, thuật toán và chuẩn bị phỏng vấn kỹ thuật chuyên sâu.

@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 📋 Đề ôn thi mạng
 
 > Tài liệu ôn thi chứng chỉ mạng.

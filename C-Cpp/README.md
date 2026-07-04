@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # ⚙️ C & C++
 
 > Bộ sưu tập ebook **C** và **C++**: sách tham khảo quốc tế, giáo trình đại học và bài tập thực hành.

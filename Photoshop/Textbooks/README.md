@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 📕 Photoshop — Textbooks
 
 > Giáo trình và tài liệu **Photoshop cơ bản** (tiếng Việt).

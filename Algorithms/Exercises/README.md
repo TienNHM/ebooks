@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 📝 Algorithms — Exercises
 
 > Bài tập và tài liệu thực hành thuật toán.

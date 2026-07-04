@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 💻 Computer Literacy
 
 > Sách **tin học đại cương** — giới thiệu máy tính, công nghệ và ứng dụng trong đời sống (không chuyên sâu lập trình).

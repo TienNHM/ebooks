@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🧪 Software Testing
 
 > Tài liệu **kiểm thử phần mềm (Software Testing)**: nhập môn, kỹ thuật kiểm thử và đảm bảo chất lượng phần mềm.

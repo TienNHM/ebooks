@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 📚 Photoshop — Lessons
 
 > Bộ bài học **Photoshop** theo buổi (Lesson 1–20).

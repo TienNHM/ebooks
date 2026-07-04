@@ -1,9 +1,13 @@
-# 📘 Web — Reference
+<p align="right"><a href="./README.en.md">English</a></p>
+
+# Reference
+
+> Tài liệu **Reference**
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Architecting Modern Web Applications with ASP.NET Core and Azure** | [📥 PDF](./architecting-modern-web-applications-with-asp-net-core-and-azure.pdf) |
+| Architecting Modern Web Applications With Asp Net Core And Azure | [📥](./architecting-modern-web-applications-with-asp-net-core-and-azure.pdf) |
 
 <p align="center">
-  ⬅️ [Quay lại Web](../README.md)
+  ⬅️ [Quay lại](../README.md)
 </p>

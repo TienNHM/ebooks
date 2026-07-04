@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🎨 Computer Graphics
 
 > Tài liệu **đồ họa máy tính**: giáo trình, lý thuyết và bài giảng (tiếng Việt).

@@ -1,23 +1,25 @@
-# ✏️ Pascal Exercises
+<p align="right"><a href="./README.en.md">English</a></p>
 
-> **Bài tập** và đề thi mẫu Pascal / HSG.
+# Exercises
+
+> Tài liệu **Exercises**
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Bài tập** | [📥 DOCX](./bai-tap.docx) |
-| **Đề bài** | [📥 PDF](./de-bai.pdf) |
-| **Pascal (tổng hợp)** | [📥 PDF](./pascal-bai-tap.pdf) |
-| **Bến Tre** | [📥 PDF](./ben-tre.pdf) |
-| **Bố trí phòng họp** | [📥 PDF](./bo-tri-phong-hop.pdf) |
-| **Chạy marathon** | [📥 PDF](./chay-marathon.pdf) |
-| **Dò mìn** | [📥 PDF](./do-min.pdf) |
-| **Mã hóa xâu** | [📥 PDF](./ma-hoa-xau.pdf) |
-| **Phép dịch** | [📥 PDF](./phep-dich.pdf) |
-| **Tìm bộ** | [📥 PDF](./tim-bo.pdf) |
-| **Ước chung của chuỗi** | [📥 PDF](./uoc-chung-cua-chuoi.pdf) |
-| **Xếp hàng** | [📥 PDF](./xep-hang.pdf) |
-| **Xếp kim cương** | [📥 PDF](./xep-kim-cuong.pdf) |
+| Bai Tap | [📥](./bai-tap.docx) |
+| Ben Tre | [📥](./ben-tre.pdf) |
+| Bo Tri Phong Hop | [📥](./bo-tri-phong-hop.pdf) |
+| Chay Marathon | [📥](./chay-marathon.pdf) |
+| De Bai | [📥](./de-bai.pdf) |
+| Do Min | [📥](./do-min.pdf) |
+| Ma Hoa Xau | [📥](./ma-hoa-xau.pdf) |
+| Pascal Bai Tap | [📥](./pascal-bai-tap.pdf) |
+| Phep Dich | [📥](./phep-dich.pdf) |
+| Tim Bo | [📥](./tim-bo.pdf) |
+| Uoc Chung Cua Chuoi | [📥](./uoc-chung-cua-chuoi.pdf) |
+| Xep Hang | [📥](./xep-hang.pdf) |
+| Xep Kim Cuong | [📥](./xep-kim-cuong.pdf) |
 
 <p align="center">
-  ⬅️ [Quay lại Pascal](../README.md)
+  ⬅️ [Quay lại](../README.md)
 </p>

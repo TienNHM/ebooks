@@ -1,13 +1,14 @@
+<p align="right"><a href="./README.en.md">English</a></p>
 # Tin học trẻ
 
 > Đề thi tin học trẻ
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| De Tinhoctre Thpt 2013 Bangc 1 | [📥](./de-tinhoctre-thpt-2013-bangc-1.pdf) |
-| Dethi Tin Hoc Tre Longan 17 Bangc 2013 | [📥](./dethi-tin-hoc-tre-longan-17-bangc-2013.doc) |
-| Dethi Tinhoctre Dongthap Bangc Thpt 2012 | [📥](./dethi-tinhoctre-dongthap-bangc-thpt-2012.pdf) |
-| Tht Tp Hai Phong | [📥](./tht-tp-hai-phong.pdf) |
+| Đề tin học trẻ THPT 2013 bảng C 1 | [📥](./de-tinhoctre-thpt-2013-bangc-1.pdf) |
+| Đề thi tin Học Tre Long An 17 bảng C 2013 | [📥](./dethi-tin-hoc-tre-longan-17-bangc-2013.doc) |
+| Đề thi tin học trẻ Đồng Tháp bảng C THPT 2012 | [📥](./dethi-tinhoctre-dongthap-bangc-thpt-2012.pdf) |
+| THT TP Hải Phòng | [📥](./tht-tp-hai-phong.pdf) |
 
 <p align="center">
   ⬅️ [Quay lại](../README.md)

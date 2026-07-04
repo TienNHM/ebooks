@@ -1,31 +1,20 @@
-# 🔷 Cisco — CCNA / CCNP
+<p align="right"><a href="./README.en.md">English</a></p>
 
-> Sách **Cisco Press** phục vụ chứng chỉ CCENT, CCNA Routing & Switching và CCNP SWITCH.
+# Cisco
 
----
-
-## 📘 CCNA / CCENT
+> Tài liệu **Cisco**
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **CCENT – ICND1 Official Cert Guide (2nd Ed.)** | [📥 PDF](./Cisco%20Press-CCENT%20-%20ICND%201%20Official%20Certification%20Guide%20(2nd%20Edition).pdf) |
-| **CCNA – ICND2 Official Cert Guide (2nd Ed.)** | [📥 PDF](./Cisco%20Press-%20CCNA%20-%20ICND%202%20%20Official%20Certification%20Guide%20(2nd%20Edition).pdf) |
-| **CCNA ICND1 100-105 Official Cert Guide (2016)** | [📥 PDF](./CiscoPress%20-%20CCNA%20Routing%20and%20Switching%20ICND1%20100-105%20Official%20Cert%20Guide%20(2016)_2.pdf) |
-| **CCNA ICND2 200-105 Official Cert Guide (2016)** | [📥 PDF](./CiscoPress%20-%20CCNA%20Routing%20and%20Switching%20ICND2%20200-105%20Official%20Cert%20Guide%20(2016).pdf) |
-| **CCNA ICND2 200-101 Official Cert Guide** | [📥 PDF](./cisco-ccna-routing-and-switching-icnd2-200-101-official-cert-guide-2010kaiser.pdf) |
-| **CCNA NEWSTAR – Routing & Switching** | [📥 PDF](./ccna-newstar-routing-switching.pdf) |
-
----
-
-## 📘 CCNP & Wireless
-
-| Tên tài liệu | Tải về |
-|--------------|--------|
-| **CCNP SWITCH 300-115 Official Cert Guide** | [📥 PDF](./ccnp-routing-and-switching-switch-300-115-official.pdf) |
-| **802.11 Wireless LAN Fundamentals** | [📥 PDF](./cisco-press-802-11-wireless-lan-fundamentals.pdf) |
-
----
+| Ccna Newstar Routing Switching | [📥](./ccna-newstar-routing-switching.pdf) |
+| Ccnp Routing And Switching Switch 300 115 Official | [📥](./ccnp-routing-and-switching-switch-300-115-official.pdf) |
+| Cisco Ccna Routing And Switching Icnd2 200 101 Official Cert Guide 2010kaiser | [📥](./cisco-ccna-routing-and-switching-icnd2-200-101-official-cert-guide-2010kaiser.pdf) |
+| Cisco Press 802 11 Wireless Lan Fundamentals | [📥](./cisco-press-802-11-wireless-lan-fundamentals.pdf) |
+| Cisco Press Ccent Icnd 1 Official Certification Guide 2nd Edition | [📥](./cisco-press-ccent-icnd-1-official-certification-guide-2nd-edition.pdf) |
+| Cisco Press Ccna Icnd 2 Official Certification Guide 2nd Edition | [📥](./cisco-press-ccna-icnd-2-official-certification-guide-2nd-edition.pdf) |
+| Ciscopress Ccna Routing And Switching Icnd1 100 105 Official Cert Guide 2016 2 | [📥](./ciscopress-ccna-routing-and-switching-icnd1-100-105-official-cert-guide-2016-2.pdf) |
+| Ciscopress Ccna Routing And Switching Icnd2 200 105 Official Cert Guide 2016 | [📥](./ciscopress-ccna-routing-and-switching-icnd2-200-105-official-cert-guide-2016.pdf) |
 
 <p align="center">
-  ⬅️ [Quay lại Computer Network](../README.md) • [Đề ôn thi CCNA](../Exams/CCNA/)
+  ⬅️ [Quay lại](../README.md)
 </p>

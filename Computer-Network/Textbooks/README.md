@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 📕 Mạng máy tính — Textbooks
 
 > Giáo trình và slide **mạng máy tính** (chủ yếu tiếng Việt).

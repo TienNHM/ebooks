@@ -1,6 +1,7 @@
-# Java 4
+<p align="right"><a href="./README.en.md">English</a></p>
+# FPT — Java 4
 
-> Giáo trình FPT Polytechnic
+> Giáo trình Java 4 — slide và bài tập
 
 | Thư mục |
 |---------|

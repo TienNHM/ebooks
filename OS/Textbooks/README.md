@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 📚 Operating Systems Textbooks
 
 > Giáo trình **hệ điều hành** (tiếng Việt, đại học).

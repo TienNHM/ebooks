@@ -1,6 +1,7 @@
-# HSG QG — Đề thi HSG QG Tin học
+<p align="right"><a href="./README.en.md">English</a></p>
+# Đề thi HSG quốc gia — Tin học
 
-> Đề thi HSG quốc gia môn Tin
+> Đề thi HSG quốc gia môn Tin học
 
 | Thư mục |
 |---------|

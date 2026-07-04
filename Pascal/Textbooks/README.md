@@ -1,4 +1,6 @@
-# 🎓 Pascal Textbooks
+<p align="right"><a href="./README.en.md">English</a></p>
+
+# 🎓 Giáo trình Pascal
 
 > Giáo trình **Pascal** tiếng Việt — cơ bản, nâng cao, chuyên Tin và bài giảng.
 
@@ -19,7 +21,7 @@
 | Tên tài liệu | Tải về |
 |--------------|--------|
 | **Giáo trình Pascal 7.0** | [📥 PDF](./Core/giao-trinh-pascal-7-0.pdf) |
-| **Giao trinh pascal** | [📥 PDF](./Core/giao-trinh-pascal.pdf) |
+| **Giáo trình Pascal** | [📥 PDF](./Core/giao-trinh-pascal.pdf) |
 | **Lập trình nâng cao** | [📥 PDF](./Core/lap-trinh-nang-cao-pascal.pdf) |
 | **Thuật toán & KT lập trình Pascal** | [📥 PDF](./Core/thuat-toan-ky-thuat-lap-trinh-pascal.pdf) |
 | **Giải thuật LT – TS Lê Minh Hoàng** | [📥 PDF](./Core/giai-thuat-lap-trinh-le-minh-hoang.pdf) |
@@ -28,7 +30,7 @@
 
 ---
 
-## 📦 Topics (giải nén)
+## 📦 Chuyên đề (giải nén)
 
 | Chuyên đề | Tải về |
 |-----------|--------|
@@ -44,7 +46,7 @@
 
 ---
 
-## 📖 Lectures
+## 📖 Bài giảng
 
 | Tên tài liệu | Tải về |
 |--------------|--------|

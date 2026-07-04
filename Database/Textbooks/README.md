@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🎓 Database Textbooks
 
 > Giáo trình **Cơ sở dữ liệu**, SQL, PL/SQL, SQL Server và MySQL (chủ yếu tiếng Việt).

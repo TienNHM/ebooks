@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🖥️ C# WinForms
 
 > Lập trình **Windows Forms** với C# — sách tham khảo, giáo trình và bài giảng.

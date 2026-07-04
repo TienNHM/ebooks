@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 📝 Bài tập — HCMUTE KTMT
 
 > Homework, quiz, bài tập và ngân hàng câu hỏi **Kiến trúc máy tính**.

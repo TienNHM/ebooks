@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 📐 Algorithms
 
 > Kho tài liệu **thuật toán và cấu trúc dữ liệu** từ cơ bản đến nâng cao: sách tham khảo quốc tế và giáo trình tiếng Việt.

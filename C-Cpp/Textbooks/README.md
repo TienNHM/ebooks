@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🎓 C/C++ Textbooks
 
 > Giáo trình **C/C++** tiếng Việt — bài giảng, slide, ngôn ngữ lập trình, OOP.

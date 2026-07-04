@@ -1,4 +1,5 @@
-# WinForms — Reference
+<p align="right"><a href="./README.en.md">English</a></p>
+# WinForms — Sách tham khảo
 
 > Sách tham khảo Windows Forms
 

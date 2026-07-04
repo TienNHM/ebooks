@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🏗️ Software Engineering
 
 > Sách kinh điển về **kỹ năng lập trình**, **viết code sạch** và **xây dựng phần mềm bền vững**.

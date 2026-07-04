@@ -1,17 +1,14 @@
-# 🎯 Reinforcement Learning
+<p align="right"><a href="./README.en.md">English</a></p>
 
-> Sách **học tăng cường (Reinforcement Learning)** — Sutton & Barto.
+# Reinforcement-Learning
 
----
-
-## 📘 Sách tham khảo
+> Tài liệu **Reinforcement-Learning**
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Reinforcement Learning: An Introduction** (2018) | [📥 Bản chính](./sutton-2018-reinforcement-learning-an-introduction.pdf) • [📄 Bản sao](./sutton-2018-reinforcement-learning-an-introduction-copy.pdf) |
-
----
+| Sutton 2018 Reinforcement Learning An Introduction Copy | [📥](./sutton-2018-reinforcement-learning-an-introduction-copy.pdf) |
+| Sutton 2018 Reinforcement Learning An Introduction | [📥](./sutton-2018-reinforcement-learning-an-introduction.pdf) |
 
 <p align="center">
-  ⬅️ [Quay lại AI & Machine Learning](../README.md)
+  ⬅️ [Quay lại](../README.md)
 </p>

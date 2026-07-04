@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 📚 Algorithms Textbooks
 
 > Giáo trình **giải thuật, cấu trúc dữ liệu và đánh giá thuật toán** (chủ yếu tiếng Việt).

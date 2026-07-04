@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 📘 Nhập môn lập trình (Intro to Programming)
 
 > Tài liệu **nhập môn lập trình** và **kỹ thuật lập trình** (NMLT, KTLT) — nền tảng cho sinh viên CNTT.

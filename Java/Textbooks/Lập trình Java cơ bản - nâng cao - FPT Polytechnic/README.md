@@ -1,6 +1,7 @@
-# Lập trình Java cơ bản - nâng cao - FPT Polytechnic
+<p align="right"><a href="./README.en.md">English</a></p>
+# Java FPT Polytechnic
 
-> Giáo trình FPT Polytechnic
+> Lập trình Java cơ bản & nâng cao — FPT Polytechnic
 
 | Thư mục |
 |---------|

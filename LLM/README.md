@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🧠 LLM – Large Language Models
 
 > Tài liệu liên quan đến các mô hình ngôn ngữ lớn (Large Language Models - LLMs), phục vụ nghiên cứu, xây dựng ứng dụng dựa trên GPT, RAG, và các kiến trúc hiện đại trong NLP.

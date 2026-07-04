@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 📚 Computer Organization Textbooks
 
 > Giáo trình **kiến trúc máy tính & kỹ thuật số** (tiếng Việt).

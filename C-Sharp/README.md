@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🧩 C# (C Sharp)
 
 > Tuyển tập ebook **C#** và **.NET** — ngôn ngữ, WinForms desktop, giáo trình tiếng Việt.

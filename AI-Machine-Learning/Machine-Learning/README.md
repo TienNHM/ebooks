@@ -1,21 +1,17 @@
-# 📊 Machine Learning
+<p align="right"><a href="./README.en.md">English</a></p>
 
-> Sách **học máy (Machine Learning)** — lý thuyết và thực hành với Python.
+# Machine-Learning
 
----
-
-## 📘 Sách tham khảo
+> Tài liệu **Machine-Learning**
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Machine Learning** – Tom M. Mitchell | [📥 PDF](./machine-learning-tom-mitchell.pdf) |
-| **Introduction to Machine Learning with Python** | [📥 PDF](./introduction-machine-learning-python.pdf) |
-| **Introduction to Machine Learning (Partial)** | [📥 PDF](./introduction-to-ml-partial-2.pdf) |
-| **Python Machine Learning Cookbook** | [📥 PDF](./python-machine-learning-cookbook.pdf) |
-| **thebook** | [📥 PDF](./thebook.pdf) |
-
----
+| Introduction Machine Learning Python | [📥](./introduction-machine-learning-python.pdf) |
+| Introduction To Ml Partial 2 | [📥](./introduction-to-ml-partial-2.pdf) |
+| Machine Learning Tom Mitchell | [📥](./machine-learning-tom-mitchell.pdf) |
+| Python Machine Learning Cookbook | [📥](./python-machine-learning-cookbook.pdf) |
+| Thebook | [📥](./thebook.pdf) |
 
 <p align="center">
-  ⬅️ [Quay lại AI & Machine Learning](../README.md)
+  ⬅️ [Quay lại](../README.md)
 </p>

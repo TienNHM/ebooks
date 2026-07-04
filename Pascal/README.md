@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🧮 Pascal
 
 > Tài liệu **ngôn ngữ Pascal** — giáo trình, bài giảng, bài tập và tài liệu ôn thi chuyên Tin.

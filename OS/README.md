@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🖥️ Operating Systems
 
 > Tài liệu **hệ điều hành (OS)**: sách tham khảo quốc tế và giáo trình tiếng Việt.

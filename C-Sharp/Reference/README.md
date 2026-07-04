@@ -1,28 +1,20 @@
-# 📘 C# — Reference
+<p align="right"><a href="./README.en.md">English</a></p>
 
-> Sách tham khảo **ngôn ngữ C#** và **.NET** (tiếng Anh).
+# Reference
 
----
+> Tài liệu **Reference**
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Head First C#** | [📥 PDF](./oreilly-head-first-csharp.pdf) |
-| **Programming C# (2nd Ed.)** | [📥 PDF](./1-oreilly-programming-csharp-2ed.pdf) |
-| **Beginning C# OOP (2nd Ed.)** | [📥 PDF](./2-beginning-csharp-object-oriented-programming-2nd-edition.pdf) |
-| **The C# Programming Language (4th Ed.)** | [📥 PDF](./3-csharp-programming-language-4th-edition.pdf) |
-| **Pro C# 5.0 and .NET 4.5 (6th Ed.)** | [📥 PDF](./pro-csharp-5-0-and-the-net-4-5-framework-6th-edition.pdf) |
-| **C# 6.0 in a Nutshell – Albahari** | [📥 PDF](./albahari-j-albahari-b-c-6-0-in-a-nutshell-6th-edition-2015.pdf) • [📄 Alt](./c-6-0-in-a-nutshell.pdf) |
-| **Learning C# with Unity 3D** | [📥 PDF](./learning-20c-20by-20developing-20games-20with-20unity-203d.pdf) |
-
----
-
-## 📌 Liên quan
-
-- **WinForms (desktop)**: [WinForms](../WinForms/)
-- **ASP.NET / Web**: [Web](../../Web/)
-
----
+| 1 Oreilly Programming Csharp 2ed | [📥](./1-oreilly-programming-csharp-2ed.pdf) |
+| 2 Beginning Csharp Object Oriented Programming 2nd Edition | [📥](./2-beginning-csharp-object-oriented-programming-2nd-edition.pdf) |
+| 3 Csharp Programming Language 4th Edition | [📥](./3-csharp-programming-language-4th-edition.pdf) |
+| Albahari J Albahari B C 6 0 In A Nutshell 6th Edition 2015 | [📥](./albahari-j-albahari-b-c-6-0-in-a-nutshell-6th-edition-2015.pdf) |
+| C 6 0 In A Nutshell | [📥](./c-6-0-in-a-nutshell.pdf) |
+| Learning 20c 20by 20developing 20games 20with 20unity 203d | [📥](./learning-20c-20by-20developing-20games-20with-20unity-203d.pdf) |
+| Oreilly Head First Csharp | [📥](./oreilly-head-first-csharp.pdf) |
+| Pro Csharp 5 0 And The Net 4 5 Framework 6th Edition | [📥](./pro-csharp-5-0-and-the-net-4-5-framework-6th-edition.pdf) |
 
 <p align="center">
-  ⬅️ [Quay lại C#](../README.md)
+  ⬅️ [Quay lại](../README.md)
 </p>

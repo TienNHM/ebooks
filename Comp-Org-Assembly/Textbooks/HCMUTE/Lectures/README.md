@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 📖 Bài giảng — HCMUTE KTMT
 
 > Slide/PDF bài giảng **Kiến trúc máy tính** theo chương.

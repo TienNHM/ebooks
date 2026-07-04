@@ -1,21 +1,17 @@
-# 🔧 Kỹ thuật vi xử lý
+<p align="right"><a href="./README.en.md">English</a></p>
 
-> Giáo trình và tài liệu môn **kỹ thuật vi xử lý** (microprocessor) — assembly, thiết kế vi xử lý.
+# Vi xu ly
 
----
-
-## 📘 Tài liệu
+> Tài liệu **Vi xu ly**
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Kỹ thuật vi xử lý** | [📦 RAR](./ky-thuat-vi-xu-ly.rar) |
-| **Kỹ thuật vi xử lý (UDS)** | [📥 PDF](./ky-thuat-vi-xu-ly-uds.pdf) |
-| **Assembly** | [📦 RAR](./asembly.rar) |
-| **VIXULY** | [📦 RAR](./vixuly.rar) |
-| **Microprocessors & Microcontrollers** – Krishna Kant | [📥 PDF](./krishna-kant-microprocessors-and-microcontrollers-architecture-programming-and-system-design-8085-8086-8051-8096.pdf) |
-
----
+| Asembly | [📦](./Asembly.rar) |
+| Krishna Kant Microprocessors And Microcontrollers Architecture Programming And System Design 8085 8086 8051 8096 | [📥](./krishna-kant-microprocessors-and-microcontrollers-architecture-programming-and-system-design-8085-8086-8051-8096.pdf) |
+| Ky Thuat Vi Xu Ly Uds | [📥](./ky-thuat-vi-xu-ly-uds.pdf) |
+| Ky Thuat Vi Xu Ly | [📦](./ky-thuat-vi-xu-ly.rar) |
+| Vixuly | [📦](./VIXULY.rar) |
 
 <p align="center">
-  ⬅️ [Quay lại Comp-Org-Assembly](../README.md)
+  ⬅️ [Quay lại](../README.md)
 </p>

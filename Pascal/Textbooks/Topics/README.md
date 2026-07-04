@@ -1,7 +1,9 @@
-# 📦 Pascal — Topics
+<p align="right"><a href="./README.en.md">English</a></p>
+
+# 📦 Pascal — Chuyên đề
 
 > Tài liệu **chuyên đề** Pascal (`.rar`) — giải nén trước khi dùng.
 
 <p align="center">
-  ⬅️ [Quay lại Textbooks](../README.md)
+  ⬅️ [Quay lại Giáo trình](../README.md)
 </p>

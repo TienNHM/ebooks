@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🎓 C# Textbooks
 
 > Giáo trình **C#** tiếng Việt — ngôn ngữ lập trình, kỹ thuật lập trình.

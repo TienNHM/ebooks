@@ -1,6 +1,7 @@
-# Topics
+<p align="right"><a href="./README.en.md">English</a></p>
+# Chuyên đề
 
-> Chuyên đề thuật toán (quy hoạch động, đồ thị, quay lui…)
+> Chuyên đề thuật toán: quy hoạch động, đồ thị, quay lui…
 
 | Thư mục |
 |---------|

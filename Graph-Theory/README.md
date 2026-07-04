@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🔗 Lý thuyết đồ thị (Graph Theory)
 
 > Tuyển tập tài liệu học tập về **Lý thuyết đồ thị (LTĐT)**: đồ thị, đường đi, thuật toán trên đồ thị và các bài tập thực hành.

@@ -1,6 +1,7 @@
-# HSG QG — Ngày thi thứ 1
+<p align="right"><a href="./README.en.md">English</a></p>
+# HSG quốc gia — Ngày thi thứ 1
 
-> Đề thi HSG quốc gia môn Tin
+> Đề thi HSG quốc gia môn Tin học
 
 | Tên tài liệu | Tải về |
 |--------------|--------|

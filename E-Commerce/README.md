@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🛒 E-Commerce
 
 > Tài liệu chuyên sâu về Thương mại điện tử (E-Commerce), chiến lược kinh doanh số, hạ tầng công nghệ và tác động xã hội – dành cho sinh viên, nhà phát triển và nhà quản lý thời đại 4.0.

@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # Giáo trình C# (Core)
 
 | Tên tài liệu | Tải về |

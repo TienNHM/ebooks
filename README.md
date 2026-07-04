@@ -1,10 +1,12 @@
-<h1 align="center">📚 Awesome IT Ebooks Collection</h1>
+<p align="right"><a href="./README.en.md">English</a></p>
+
+<h1 align="center">📚 Bộ sưu tập Ebook CNTT</h1>
 
 <p align="center">
   Một kho tàng sách điện tử chất lượng cao dành cho lập trình viên, sinh viên và những người đam mê công nghệ thông tin.
 </p>
 
-<p align="center">Truy cập blog của tôi tại: https://tiennhm.github.io/ để xem thêm nhiều tutorials hữu ích khác ⭐</p>
+<p align="center">Truy cập blog của tôi tại: https://tiennhm.github.io/ để xem thêm nhiều bài hướng dẫn hữu ích khác ⭐</p>
 
 <p align="center">
   <a href="https://github.com/TienNHM/ebooks/issues">
@@ -23,34 +25,34 @@
 
 | Chủ đề | Liên kết |
 |--------|---------|
-| 🤖 AI & Machine Learning | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/AI-Machine-Learning) |
-| 🧠 LLM (Large Language Models) | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/LLM) |
-| 📐 Algorithms | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Algorithms) |
+| 🤖 AI & Học máy | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/AI-Machine-Learning) |
+| 🧠 LLM (Mô hình ngôn ngữ lớn) | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/LLM) |
+| 📐 Thuật toán | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Algorithms) |
 | 🧮 Toán rời rạc | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Discrete-Math) |
 | 🔗 Lý thuyết đồ thị | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Graph-Theory) |
-| 🎨 Computer Graphics | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Computer-Graphics) |
+| 🎨 Đồ họa máy tính | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Computer-Graphics) |
 | 🖌️ Adobe Photoshop | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Photoshop) |
 | 💻 C/C++ | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/C-Cpp) |
 | 🧩 C# | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/C-Sharp) |
-| 🧬 OOP | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/OOP) |
-| 🏁 Competitive Programming | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Competitive) |
-| 🌐 Computer Network | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Computer-Network) |
-| 🧬 Computer Org & Assembly | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Comp-Org-Assembly) |
-| 💻 Computer Literacy | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Computer-Literacy) |
-| ⚙️ Engineering | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Engineering) |
-| ⚙️ Compiler | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Compiler) |
-| 🗄️ Database | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Database) |
-| 🌍 Full-Stack Development | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Full-Stack) |
-| 🛒 E-Commerce | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/E-Commerce) |
+| 🧬 Lập trình hướng đối tượng (OOP) | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/OOP) |
+| 🏁 Lập trình thi đấu | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Competitive) |
+| 🌐 Mạng máy tính | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Computer-Network) |
+| 🧬 Kiến trúc máy & Assembly | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Comp-Org-Assembly) |
+| 💻 Tin học đại cương | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Computer-Literacy) |
+| ⚙️ Kỹ thuật phần mềm | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Engineering) |
+| ⚙️ Trình biên dịch | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Compiler) |
+| 🗄️ Cơ sở dữ liệu | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Database) |
+| 🌍 Phát triển Full-Stack | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Full-Stack) |
+| 🛒 Thương mại điện tử | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/E-Commerce) |
 | ☕ Java | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Java) |
-| 🖥️ Operating Systems | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/OS) |
-| 💻 Interview | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Interview) |
-| 📘 Intro to Programming | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Intro-to-Programming) |
+| 🖥️ Hệ điều hành | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/OS) |
+| 💻 Phỏng vấn IT | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Interview) |
+| 📘 Nhập môn lập trình | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Intro-to-Programming) |
 | ⚛️ ReactJS | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/ReactJS) |
-| 📊 R Programming | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/R) |
+| 📊 Lập trình R | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/R) |
 | 🐍 Python | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Python) |
-| 🏗️ System Design & PTTK | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/System-Design) |
-| 🧪 Software Testing | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Testing) |
+| 🏗️ Thiết kế hệ thống & PTTK | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/System-Design) |
+| 🧪 Kiểm thử phần mềm | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Testing) |
 | 🇻🇳 Tin học THPT | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Tin-Hoc-THPT) |
 | 🧮 Pascal | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Pascal) |
 

@@ -1,18 +1,14 @@
-# 🧠 Artificial Intelligence
+<p align="right"><a href="./README.en.md">English</a></p>
 
-> Sách tham khảo **trí tuệ nhân tạo** cổ điển và tìm kiếm trong game.
+# AI
 
----
-
-## 📘 Sách tham khảo
+> Tài liệu **AI**
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Artificial Intelligence: A Modern Approach** – Russell & Norvig (3rd Ed.) | [📥 PDF](./Artificial%20Intelligence%20-%20A%20Modern%20Approach%20(3rd%20Edition).pdf) |
-| **Searching for Solutions in Games and AI** | [📥 PDF](./searching-for-solutions-in-games-and-artificial-intelligence.pdf) |
-
----
+| Artificial Intelligence A Modern Approach 3rd Edition | [📥](./artificial-intelligence-a-modern-approach-3rd-edition.pdf) |
+| Searching For Solutions In Games And Artificial Intelligence | [📥](./searching-for-solutions-in-games-and-artificial-intelligence.pdf) |
 
 <p align="center">
-  ⬅️ [Quay lại AI & Machine Learning](../README.md)
+  ⬅️ [Quay lại](../README.md)
 </p>

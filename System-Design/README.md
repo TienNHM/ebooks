@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🏗️ System Design
 
 > Tài liệu **thiết kế hệ thống**: sách tham khảo hiện đại (phỏng vấn, kiến trúc phân tán) và giáo trình **phân tích thiết kế hệ thống (PTTK)** đại học.

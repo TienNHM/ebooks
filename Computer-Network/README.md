@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🌐 Computer Network
 
 > Tài liệu **mạng máy tính**: sách tham khảo quốc tế, giáo trình tiếng Việt, Cisco/CCNA, Windows Server và bài tập thực hành.

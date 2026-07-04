@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🧩 Computer Organization & Assembly Language
 
 > Tài liệu **tổ chức máy tính, kiến trúc CPU** và **lập trình Assembly** (x86, x64, MIPS, ARM).

@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🗄️ Database
 
 > Tổng hợp tài liệu **Cơ sở dữ liệu (CSDL)**: sách tham khảo quốc tế, giáo trình tiếng Việt, SQL Server và MySQL.

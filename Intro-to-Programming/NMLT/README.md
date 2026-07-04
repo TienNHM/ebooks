@@ -1,32 +1,22 @@
-# 📗 NMLT — Nhập môn lập trình
+<p align="right"><a href="./README.en.md">English</a></p>
 
-> Bài giảng, tài liệu và kỹ năng môn **Nhập môn lập trình**.
+# NMLT
 
----
-
-## 📘 Giáo trình & bài giảng
+> Tài liệu **NMLT**
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Mở đầu, giới thiệu môn học** | [📥 PDF](./mo-dau-gioi-thieu-mon-hoc.pdf) |
-| **NMLT – Kỹ năng** | [📥 DOCX](./nmlt-ky-nang.docx) |
-| **Nhập môn lập trình không code** | [📥 PDF](./nhap-mon-lap-trinh-khong-code-toidicodedao.pdf) |
-| **Bài giảng NMLT – ĐB Phương (bản in)** | [📦 RAR](./baigiangnmlt-banin-dbphuong.rar) |
-
----
-
-## 📖 Tài liệu bổ sung
-
-| Tên tài liệu | Tải về |
-|--------------|--------|
-| **Bài tập sơ đồ khối** | [📥 PDF](./baitapsodokhoi-nhap-mon-lap-trinh.pdf) |
-| **Lưu đồ thuật toán** | [📥 PDF](./luu-do-thuat-toan.pdf) |
-| **NMLT Nhóm 2** | [📥 PDF](./nmlt-nhom2.pdf) |
-| **Kiểm tra lần 3, 4** | [📥 Lần 3](./ktlan3-ct6.pdf) • [📄 Lần 4](./ktlan4-st4.pdf) |
-| **Thứ 6 – Lần 3** | [📥 PDF](./thu6-lan3.pdf) |
-
----
+| Baigiangnmlt Banin Dbphuong | [📦](./baigiangnmlt-banin-dbphuong.rar) |
+| Baitapsodokhoi Nhap môn lập trình | [📥](./baitapsodokhoi-nhap-mon-lap-trinh.pdf) |
+| Ktlan3 Ct6 | [📥](./ktlan3-ct6.pdf) |
+| Ktlan4 St4 | [📥](./ktlan4-st4.pdf) |
+| Luu Do Thuat Toan | [📥](./luu-do-thuat-toan.pdf) |
+| Mo Dau Gioi Thieu Mon Hoc | [📥](./mo-dau-gioi-thieu-mon-hoc.pdf) |
+| Nhap môn lập trình Khong Code Toidicodedao | [📥](./nhap-mon-lap-trinh-khong-code-toidicodedao.pdf) |
+| Nmlt Ky Nang | [📥](./nmlt-ky-nang.docx) |
+| Nmlt Nhom2 | [📥](./nmlt-nhom2.pdf) |
+| Thu6 Lan3 | [📥](./thu6-lan3.pdf) |
 
 <p align="center">
-  ⬅️ [Quay lại Intro to Programming](../README.md)
+  ⬅️ [Quay lại](../README.md)
 </p>

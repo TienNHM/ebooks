@@ -1,6 +1,7 @@
+<p align="right"><a href="./README.en.md">English</a></p>
 # Giáo trình FPT
 
-> Giáo trình FPT Polytechnic
+> Giáo trình Java FPT Polytechnic (MOB/SOF)
 
 | Thư mục |
 |---------|

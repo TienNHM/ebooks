@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🧮 Toán rời rạc (Discrete Mathematics)
 
 > Tuyển tập tài liệu học tập về **Toán rời rạc**: logic, quan hệ, đại số, biểu thức Boole và các chủ đề nền tảng trong chương trình CNTT.

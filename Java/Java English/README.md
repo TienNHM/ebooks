@@ -1,4 +1,5 @@
-# Java (English)
+<p align="right"><a href="./README.en.md">English</a></p>
+# Java (tiếng Anh)
 
 > Sách Java tiếng Anh
 

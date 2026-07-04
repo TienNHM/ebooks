@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 📚 Compiler Textbooks
 
 > Giáo trình **trình biên dịch** theo từng cơ sở đào tạo.

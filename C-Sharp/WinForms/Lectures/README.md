@@ -1,11 +1,12 @@
-# WinForms — Lectures
+<p align="right"><a href="./README.en.md">English</a></p>
+# WinForms — Bài giảng
 
 > Bài giảng Windows Forms
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| Chuong 2 Cont Gdi And Timer | [📥](./chuong-2-cont-gdi-and-timer.pdf) |
-| Chuong2 Form And Controls Full | [📥](./chuong2-form-and-controls-full.pdf) |
+| Chương 2 tiếp GDI And Timer | [📥](./chuong-2-cont-gdi-and-timer.pdf) |
+| Chương 2 Form And Controls đầy đủ | [📥](./chuong2-form-and-controls-full.pdf) |
 
 <p align="center">
   ⬅️ [Quay lại](../README.md)

@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # ⚙️ Engineering
 
 > Sách **giới thiệu kỹ thuật & thiết kế** — nền tảng engineering (không thuộc chuyên ngành CNTT thuần).

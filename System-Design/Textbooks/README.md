@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 📚 System Analysis & Design Textbooks
 
 > Giáo trình **Phân tích thiết kế hệ thống (PTTK)** — bài giảng, giáo trình và đề thi đại học.

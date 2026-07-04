@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # Thuật toán nâng cao
 
 > Tài liệu môn **Thuật toán nâng cao** — Thầy Bình.

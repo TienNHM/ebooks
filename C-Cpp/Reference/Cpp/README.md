@@ -1,4 +1,5 @@
-# C++ — Reference
+<p align="right"><a href="./README.en.md">English</a></p>
+# C++ — Sách tham khảo
 
 > Sách tham khảo **C++** (tiếng Anh)
 

@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # ⚙️ Compiler
 
 > Tài liệu **trình biên dịch (Compiler)** — sách tham khảo và giáo trình các trường đại học Việt Nam.

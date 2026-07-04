@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🇻🇳 Tin học THPT
 
 > Tài liệu môn **Tin học** trong chương trình giáo dục **trung học phổ thông** tại Việt Nam: giáo trình, bài tập, đề thi HSG và olympic tin học.

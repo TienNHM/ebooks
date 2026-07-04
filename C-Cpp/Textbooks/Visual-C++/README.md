@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # Visual C++ & Windows
 
 | Tên tài liệu | Tải về |

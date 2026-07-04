@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🎨 Adobe Photoshop
 
 > Tài liệu **chỉnh sửa ảnh với Photoshop**: sách tham khảo, giáo trình tiếng Việt và bài học theo buổi.

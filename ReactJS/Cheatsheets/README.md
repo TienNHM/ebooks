@@ -1,6 +1,7 @@
-# Cheatsheets
+<p align="right"><a href="./README.en.md">English</a></p>
+# Bảng tra cứu
 
-> React cheatsheet (PDF)
+> Bảng tra cứu React (PDF)
 
 | Tên tài liệu | Tải về |
 |--------------|--------|

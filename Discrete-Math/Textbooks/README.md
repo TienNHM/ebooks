@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 📚 Discrete Math Textbooks
 
 > Giáo trình **toán rời rạc** và các môn nền tảng liên quan (tiếng Việt).

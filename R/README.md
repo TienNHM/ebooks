@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 📊 R Programming
 
 > Sách tham khảo về **ngôn ngữ R** — phân tích dữ liệu, thống kê và lập trình khoa học dữ liệu.

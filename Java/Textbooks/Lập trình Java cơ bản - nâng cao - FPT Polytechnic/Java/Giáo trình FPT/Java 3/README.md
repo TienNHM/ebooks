@@ -1,6 +1,7 @@
-# Java 3
+<p align="right"><a href="./README.en.md">English</a></p>
+# FPT — Java 3
 
-> Giáo trình FPT Polytechnic
+> Giáo trình Java 3 — slide và bài tập
 
 | Thư mục |
 |---------|

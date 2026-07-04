@@ -1,6 +1,7 @@
-# Java 2
+<p align="right"><a href="./README.en.md">English</a></p>
+# FPT — Java 2
 
-> Giáo trình FPT Polytechnic
+> Giáo trình Java 2 — slide và bài tập
 
 | Thư mục |
 |---------|

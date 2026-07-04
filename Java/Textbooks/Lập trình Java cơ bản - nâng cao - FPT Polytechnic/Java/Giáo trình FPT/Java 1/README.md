@@ -1,6 +1,7 @@
-# Java 1
+<p align="right"><a href="./README.en.md">English</a></p>
+# FPT — Java 1
 
-> Giáo trình FPT Polytechnic
+> Giáo trình Java 1 — slide và bài tập
 
 | Thư mục |
 |---------|

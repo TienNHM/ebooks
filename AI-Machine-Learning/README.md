@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.en.md">English</a></p>
+
 # 🤖 AI & Machine Learning
 
 > Tài liệu **trí tuệ nhân tạo (AI)** và **học máy (Machine Learning)** — sách tham khảo quốc tế, giáo trình tiếng Việt và đề tài nghiên cứu.

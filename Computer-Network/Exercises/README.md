@@ -1,20 +1,16 @@
-# 📝 Bài tập mạng
+<p align="right"><a href="./README.en.md">English</a></p>
 
-> Bài tập **địa chỉ IP, subnet** và thực hành mạng máy tính.
+# Exercises
 
----
-
-## 📘 Danh sách
+> Tài liệu **Exercises**
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Bài tập IP** | [📥 PDF](./bai-tap-ip.pdf) |
-| **Bài tập IP – Phần 2** | [📥 PDF](./bai-tap-ip-phan-2.pdf) |
-| **IPv4 address** | [📥 PDF](./ipv4-address.pdf) |
-| **The Subnet Training Guide** | [📥 PDF](./thesubnettrainingguide.pdf) |
-
----
+| Bai Tap Ip Phan 2 | [📥](./bai-tap-ip-phan-2.pdf) |
+| Bai Tap Ip | [📥](./bai-tap-ip.pdf) |
+| Ipv4 Address | [📥](./ipv4-address.pdf) |
+| Thesubnettrainingguide | [📥](./TheSubnetTrainingGuide.pdf) |
 
 <p align="center">
-  ⬅️ [Quay lại Computer Network](../README.md)
+  ⬅️ [Quay lại](../README.md)
 </p>

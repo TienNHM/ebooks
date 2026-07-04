@@ -1,16 +1,14 @@
-# 📘 Photoshop — Reference
+<p align="right"><a href="./README.en.md">English</a></p>
 
-> Sách tham khảo **Adobe Photoshop** và công cụ chỉnh sửa ảnh.
+# Reference
 
----
+> Tài liệu **Reference**
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Adobe Photoshop 7** | [📥 PDF](./adobe-photoshop-7.pdf) |
-| **Công cụ chỉnh sửa ảnh đẹp mà không cần Adobe Photoshop** | [📥 PDF](./cong-cu-chinh-sua-anh-dep-ma-khong-can-adobe-photoshop.pdf) |
-
----
+| Adobe Photoshop 7 | [📥](./adobe-photoshop-7.pdf) |
+| Cong Cu Chinh Sua Anh Dep Ma Khong Can Adobe Photoshop | [📥](./cong-cu-chinh-sua-anh-dep-ma-khong-can-adobe-photoshop.pdf) |
 
 <p align="center">
-  ⬅️ [Quay lại Photoshop](../README.md)
+  ⬅️ [Quay lại](../README.md)
 </p>
