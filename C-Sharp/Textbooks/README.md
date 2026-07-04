@@ -14,6 +14,16 @@
 | **Kỹ thuật lập trình C# 2.0** | [📦 RAR](./Ky_Thuat_Lap_Trinh_CSharp_2.0.rar) |
 | **Lập trình Windows với C#.Net** | [📦 RAR](./Lap%20trinh%20Window%20voi%20C%23.Net.rar) |
 | **C# cơ bản – Nội dung** | [📥 PDF](./Microsoft%20Word%20-%20C%23-CoBan-NoiDung.pdf) |
+| **Ngôn ngữ lập trình C# (Tiếng Việt)** | [📥 PDF](./Ngon%20ngu%20lap%20trinh%20C%23%20-%20Tieng%20Viet%20.pdf) |
+
+---
+
+## 🌐 ASP.NET
+
+| Tên tài liệu | Tải về |
+|--------------|--------|
+| **FPT – Giáo trình + Lab ASP.NET** | [📦 RAR](./FPT%20-%20Gi%C3%A1o%20tr%C3%ACnh%20%2B%20Lab%20ASP.NET.rar) |
+| **Giáo trình & Lab ASP.NET** | [📦 RAR](./Giao%20Trinh%20Va%20Lab%20ASP-NET.rar) |
 
 ---
 

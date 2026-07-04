@@ -27,6 +27,15 @@
 
 ---
 
+## 📘 OOP & Core Java
+
+| Tên tài liệu | Tải về |
+|--------------|--------|
+| **Object-Oriented Programming Using Java** | [📥 PDF](./5.object-oriented-programming-using-java.pdf) |
+| **Lab Core Java** | [📥 DOC](./Lab%20CORE%20JAVA.doc) |
+
+---
+
 <p align="center">
   ⬅️ [Quay lại Java](../README.md)
 </p>

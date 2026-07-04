@@ -13,6 +13,10 @@
 | **Windows Forms Programming in C#** – Chris Sells (2003) | Lập trình giao diện desktop với WinForms | [📥 Tải PDF](./Windows%20Forms%20Programming%20in%20C%20Sharp%20by%20chris%20sells%202003%20(1).pdf) |
 | **Windows Forms Programming with C#** | Bổ sung về lập trình Windows Forms | [📥 Tải PDF](./Windows%20Forms%20Programming%20With%20C%23.pdf) |
 | **Learning C# by Developing Games with Unity 3D** | Học C# qua phát triển game Unity | [📥 Tải PDF](./Learning%2020C%23%2020by%2020Developing%2020Games%2020with%2020Unity%20203D.pdf) |
+| **Programming C#** – O'Reilly (2nd Ed.) | Lập trình C# toàn diện | [📥 Tải PDF](./1.OReilly-Programming%20C#,%202Ed.pdf) |
+| **Beginning C# Object-Oriented Programming** (2nd Ed.) | OOP với C# cho người mới | [📥 Tải PDF](./2.Beginning-C-Object-Oriented-Programming-2nd-Edition.pdf) |
+| **The C# Programming Language** (4th Ed.) | Đặc tả ngôn ngữ C# | [📥 Tải PDF](./3.C%23%20Programming%20Language,%20The,%204th%20Edition.pdf) |
+| **C# 6.0 in a Nutshell** – Albahari | Sổ tay C# 6.0 | [📥 Bản 1](./Albahari%20J.,%20Albahari%20B.%20-%20C%23%206.0%20in%20a%20Nutshell,%206th%20Edition%20-%202015.pdf) • [📄 Bản 2](./c-6-0-in-a-nutshell.pdf) |
 
 ---
 
@@ -24,7 +28,7 @@
 |--|--|
 | **Xem toàn bộ giáo trình** | [📂 Thư mục Textbooks](./Textbooks/) |
 
-Bao gồm: ngôn ngữ C#, kỹ thuật lập trình C#, Windows Forms, giáo trình Hồ Hoàn Kiếm…
+Bao gồm: ngôn ngữ C#, kỹ thuật lập trình C#, Windows Forms, ASP.NET, giáo trình Hồ Hoàn Kiếm…
 
 ---
 

@@ -14,20 +14,20 @@
 
 ## ?? Giáo trình OOP
 
-> Giáo trình l?p trình h??ng ??i t??ng (ti?ng Vi?t, ??i h?c).
-
 | | |
 |--|--|
 | **Xem toàn b? giáo trình** | [?? Th? m?c Textbooks](./Textbooks/) |
 
 ---
 
-## ?? Ghi chú
+## ?? Liên quan
 
-- Tài li?u C++ OOP chung c?ng có trong [C-Cpp/Textbooks](../C-Cpp/Textbooks/).
+- OOP v?i **C++**: [C-Cpp/Textbooks](../C-Cpp/Textbooks/)
+- OOP v?i **C#**: [C-Sharp](../C-Sharp/)
+- OOP v?i **Java**: [Java/Textbooks](../Java/Textbooks/)
 
 ---
 
 <p align="center">
-  ?? Góp ý ho?c thêm sách? ?? <a href="https://github.com/TienNHM/ebooks/pulls">G?i Pull Request</a>
+  Góp tài li?u? ?? <a href="https://github.com/TienNHM/ebooks/pulls">G?i Pull Request</a>
 </p>
