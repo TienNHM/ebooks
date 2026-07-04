@@ -1,28 +1,28 @@
-# ?? Discrete Math Textbooks
+# 📚 Discrete Math Textbooks
 
-> Gi�o tr�nh **to�n r?i r?c** v� c�c m�n n?n t?ng li�n quan (ti?ng Vi?t).
-
----
-
-## ?? Gi�o tr�nh to�n r?i r?c
-
-| T�n t�i li?u | T?i v? |
-|--------------|--------|
-| **Gi�o tr�nh to�n r?i r?c (ch??ng 1�8)** | [?? Th? m?c](./Giao-trinh-Toan-roi-rac/) |
-| **To�n r?i r?c (RAR)** | [?? RAR](./Toan%20roi%20rac.rar) |
+> Giáo trình **toán rời rạc** và các môn nền tảng liên quan (tiếng Việt).
 
 ---
 
-## ?? M�n li�n quan
+## 📘 Giáo trình toán rời rạc
 
-| T�n t�i li?u | T?i v? |
+| Tên tài liệu | Tải về |
 |--------------|--------|
-| **L� thuy?t otomat** | [?? RAR](./lythuyet%20otomat.rar) |
-| **Quy ho?ch tuy?n t�nh** | [?? RAR](./quy%20hoach%20tuyen%20tinh.rar) |
-| **Ph??ng ph�p t�nh** | [?? RAR](./Phuong%20phap%20tinh.rar) |
+| **Giáo trình toán rời rạc (chương 1–8)** | [📂 Thư mục](./Giao-trinh-Toan-roi-rac/) |
+| **Toán rời rạc (RAR)** | [📦 RAR](./Toan%20roi%20rac.rar) |
+
+---
+
+## 🔗 Môn liên quan
+
+| Tên tài liệu | Tải về |
+|--------------|--------|
+| **Lý thuyết otomat** | [📦 RAR](./lythuyet%20otomat.rar) |
+| **Quy hoạch tuyến tính** | [📦 RAR](./quy%20hoach%20tuyen%20tinh.rar) |
+| **Phương pháp tính** | [📦 RAR](./Phuong%20phap%20tinh.rar) |
 
 ---
 
 <p align="center">
-  ?? [Quay l?i Discrete Math](../README.md)
+  ⬅️ [Quay lại Discrete Math](../README.md)
 </p>

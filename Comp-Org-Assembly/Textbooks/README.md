@@ -1,31 +1,31 @@
-# ?? Computer Organization Textbooks
+# 📚 Computer Organization Textbooks
 
-> Gi�o tr�nh **ki?n tr�c m�y t�nh & k? thu?t s?** (ti?ng Vi?t).
+> Giáo trình **kiến trúc máy tính & kỹ thuật số** (tiếng Việt).
 
 ---
 
-## ?? Theo tr??ng
+## 🎓 Theo trường
 
-| Th? m?c | M� t? |
+| Thư mục | Mô tả |
 |---------|-------|
-| [HCMUTE](./HCMUTE/) | Gi�o tr�nh KTMT � Tr??ng SPKT TP.HCM (b�i gi?ng, lab, ?? thi) |
+| [HCMUTE](./HCMUTE/) | Giáo trình KTMT — Trường SPKT TP.HCM (bài giảng, lab, đề thi) |
 
 ---
 
-## ?? T�i li?u chung
+## 📘 Tài liệu chung
 
-| T�n t�i li?u | T?i v? |
+| Tên tài liệu | Tải về |
 |--------------|--------|
-| **K? thu?t s?** | [?? RAR](./Ki%20thuat%20so.rar) |
-| **Ki?n tr�c m�y t�nh** | [?? RAR](./Kien%20truc%20may%20tinh.rar) |
-| **C?u tr�c m�y t�nh** | [?? ZIP](./Cau%20truc%20may%20tinh.zip) |
-| **B�i gi?ng C?u tr�c m�y t�nh & ASM** | [?? RAR](./Bai_giang_Cau_Truc_May_Tinh___ASM.rar) |
-| **Ki?n tr�c m�y t�nh � BKHN** | [?? PDF](./Ki%E1%BA%BFn%20tr%C3%BAc%20m%C3%A1y%20t%C3%ADnh%20-%20BKHN.pdf) |
-| **CA-20172** | [?? PDF](./CA-20172-1s.pdf) |
-| **Ch??ng 5 � HUMUS** | [?? PDF](./Chuong05%20HUMUS.pdf) |
+| **Kỹ thuật số** | [📦 RAR](./Ki%20thuat%20so.rar) |
+| **Kiến trúc máy tính** | [📦 RAR](./Kien%20truc%20may%20tinh.rar) |
+| **Cấu trúc máy tính** | [📦 ZIP](./Cau%20truc%20may%20tinh.zip) |
+| **Bài giảng Cấu trúc máy tính & ASM** | [📦 RAR](./Bai_giang_Cau_Truc_May_Tinh___ASM.rar) |
+| **Kiến trúc máy tính – BKHN** | [📥 PDF](./Ki%E1%BA%BFn%20tr%C3%BAc%20m%C3%A1y%20t%C3%ADnh%20-%20BKHN.pdf) |
+| **CA-20172** | [📥 PDF](./CA-20172-1s.pdf) |
+| **Chương 5 – HUMUS** | [📥 PDF](./Chuong05%20HUMUS.pdf) |
 
 ---
 
 <p align="center">
-  ?? [Quay l?i Comp-Org-Assembly](../README.md)
+  ⬅️ [Quay lại Comp-Org-Assembly](../README.md)
 </p>

@@ -1,43 +1,43 @@
-# ?? Algorithms Textbooks
+# 📚 Algorithms Textbooks
 
-> Gi�o tr�nh **gi?i thu?t, c?u tr�c d? li?u v� ?�nh gi� thu?t to�n** (ch? y?u ti?ng Vi?t).
+> Giáo trình **giải thuật, cấu trúc dữ liệu và đánh giá thuật toán** (chủ yếu tiếng Việt).
 
 ---
 
-## ?? Th? m?c ch�nh
+## 📂 Thư mục chính
 
-| Th? m?c | M� t? |
+| Thư mục | Mô tả |
 |---------|-------|
-| [CTDL-GT](./CTDL-GT/) | C?u tr�c d? li?u & gi?i thu?t � slide theo ch??ng |
-| [Algorithms-2004](./Algorithms-2004/) | Slide gi?i thu?t n�ng cao (DP, Greedy, NP-C�) |
-| [Advanced-Data-Structures](./Advanced-Data-Structures/) | C?u tr�c d? li?u n�ng cao I & II |
-| [Algorithm-Analysis](./Algorithm-Analysis/) | Gi?i thu?t & ?�nh gi� (b�i gi?ng HTML/SCORM) |
-| [Advanced-Algorithms](./Advanced-Algorithms/) | Thu?t to�n n�ng cao � Th?y B�nh |
+| [CTDL-GT](./CTDL-GT/) | Cấu trúc dữ liệu & giải thuật – slide theo chương |
+| [Algorithms-2004](./Algorithms-2004/) | Slide giải thuật nâng cao (DP, Greedy, NP-C…) |
+| [Advanced-Data-Structures](./Advanced-Data-Structures/) | Cấu trúc dữ liệu nâng cao I & II |
+| [Algorithm-Analysis](./Algorithm-Analysis/) | Giải thuật & đánh giá (bài giảng HTML/SCORM) |
+| [Advanced-Algorithms](./Advanced-Algorithms/) | Thuật toán nâng cao – Thầy Bình |
 
 ---
 
-## ?? Gi�o tr�nh ti�u bi?u
+## 📘 Giáo trình tiêu biểu
 
-| T�n t�i li?u | T?i v? |
+| Tên tài liệu | Tải về |
 |--------------|--------|
-| **L� Minh Ho�ng � Gi?i thu?t l?p tr�nh** | [?? PDF](./GiaiThuatLapTrinh_LeMinhHoang.pdf) � [?? Chuy�n ??](./Le%20minh%20hoang%20-%20Bai%20giang%20cac%20chuyen%20de.pdf) |
-| **Gi�o tr�nh gi?i thu?t** | [?? PDF](./Giao%20trinh%20giai%20thuat.pdf) |
-| **Gi?i thu?t v� l?p tr�nh** | [?? PDF](./Giai%20thuat%20va%20Lap%20Trinh(rat%20hay).pdf) |
-| **GT_LTTT** | [?? PDF](./GT_LTTT.pdf) |
+| **Lê Minh Hoàng – Giải thuật lập trình** | [📥 PDF](./GiaiThuatLapTrinh_LeMinhHoang.pdf) • [📥 Chuyên đề](./Le%20minh%20hoang%20-%20Bai%20giang%20cac%20chuyen%20de.pdf) |
+| **Giáo trình giải thuật** | [📥 PDF](./Giao%20trinh%20giai%20thuat.pdf) |
+| **Giải thuật và lập trình** | [📥 PDF](./Giai%20thuat%20va%20Lap%20Trinh(rat%20hay).pdf) |
+| **GT_LTTT** | [📥 PDF](./GT_LTTT.pdf) |
 
 ---
 
-## ?? Chuy�n ??
+## 🧩 Chuyên đề
 
-| T�n t�i li?u | T?i v? |
+| Tên tài liệu | Tải về |
 |--------------|--------|
-| **Quy ho?ch ??ng** | [?? B?n 1](./QuiHoachDong.pdf) � [?? B?n 2](./QuiHoachDong_2.pdf) |
-| **?? quy � Quay lui � Nh�nh c?n** | [?? PDF](./De%20quy-Quay%20lui-Nhanh%20can.pdf) |
-| **C�c b�i to�n quy ho?ch ??ng** | [?? PDF](./Cac_bai_toan_ve_quy_hoach_dong_2.pdf) |
-| **?�nh gi� ti?p c?n thu?t to�n** | [?? PDF](./B01-DanhGiaTiepCanThuatToan.pdf) |
+| **Quy hoạch động** | [📥 PDF](./QuiHoachDong.pdf) |
+| **Đệ quy – Quay lui – Nhánh cận** | [📥 PDF](./De%20quy-Quay%20lui-Nhanh%20can.pdf) |
+| **Các bài toán quy hoạch động** | [📥 PDF](./Cac_bai_toan_ve_quy_hoach_dong_2.pdf) |
+| **Đánh giá tiếp cận thuật toán** | [📥 PDF](./B01-DanhGiaTiepCanThuatToan.pdf) |
 
 ---
 
 <p align="center">
-  ?? [Quay l?i Algorithms](../README.md)
+  ⬅️ [Quay lại Algorithms](../README.md)
 </p>

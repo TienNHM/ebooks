@@ -1,22 +1,22 @@
-# ?? Compiler Textbooks
+# 📚 Compiler Textbooks
 
-> Gi�o tr�nh **tr�nh bi�n d?ch** theo t?ng c? s? ?�o t?o.
+> Giáo trình **trình biên dịch** theo từng cơ sở đào tạo.
 
 ---
 
-## ?? T�i li?u theo tr??ng
+## 🎓 Tài liệu theo trường
 
-| T�n t�i li?u | T?i v? |
+| Tên tài liệu | Tải về |
 |--------------|--------|
-| **Tr�nh bi�n d?ch � C?n Th?** | [?? RAR](./Can%20tho.rar) |
-| **Tr�nh bi�n d?ch � ?� N?ng** | [?? RAR](./Da%20Nang.rar) |
-| **Tr�nh bi�n d?ch � TP.HCM** | [?? RAR](./HCM.rar) |
-| **Tr�nh bi�n d?ch � H� N?i** | [?? RAR](./Ha%20Noi.rar) |
-| **Tr�nh bi�n d?ch � Web** | [?? RAR](./Trinh%20bien%20dich-%20Web.rar) � [?? B?n 2](./Trinh%20bien%20dich-%20Web_2.rar) |
-| **Bi�n d?ch, bi�n d?ch ri�ng r?** | [?? PDF](./Bien%20dich,%20bien%20dich%20rieng%20re.pdf) |
+| **Trình biên dịch – Cần Thơ** | [📦 RAR](./Can%20tho.rar) |
+| **Trình biên dịch – Đà Nẵng** | [📦 RAR](./Da%20Nang.rar) |
+| **Trình biên dịch – TP.HCM** | [📦 RAR](./HCM.rar) |
+| **Trình biên dịch – Hà Nội** | [📦 RAR](./Ha%20Noi.rar) |
+| **Trình biên dịch – Web** | [📦 RAR](./Trinh%20bien%20dich-%20Web.rar) • [📦 Bản 2](./Trinh%20bien%20dich-%20Web_2.rar) |
+| **Biên dịch, biên dịch riêng rẽ** | [📥 PDF](./Bien%20dich,%20bien%20dich%20rieng%20re.pdf) |
 
 ---
 
 <p align="center">
-  ?? [Quay l?i Compiler](../README.md)
+  ⬅️ [Quay lại Compiler](../README.md)
 </p>

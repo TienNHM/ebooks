@@ -1,39 +1,40 @@
-# ?? System Analysis & Design Textbooks
+# 📚 System Analysis & Design Textbooks
 
-> Gi�o tr�nh **Ph�n t�ch thi?t k? h? th?ng (PTTK)** � b�i gi?ng, gi�o tr�nh v� ?? thi ??i h?c.
-
----
-
-## ?? Gi�o tr�nh & b�i gi?ng
-
-| T�n t�i li?u | T?i v? |
-|--------------|--------|
-| **Gi�o tr�nh PT_TKHT � Th?y Kh�nh** | [?? PDF](./GiaoTrinh%20PT_TKHT-%20Thay%20Khanh.pdf) |
-| **B�i gi?ng PT-TKHDT � Th?y B�nh** | [?? PDF](./BaiGiang-PT-TKHDT-Thay%20Binh.pdf) |
-| **Ph�n t�ch thi?t k? h? th?ng** | [?? ZIP](./PhanTichThietKeHeThong.zip) |
-| **PTTK � ?H KH Hu?** | [?? RAR](./PTTK%20He%20Thong-DHKH%20Hue.rar) |
-| **Nh?p m�n CNPM** � Gi?ng VH | [?? RAR](./Nhap_mon_cnpm_Giangvh-1.rar) |
-| **Pressman � Ch??ng 4�5** | [?? PDF](./Pressman_chapter4-5.pdf) |
+> Giáo trình **Phân tích thiết kế hệ thống (PTTK)** — bài giảng, giáo trình và đề thi đại học.
 
 ---
 
-## ?? Chuy�n ?? & d? �n
+## 📘 Giáo trình & bài giảng
 
-| T�n t�i li?u | T?i v? |
+| Tên tài liệu | Tải về |
 |--------------|--------|
-| **Ph�n t�ch r?i ro** | [?? PDF](./Phan%20Tich%20Rui%20Ro.pdf) |
-| **H? th?ng ph�t hi?n x�m nh?p** | [?? ZIP](./He_Thong_Phat_Hien_Xam_Nhap.zip) |
+| **Giáo trình PT_TKHT – Thầy Khánh** | [📥 PDF](./GiaoTrinh%20PT_TKHT-%20Thay%20Khanh.pdf) |
+| **Bài giảng PT-TKHDT – Thầy Bình** | [📥 PDF](./BaiGiang-PT-TKHDT-Thay%20Binh.pdf) |
+| **Phân tích thiết kế hệ thống** | [📦 ZIP](./PhanTichThietKeHeThong.zip) |
+| **PTTK – ĐH KH Huế** | [📦 RAR](./PTTK%20He%20Thong-DHKH%20Hue.rar) |
+| **Nhập môn CNPM** – Giảng VH | [📦 RAR](./Nhap_mon_cnpm_Giangvh-1.rar) |
+| **Pressman – Chương 4–5** | [📥 PDF](./Pressman_chapter4-5.pdf) |
+| **Implementing Domain-Driven Design** – H. İ. Kalkan | [📥 PDF](./Halil%20%C4%B0brahim%20Kalkan%20-%20Implementing_Domain_Driven_Design.pdf) |
 
 ---
 
-## ?? ?? thi
+## 🧩 Chuyên đề & dự án
 
-| T�n t�i li?u | T?i v? |
+| Tên tài liệu | Tải về |
 |--------------|--------|
-| **?? thi PTTK** | [?? DOC](./De%20thi%20PTTK.DOC) |
+| **Phân tích rủi ro** | [📥 PDF](./Phan%20Tich%20Rui%20Ro.pdf) |
+| **Hệ thống phát hiện xâm nhập** | [📦 ZIP](./He_Thong_Phat_Hien_Xam_Nhap.zip) |
+
+---
+
+## 📝 Đề thi
+
+| Tên tài liệu | Tải về |
+|--------------|--------|
+| **Đề thi PTTK** | [📄 DOC](./De%20thi%20PTTK.DOC) |
 
 ---
 
 <p align="center">
-  ?? [Quay l?i System Design](../README.md)
+  ⬅️ [Quay lại System Design](../README.md)
 </p>

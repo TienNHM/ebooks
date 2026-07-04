@@ -1,4 +1,5 @@
-* text=auto
+* text=auto eol=lf
+*.md text eol=lf
 *.html linguist-vendored
 *.htm linguist-vendored
 *.HTM linguist-vendored

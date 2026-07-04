@@ -1,28 +1,28 @@
-# ?? Operating Systems Textbooks
+# 📚 Operating Systems Textbooks
 
-> Gi�o tr�nh **h? ?i?u h�nh** (ti?ng Vi?t, ??i h?c).
-
----
-
-## ?? Gi�o tr�nh
-
-| T�n t�i li?u | T?i v? |
-|--------------|--------|
-| **C? b?n v? H? ?i?u h�nh � H� Quang Tuy** | [?? PDF](./Co%20ban%20ve%20He%20Dieu%20Hanh%20Phan%20Tan%20-%20Ha%20Quang%20Tuy.pdf) |
-| **Gi�o tr�nh HDH** | [?? RAR](./GIAO%20TRINH%20HDH.rar) |
-| **H? ?i?u h�nh � Gi�o d?c t? xa** | [?? RAR](./He%20dieu%20hanh-%20Giao%20duc%20tu%20xa.rar) |
-| **T?ng quan h? ?i?u h�nh** | [?? RAR](./Tong%20quan%20He%20dieu%20hanh.rar) |
+> Giáo trình **hệ điều hành** (tiếng Việt, đại học).
 
 ---
 
-## ?? ?? & c�u h?i
+## 📘 Giáo trình
 
-| T�n t�i li?u | T?i v? |
+| Tên tài liệu | Tải về |
 |--------------|--------|
-| **CS6303 � Question Bank** | [?? PDF](./CS6303_qb.pdf) |
+| **Cơ bản về Hệ điều hành – Hà Quang Tuy** | [📥 PDF](./Co%20ban%20ve%20He%20Dieu%20Hanh%20Phan%20Tan%20-%20Ha%20Quang%20Tuy.pdf) |
+| **Giáo trình HDH** | [📦 RAR](./GIAO%20TRINH%20HDH.rar) |
+| **Hệ điều hành – Giáo dục từ xa** | [📦 RAR](./He%20dieu%20hanh-%20Giao%20duc%20tu%20xa.rar) |
+| **Tổng quan hệ điều hành** | [📦 RAR](./Tong%20quan%20He%20dieu%20hanh.rar) |
+
+---
+
+## 📝 Đề & câu hỏi
+
+| Tên tài liệu | Tải về |
+|--------------|--------|
+| **CS6303 – Question Bank** | [📥 PDF](./CS6303_qb.pdf) |
 
 ---
 
 <p align="center">
-  ?? [Quay l?i OS](../README.md)
+  ⬅️ [Quay lại OS](../README.md)
 </p>

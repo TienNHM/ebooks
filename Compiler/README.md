@@ -1,25 +1,25 @@
-# ?? Compiler
+# ⚙️ Compiler
 
-> T�i li?u **tr�nh bi�n d?ch (Compiler)** � s�ch tham kh?o v� gi�o tr�nh c�c tr??ng ??i h?c Vi?t Nam.
+> Tài liệu **trình biên dịch (Compiler)** — sách tham khảo và giáo trình các trường đại học Việt Nam.
 
 ---
 
-## ?? S�ch tham kh?o
+## 📘 Sách tham khảo
 
-| T�n t�i li?u | T?i v? |
+| Tên tài liệu | Tải về |
 |--------------|--------|
-| **Compilers** (t?ng quan) | [?? PDF](./compilers.pdf) |
+| **Compilers** (tổng quan) | [📥 PDF](./compilers.pdf) |
 
 ---
 
-## ?? Gi�o tr�nh tr�nh bi�n d?ch
+## 🎓 Giáo trình trình biên dịch
 
 | | |
 |--|--|
-| **Xem to�n b?** | [?? Th? m?c Textbooks](./Textbooks/) |
+| **Xem toàn bộ** | [📂 Thư mục Textbooks](./Textbooks/) |
 
 ---
 
 <p align="center">
-  G�p t�i li?u? ?? <a href="https://github.com/TienNHM/ebooks/pulls">G?i Pull Request</a>
+  Góp tài liệu? 👉 <a href="https://github.com/TienNHM/ebooks/pulls">Gửi Pull Request</a>
 </p>

@@ -1,33 +1,34 @@
-# ?? Object-Oriented Programming (OOP)
+# 🧬 Object-Oriented Programming (OOP)
 
-> T�i li?u **l?p tr�nh h??ng ??i t??ng**: s�ch tham kh?o qu?c t? v� gi�o tr�nh ??i h?c ti?ng Vi?t.
+> Tài liệu **lập trình hướng đối tượng**: sách tham khảo quốc tế và giáo trình đại học tiếng Việt.
 
 ---
 
-## ?? S�ch tham kh?o
+## 📘 Sách tham khảo
 
-| T�n t�i li?u | M� t? | T?i v? |
+| Tên tài liệu | Mô tả | Tải về |
 |--------------|-------|--------|
-| **Object Oriented Programming with C++ (4th Edition)** � Balaguruswamy | Gi�o tr�nh OOP v?i C++ kinh ?i?n | [?? T?i PDF](./4.Balaguruswamy%20Object%20Oriented%20Programming%20With%20C++%20Fourth%20Edition.pdf) |
+| **Object Oriented Programming with C++ (4th Edition)** – Balaguruswamy | Giáo trình OOP với C++ kinh điển | [📥 PDF](./4.Balaguruswamy%20Object%20Oriented%20Programming%20With%20C++%20Fourth%20Edition.pdf) |
+| **Learning Design Patterns** | Mẫu thiết kế trong lập trình | [📥 PDF](./learning-design-patterns.pdf) |
 
 ---
 
-## ?? Gi�o tr�nh OOP
+## 🎓 Giáo trình OOP
 
 | | |
 |--|--|
-| **Xem to�n b? gi�o tr�nh** | [?? Th? m?c Textbooks](./Textbooks/) |
+| **Xem toàn bộ giáo trình** | [📂 Thư mục Textbooks](./Textbooks/) |
 
 ---
 
-## ?? Li�n quan
+## 📌 Liên quan
 
-- OOP v?i **C++**: [C-Cpp/Textbooks](../C-Cpp/Textbooks/)
-- OOP v?i **C#**: [C-Sharp](../C-Sharp/)
-- OOP v?i **Java**: [Java/Textbooks](../Java/Textbooks/)
+- OOP với **C++**: [C-Cpp/Textbooks](../C-Cpp/Textbooks/)
+- OOP với **C#**: [C-Sharp](../C-Sharp/)
+- OOP với **Java**: [Java/Textbooks](../Java/Textbooks/)
 
 ---
 
 <p align="center">
-  G�p t�i li?u? ?? <a href="https://github.com/TienNHM/ebooks/pulls">G?i Pull Request</a>
+  Góp tài liệu? 👉 <a href="https://github.com/TienNHM/ebooks/pulls">Gửi Pull Request</a>
 </p>
