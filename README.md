@@ -30,6 +30,7 @@
 | 🔗 Lý thuyết đồ thị | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Graph-Theory) |
 | 💻 C/C++ | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/C-Cpp) |
 | 🧩 C# | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/C-Sharp) |
+| 🧬 OOP | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/OOP) |
 | 🏁 Competitive Programming | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Competitive) |
 | 🌐 Computer Network | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Computer-Network) |
 | 🧬 Computer Org & Assembly | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Comp-Org-Assembly) |
