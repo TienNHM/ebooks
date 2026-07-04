@@ -9,7 +9,7 @@
 | Tên tài liệu | Tải về |
 |--------------|--------|
 | **Giáo trình toán rời rạc (chương 1–8)** | [📂 Thư mục](./Giao-trinh-Toan-roi-rac/) |
-| **Toán rời rạc (RAR)** | [📦 RAR](./Toan%20roi%20rac.rar) |
+| **Toán rời rạc (RAR)** | [📦 RAR](./toan-roi-rac.rar) |
 
 ---
 
@@ -17,9 +17,9 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Lý thuyết otomat** | [📦 RAR](./lythuyet%20otomat.rar) |
-| **Quy hoạch tuyến tính** | [📦 RAR](./quy%20hoach%20tuyen%20tinh.rar) |
-| **Phương pháp tính** | [📦 RAR](./Phuong%20phap%20tinh.rar) |
+| **Lý thuyết otomat** | [📦 RAR](./lythuyet-otomat.rar) |
+| **Quy hoạch tuyến tính** | [📦 RAR](./quy-hoach-tuyen-tinh.rar) |
+| **Phương pháp tính** | [📦 RAR](./phuong-phap-tinh.rar) |
 
 ---
 

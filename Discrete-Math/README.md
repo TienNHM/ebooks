@@ -8,9 +8,9 @@
 
 | Tên tài liệu | Mô tả | Tải về |
 |--------------|-------|--------|
-| **Discrete Mathematics and Its Applications** – Rosen (7th Edition) | Giáo trình kinh điển về toán rời rạc, dùng rộng rãi trong đại học | [📥 Tải PDF](./Rosen_Discrete_Mathematics_and_Its_Applications_7th_Edition.pdf) |
-| **Đại số đại cương** | Tài liệu nền tảng về đại số | [📥 Bản 1](./Sach%20Dai%20So%20Dai%20Cuong.pdf) • [📄 Bản 2](./Sach%20Dai%20So%20Dai%20Cuong_2.pdf) |
-| **Knights Tours and Zeta Functions** | Toán tổ hợp và hàm zeta | [📥 Tải PDF](./Knights%20Tours%20and%20Zeta%20Functions.pdf) |
+| **Discrete Mathematics and Its Applications** – Rosen (7th Edition) | Giáo trình kinh điển về toán rời rạc, dùng rộng rãi trong đại học | [📥 Tải PDF](./rosen-discrete-mathematics-and-its-applications-7th-edition.pdf) |
+| **Đại số đại cương** | Tài liệu nền tảng về đại số | [📥 PDF](./sach-dai-so-dai-cuong.pdf) |
+| **Knights Tours and Zeta Functions** | Toán tổ hợp và hàm zeta | [📥 Tải PDF](./knights-tours-and-zeta-functions.pdf) |
 
 ---
 
@@ -18,11 +18,11 @@
 
 | Tên tài liệu | Mô tả | Tải về |
 |--------------|-------|--------|
-| **Chương 1 – Logic** | Giới thiệu logic mệnh đề, suy luận | [📥 Tải PDF](./Chuong-1-Logic.pdf) |
-| **Chương 2 – BJT** | Bài giảng chương 2 | [📥 Tải PDF](./chuong-2-BJT.pdf) |
-| **Chương 6** | Tài liệu chương 6 môn Toán rời rạc | [📥 Tải PDF](./TRRch06.pdf) |
-| **Quan hệ – Bài giải** | Bài giải các bài tập về quan hệ | [📥 Tải PDF](./QuanHe%20-%20Giai.pdf) |
-| **Karnaugh – Tối tiểu Boole** | Slide về bản đồ Karnaugh và tối tiểu hóa biểu thức Boole | [📥 Tải PPT](./08.%20Karnaugh%20toi%20tieu%20bool.ppt) |
+| **Chương 1 – Logic** | Giới thiệu logic mệnh đề, suy luận | [📥 Tải PDF](./chuong-1-logic.pdf) |
+| **Chương 2 – BJT** | Bài giảng chương 2 | [📥 Tải PDF](./chuong-2-bjt.pdf) |
+| **Chương 6** | Tài liệu chương 6 môn Toán rời rạc | [📥 Tải PDF](./Exams/trrch06.pdf) |
+| **Quan hệ – Bài giải** | Bài giải các bài tập về quan hệ | [📥 Tải PDF](./quanhe-giai.pdf) |
+| **Karnaugh – Tối tiểu Boole** | Slide về bản đồ Karnaugh và tối tiểu hóa biểu thức Boole | [📥 Tải PPT](./08-karnaugh-toi-tieu-bool.ppt) |
 
 ---
 
@@ -30,7 +30,7 @@
 
 | Tên tài liệu | Mô tả | Tải về |
 |--------------|-------|--------|
-| **Đề thi – Kỳ I 2015–2016** | Đề thi môn Toán rời rạc | [📥 Tải PDF](./DA-TRR-ky-I-15-16.pdf) |
+| **Đề thi – Kỳ I 2015–2016** | Đề thi môn Toán rời rạc | [📥 Tải PDF](./Exams/da-trr-ky-i-15-16.pdf) |
 
 ---
 
