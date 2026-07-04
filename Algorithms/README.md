@@ -18,9 +18,9 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Introduction to Algorithms – CLRS (3rd Ed.)** | [📥 PDF](./Reference/Introduction%20to%20Algorithms%20CLRS%203rd%20Edition%20Sep%202009.pdf) |
-| **Algorithm Design – Kleinberg & Tardos** | [📥 PDF](./Reference/Algorithm%20Design.pdf) |
-| **The Algorithm Design Manual – Skiena** | [📥 PDF](./Reference/Skiena.-.TheAlgorithmDesignManual.pdf) |
+| **Introduction to Algorithms – CLRS (3rd Ed.)** | [📥 PDF](./Reference/introduction-to-algorithms-clrs-3rd-edition-sep-2009.pdf) |
+| **Algorithm Design – Kleinberg & Tardos** | [📥 PDF](./Reference/algorithm-design.pdf) |
+| **The Algorithm Design Manual – Skiena** | [📥 PDF](./Reference/skiena-thealgorithmdesignmanual.pdf) |
 | **TAOCP – Knuth (Vol. 1–4)** | [📂 Thư mục TAOC](./Reference/TAOC/) |
 
 ---

@@ -4,6 +4,6 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Bài giảng TTNC** | [📥 PDF](./BaiGiang-TTNC.pdf) |
-| **Trang bìa** | [📥 PDF](./TrangBia-TTNC.pdf) |
-| **Giáo trình (RAR)** | [📦 RAR](./Thuat%20toan%20nang%20cao_Th%20Binh.rar) |
+| **Bài giảng TTNC** | [📥 PDF](./baigiang-ttnc.pdf) |
+| **Trang bìa** | [📥 PDF](./trangbia-ttnc.pdf) |
+| **Giáo trình (RAR)** | [📦 RAR](./thuat-toan-nang-cao-th-binh.rar) |

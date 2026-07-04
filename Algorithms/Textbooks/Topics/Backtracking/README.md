@@ -2,5 +2,5 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Đệ quy – Quay lui – Nhánh cận** | [📥 PDF](./De%20quy-Quay%20lui-Nhanh%20can.pdf) |
-| **Thuật toán quay lui** | [📥 PDF](./TTQUAYLUI.pdf) |
+| **Đệ quy – Quay lui – Nhánh cận** | [📥 PDF](./de-quy-quay-lui-nhanh-can.pdf) |
+| **Thuật toán quay lui** | [📥 PDF](./ttquaylui.pdf) |

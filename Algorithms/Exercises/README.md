@@ -8,8 +8,8 @@
 
 | Gói | Mô tả |
 |-----|-------|
-| [Advanced-Data-Structures.zip](./Advanced-Data-Structures.zip) | Bài tập CTDL nâng cao (7 file `.doc`) — **giải nén** |
-| [Misc.zip](./Misc.zip) | Bài tập khác (red-black tree, tràn bộ đệm…) — **giải nén** |
+| [advanced-data-structures.zip](./advanced-data-structures.zip) | Bài tập CTDL nâng cao (7 file `.doc`) — **giải nén** |
+| [misc.zip](./misc.zip) | Bài tập khác (red-black tree, tràn bộ đệm…) — **giải nén** |
 
 ---
 

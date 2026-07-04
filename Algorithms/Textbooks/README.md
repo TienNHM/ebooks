@@ -8,10 +8,10 @@
 
 | Gói | Mô tả |
 |-----|-------|
-| [CTDL-GT.zip](./CTDL-GT.zip) | Cấu trúc dữ liệu & giải thuật — 12 chương (PDF) |
-| [Algorithms-2004-slides.zip](./Algorithms-2004-slides.zip) | Slide giải thuật nâng cao (DP, Greedy, NP-C…) |
-| [Algorithm-Analysis.zip](./Algorithm-Analysis.zip) | Bài giảng HTML/SCORM — đánh giá thuật toán |
-| [GiaiThuat_DanhGia.zip](./GiaiThuat_DanhGia.zip) | Bài giảng SCORM bổ sung |
+| [ctdl-gt.zip](./ctdl-gt.zip) | Cấu trúc dữ liệu & giải thuật — 12 chương (PDF) |
+| [algorithms-2004-slides.zip](./algorithms-2004-slides.zip) | Slide giải thuật nâng cao (DP, Greedy, NP-C…) |
+| [algorithm-analysis.zip](./algorithm-analysis.zip) | Bài giảng HTML/SCORM — đánh giá thuật toán |
+| [giaithuat-danhgia.zip](./giaithuat-danhgia.zip) | Bài giảng SCORM bổ sung |
 
 ---
 
@@ -29,9 +29,9 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Lê Minh Hoàng – Giải thuật lập trình** | [📥 PDF](./Core/GiaiThuatLapTrinh_LeMinhHoang.pdf) |
-| **Chuyên đề – Lê Minh Hoàng** | [📥 PDF](./Core/Le%20minh%20hoang%20-%20Bai%20giang%20cac%20chuyen%20de.pdf) |
-| **Giáo trình giải thuật** | [📥 PDF](./Core/Giao%20trinh%20giai%20thuat.pdf) |
+| **Lê Minh Hoàng – Giải thuật lập trình** | [📥 PDF](./Core/giaithuatlaptrinh-leminhhoang.pdf) |
+| **Chuyên đề – Lê Minh Hoàng** | [📥 PDF](./Core/le-minh-hoang-bai-giang-cac-chuyen-de.pdf) |
+| **Giáo trình giải thuật** | [📥 PDF](./Core/giao-trinh-giai-thuat.pdf) |
 | **Giải thuật và lập trình** | [📥 PDF](./Core/Giai%20thuat%20va%20Lap%20Trinh(rat%20hay).pdf) |
 
 ---

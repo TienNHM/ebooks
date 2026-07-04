@@ -2,4 +2,4 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Dijkstra** | [📥 PDF](./Dijkstra_Algorithms.pdf) |
+| **Dijkstra** | [📥 PDF](./dijkstra-algorithms.pdf) |
