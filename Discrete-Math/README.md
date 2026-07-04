@@ -33,6 +33,16 @@
 
 ---
 
+## 🎓 Giáo trình bổ sung
+
+| | |
+|--|--|
+| **Xem thêm giáo trình** | [📂 Thư mục Textbooks](./Textbooks/) |
+
+Bao gồm: giáo trình toán rời rạc (chương 1–8), lý thuyết otomat, quy hoạch tuyến tính, phương pháp tính…
+
+---
+
 ## 📌 Ghi chú
 
 - Tài liệu phục vụ mục đích **học tập và nghiên cứu cá nhân**.

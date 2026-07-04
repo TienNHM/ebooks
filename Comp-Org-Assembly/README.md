@@ -40,6 +40,16 @@
 
 ---
 
+## 🎓 Giáo trình (tiếng Việt)
+
+| | |
+|--|--|
+| **Xem giáo trình** | [📂 Thư mục Textbooks](./Textbooks/) |
+
+Bao gồm: kỹ thuật số, kiến trúc máy tính…
+
+---
+
 ## 📝 Ghi chú
 
 - Tất cả tài liệu chỉ dùng cho mục đích **học tập, nghiên cứu và tham khảo cá nhân**.
