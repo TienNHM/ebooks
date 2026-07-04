@@ -26,7 +26,7 @@
 | 🤖 AI & Machine Learning | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/AI-Machine-Learning) |
 | 🧠 LLM (Large Language Models) | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/LLM) |
 | 📐 Algorithms | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Algorithms) |
-| 💻 C/C++ | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/C%20Cplusplus) |
+| 💻 C/C++ | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/C-Cpp) |
 | 🧩 C# | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/C-Sharp) |
 | 🏁 Competitive Programming | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Competitive) |
 | 🌐 Computer Network | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Computer%20Network) |
