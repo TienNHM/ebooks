@@ -8,7 +8,7 @@
 
 | Tên tài liệu | Mô tả | Tải về |
 |--------------|-------|--------|
-| **Database System Concepts (6th Edition)** – Silberschatz, Korth, Sudarshan | Giáo trình kinh điển về hệ quản trị CSDL | [📥 Tải PDF](./2_Database%20System%20Concepts%206e%20By%20Abraham%20Silberschatz,%20Henry%20Korth%20and%20S%20Sudarshan.pdf) |
+| **Database System Concepts (6th Edition)** – Silberschatz, Korth, Sudarshan | Giáo trình kinh điển về hệ quản trị CSDL | [📥 Tải PDF](./2-database-system-concepts-6e-by-abraham-silberschatz-henry-korth-and-s-sudarshan.pdf) |
 
 ---
 

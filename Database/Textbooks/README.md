@@ -17,12 +17,12 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **CSDL** | [📥 PDF](./CSDL.pdf) |
-| **Cơ sở dữ liệu – Phương** | [📦 RAR](./Co_so_du_lieu_Phuongnh.rar) |
-| **Cơ sở dữ liệu – Trịnh** | [📦 RAR](./Co_so_du_lieu_Trinhvt.rar) |
-| **Bài tập ôn CSDL** | [📥 DOC](./BT%20%C3%B4n%20CSDL.doc) |
-| **Đề thi mẫu** | [📥 DOC](./De%20thi_Mau.doc) |
-| **Kiểm tra SQL** | [📥 DOCX](./Ktra%20SQL.docx) |
+| **CSDL** | [📥 PDF](./csdl.pdf) |
+| **Cơ sở dữ liệu – Phương** | [📦 RAR](./co-so-du-lieu-phuongnh.rar) |
+| **Cơ sở dữ liệu – Trịnh** | [📦 RAR](./co-so-du-lieu-trinhvt.rar) |
+| **Bài tập ôn CSDL** | [📥 DOC](./bt-on-csdl.doc) |
+| **Đề thi mẫu** | [📥 DOC](./de-thi-mau.doc) |
+| **Kiểm tra SQL** | [📥 DOCX](./ktra-sql.docx) |
 
 ---
 
@@ -30,11 +30,11 @@
 
 | Tên tài liệu | Tải về |
 |--------------|--------|
-| **Giáo trình SQL và PL/SQL** | [📥 PDF](./SQL-Server/3.Giao_trinh_SQL_va_PL_Sql.pdf) |
-| **Học SQL Server 2000** | [📥 PDF](./SQL-Server/HOC%20SQL%20SERVER%202000.pdf) |
-| **Giáo trình SQL Server 7.0** | [📥 PDF](./SQL-Server/Giaotrinh%20SQL%20server%207.0.pdf) |
-| **Oracle SQL & PL/SQL cơ bản** | [📦 RAR](./SQL-Server/Giao_Trinh_Oracle_SQL_PLSQL_CoBan.rar) |
-| **Kỹ thuật lập trình PHP & MySQL** | [📥 PDF](./SQL-Server/Ky_thuat_lap_trinh_PHP_MySQL.PDF) |
+| **Giáo trình SQL và PL/SQL** | [📥 PDF](./SQL-Server/3-giao-trinh-sql-va-pl-sql.pdf) |
+| **Học SQL Server 2000** | [📥 PDF](./SQL-Server/hoc-sql-server-2000.pdf) |
+| **Giáo trình SQL Server 7.0** | [📥 PDF](./SQL-Server/giaotrinh-sql-server-7-0.pdf) |
+| **Oracle SQL & PL/SQL cơ bản** | [📦 RAR](./SQL-Server/giao-trinh-oracle-sql-plsql-coban.rar) |
+| **Kỹ thuật lập trình PHP & MySQL** | [📥 PDF](./SQL-Server/ky-thuat-lap-trinh-php-mysql.pdf) |
 
 ---
 
