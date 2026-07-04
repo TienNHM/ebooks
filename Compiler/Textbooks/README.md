@@ -13,6 +13,7 @@
 | **Trình biên d?ch – TP.HCM** | [?? RAR](./HCM.rar) |
 | **Trình biên d?ch – Hà N?i** | [?? RAR](./Ha%20Noi.rar) |
 | **Trình biên d?ch – Web** | [?? RAR](./Trinh%20bien%20dich-%20Web.rar) • [?? B?n 2](./Trinh%20bien%20dich-%20Web_2.rar) |
+| **Biên d?ch, biên d?ch riêng r?** | [?? PDF](./Bien%20dich,%20bien%20dich%20rieng%20re.pdf) |
 
 ---
 

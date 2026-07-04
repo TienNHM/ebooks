@@ -12,6 +12,7 @@
 | **Bài gi?ng PT-TKHDT – Th?y Bình** | [?? PDF](./BaiGiang-PT-TKHDT-Thay%20Binh.pdf) |
 | **Phân tích thi?t k? h? th?ng** | [?? ZIP](./PhanTichThietKeHeThong.zip) |
 | **PTTK – ?H KH Hu?** | [?? RAR](./PTTK%20He%20Thong-DHKH%20Hue.rar) |
+| **Nh?p môn CNPM** – Gi?ng VH | [?? RAR](./Nhap_mon_cnpm_Giangvh-1.rar) |
 
 ---
 
