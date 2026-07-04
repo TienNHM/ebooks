@@ -38,7 +38,7 @@
 | 🛒 E-Commerce | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/E-Commerce) |
 | ☕ Java | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Java) |
 | 💻 Interview | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Interview) |
-| 📘 Intro to Programming | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Intro2Programming) |
+| 📘 Intro to Programming | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Intro-to-Programming) |
 | ⚛️ ReactJS | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/ReactJS) |
 | 📊 R Programming | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/R) |
 | 🐍 Python | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Python) |
