@@ -12,6 +12,14 @@
 
 ---
 
+## 🎓 Giáo trình bổ sung
+
+| | |
+|--|--|
+| **Xem thêm giáo trình** | [📂 Thư mục Textbooks](./Textbooks/) |
+
+---
+
 ## 📖 Chương trình học
 
 | Tên tài liệu | Mô tả | Tải về |

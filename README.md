@@ -28,6 +28,7 @@
 | 📐 Algorithms | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Algorithms) |
 | 🧮 Toán rời rạc | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Discrete-Math) |
 | 🔗 Lý thuyết đồ thị | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Graph-Theory) |
+| 🎨 Computer Graphics | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Computer-Graphics) |
 | 💻 C/C++ | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/C-Cpp) |
 | 🧩 C# | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/C-Sharp) |
 | 🧬 OOP | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/OOP) |

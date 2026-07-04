@@ -48,6 +48,10 @@
 
 Bao gồm: kỹ thuật số, kiến trúc máy tính…
 
+| | |
+|--|--|
+| **Kỹ thuật vi xử lý** | [📂 Thư mục Vi xu ly](./Vi%20xu%20ly/) |
+
 ---
 
 ## 📝 Ghi chú
