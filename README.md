@@ -42,7 +42,7 @@
 | ⚛️ ReactJS | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/ReactJS) |
 | 📊 R Programming | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/R) |
 | 🐍 Python | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Python) |
-| 🇻🇳 Tin học cơ bản (Vietnamese) | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Tin%20h%E1%BB%8Dc) |
+| 🇻🇳 Tin học THPT | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Tin-Hoc-THPT) |
 | 🧮 Pascal | [Xem sách](https://github.com/TienNHM/ebooks/tree/master/Pascal) |
 
 ---
