@@ -1,6 +1,6 @@
 <p align="right"><a href="./README.en.md">English</a></p>
 
-<h1 align="center">📚 Bộ sưu tập Ebook CNTT</h1>
+<h1 align="center">📚 Bộ sưu tập Ebooks ngành Công nghệ Thông tin</h1>
 
 <p align="center">
   Một kho tàng sách điện tử chất lượng cao dành cho lập trình viên, sinh viên và những người đam mê công nghệ thông tin.
